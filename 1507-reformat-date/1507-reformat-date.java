@@ -14,13 +14,14 @@ class Solution {
         months.put("Nov","11");
         months.put("Dec","12");
         
+        //split into 3 sections
         String[] strings = date.split(" ");
         StringBuilder sb = new StringBuilder();
-        sb.append(strings[2]);
-        sb.append("-");
-        sb.append(months.get(strings[1]));
-        sb.append("-");
+        sb.append(strings[2] + "-");
+        sb.append(months.get(strings[1])+"-");
+        //get all the characters except last two using substring method
         String day = strings[0].substring(0,strings[0].length()-2);
+        //if the day is one degit then append 0 at the begining
         if(day.length()==1){
             sb.append("0"+day);
         }else{
