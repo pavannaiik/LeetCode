@@ -1,51 +1,29 @@
 class TicTacToe {
-    private int[][] board ;
-    private int n;
+    private int[] rows ;
+    private int[] cols ;
+    private int diagonal =0;
+    private int antiDiagonal =0;
     public TicTacToe(int n) {
-        board = new int[n][n];
-        this.n = n;
+        rows = new int[n];
+        cols = new int[n];
     }
     
     public int move(int row, int col, int player) {
         //put player in the given place
-        board[row][col] = player;
-        if(rowCheck(row,col,player) || columnCheck(row,col,player)|| diagonalCheck(row,col,player)||
-           antiDiagonalCheck(row,col,player)){
+        int currentPlayer = player == 1? 1:-1;
+        rows[row]+=currentPlayer;
+        cols[col]+=currentPlayer;
+        if(row==col){
+            diagonal+=currentPlayer;
+        }
+        if(col == (cols.length-row-1)){
+            antiDiagonal+=currentPlayer;
+        }
+        int n = rows.length;
+        if(Math.abs(rows[row])==n || Math.abs(cols[col])==n || Math.abs(diagonal)==n || Math.abs(antiDiagonal)==n){
             return player;
         }
         return 0;
-    }
-    public boolean rowCheck(int row,int col,int player){
-        for(int i=0;i<n;i++){
-            if(board[row][i]!=player){
-                return false;
-            }
-        }
-        return true;
-    }
-    public boolean columnCheck(int row,int col,int player){
-        for(int i=0;i<n;i++){
-            if(board[i][col]!=player){
-                return false;
-            }
-        }
-        return true;
-    }
-    public boolean diagonalCheck(int row,int col,int player){
-        for(int i=0;i<n;i++){
-            if(board[i][i]!=player){
-                return false;
-            }
-        }
-        return true;
-    }
-    public boolean antiDiagonalCheck(int row,int col,int player){
-        for(int i=0;i<n;i++){
-            if(board[i][n-i-1]!=player){
-                return false;
-            }
-        }
-        return true;
     }
 }
 
