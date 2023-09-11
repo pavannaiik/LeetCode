@@ -6,27 +6,23 @@
  * }
  */
 class Solution {
-    private Set<String> set;
+    private Set<String>set;
     private String host;
     private HtmlParser htmlParser;
-
     public List<String> crawl(String startUrl, HtmlParser htmlParser) {
         set = ConcurrentHashMap.newKeySet();
-        host = getHost(startUrl);
+        host = getUrl(startUrl);
         this.htmlParser = htmlParser;
         crawlR(startUrl);
         return new ArrayList<>(set);
     }
-
-    private void crawlR(String startUrl) {
-        if (set.contains(startUrl) || !getHost(startUrl).equals(host)) return;
-        set.add(startUrl);
-        htmlParser.getUrls(startUrl).parallelStream().forEach(this::crawlR);
+    public void crawlR(String url){
+        if(set.contains(url) ||! host.equals(getUrl(url))) return;
+        set.add(url);
+        htmlParser.getUrls(url).parallelStream().forEach(this::crawlR);
     }
-
-    private static String getHost(String url) {
-        int end = url.indexOf('/', 7);
-        System.out.println(end);
-        return url.substring(7, end == -1 ? url.length() : end);
+    public String getUrl(String startUrl){
+        int end = startUrl.indexOf("/",7);
+        return startUrl.substring(7,end==-1?startUrl.length():end);
     }
 }
