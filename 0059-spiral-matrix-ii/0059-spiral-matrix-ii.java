@@ -6,7 +6,7 @@ class Solution {
         int rows=n,cols=n;
         int up=0,down =rows-1,left=0,right=cols-1;
         int direction =0;
-        while(up<=down && left<=right){
+        while(val <= n*n){
             if(direction==0){
                 for(int i=left;i<=right;i++){
                     res[up][i]=val++;
