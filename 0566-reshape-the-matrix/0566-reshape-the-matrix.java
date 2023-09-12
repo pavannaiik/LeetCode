@@ -8,9 +8,10 @@ class Solution {
             for(int j=0;j<mat[0].length;j++){
                 res[row][col]=mat[i][j];
                 col++;
-                if(col==c){
-                    row++;
+                //if the columns are finished we start from next row and zero column
+                if(col == c){
                     col=0;
+                    row++;
                 }
             }
         }
