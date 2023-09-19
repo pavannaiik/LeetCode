@@ -1,5 +1,6 @@
 class Solution {
     public int numTrees(int n) {
+        //Recurrance relation is ways(n)= Sum(1,n)[ways(x-1)*ways(n-x)]
         int dp[] = new int[n+1];
         dp[0]=1;
         for(int x=1;x<=n;x++){
