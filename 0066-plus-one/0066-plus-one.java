@@ -1,24 +1,16 @@
 class Solution {
     public int[] plusOne(int[] digits) {
-        int carry =1;
-        int sum=0;
-        Deque<Integer>queue = new ArrayDeque<>();
-        for(int i=digits.length-1;i>=0;i--){
-            sum = carry + digits[i];
-            if(sum>9){
-                carry = sum/10;
-            }else{
-                carry =0;
+        for(int i=digits.length-1;i>=0 ;i--){
+            if(digits[i]<9){
+                digits[i]++;
+                return digits;
             }
-            queue.offer(sum%10);  
+            digits[i]=0;
         }
-        if(carry ==1) queue.offer(1);
-        int[] res = new int[queue.size()];
-        int i=0;
-        while(!queue.isEmpty()){
-            res[i++]=queue.removeLast();
-        }
-        return res;
+        //if the program arrived till this point means the we need to add 1 to the start of array
+        digits = new int[digits.length+1];
+            digits[0]=1;
+        return digits;
     }
     
 }
