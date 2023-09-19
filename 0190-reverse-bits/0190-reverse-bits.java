@@ -1,7 +1,7 @@
 public class Solution {
     // you need treat n as an unsigned value
     public int reverseBits(int n) {
-        // the idea is to shift the i by 31 positions
+        // the idea is to shift the ith bit by 31 positions while calculating answer
         int ans  = 0;
         int power =31;
         while(n !=0){
