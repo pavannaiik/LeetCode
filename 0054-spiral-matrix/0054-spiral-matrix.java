@@ -4,7 +4,7 @@ class Solution {
     public List<Integer> spiralOrder(int[][] matrix) {
         int cols= matrix[0].length;
         int rows = matrix.length;
-       int up =0;
+        int up =0;
         int down = rows-1;
         int left =0;
         int right = cols-1;
