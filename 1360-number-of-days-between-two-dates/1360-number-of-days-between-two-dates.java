@@ -15,8 +15,10 @@ class Solution {
         for(int i=0;i<month-1;i++){
             days+= (monthsDays[i]);
         }
-        
-        days+= ((year-1)*365) + (year-1)/4;
+        //If we are in 2011 year and second month we need to count 365 days till 2010 only
+        days+= ((year-1)*365);
+        // from 1971 every four years we get leap year so number of leap year equals = number of one extra day day of feb  
+        days+=  (year-1)/4;
         if(year%4 ==0 && month >2 && year!=2100) days++;
         return days;
     }
