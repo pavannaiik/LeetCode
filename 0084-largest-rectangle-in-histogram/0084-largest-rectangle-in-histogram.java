@@ -3,41 +3,25 @@ public class Solution {
         int maxarea = 0;
        int[] left = new int[heights.length];
         int[] right = new int[heights.length];
-        Stack<Integer>stack = new Stack<Integer>();
-        for(int i=0;i<heights.length;i++){
+        left[0]=-1;
+        right[heights.length-1]=heights.length;
+        for(int i=1;i<heights.length;i++){
+            int p =i-1;
+            while(p>=0 && heights[i]<=heights[p]){
+                p=left[p];
+            }
+            left[i]=p;
+        }
+        for(int i=heights.length-2;i>=0;i--){
+           int p=i+1;
+            while(p<heights.length && heights[i]<=heights[p]){
+                p=right[p];
+            }
+            right[i]=p;
             
-            if(stack.isEmpty()){
-                left[i]=0;
-                stack.push(i);
-            }else{
-                
-            while(!stack.isEmpty() && heights[i]<=heights[stack.peek()]){
-                stack.pop();
-            }
-            if(stack.size()>0)
-            left[i]=(stack.peek()+1);
-            else left[i]=0;
-            stack.push(i);
-            }
-        }
-        while(!stack.isEmpty()) stack.pop();
-        for(int i=heights.length-1;i>=0;i--){
-           if(stack.isEmpty()){
-                right[i]=heights.length-1;
-                stack.push(i);
-            }else{
-                
-            while(!stack.isEmpty() && heights[i]<=heights[stack.peek()]){
-                stack.pop();
-            }
-            if(stack.size()>0)
-            right[i]=(stack.peek()-1);
-            else right[i]=heights.length-1;
-            stack.push(i);
-            }
         }
         for(int i=0;i<heights.length;i++){
-            maxarea = Math.max(maxarea,heights[i]*(right[i]-left[i]+1));
+            maxarea = Math.max(maxarea,heights[i]*(right[i]-left[i]-1));
         }
         return maxarea;
     }
