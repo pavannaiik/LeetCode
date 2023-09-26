@@ -1,20 +1,39 @@
 class Solution {
-    public int numDistinct(String s, String t) {
-       
-        int n = s.length(),m = t.length();
-        int[][] dp = new int[m+1][n+1];
-        for(int i=0;i<=n;i++){
-            dp[0][i]=1;
+    
+    private String s;
+    private String t;
+    private int sn;
+    private int tn;
+    private Integer memo[][];
+    
+    private int check(int si, int ti) {
+        if (si == sn || ti == tn || sn - si < tn - ti) {
+            return ti == tn ? 1 : 0;
         }
-        for(int i=0;i<m;i++){
-            for(int j=0;j<n;j++){
-                if(t.charAt(i)==s.charAt(j)){
-                    dp[i+1][j+1]=dp[i][j]+dp[i+1][j];
-                }else{
-                     dp[i+1][j+1]=dp[i+1][j];
-                }
-            }
+        if (ti == tn) {
+            return 1;
         }
-        return dp[m][n];
+        if (si == sn) {
+            return 0;
+        }
+        if (memo[si][ti] != null) {
+            return memo[si][ti];
+        }
+        int count = check(si + 1, ti);
+        if (s.charAt(si) == t.charAt(ti)) {
+            count += check(si + 1, ti + 1);
+        }
+        memo[si][ti] = count;
+        return count;
     }
+    
+    public int numDistinct(String s, String t) {
+        this.s = s;
+        this.t = t;
+        this.sn = s.length();
+        this.tn = t.length();
+        this.memo = new Integer[sn][tn];
+        return check(0, 0);
+    }
+    
 }
