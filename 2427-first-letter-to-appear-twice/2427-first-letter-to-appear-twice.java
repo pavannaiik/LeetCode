@@ -1,3 +1,4 @@
+
 class Solution {
     public char repeatedCharacter(String s) {
         int[] arr = new int[26];
@@ -5,6 +6,6 @@ class Solution {
             arr[ch -'a'] +=1;
             if(arr[ch -'a']==2) return ch;
         }
-        return 'a';
+        throw new RuntimeException("s should contain at least one repeated character");
     }
 }
