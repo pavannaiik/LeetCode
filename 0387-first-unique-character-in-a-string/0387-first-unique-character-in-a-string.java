@@ -1,12 +1,12 @@
 class Solution {
     public int firstUniqChar(String s) {
-        int[] arr = new int[26];
-        for(char ch: s.toCharArray()){
-            arr[ch -'a'] +=1;
+        int ans = Integer.MAX_VALUE;
+        for(char c ='a'; c<='z';c++ ){
+            int index = s.indexOf(c);
+            if(index!=-1 && index == s.lastIndexOf(c)){
+                ans = Math.min(ans,index);
+            }
         }
-        for(int i=0;i<s.length();i++){
-            if(arr[s.charAt(i)-'a']==1) return i;
-        }
-        return -1;
+        return ans!=Integer.MAX_VALUE?ans:-1;
     }
 }
