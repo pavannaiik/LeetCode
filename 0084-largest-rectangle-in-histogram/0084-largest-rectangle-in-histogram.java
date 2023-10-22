@@ -52,8 +52,8 @@ class Solution {
                 }
                 q--;
             }
-            p = p >> 1;
-            q = q >> 1;
+            p = p / 2;
+            q = q /2 ;
         }
         return index;
     }
