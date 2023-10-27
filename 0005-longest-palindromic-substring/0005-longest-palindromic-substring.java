@@ -1,42 +1,30 @@
 class Solution {
+     int leftIndex =0, rightIndex =0;
+     int maxLen = Integer.MIN_VALUE;
+    public void findLP(String s, int p, int q){
+        int n =s.length();
+        while(p >=0 && q < n){
+            if(s.charAt(p)!=s.charAt(q)){
+                break;
+            }
+            p--;
+            q++;
+        }
+
+        int len = q-p-1;
+        if(len > maxLen){
+            maxLen = len;
+            leftIndex = p+1;
+            rightIndex = q-1;
+        }
+    }
     public String longestPalindrome(String s) {
-        int max_len = 0;
-        int start_index =0,end_index=0;
-        int len = s.length();
-        for(int i=0;i<len;i++){
-            int start=i-1,end =i+1;
-            while(start >=0 && end <len){
-                if(s.charAt(start)!=s.charAt(end)){
-                    break;
-                }else{
-                    start--;
-                    end++;
-                }
-            }
-            int cur_len = 1 + ((end-1)-(start+1));
-            if(cur_len>max_len){
-                max_len = cur_len;
-                start_index = start+1;
-                end_index = end-1;
-            }
+        int n =s.length();
+        for(int i=0;i<n;i++){
+            findLP(s,i,i);
+            findLP(s,i,i+1);
         }
-        for(int i=0;i<len;i++){
-            int start=i-1,end =i;
-            while(start >=0 && end <len){
-                if(s.charAt(start)!=s.charAt(end)){
-                    break;
-                }else{
-                    start--;
-                    end++;
-                }
-            }
-            int cur_len = 1 + ((end-1)-(start+1));
-            if(cur_len>max_len){
-                max_len = cur_len;
-                start_index = start+1;
-                end_index = end-1;
-            }
-        }
-        return s.substring(start_index,end_index+1);
+        
+        return s.substring(leftIndex,rightIndex+1);
     }
 }
