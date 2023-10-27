@@ -1,8 +1,16 @@
 class Solution {
     public int kthGrammar(int n, int k) {
-        if(n==1) return 0;
-        if(k%2 ==0)
-        return 1 - kthGrammar(n-1, k/2);
-        else return kthGrammar(n-1,(k+1)/2);
+        int cur =0;
+        int left =1, right = (int)Math.pow(2,n-1);
+        for(int i=0;i<n;i++){
+            int mid = (right+left)/2;
+            if (k<= mid){
+                right = mid;
+            }else{
+                left = mid+1;
+                cur = 1-cur;
+            }
+        }
+        return cur;
     }
 }
