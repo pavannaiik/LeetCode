@@ -9,6 +9,6 @@ class Solution {
             }
         }
        
-        return s2+s;
+        return "";
     }
 }
