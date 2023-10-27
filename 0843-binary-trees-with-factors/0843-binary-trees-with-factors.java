@@ -1,7 +1,7 @@
 class Solution {
     private int mod = 1000000007;
     public int numFactoredBinaryTrees(int[] arr) {
-        int n = arr.length;
+         int n = arr.length;
         HashMap<Integer,Long> dp = new HashMap<>();
         Arrays.sort(arr);
         for(int i=0;i<n;i++){
