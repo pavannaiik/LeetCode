@@ -13,12 +13,11 @@ class Solution:
 		while len(queue) > 0:
 		    currentVertex = queue.pop()
 		    vertexValue = currentVertex[0]
-		    colorOfvertex = currentVertex[1]
 		    for i in adj[vertexValue]:
 		        if colored[i-1] == -1:
-		            colored[i-1] = 1 - colorOfvertex
-		            queue.append([i,1-colorOfvertex])
-		        elif colored[i-1] == colorOfvertex:
+		            colored[i-1] = 1 - currentVertex[1]
+		            queue.append([i,1-currentVertex[1]])
+		        elif colored[i-1] == currentVertex[1]:
 		            return 1
 		return 0
 		        
