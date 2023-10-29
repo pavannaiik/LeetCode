@@ -2,7 +2,7 @@ class Solution:
 	def isBipartite(self, V, adj):
 		#code here
 		colored = [-1]*V
-		for v in range(V):
+		for v in range(1,V):
 		    if colored[v-1] == -1:
 		        if self.bfs(adj, colored, v):
 		            return 0
