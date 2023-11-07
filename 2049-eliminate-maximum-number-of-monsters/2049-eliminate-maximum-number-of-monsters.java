@@ -1,18 +1,12 @@
 class Solution {
     public int eliminateMaximum(int[] dist, int[] speed) {
-        int ans =1;
-        int n = dist.length;
-        List<Double>list = new ArrayList<>();
-        for(int i=0;i<n;i++){
-            list.add((double)dist[i]/speed[i]);
-        }
-        Collections.sort(list);
-        for(int i=1;i<n;i++){
-            if(list.get(i)<=i){
-                return ans;
-            }
-            ans++;
-        }
-        return ans;
+
+        for (int i = 0; i < dist.length; ++i)
+        dist[i] = (dist[i]-1) / speed[i];
+        Arrays.sort(dist);
+        for (int i = 0; i < dist.length; ++i)
+            if (i > dist[i])
+                return i;
+        return dist.length;
     }
 }
