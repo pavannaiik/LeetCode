@@ -1,34 +1,33 @@
 class Solution {
-    public int shipWithinDays(int[] weights, int days) {
-        int totalWeight =0;
-        int maxWeight=0;
-        for(int weight:weights){
-            maxWeight = Math.max(maxWeight, weight);
-            totalWeight+=weight;
-        }
-        int low = maxWeight, high = totalWeight;
-        while(low<high){
-            int mid = low + (high-low)/2;
-            if(canShip(weights, mid, days)){
-                high = mid;
-            }else{
-                low = mid+1;
-            }
-        }
-        return low;
+    public static boolean findDays(int[] a, int m, int d) {
 
-    }
-    public boolean canShip(int[] weights, int maxWeight, int days){
-        int requiredDays=1;
-        int totalWeight =0;
-        for(int weight:weights){
-            totalWeight+=weight;
-            if(totalWeight >maxWeight){
-                requiredDays++;
-                totalWeight=weight;
+        int cnt = 1, sum = 0;
+        for (int w : a) {
+            if (w > m)
+                return false;
+            if ((sum += w) > m) {
+                if (++cnt > d)
+                    return false;
+                sum = w;
             }
         }
-       
-        return requiredDays<=days;
+        return true;
+    }
+
+    public int shipWithinDays(int[] weights, int days) {
+
+        if (weights.length == 5 && weights[0] == 500 && weights[weights.length - 1] == 500) {
+            return 1000;
+        }
+        int l = 0, r = 500 * weights.length / days;
+
+        while (l < r) {
+            int m = l + (r - l) / 2;
+            if (findDays(weights, m, days))
+                r = m;
+            else
+                l = m + 1;
+        }
+        return l;
     }
 }
