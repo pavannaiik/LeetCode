@@ -1,18 +1,21 @@
 class Solution {
-    public int maxSatisfied(int[] customers, int[] grumpy, int x) {
-    int res = 0, max = 0;
+    public int maxSatisfied(int[] customers, int[] grumpy, int minutes) {
+        int n = grumpy.length;
+        int i = 0;
+        int curWin = 0;
+        int maxWin = 0;
 
-    for(int i = 0, extra = 0; i < grumpy.length; i++){
-        if(grumpy[i] == 0)
-            res += customers[i];//take sum when owner isn't grumpy cause this is what greedy looks like
-        else
-            extra += customers[i];//include in window 
-
-        if(i >= x && grumpy[i - x] == 1)//when we have reached our window limit(x), it's time to slide it
-            extra -= customers[i - x];//exclude (i - x)th index value from window
-
-        max = Math.max(max, extra);//store the maximum extra we can get using super powers
-    }
-    return res + max;
+        for(int j=0;j<n;j++) {
+            curWin+=customers[j] * grumpy[j];
+            maxWin = Math.max(curWin, maxWin);
+            if(j >= minutes - 1 ) {
+                curWin -= customers[i] * grumpy[i++];
+            }
+        }
+        int res = maxWin;
+        for(i=0;i<grumpy.length;i++) {
+            res+=customers[i] * (1 - grumpy[i]);
+        }
+        return res;
 }
 }
