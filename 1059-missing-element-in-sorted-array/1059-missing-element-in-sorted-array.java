@@ -1,15 +1,15 @@
 class Solution {
     public int missingElement(int[] nums, int k) {
        // int totalMissingNumbers =0;
-        int n =k;
-        for(int i=1;i<nums.length;i++){
-            if(n <= nums[i]-nums[i-1] - 1 ){
-                return nums[i-1]+n;
-            }else{
-                int totalMissingNumbers =(nums[i]-nums[i-1]-1);
-                n-=totalMissingNumbers;
+        int left =0, right = nums.length-1;
+        while(left < right){
+            int mid = right-(right-left)/2;
+            if(nums[mid]-nums[0]-mid < k){
+                left = mid;
+            }else {
+                right = mid-1;
             }
         }
-        return nums[nums.length-1]+n;
+        return nums[0]+k+left;
     }
 }
