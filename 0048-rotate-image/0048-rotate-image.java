@@ -4,9 +4,9 @@ class Solution {
         int cols = matrix[0].length;
         for(int i=0;i<rows;i++){
             for(int j=i;j<rows;j++){
-                int t = matrix[j][i];
-                matrix[j][i]=matrix[i][j];
-                matrix[i][j]=t;
+                int t = matrix[i][j];
+                matrix[i][j]=matrix[j][i];
+                matrix[j][i]=t;
             }
         }
         for(int i=0;i<rows;i++){
