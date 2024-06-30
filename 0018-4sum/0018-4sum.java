@@ -1,37 +1,49 @@
 class Solution {
+    int len =0;
     public List<List<Integer>> fourSum(int[] nums, int target) {
-        int n = nums.length;
-        List<List<Integer>>ans = new ArrayList<>();
-        if(nums==null || n<4){
+        len = nums.length;
+        Arrays.sort(nums);
+        return kSum(nums,target, 4,0);
+    }
+    public ArrayList<List<Integer>> kSum(int[] nums,long target, int K, int index ){
+        ArrayList<List<Integer>>ans = new ArrayList<>();
+        if(index >= len){
             return ans;
         }
-        Arrays.sort(nums);
-        for(int i=0;i<n-3;i++){
-            if(i>0 && nums[i]== nums[i-1]){
-                continue;
-            }
-            for(int j=i+1;j<n-2;j++){
-                if(j>i+1 && nums[j]==nums[j-1]){
-                    continue;
+        if(K==2){
+            int i = index, j= len-1;
+            while(i < j){
+                long sum = (long) nums[i]+nums[j];
+                if(sum==target){
+                    List<Integer>list = new ArrayList<>();
+                    list.add(nums[i]);
+                    list.add(nums[j]);
+                    ans.add(list);
+                    while(i<j && nums[i]==nums[i+1]) i++;
+                    while(i<j && nums[j]==nums[j-1])j--;
+                    i++;
+                    j--;
+                }else if(sum < target){
+                    i++;
+                }else{
+                    j--;
                 }
-                int left = j+1, right = n-1;
-                while(left < right){
-                    long sum =(long) nums[i]+nums[j]+nums[left]+nums[right];
-                    if(sum== target){
-                        ans.add(Arrays.asList(nums[i],nums[j],nums[left],nums[right]));
-                        left++;
-                        right--;
-                        while(left<right && nums[left]==nums[left-1]) left++;
-                        while(left<right && nums[right]==nums[right+1]) right--;
-                    }else if(sum < target){
-                        left++;
-                    }else{
-                        right--;
+            }
+
+        }else{
+            for(int i=index;i<nums.length-K+1;i++){
+                ArrayList<List<Integer>>res = kSum(nums, target-nums[i], K-1, i+1);
+                if(res!=null){
+                    for(List<Integer>temp:res){
+                        temp.add(0, nums[i]);
                     }
+                    ans.addAll(res);
+                }
+                while(i<len-1 && nums[i]==nums[i+1]){
+                    i++;
                 }
             }
         }
         return ans;
-        
     }
 }
