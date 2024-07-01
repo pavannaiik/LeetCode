@@ -33,6 +33,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0088-merge-sorted-array](https://github.com/pavannaiik/LeetCode/tree/master/0088-merge-sorted-array) |
 | [0169-majority-element](https://github.com/pavannaiik/LeetCode/tree/master/0169-majority-element) |
 | [0229-majority-element-ii](https://github.com/pavannaiik/LeetCode/tree/master/0229-majority-element-ii) |
+| [2379-maximum-total-importance-of-roads](https://github.com/pavannaiik/LeetCode/tree/master/2379-maximum-total-importance-of-roads) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -91,4 +92,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1701-remove-max-number-of-edges-to-keep-graph-fully-traversable](https://github.com/pavannaiik/LeetCode/tree/master/1701-remove-max-number-of-edges-to-keep-graph-fully-traversable) |
+| [2379-maximum-total-importance-of-roads](https://github.com/pavannaiik/LeetCode/tree/master/2379-maximum-total-importance-of-roads) |
+## Greedy
+|  |
+| ------- |
+| [2379-maximum-total-importance-of-roads](https://github.com/pavannaiik/LeetCode/tree/master/2379-maximum-total-importance-of-roads) |
+## Heap (Priority Queue)
+|  |
+| ------- |
+| [2379-maximum-total-importance-of-roads](https://github.com/pavannaiik/LeetCode/tree/master/2379-maximum-total-importance-of-roads) |
 <!---LeetCode Topics End-->
