@@ -11,20 +11,14 @@
  */
 public class Solution {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
-        ListNode tempA=headA;
-        ListNode tempB=headB;
-        while(tempA!=tempB){
-            if(tempA==null){
-                tempA = headB;
-            }
-            if(tempB==null){
-                tempB=headA;
-            }
-            if(tempA == tempB) return tempA;
-            tempA=tempA.next;
-            tempB=tempB.next;
-        }
-        if(tempA != tempB) return new ListNode(0);
-        return tempB;
+        ListNode a=headA;
+        ListNode b=headB;
+       while( a != b){
+    	//for the end of first iteration, we just reset the pointer to the head of another linkedlist
+        a = a == null? headB : a.next;
+        b = b == null? headA : b.next;    
+    }
+    
+    return a;
     }
 }
