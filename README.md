@@ -66,6 +66,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0048-rotate-image](https://github.com/pavannaiik/LeetCode/tree/master/0048-rotate-image) |
 | [0050-powx-n](https://github.com/pavannaiik/LeetCode/tree/master/0050-powx-n) |
 | [0062-unique-paths](https://github.com/pavannaiik/LeetCode/tree/master/0062-unique-paths) |
+| [2645-pass-the-pillow](https://github.com/pavannaiik/LeetCode/tree/master/2645-pass-the-pillow) |
 ## Matrix
 |  |
 | ------- |
@@ -171,4 +172,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2299-merge-nodes-in-between-zeros](https://github.com/pavannaiik/LeetCode/tree/master/2299-merge-nodes-in-between-zeros) |
+| [2645-pass-the-pillow](https://github.com/pavannaiik/LeetCode/tree/master/2645-pass-the-pillow) |
 <!---LeetCode Topics End-->
