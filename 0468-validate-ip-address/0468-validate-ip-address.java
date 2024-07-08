@@ -24,13 +24,20 @@ class Solution {
              if(strArr6.length!=8) return false;
              for(String s:strArr6){
                 try{
-                    if(Integer.parseInt(s, 16) > 65535 || s.length() >4 ){
-                        return false;
+                    if (s.length() == 0 || s.length() > 4) return false;
+                    for (char c : s.toCharArray()) {
+                        if (!isHexCharacter(c)) return false;
                     }
                 }catch(NumberFormatException e){
                     return false;
                 }
             }
             return true;
+        }
+
+        private boolean isHexCharacter(char c) {
+            return (c >= '0' && c <= '9') ||
+                (c >= 'a' && c <= 'f') ||
+                (c >= 'A' && c <= 'F');
         }
 }
