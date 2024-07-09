@@ -1,20 +1,13 @@
 class Solution {
     public double averageWaitingTime(int[][] customers) {
         int n = customers.length;
-        long ans =0;
-        long end =0;
-        for(int[] customer :customers ){
-            long time = customer[0]+customer[1];
-            long wait = time - customer[0];
-            if(end > customer[0]){
-                wait+= end-customer[0];
-                end = time +(end-customer[0]);
-            }else{
-                end = time;
-            }
-            ans += wait;
-            
+        int t=-1;
+        double wait=0;
+        for(int[] a:customers){
+            t = t<a[0]?a[0]:t;
+            t+=a[1];
+            wait += t-a[0];
         }
-        return (double)(ans)/(double)n;
+        return wait/n;
     }
 }
