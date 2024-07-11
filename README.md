@@ -150,6 +150,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/pavannaiik/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0468-validate-ip-address](https://github.com/pavannaiik/LeetCode/tree/master/0468-validate-ip-address) |
+| [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/pavannaiik/LeetCode/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
 | [1720-crawler-log-folder](https://github.com/pavannaiik/LeetCode/tree/master/1720-crawler-log-folder) |
 ## Sliding Window
 |  |
@@ -180,6 +181,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0042-trapping-rain-water](https://github.com/pavannaiik/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0234-palindrome-linked-list](https://github.com/pavannaiik/LeetCode/tree/master/0234-palindrome-linked-list) |
+| [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/pavannaiik/LeetCode/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
 | [1720-crawler-log-folder](https://github.com/pavannaiik/LeetCode/tree/master/1720-crawler-log-folder) |
 ## Monotonic Stack
 |  |
