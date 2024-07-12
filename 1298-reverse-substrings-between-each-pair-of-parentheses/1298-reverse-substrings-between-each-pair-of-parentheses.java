@@ -1,37 +1,30 @@
-public class Solution {
-
+class Solution {
     public String reverseParentheses(String s) {
-        int n = s.length();
-        Stack<Integer> openParenthesesIndices = new Stack<>();
-        int[] pair = new int[n];
-
-        // First pass: Pair up parentheses
-        for (int i = 0; i < n; ++i) {
-            if (s.charAt(i) == '(') {
-                openParenthesesIndices.push(i);
-            }
-            if (s.charAt(i) == ')') {
-                int j = openParenthesesIndices.pop();
-                pair[i] = j;
-                pair[j] = i;
-            }
-        }
-
-        // Second pass: Build the result string
-        StringBuilder result = new StringBuilder();
-        for (
-            int currIndex = 0, direction = 1;
-            currIndex < n;
-            currIndex += direction
-        ) {
-            if (s.charAt(currIndex) == '(' || s.charAt(currIndex) == ')') {
-                currIndex = pair[currIndex];
-                direction = -direction;
-            } else {
-                result.append(s.charAt(currIndex));
+        Stack<Character>stack = new Stack<>();
+        int leftBrackets =0;
+        for(char c:s.toCharArray()){
+            if(c !=')'){
+                if(c=='(')
+                  leftBrackets++;
+                stack.push(c);
+            }else if(leftBrackets>0){
+                StringBuilder sb = new StringBuilder();
+                while(stack.size() >0 && stack.peek()!='('){
+                    sb.append(stack.pop());
+                }
+                if(stack.size() >0 && stack.peek()=='('){
+                    leftBrackets--;
+                    stack.pop();
+                }
+                for(int i=0;i<sb.length();i++){
+                    stack.push(sb.charAt(i));
+                }
             }
         }
-
-        return result.toString();
+         StringBuilder ans = new StringBuilder();
+        while(!stack.isEmpty()){
+            ans.append(stack.pop());
+        }
+        return ans.reverse().toString();
     }
 }
