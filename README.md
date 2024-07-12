@@ -9,6 +9,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0018-4sum](https://github.com/pavannaiik/LeetCode/tree/master/0018-4sum) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/pavannaiik/LeetCode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0039-combination-sum](https://github.com/pavannaiik/LeetCode/tree/master/0039-combination-sum) |
+| [0040-combination-sum-ii](https://github.com/pavannaiik/LeetCode/tree/master/0040-combination-sum-ii) |
 | [0042-trapping-rain-water](https://github.com/pavannaiik/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0048-rotate-image](https://github.com/pavannaiik/LeetCode/tree/master/0048-rotate-image) |
 | [0056-merge-intervals](https://github.com/pavannaiik/LeetCode/tree/master/0056-merge-intervals) |
@@ -208,6 +209,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0039-combination-sum](https://github.com/pavannaiik/LeetCode/tree/master/0039-combination-sum) |
+| [0040-combination-sum-ii](https://github.com/pavannaiik/LeetCode/tree/master/0040-combination-sum-ii) |
 | [0078-subsets](https://github.com/pavannaiik/LeetCode/tree/master/0078-subsets) |
 | [0090-subsets-ii](https://github.com/pavannaiik/LeetCode/tree/master/0090-subsets-ii) |
 <!---LeetCode Topics End-->
