@@ -32,16 +32,11 @@ class Solution {
                 stack.push(robot);
             }
         }
-        int[] ans = new int[positions.length];
-        while(!stack.isEmpty()){
-            ans[stack.peek().index]= stack.peek().health;
-            stack.pop();
-        }
+        stack.sort((a,b)->a.index-b.index);
         List<Integer>res = new ArrayList<>();
-        for(int i=0;i<ans.length;i++){
-            if(ans[i]>0){
-                res.add(ans[i]);
-            }
+        while(!stack.isEmpty()){
+            res.add(0,stack.peek().health);
+            stack.pop();
         }
         return res;
     }
