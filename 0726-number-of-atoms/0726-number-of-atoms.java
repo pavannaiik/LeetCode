@@ -18,9 +18,9 @@ class Solution {
                 while (i < n && Character.isDigit(formula.charAt(i))) {
                     i++;
                 }
-                int multiplicity = (start < i) ? Integer.parseInt(formula.substring(start, i)) : 1;
+                int count = (start < i) ? Integer.parseInt(formula.substring(start, i)) : 1;
                 for (String key : tempMap.keySet()) {
-                    countMap.put(key, countMap.getOrDefault(key, 0) + tempMap.get(key) * multiplicity);
+                    countMap.put(key, countMap.getOrDefault(key, 0) + tempMap.get(key) * count);
                 }
             } else {
                 int start = i;
@@ -33,8 +33,8 @@ class Solution {
                 while (i < n && Character.isDigit(formula.charAt(i))) {
                     i++;
                 }
-                int multiplicity = (start < i) ? Integer.parseInt(formula.substring(start, i)) : 1;
-                countMap.put(name, countMap.getOrDefault(name, 0) + multiplicity);
+                int count = (start < i) ? Integer.parseInt(formula.substring(start, i)) : 1;
+                countMap.put(name, countMap.getOrDefault(name, 0) + count);
             }
         }
         
