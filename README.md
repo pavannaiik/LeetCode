@@ -83,6 +83,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0050-powx-n](https://github.com/pavannaiik/LeetCode/tree/master/0050-powx-n) |
 | [0060-permutation-sequence](https://github.com/pavannaiik/LeetCode/tree/master/0060-permutation-sequence) |
 | [0062-unique-paths](https://github.com/pavannaiik/LeetCode/tree/master/0062-unique-paths) |
+| [0796-reaching-points](https://github.com/pavannaiik/LeetCode/tree/master/0796-reaching-points) |
 | [1642-water-bottles](https://github.com/pavannaiik/LeetCode/tree/master/1642-water-bottles) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/pavannaiik/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2645-pass-the-pillow](https://github.com/pavannaiik/LeetCode/tree/master/2645-pass-the-pillow) |
