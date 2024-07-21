@@ -29,6 +29,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0455-assign-cookies](https://github.com/pavannaiik/LeetCode/tree/master/0455-assign-cookies) |
 | [0485-max-consecutive-ones](https://github.com/pavannaiik/LeetCode/tree/master/0485-max-consecutive-ones) |
 | [0560-subarray-sum-equals-k](https://github.com/pavannaiik/LeetCode/tree/master/0560-subarray-sum-equals-k) |
+| [0941-sort-array-by-parity](https://github.com/pavannaiik/LeetCode/tree/master/0941-sort-array-by-parity) |
 | [1207-delete-nodes-and-return-forest](https://github.com/pavannaiik/LeetCode/tree/master/1207-delete-nodes-and-return-forest) |
 | [1293-three-consecutive-odds](https://github.com/pavannaiik/LeetCode/tree/master/1293-three-consecutive-odds) |
 | [1496-lucky-numbers-in-a-matrix](https://github.com/pavannaiik/LeetCode/tree/master/1496-lucky-numbers-in-a-matrix) |
@@ -56,6 +57,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0350-intersection-of-two-arrays-ii](https://github.com/pavannaiik/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0455-assign-cookies](https://github.com/pavannaiik/LeetCode/tree/master/0455-assign-cookies) |
 | [0908-middle-of-the-linked-list](https://github.com/pavannaiik/LeetCode/tree/master/0908-middle-of-the-linked-list) |
+| [0941-sort-array-by-parity](https://github.com/pavannaiik/LeetCode/tree/master/0941-sort-array-by-parity) |
 ## Sorting
 |  |
 | ------- |
@@ -69,6 +71,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0350-intersection-of-two-arrays-ii](https://github.com/pavannaiik/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0455-assign-cookies](https://github.com/pavannaiik/LeetCode/tree/master/0455-assign-cookies) |
 | [0726-number-of-atoms](https://github.com/pavannaiik/LeetCode/tree/master/0726-number-of-atoms) |
+| [0941-sort-array-by-parity](https://github.com/pavannaiik/LeetCode/tree/master/0941-sort-array-by-parity) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/pavannaiik/LeetCode/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
 | [2379-maximum-total-importance-of-roads](https://github.com/pavannaiik/LeetCode/tree/master/2379-maximum-total-importance-of-roads) |
 | [2846-robot-collisions](https://github.com/pavannaiik/LeetCode/tree/master/2846-robot-collisions) |
