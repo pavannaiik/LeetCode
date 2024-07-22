@@ -26,6 +26,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0229-majority-element-ii](https://github.com/pavannaiik/LeetCode/tree/master/0229-majority-element-ii) |
 | [0287-find-the-duplicate-number](https://github.com/pavannaiik/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/pavannaiik/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0399-evaluate-division](https://github.com/pavannaiik/LeetCode/tree/master/0399-evaluate-division) |
 | [0455-assign-cookies](https://github.com/pavannaiik/LeetCode/tree/master/0455-assign-cookies) |
 | [0485-max-consecutive-ones](https://github.com/pavannaiik/LeetCode/tree/master/0485-max-consecutive-ones) |
 | [0560-subarray-sum-equals-k](https://github.com/pavannaiik/LeetCode/tree/master/0560-subarray-sum-equals-k) |
@@ -158,10 +159,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/pavannaiik/LeetCode/tree/master/0128-longest-consecutive-sequence) |
+| [0399-evaluate-division](https://github.com/pavannaiik/LeetCode/tree/master/0399-evaluate-division) |
 | [1701-remove-max-number-of-edges-to-keep-graph-fully-traversable](https://github.com/pavannaiik/LeetCode/tree/master/1701-remove-max-number-of-edges-to-keep-graph-fully-traversable) |
 ## Graph
 |  |
 | ------- |
+| [0399-evaluate-division](https://github.com/pavannaiik/LeetCode/tree/master/0399-evaluate-division) |
 | [1701-remove-max-number-of-edges-to-keep-graph-fully-traversable](https://github.com/pavannaiik/LeetCode/tree/master/1701-remove-max-number-of-edges-to-keep-graph-fully-traversable) |
 | [2379-maximum-total-importance-of-roads](https://github.com/pavannaiik/LeetCode/tree/master/2379-maximum-total-importance-of-roads) |
 | [2472-build-a-matrix-with-conditions](https://github.com/pavannaiik/LeetCode/tree/master/2472-build-a-matrix-with-conditions) |
@@ -182,6 +185,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/pavannaiik/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0131-palindrome-partitioning](https://github.com/pavannaiik/LeetCode/tree/master/0131-palindrome-partitioning) |
+| [0399-evaluate-division](https://github.com/pavannaiik/LeetCode/tree/master/0399-evaluate-division) |
 | [0468-validate-ip-address](https://github.com/pavannaiik/LeetCode/tree/master/0468-validate-ip-address) |
 | [0726-number-of-atoms](https://github.com/pavannaiik/LeetCode/tree/master/0726-number-of-atoms) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/pavannaiik/LeetCode/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
@@ -266,6 +270,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Depth-First Search
 |  |
 | ------- |
+| [0399-evaluate-division](https://github.com/pavannaiik/LeetCode/tree/master/0399-evaluate-division) |
 | [1207-delete-nodes-and-return-forest](https://github.com/pavannaiik/LeetCode/tree/master/1207-delete-nodes-and-return-forest) |
 | [1653-number-of-good-leaf-nodes-pairs](https://github.com/pavannaiik/LeetCode/tree/master/1653-number-of-good-leaf-nodes-pairs) |
 | [2217-step-by-step-directions-from-a-binary-tree-node-to-another](https://github.com/pavannaiik/LeetCode/tree/master/2217-step-by-step-directions-from-a-binary-tree-node-to-another) |
@@ -273,4 +278,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2472-build-a-matrix-with-conditions](https://github.com/pavannaiik/LeetCode/tree/master/2472-build-a-matrix-with-conditions) |
+## Breadth-First Search
+|  |
+| ------- |
+| [0399-evaluate-division](https://github.com/pavannaiik/LeetCode/tree/master/0399-evaluate-division) |
+## Shortest Path
+|  |
+| ------- |
+| [0399-evaluate-division](https://github.com/pavannaiik/LeetCode/tree/master/0399-evaluate-division) |
 <!---LeetCode Topics End-->
