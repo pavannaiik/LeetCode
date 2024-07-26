@@ -1,21 +1,21 @@
 class Solution {
-    public void dfs(int[][] M, int[] visited, int i) {
-        for (int j = 0; j < M.length; j++) {
-            if (M[i][j] == 1 && visited[j] == 0) {
-                visited[j] = 1;
-                dfs(M, visited, j);
+    Set<Integer>set = new HashSet<>();
+    public int findCircleNum(int[][] isConnected) {
+        int cnt =0;
+        for(int i=0;i<isConnected.length;i++){
+            if(!set.contains(i)){
+                cnt++;
+                dfs(isConnected, i);
             }
         }
+        return cnt;
     }
-    public int findCircleNum(int[][] M) {
-        int[] visited = new int[M.length];
-        int count = 0;
-        for (int i = 0; i < M.length; i++) {
-            if (visited[i] == 0) {
-                dfs(M, visited, i);
-                count++;
+    public void dfs(int[][] isConnected, int i){
+        set.add(i);
+        for(int j=0;j<isConnected.length;j++){
+            if(!set.contains(j)  && isConnected[i][j]==1){
+                dfs(isConnected, j);
             }
         }
-        return count;
     }
 }
