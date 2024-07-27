@@ -30,6 +30,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0399-evaluate-division](https://github.com/pavannaiik/LeetCode/tree/master/0399-evaluate-division) |
 | [0455-assign-cookies](https://github.com/pavannaiik/LeetCode/tree/master/0455-assign-cookies) |
 | [0485-max-consecutive-ones](https://github.com/pavannaiik/LeetCode/tree/master/0485-max-consecutive-ones) |
+| [0542-01-matrix](https://github.com/pavannaiik/LeetCode/tree/master/0542-01-matrix) |
 | [0560-subarray-sum-equals-k](https://github.com/pavannaiik/LeetCode/tree/master/0560-subarray-sum-equals-k) |
 | [0733-flood-fill](https://github.com/pavannaiik/LeetCode/tree/master/0733-flood-fill) |
 | [0941-sort-array-by-parity](https://github.com/pavannaiik/LeetCode/tree/master/0941-sort-array-by-parity) |
@@ -95,6 +96,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0062-unique-paths](https://github.com/pavannaiik/LeetCode/tree/master/0062-unique-paths) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/pavannaiik/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0131-palindrome-partitioning](https://github.com/pavannaiik/LeetCode/tree/master/0131-palindrome-partitioning) |
+| [0542-01-matrix](https://github.com/pavannaiik/LeetCode/tree/master/0542-01-matrix) |
 | [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/pavannaiik/LeetCode/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
 ## Math
 |  |
@@ -114,6 +116,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0048-rotate-image](https://github.com/pavannaiik/LeetCode/tree/master/0048-rotate-image) |
 | [0074-search-a-2d-matrix](https://github.com/pavannaiik/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0200-number-of-islands](https://github.com/pavannaiik/LeetCode/tree/master/0200-number-of-islands) |
+| [0542-01-matrix](https://github.com/pavannaiik/LeetCode/tree/master/0542-01-matrix) |
 | [0733-flood-fill](https://github.com/pavannaiik/LeetCode/tree/master/0733-flood-fill) |
 | [1036-rotting-oranges](https://github.com/pavannaiik/LeetCode/tree/master/1036-rotting-oranges) |
 | [1496-lucky-numbers-in-a-matrix](https://github.com/pavannaiik/LeetCode/tree/master/1496-lucky-numbers-in-a-matrix) |
@@ -310,6 +313,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0200-number-of-islands](https://github.com/pavannaiik/LeetCode/tree/master/0200-number-of-islands) |
 | [0399-evaluate-division](https://github.com/pavannaiik/LeetCode/tree/master/0399-evaluate-division) |
+| [0542-01-matrix](https://github.com/pavannaiik/LeetCode/tree/master/0542-01-matrix) |
 | [0547-number-of-provinces](https://github.com/pavannaiik/LeetCode/tree/master/0547-number-of-provinces) |
 | [0733-flood-fill](https://github.com/pavannaiik/LeetCode/tree/master/0733-flood-fill) |
 | [1036-rotting-oranges](https://github.com/pavannaiik/LeetCode/tree/master/1036-rotting-oranges) |
