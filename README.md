@@ -191,6 +191,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0399-evaluate-division](https://github.com/pavannaiik/LeetCode/tree/master/0399-evaluate-division) |
 | [0547-number-of-provinces](https://github.com/pavannaiik/LeetCode/tree/master/0547-number-of-provinces) |
 | [0694-number-of-distinct-islands](https://github.com/pavannaiik/LeetCode/tree/master/0694-number-of-distinct-islands) |
+| [0801-is-graph-bipartite](https://github.com/pavannaiik/LeetCode/tree/master/0801-is-graph-bipartite) |
 | [1073-number-of-enclaves](https://github.com/pavannaiik/LeetCode/tree/master/1073-number-of-enclaves) |
 | [1701-remove-max-number-of-edges-to-keep-graph-fully-traversable](https://github.com/pavannaiik/LeetCode/tree/master/1701-remove-max-number-of-edges-to-keep-graph-fully-traversable) |
 ## Graph
@@ -198,6 +199,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0399-evaluate-division](https://github.com/pavannaiik/LeetCode/tree/master/0399-evaluate-division) |
 | [0547-number-of-provinces](https://github.com/pavannaiik/LeetCode/tree/master/0547-number-of-provinces) |
+| [0801-is-graph-bipartite](https://github.com/pavannaiik/LeetCode/tree/master/0801-is-graph-bipartite) |
 | [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/pavannaiik/LeetCode/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
 | [1701-remove-max-number-of-edges-to-keep-graph-fully-traversable](https://github.com/pavannaiik/LeetCode/tree/master/1701-remove-max-number-of-edges-to-keep-graph-fully-traversable) |
 | [2379-maximum-total-importance-of-roads](https://github.com/pavannaiik/LeetCode/tree/master/2379-maximum-total-importance-of-roads) |
@@ -314,6 +316,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0547-number-of-provinces](https://github.com/pavannaiik/LeetCode/tree/master/0547-number-of-provinces) |
 | [0694-number-of-distinct-islands](https://github.com/pavannaiik/LeetCode/tree/master/0694-number-of-distinct-islands) |
 | [0733-flood-fill](https://github.com/pavannaiik/LeetCode/tree/master/0733-flood-fill) |
+| [0801-is-graph-bipartite](https://github.com/pavannaiik/LeetCode/tree/master/0801-is-graph-bipartite) |
 | [1073-number-of-enclaves](https://github.com/pavannaiik/LeetCode/tree/master/1073-number-of-enclaves) |
 | [1207-delete-nodes-and-return-forest](https://github.com/pavannaiik/LeetCode/tree/master/1207-delete-nodes-and-return-forest) |
 | [1653-number-of-good-leaf-nodes-pairs](https://github.com/pavannaiik/LeetCode/tree/master/1653-number-of-good-leaf-nodes-pairs) |
@@ -332,6 +335,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0547-number-of-provinces](https://github.com/pavannaiik/LeetCode/tree/master/0547-number-of-provinces) |
 | [0694-number-of-distinct-islands](https://github.com/pavannaiik/LeetCode/tree/master/0694-number-of-distinct-islands) |
 | [0733-flood-fill](https://github.com/pavannaiik/LeetCode/tree/master/0733-flood-fill) |
+| [0801-is-graph-bipartite](https://github.com/pavannaiik/LeetCode/tree/master/0801-is-graph-bipartite) |
 | [1036-rotting-oranges](https://github.com/pavannaiik/LeetCode/tree/master/1036-rotting-oranges) |
 | [1073-number-of-enclaves](https://github.com/pavannaiik/LeetCode/tree/master/1073-number-of-enclaves) |
 ## Shortest Path
