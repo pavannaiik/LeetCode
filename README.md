@@ -34,6 +34,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0542-01-matrix](https://github.com/pavannaiik/LeetCode/tree/master/0542-01-matrix) |
 | [0560-subarray-sum-equals-k](https://github.com/pavannaiik/LeetCode/tree/master/0560-subarray-sum-equals-k) |
 | [0733-flood-fill](https://github.com/pavannaiik/LeetCode/tree/master/0733-flood-fill) |
+| [0921-spiral-matrix-iii](https://github.com/pavannaiik/LeetCode/tree/master/0921-spiral-matrix-iii) |
 | [0941-sort-array-by-parity](https://github.com/pavannaiik/LeetCode/tree/master/0941-sort-array-by-parity) |
 | [0948-sort-an-array](https://github.com/pavannaiik/LeetCode/tree/master/0948-sort-an-array) |
 | [1036-rotting-oranges](https://github.com/pavannaiik/LeetCode/tree/master/1036-rotting-oranges) |
@@ -136,6 +137,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0200-number-of-islands](https://github.com/pavannaiik/LeetCode/tree/master/0200-number-of-islands) |
 | [0542-01-matrix](https://github.com/pavannaiik/LeetCode/tree/master/0542-01-matrix) |
 | [0733-flood-fill](https://github.com/pavannaiik/LeetCode/tree/master/0733-flood-fill) |
+| [0921-spiral-matrix-iii](https://github.com/pavannaiik/LeetCode/tree/master/0921-spiral-matrix-iii) |
 | [1036-rotting-oranges](https://github.com/pavannaiik/LeetCode/tree/master/1036-rotting-oranges) |
 | [1073-number-of-enclaves](https://github.com/pavannaiik/LeetCode/tree/master/1073-number-of-enclaves) |
 | [1496-lucky-numbers-in-a-matrix](https://github.com/pavannaiik/LeetCode/tree/master/1496-lucky-numbers-in-a-matrix) |
@@ -299,6 +301,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Simulation
 |  |
 | ------- |
+| [0921-spiral-matrix-iii](https://github.com/pavannaiik/LeetCode/tree/master/0921-spiral-matrix-iii) |
 | [1642-water-bottles](https://github.com/pavannaiik/LeetCode/tree/master/1642-water-bottles) |
 | [1803-average-waiting-time](https://github.com/pavannaiik/LeetCode/tree/master/1803-average-waiting-time) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/pavannaiik/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
