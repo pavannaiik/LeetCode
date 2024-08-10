@@ -3,11 +3,10 @@ class Solution {
         int[] ans = new int[3];
         int i=1;
         while( i <= memory1 || i <= memory2){
-            if(memory1 >= memory2 && i <= memory1 ){
+            if(memory1 >= memory2 ){
                 memory1-=i;
             }else{
-                if(i <= memory2)
-                    memory2-=i;
+                 memory2-=i;
             }
             i++;
         }
