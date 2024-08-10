@@ -128,6 +128,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0796-reaching-points](https://github.com/pavannaiik/LeetCode/tree/master/0796-reaching-points) |
 | [1642-water-bottles](https://github.com/pavannaiik/LeetCode/tree/master/1642-water-bottles) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/pavannaiik/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
+| [1971-incremental-memory-leak](https://github.com/pavannaiik/LeetCode/tree/master/1971-incremental-memory-leak) |
 | [2645-pass-the-pillow](https://github.com/pavannaiik/LeetCode/tree/master/2645-pass-the-pillow) |
 ## Matrix
 |  |
@@ -308,6 +309,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1642-water-bottles](https://github.com/pavannaiik/LeetCode/tree/master/1642-water-bottles) |
 | [1803-average-waiting-time](https://github.com/pavannaiik/LeetCode/tree/master/1803-average-waiting-time) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/pavannaiik/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
+| [1971-incremental-memory-leak](https://github.com/pavannaiik/LeetCode/tree/master/1971-incremental-memory-leak) |
 | [2299-merge-nodes-in-between-zeros](https://github.com/pavannaiik/LeetCode/tree/master/2299-merge-nodes-in-between-zeros) |
 | [2645-pass-the-pillow](https://github.com/pavannaiik/LeetCode/tree/master/2645-pass-the-pillow) |
 | [2846-robot-collisions](https://github.com/pavannaiik/LeetCode/tree/master/2846-robot-collisions) |
