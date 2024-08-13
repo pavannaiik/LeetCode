@@ -273,6 +273,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0399-evaluate-division](https://github.com/pavannaiik/LeetCode/tree/master/0399-evaluate-division) |
 | [0468-validate-ip-address](https://github.com/pavannaiik/LeetCode/tree/master/0468-validate-ip-address) |
 | [0726-number-of-atoms](https://github.com/pavannaiik/LeetCode/tree/master/0726-number-of-atoms) |
+| [0886-score-of-parentheses](https://github.com/pavannaiik/LeetCode/tree/master/0886-score-of-parentheses) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/pavannaiik/LeetCode/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
 | [1720-crawler-log-folder](https://github.com/pavannaiik/LeetCode/tree/master/1720-crawler-log-folder) |
 | [1756-minimum-deletions-to-make-string-balanced](https://github.com/pavannaiik/LeetCode/tree/master/1756-minimum-deletions-to-make-string-balanced) |
@@ -315,6 +316,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0234-palindrome-linked-list](https://github.com/pavannaiik/LeetCode/tree/master/0234-palindrome-linked-list) |
 | [0726-number-of-atoms](https://github.com/pavannaiik/LeetCode/tree/master/0726-number-of-atoms) |
 | [0735-asteroid-collision](https://github.com/pavannaiik/LeetCode/tree/master/0735-asteroid-collision) |
+| [0886-score-of-parentheses](https://github.com/pavannaiik/LeetCode/tree/master/0886-score-of-parentheses) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/pavannaiik/LeetCode/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
 | [1720-crawler-log-folder](https://github.com/pavannaiik/LeetCode/tree/master/1720-crawler-log-folder) |
 | [1756-minimum-deletions-to-make-string-balanced](https://github.com/pavannaiik/LeetCode/tree/master/1756-minimum-deletions-to-make-string-balanced) |
