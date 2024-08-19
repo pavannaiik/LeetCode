@@ -128,6 +128,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0131-palindrome-partitioning](https://github.com/pavannaiik/LeetCode/tree/master/0131-palindrome-partitioning) |
 | [0264-ugly-number-ii](https://github.com/pavannaiik/LeetCode/tree/master/0264-ugly-number-ii) |
 | [0542-01-matrix](https://github.com/pavannaiik/LeetCode/tree/master/0542-01-matrix) |
+| [0650-2-keys-keyboard](https://github.com/pavannaiik/LeetCode/tree/master/0650-2-keys-keyboard) |
 | [0967-minimum-falling-path-sum](https://github.com/pavannaiik/LeetCode/tree/master/0967-minimum-falling-path-sum) |
 | [1196-filling-bookcase-shelves](https://github.com/pavannaiik/LeetCode/tree/master/1196-filling-bookcase-shelves) |
 | [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/pavannaiik/LeetCode/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
@@ -146,6 +147,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0264-ugly-number-ii](https://github.com/pavannaiik/LeetCode/tree/master/0264-ugly-number-ii) |
 | [0273-integer-to-english-words](https://github.com/pavannaiik/LeetCode/tree/master/0273-integer-to-english-words) |
 | [0360-sort-transformed-array](https://github.com/pavannaiik/LeetCode/tree/master/0360-sort-transformed-array) |
+| [0650-2-keys-keyboard](https://github.com/pavannaiik/LeetCode/tree/master/0650-2-keys-keyboard) |
 | [0796-reaching-points](https://github.com/pavannaiik/LeetCode/tree/master/0796-reaching-points) |
 | [0870-magic-squares-in-grid](https://github.com/pavannaiik/LeetCode/tree/master/0870-magic-squares-in-grid) |
 | [1642-water-bottles](https://github.com/pavannaiik/LeetCode/tree/master/1642-water-bottles) |
