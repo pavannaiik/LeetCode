@@ -192,6 +192,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0078-subsets](https://github.com/pavannaiik/LeetCode/tree/master/0078-subsets) |
 | [0090-subsets-ii](https://github.com/pavannaiik/LeetCode/tree/master/0090-subsets-ii) |
 | [0287-find-the-duplicate-number](https://github.com/pavannaiik/LeetCode/tree/master/0287-find-the-duplicate-number) |
+| [0476-number-complement](https://github.com/pavannaiik/LeetCode/tree/master/0476-number-complement) |
 ## Recursion
 |  |
 | ------- |
