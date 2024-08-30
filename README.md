@@ -272,6 +272,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2171-second-minimum-time-to-reach-destination](https://github.com/pavannaiik/LeetCode/tree/master/2171-second-minimum-time-to-reach-destination) |
 | [2379-maximum-total-importance-of-roads](https://github.com/pavannaiik/LeetCode/tree/master/2379-maximum-total-importance-of-roads) |
 | [2472-build-a-matrix-with-conditions](https://github.com/pavannaiik/LeetCode/tree/master/2472-build-a-matrix-with-conditions) |
+| [2803-modify-graph-edge-weights](https://github.com/pavannaiik/LeetCode/tree/master/2803-modify-graph-edge-weights) |
 | [3235-minimum-cost-to-convert-string-i](https://github.com/pavannaiik/LeetCode/tree/master/3235-minimum-cost-to-convert-string-i) |
 ## Greedy
 |  |
@@ -290,6 +291,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0789-kth-largest-element-in-a-stream](https://github.com/pavannaiik/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0948-sort-an-array](https://github.com/pavannaiik/LeetCode/tree/master/0948-sort-an-array) |
 | [2379-maximum-total-importance-of-roads](https://github.com/pavannaiik/LeetCode/tree/master/2379-maximum-total-importance-of-roads) |
+| [2803-modify-graph-edge-weights](https://github.com/pavannaiik/LeetCode/tree/master/2803-modify-graph-edge-weights) |
 ## String
 |  |
 | ------- |
@@ -447,6 +449,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0399-evaluate-division](https://github.com/pavannaiik/LeetCode/tree/master/0399-evaluate-division) |
 | [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/pavannaiik/LeetCode/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
 | [2171-second-minimum-time-to-reach-destination](https://github.com/pavannaiik/LeetCode/tree/master/2171-second-minimum-time-to-reach-destination) |
+| [2803-modify-graph-edge-weights](https://github.com/pavannaiik/LeetCode/tree/master/2803-modify-graph-edge-weights) |
 | [3235-minimum-cost-to-convert-string-i](https://github.com/pavannaiik/LeetCode/tree/master/3235-minimum-cost-to-convert-string-i) |
 ## Merge Sort
 |  |
