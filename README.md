@@ -14,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0046-permutations](https://github.com/pavannaiik/LeetCode/tree/master/0046-permutations) |
 | [0047-permutations-ii](https://github.com/pavannaiik/LeetCode/tree/master/0047-permutations-ii) |
 | [0048-rotate-image](https://github.com/pavannaiik/LeetCode/tree/master/0048-rotate-image) |
+| [0049-group-anagrams](https://github.com/pavannaiik/LeetCode/tree/master/0049-group-anagrams) |
 | [0056-merge-intervals](https://github.com/pavannaiik/LeetCode/tree/master/0056-merge-intervals) |
 | [0074-search-a-2d-matrix](https://github.com/pavannaiik/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0075-sort-colors](https://github.com/pavannaiik/LeetCode/tree/master/0075-sort-colors) |
@@ -100,6 +101,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0015-3sum](https://github.com/pavannaiik/LeetCode/tree/master/0015-3sum) |
 | [0018-4sum](https://github.com/pavannaiik/LeetCode/tree/master/0018-4sum) |
+| [0049-group-anagrams](https://github.com/pavannaiik/LeetCode/tree/master/0049-group-anagrams) |
 | [0056-merge-intervals](https://github.com/pavannaiik/LeetCode/tree/master/0056-merge-intervals) |
 | [0075-sort-colors](https://github.com/pavannaiik/LeetCode/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/pavannaiik/LeetCode/tree/master/0088-merge-sorted-array) |
@@ -213,6 +215,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0001-two-sum](https://github.com/pavannaiik/LeetCode/tree/master/0001-two-sum) |
 | [0003-longest-substring-without-repeating-characters](https://github.com/pavannaiik/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0049-group-anagrams](https://github.com/pavannaiik/LeetCode/tree/master/0049-group-anagrams) |
 | [0128-longest-consecutive-sequence](https://github.com/pavannaiik/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0138-copy-list-with-random-pointer](https://github.com/pavannaiik/LeetCode/tree/master/0138-copy-list-with-random-pointer) |
 | [0160-intersection-of-two-linked-lists](https://github.com/pavannaiik/LeetCode/tree/master/0160-intersection-of-two-linked-lists) |
@@ -299,6 +302,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/pavannaiik/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0049-group-anagrams](https://github.com/pavannaiik/LeetCode/tree/master/0049-group-anagrams) |
 | [0131-palindrome-partitioning](https://github.com/pavannaiik/LeetCode/tree/master/0131-palindrome-partitioning) |
 | [0273-integer-to-english-words](https://github.com/pavannaiik/LeetCode/tree/master/0273-integer-to-english-words) |
 | [0399-evaluate-division](https://github.com/pavannaiik/LeetCode/tree/master/0399-evaluate-division) |
