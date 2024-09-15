@@ -1,29 +1,48 @@
 class Solution {
+    int len;
     public List<List<Integer>> threeSum(int[] nums) {
+        len = nums.length;
         Arrays.sort(nums);
-        List<List<Integer>>list =new ArrayList<>();
-        for(int i=0;i<nums.length;i++){
-            if(i==0 || (i>0 && nums[i]!=nums[i-1])){
-            int j=i+1,k=nums.length-1;
-            while(j<k){
-                if(nums[i]+nums[j]+nums[k]==0){
-                    List<Integer>lis=new ArrayList<>();
-                    lis.add(nums[i]);
-                    lis.add(nums[j]);
-                    lis.add(nums[k]);
-                    list.add(lis);
-                        while(j<k &&nums[j]==nums[j+1]) j++;
-                    while(j<k && nums[k]==nums[k-1]) k--;
-                    j++;
-                    k--;
-                }else if(nums[i]+nums[j]+nums[k]>0){
-                    k--;
+        return kSum(nums, 0, 3, 0);
+        
+    }
+    public List<List<Integer>> kSum(int [] nums, long target, int k, int index){
+        List<List<Integer>>ans = new ArrayList<>();
+        if(index >= len){
+            return ans;
+        }
+        if(k==2){
+            int i= index, j = len-1;
+            while(i < j){
+                long sum = nums[i]+nums[j];
+                if(sum == target){
+                    List<Integer>list = new ArrayList<>();
+                    list.add(nums[i]);
+                    list.add(nums[j]);
+                    ans.add(list);
+                    while( i < len-1 && nums[i]==nums[i+1]) i++;
+                    while(j >0 && nums[j]==nums[j-1])j--;
+                    i++;
+                    j--;
+                }else if(sum>target){
+                    j--;
                 }else{
-                    j++;
+                    i++;
                 }
             }
+        }else{
+            
+            for(int i=index;i<len-k+1;i++){
+                List<List<Integer>>res = kSum(nums, target-nums[i], k-1, i+1);
+                if(res!=null){
+                    for(List<Integer>list:res){
+                        list.add(0, nums[i]);
+                    }
+                    ans.addAll(res);
+                }
+                while(i < len-1 && nums[i]==nums[i+1]) i++;
+            }
         }
-        }
-        return list;
+        return ans;
     }
 }
