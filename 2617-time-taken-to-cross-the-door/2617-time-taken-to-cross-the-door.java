@@ -32,13 +32,11 @@ class Solution {
             }
             time++;
         }
-        {
-            while(!exit.isEmpty()){
-                if(arrival[exit.peek()]<=time){
-                    answer[exit.poll()]=time;
-                }
-                time++;
+        while(!exit.isEmpty()){
+            if(arrival[exit.peek()]<=time){
+                answer[exit.poll()]=time;
             }
+            time++;
         }
         return answer;
     }
