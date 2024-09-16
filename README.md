@@ -49,6 +49,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0999-regions-cut-by-slashes](https://github.com/pavannaiik/LeetCode/tree/master/0999-regions-cut-by-slashes) |
 | [1036-rotting-oranges](https://github.com/pavannaiik/LeetCode/tree/master/1036-rotting-oranges) |
 | [1073-number-of-enclaves](https://github.com/pavannaiik/LeetCode/tree/master/1073-number-of-enclaves) |
+| [1107-minimum-swaps-to-group-all-1s-together](https://github.com/pavannaiik/LeetCode/tree/master/1107-minimum-swaps-to-group-all-1s-together) |
 | [1196-filling-bookcase-shelves](https://github.com/pavannaiik/LeetCode/tree/master/1196-filling-bookcase-shelves) |
 | [1207-delete-nodes-and-return-forest](https://github.com/pavannaiik/LeetCode/tree/master/1207-delete-nodes-and-return-forest) |
 | [1240-stone-game-ii](https://github.com/pavannaiik/LeetCode/tree/master/1240-stone-game-ii) |
@@ -330,6 +331,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/pavannaiik/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
+| [1107-minimum-swaps-to-group-all-1s-together](https://github.com/pavannaiik/LeetCode/tree/master/1107-minimum-swaps-to-group-all-1s-together) |
 | [2255-minimum-swaps-to-group-all-1s-together-ii](https://github.com/pavannaiik/LeetCode/tree/master/2255-minimum-swaps-to-group-all-1s-together-ii) |
 ## Prefix Sum
 |  |
