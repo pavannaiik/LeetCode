@@ -1,20 +1,15 @@
 class Solution {
     public int partitionString(String s) {
-        HashSet<Character>set = new HashSet<>();
-        int  right =0;
-        int len = s.length();
-        int ans =0;
-        while(right < len){
-            if(set.contains(s.charAt(right))){
-                ans++;
-                set = new HashSet<>();
+        int[] lastSeen = new int[26];
+        Arrays.fill(lastSeen,-1);
+        int count=1, subStringStart=0;
+        for(int i=0;i<s.length();i++){
+            if(lastSeen[s.charAt(i)-'a'] >= subStringStart){
+                count++;
+                subStringStart =i;
             }
-            set.add(s.charAt(right));
-            right++;
+            lastSeen[s.charAt(i)-'a'] =i;
         }
-        if(set.size()>0){
-            ans++;
-        }
-        return ans;
+        return count;
     }
 }
