@@ -73,6 +73,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2306-create-binary-tree-from-descriptions](https://github.com/pavannaiik/LeetCode/tree/master/2306-create-binary-tree-from-descriptions) |
 | [2472-build-a-matrix-with-conditions](https://github.com/pavannaiik/LeetCode/tree/master/2472-build-a-matrix-with-conditions) |
 | [2502-sort-the-people](https://github.com/pavannaiik/LeetCode/tree/master/2502-sort-the-people) |
+| [2565-merge-operations-to-turn-array-into-a-palindrome](https://github.com/pavannaiik/LeetCode/tree/master/2565-merge-operations-to-turn-array-into-a-palindrome) |
 | [2617-time-taken-to-cross-the-door](https://github.com/pavannaiik/LeetCode/tree/master/2617-time-taken-to-cross-the-door) |
 | [2658-count-the-number-of-k-big-indices](https://github.com/pavannaiik/LeetCode/tree/master/2658-count-the-number-of-k-big-indices) |
 | [2727-number-of-senior-citizens](https://github.com/pavannaiik/LeetCode/tree/master/2727-number-of-senior-citizens) |
@@ -99,6 +100,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0908-middle-of-the-linked-list](https://github.com/pavannaiik/LeetCode/tree/master/0908-middle-of-the-linked-list) |
 | [0941-sort-array-by-parity](https://github.com/pavannaiik/LeetCode/tree/master/0941-sort-array-by-parity) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/pavannaiik/LeetCode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
+| [2565-merge-operations-to-turn-array-into-a-palindrome](https://github.com/pavannaiik/LeetCode/tree/master/2565-merge-operations-to-turn-array-into-a-palindrome) |
 ## Sorting
 |  |
 | ------- |
@@ -295,6 +297,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1818-maximum-score-from-removing-substrings](https://github.com/pavannaiik/LeetCode/tree/master/1818-maximum-score-from-removing-substrings) |
 | [2379-maximum-total-importance-of-roads](https://github.com/pavannaiik/LeetCode/tree/master/2379-maximum-total-importance-of-roads) |
 | [2487-optimal-partition-of-string](https://github.com/pavannaiik/LeetCode/tree/master/2487-optimal-partition-of-string) |
+| [2565-merge-operations-to-turn-array-into-a-palindrome](https://github.com/pavannaiik/LeetCode/tree/master/2565-merge-operations-to-turn-array-into-a-palindrome) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/pavannaiik/LeetCode/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
 ## Heap (Priority Queue)
 |  |
