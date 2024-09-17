@@ -4,9 +4,10 @@ class Solution {
         int i=0, j= s.length()-1;
         while(i < j){
             if(s.charAt(i)!=s.charAt(j)) cnt++;
+            if(cnt >2) return false;
             i++;
             j--;
         }
-        return cnt<=2;
+        return true;
     }
 }
