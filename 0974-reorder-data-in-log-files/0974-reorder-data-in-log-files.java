@@ -7,7 +7,7 @@ class Solution {
                 String newX= X.substring(X.indexOf(' '));
                 String newY = Y.substring(Y.indexOf(' '));
                 if(newX.equals(newY)){
-                    return X.substring(0,X.indexOf(' ')).compareTo(Y.substring(0,Y.indexOf(' ')));
+                    return X.compareTo(Y);
                 }
                 return newX.compareTo(newY);
             }else if(Character.isDigit(X.charAt(X.length()-1)) && Character.isAlphabetic(Y.charAt(Y.length()-1))){
