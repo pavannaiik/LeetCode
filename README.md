@@ -46,6 +46,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0941-sort-array-by-parity](https://github.com/pavannaiik/LeetCode/tree/master/0941-sort-array-by-parity) |
 | [0948-sort-an-array](https://github.com/pavannaiik/LeetCode/tree/master/0948-sort-an-array) |
 | [0967-minimum-falling-path-sum](https://github.com/pavannaiik/LeetCode/tree/master/0967-minimum-falling-path-sum) |
+| [0974-reorder-data-in-log-files](https://github.com/pavannaiik/LeetCode/tree/master/0974-reorder-data-in-log-files) |
 | [0999-regions-cut-by-slashes](https://github.com/pavannaiik/LeetCode/tree/master/0999-regions-cut-by-slashes) |
 | [1036-rotting-oranges](https://github.com/pavannaiik/LeetCode/tree/master/1036-rotting-oranges) |
 | [1073-number-of-enclaves](https://github.com/pavannaiik/LeetCode/tree/master/1073-number-of-enclaves) |
@@ -124,6 +125,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0726-number-of-atoms](https://github.com/pavannaiik/LeetCode/tree/master/0726-number-of-atoms) |
 | [0941-sort-array-by-parity](https://github.com/pavannaiik/LeetCode/tree/master/0941-sort-array-by-parity) |
 | [0948-sort-an-array](https://github.com/pavannaiik/LeetCode/tree/master/0948-sort-an-array) |
+| [0974-reorder-data-in-log-files](https://github.com/pavannaiik/LeetCode/tree/master/0974-reorder-data-in-log-files) |
 | [1333-sort-the-jumbled-numbers](https://github.com/pavannaiik/LeetCode/tree/master/1333-sort-the-jumbled-numbers) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/pavannaiik/LeetCode/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/pavannaiik/LeetCode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
@@ -338,6 +340,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0664-strange-printer](https://github.com/pavannaiik/LeetCode/tree/master/0664-strange-printer) |
 | [0726-number-of-atoms](https://github.com/pavannaiik/LeetCode/tree/master/0726-number-of-atoms) |
 | [0886-score-of-parentheses](https://github.com/pavannaiik/LeetCode/tree/master/0886-score-of-parentheses) |
+| [0974-reorder-data-in-log-files](https://github.com/pavannaiik/LeetCode/tree/master/0974-reorder-data-in-log-files) |
 | [1250-longest-common-subsequence](https://github.com/pavannaiik/LeetCode/tree/master/1250-longest-common-subsequence) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/pavannaiik/LeetCode/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
 | [1720-crawler-log-folder](https://github.com/pavannaiik/LeetCode/tree/master/1720-crawler-log-folder) |
