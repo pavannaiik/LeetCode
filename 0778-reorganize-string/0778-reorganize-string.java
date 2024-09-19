@@ -1,35 +1,35 @@
 class Solution {
     public String reorganizeString(String s) {
         int[] freq=new int[26];
-        PriorityQueue<Character>pq = new PriorityQueue<>((x, y)->freq[y-'a']-freq[x-'a']);
-        
+        int max_c=0;
+        int n = s.length();
+        int index =0;
         for(char c:s.toCharArray()){
             freq[c-'a']++;
+           if(max_c < freq[c-'a'] ) {
+                max_c = Math.max(max_c, freq[c-'a']);
+                index = c-'a';
+                }
         }
-        for(int i=0;i<26;i++){
-            if(freq[i]>0){
-                pq.add((char) ('a'+i));
+        if(max_c > (n+1)/2 ) return "";
+        var ans = new char[n];
+        int i =0;
+        while(freq[index] > 0){
+            ans[i]= (char)('a'+index);
+            i+=2;
+            freq[index]--;
+        }
+        for(int j=0;j<26;j++){
+            while(freq[j]>0){
+                if(i >= s.length()){
+                    i=1;
+                }
+                ans[i]= (char)('a'+j);
+                i+=2;
+                freq[j]--;
+                
             }
         }
-        StringBuilder sb = new StringBuilder();
-        while(pq.size()>1){
-            char firstChar = pq.poll();
-            char secondChar = pq.poll();
-            sb.append(firstChar);
-            sb.append(secondChar);
-            freq[firstChar-'a']--;
-            freq[secondChar-'a']--;
-            if(freq[firstChar-'a'] >0)
-             pq.add(firstChar);
-            if(freq[secondChar-'a'] >0)
-             pq.add(secondChar);
-        }
-        if(pq.size()!=0)
-        {
-            char c = pq.poll();
-            if(freq[c-'a']>1) return "";
-            sb.append(c);
-        }
-        return sb.toString();
+        return String.valueOf(ans);
     }
 }
