@@ -1,33 +1,34 @@
 class Solution {
     public String reorganizeString(String s) {
-        int[] freq=new int[26];
-        int max_c=0;
+        int[] freq = new int[26];
+        int max_c = 0;
         int n = s.length();
-        int index =0;
-        for(char c:s.toCharArray()){
-            freq[c-'a']++;
-           if(max_c < freq[c-'a'] ) {
-                max_c = Math.max(max_c, freq[c-'a']);
-                index = c-'a';
-                }
+        int letter =0;
+        for(int i=0;i<n;i++){
+            freq[s.charAt(i)-'a']++;
+            if(max_c <freq[s.charAt(i)-'a'] ){
+                max_c = freq[s.charAt(i)-'a'];
+                letter = s.charAt(i)-'a';
+            }
         }
-        if(max_c > (n+1)/2 ) return "";
+        if(max_c > (n+1)/2){
+            return "";
+        }
         var ans = new char[n];
-        int i =0;
-        while(freq[index] > 0){
-            ans[i]= (char)('a'+index);
-            i+=2;
-            freq[index]--;
+        int index =0;
+        while(freq[letter] >0){
+            ans[index]=(char)('a'+letter);
+            index+=2;
+            freq[letter]--;
         }
-        for(int j=0;j<26;j++){
-            while(freq[j]>0){
-                if(i >= s.length()){
-                    i=1;
-                }
-                ans[i]= (char)('a'+j);
-                i+=2;
-                freq[j]--;
-                
+        for(int i=0;i<26;i++){
+            while(freq[i]>0){
+                if(index >= n){
+                index =1;
+            }
+                ans[index]=(char)('a'+i);
+                index+=2;
+                freq[i]--;
             }
         }
         return String.valueOf(ans);
