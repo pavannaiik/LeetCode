@@ -123,6 +123,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0455-assign-cookies](https://github.com/pavannaiik/LeetCode/tree/master/0455-assign-cookies) |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/pavannaiik/LeetCode/tree/master/0719-find-k-th-smallest-pair-distance) |
 | [0726-number-of-atoms](https://github.com/pavannaiik/LeetCode/tree/master/0726-number-of-atoms) |
+| [0778-reorganize-string](https://github.com/pavannaiik/LeetCode/tree/master/0778-reorganize-string) |
 | [0941-sort-array-by-parity](https://github.com/pavannaiik/LeetCode/tree/master/0941-sort-array-by-parity) |
 | [0948-sort-an-array](https://github.com/pavannaiik/LeetCode/tree/master/0948-sort-an-array) |
 | [0974-reorder-data-in-log-files](https://github.com/pavannaiik/LeetCode/tree/master/0974-reorder-data-in-log-files) |
@@ -245,6 +246,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0560-subarray-sum-equals-k](https://github.com/pavannaiik/LeetCode/tree/master/0560-subarray-sum-equals-k) |
 | [0694-number-of-distinct-islands](https://github.com/pavannaiik/LeetCode/tree/master/0694-number-of-distinct-islands) |
 | [0726-number-of-atoms](https://github.com/pavannaiik/LeetCode/tree/master/0726-number-of-atoms) |
+| [0778-reorganize-string](https://github.com/pavannaiik/LeetCode/tree/master/0778-reorganize-string) |
 | [0870-magic-squares-in-grid](https://github.com/pavannaiik/LeetCode/tree/master/0870-magic-squares-in-grid) |
 | [0999-regions-cut-by-slashes](https://github.com/pavannaiik/LeetCode/tree/master/0999-regions-cut-by-slashes) |
 | [1207-delete-nodes-and-return-forest](https://github.com/pavannaiik/LeetCode/tree/master/1207-delete-nodes-and-return-forest) |
@@ -269,6 +271,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0169-majority-element](https://github.com/pavannaiik/LeetCode/tree/master/0169-majority-element) |
 | [0229-majority-element-ii](https://github.com/pavannaiik/LeetCode/tree/master/0229-majority-element-ii) |
+| [0778-reorganize-string](https://github.com/pavannaiik/LeetCode/tree/master/0778-reorganize-string) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/pavannaiik/LeetCode/tree/master/2163-kth-distinct-string-in-an-array) |
 | [2405-minimum-number-of-keypresses](https://github.com/pavannaiik/LeetCode/tree/master/2405-minimum-number-of-keypresses) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/pavannaiik/LeetCode/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
@@ -309,6 +312,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0455-assign-cookies](https://github.com/pavannaiik/LeetCode/tree/master/0455-assign-cookies) |
 | [0624-maximum-distance-in-arrays](https://github.com/pavannaiik/LeetCode/tree/master/0624-maximum-distance-in-arrays) |
+| [0778-reorganize-string](https://github.com/pavannaiik/LeetCode/tree/master/0778-reorganize-string) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/pavannaiik/LeetCode/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
 | [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/pavannaiik/LeetCode/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/pavannaiik/LeetCode/tree/master/1818-maximum-score-from-removing-substrings) |
@@ -323,6 +327,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0264-ugly-number-ii](https://github.com/pavannaiik/LeetCode/tree/master/0264-ugly-number-ii) |
+| [0778-reorganize-string](https://github.com/pavannaiik/LeetCode/tree/master/0778-reorganize-string) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/pavannaiik/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0948-sort-an-array](https://github.com/pavannaiik/LeetCode/tree/master/0948-sort-an-array) |
 | [1325-path-with-maximum-probability](https://github.com/pavannaiik/LeetCode/tree/master/1325-path-with-maximum-probability) |
@@ -341,6 +346,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0592-fraction-addition-and-subtraction](https://github.com/pavannaiik/LeetCode/tree/master/0592-fraction-addition-and-subtraction) |
 | [0664-strange-printer](https://github.com/pavannaiik/LeetCode/tree/master/0664-strange-printer) |
 | [0726-number-of-atoms](https://github.com/pavannaiik/LeetCode/tree/master/0726-number-of-atoms) |
+| [0778-reorganize-string](https://github.com/pavannaiik/LeetCode/tree/master/0778-reorganize-string) |
 | [0886-score-of-parentheses](https://github.com/pavannaiik/LeetCode/tree/master/0886-score-of-parentheses) |
 | [0974-reorder-data-in-log-files](https://github.com/pavannaiik/LeetCode/tree/master/0974-reorder-data-in-log-files) |
 | [1250-longest-common-subsequence](https://github.com/pavannaiik/LeetCode/tree/master/1250-longest-common-subsequence) |
