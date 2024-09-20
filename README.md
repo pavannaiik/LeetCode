@@ -107,6 +107,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/pavannaiik/LeetCode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
 | [2468-valid-palindrome-iv](https://github.com/pavannaiik/LeetCode/tree/master/2468-valid-palindrome-iv) |
 | [2565-merge-operations-to-turn-array-into-a-palindrome](https://github.com/pavannaiik/LeetCode/tree/master/2565-merge-operations-to-turn-array-into-a-palindrome) |
+| [2572-append-characters-to-string-to-make-subsequence](https://github.com/pavannaiik/LeetCode/tree/master/2572-append-characters-to-string-to-make-subsequence) |
 ## Sorting
 |  |
 | ------- |
@@ -322,6 +323,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2474-minimum-adjacent-swaps-to-make-a-valid-array](https://github.com/pavannaiik/LeetCode/tree/master/2474-minimum-adjacent-swaps-to-make-a-valid-array) |
 | [2487-optimal-partition-of-string](https://github.com/pavannaiik/LeetCode/tree/master/2487-optimal-partition-of-string) |
 | [2565-merge-operations-to-turn-array-into-a-palindrome](https://github.com/pavannaiik/LeetCode/tree/master/2565-merge-operations-to-turn-array-into-a-palindrome) |
+| [2572-append-characters-to-string-to-make-subsequence](https://github.com/pavannaiik/LeetCode/tree/master/2572-append-characters-to-string-to-make-subsequence) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/pavannaiik/LeetCode/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
 ## Heap (Priority Queue)
 |  |
@@ -362,6 +364,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2487-optimal-partition-of-string](https://github.com/pavannaiik/LeetCode/tree/master/2487-optimal-partition-of-string) |
 | [2502-sort-the-people](https://github.com/pavannaiik/LeetCode/tree/master/2502-sort-the-people) |
 | [2555-design-sql](https://github.com/pavannaiik/LeetCode/tree/master/2555-design-sql) |
+| [2572-append-characters-to-string-to-make-subsequence](https://github.com/pavannaiik/LeetCode/tree/master/2572-append-characters-to-string-to-make-subsequence) |
 | [2727-number-of-senior-citizens](https://github.com/pavannaiik/LeetCode/tree/master/2727-number-of-senior-citizens) |
 | [3235-minimum-cost-to-convert-string-i](https://github.com/pavannaiik/LeetCode/tree/master/3235-minimum-cost-to-convert-string-i) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/pavannaiik/LeetCode/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
