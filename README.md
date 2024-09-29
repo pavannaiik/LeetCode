@@ -40,6 +40,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0560-subarray-sum-equals-k](https://github.com/pavannaiik/LeetCode/tree/master/0560-subarray-sum-equals-k) |
 | [0624-maximum-distance-in-arrays](https://github.com/pavannaiik/LeetCode/tree/master/0624-maximum-distance-in-arrays) |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/pavannaiik/LeetCode/tree/master/0719-find-k-th-smallest-pair-distance) |
+| [0720-longest-word-in-dictionary](https://github.com/pavannaiik/LeetCode/tree/master/0720-longest-word-in-dictionary) |
 | [0733-flood-fill](https://github.com/pavannaiik/LeetCode/tree/master/0733-flood-fill) |
 | [0735-asteroid-collision](https://github.com/pavannaiik/LeetCode/tree/master/0735-asteroid-collision) |
 | [0870-magic-squares-in-grid](https://github.com/pavannaiik/LeetCode/tree/master/0870-magic-squares-in-grid) |
@@ -124,6 +125,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0360-sort-transformed-array](https://github.com/pavannaiik/LeetCode/tree/master/0360-sort-transformed-array) |
 | [0455-assign-cookies](https://github.com/pavannaiik/LeetCode/tree/master/0455-assign-cookies) |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/pavannaiik/LeetCode/tree/master/0719-find-k-th-smallest-pair-distance) |
+| [0720-longest-word-in-dictionary](https://github.com/pavannaiik/LeetCode/tree/master/0720-longest-word-in-dictionary) |
 | [0726-number-of-atoms](https://github.com/pavannaiik/LeetCode/tree/master/0726-number-of-atoms) |
 | [0778-reorganize-string](https://github.com/pavannaiik/LeetCode/tree/master/0778-reorganize-string) |
 | [0941-sort-array-by-parity](https://github.com/pavannaiik/LeetCode/tree/master/0941-sort-array-by-parity) |
@@ -251,6 +253,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0350-intersection-of-two-arrays-ii](https://github.com/pavannaiik/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0560-subarray-sum-equals-k](https://github.com/pavannaiik/LeetCode/tree/master/0560-subarray-sum-equals-k) |
 | [0694-number-of-distinct-islands](https://github.com/pavannaiik/LeetCode/tree/master/0694-number-of-distinct-islands) |
+| [0720-longest-word-in-dictionary](https://github.com/pavannaiik/LeetCode/tree/master/0720-longest-word-in-dictionary) |
 | [0726-number-of-atoms](https://github.com/pavannaiik/LeetCode/tree/master/0726-number-of-atoms) |
 | [0778-reorganize-string](https://github.com/pavannaiik/LeetCode/tree/master/0778-reorganize-string) |
 | [0870-magic-squares-in-grid](https://github.com/pavannaiik/LeetCode/tree/master/0870-magic-squares-in-grid) |
@@ -353,6 +356,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0564-find-the-closest-palindrome](https://github.com/pavannaiik/LeetCode/tree/master/0564-find-the-closest-palindrome) |
 | [0592-fraction-addition-and-subtraction](https://github.com/pavannaiik/LeetCode/tree/master/0592-fraction-addition-and-subtraction) |
 | [0664-strange-printer](https://github.com/pavannaiik/LeetCode/tree/master/0664-strange-printer) |
+| [0720-longest-word-in-dictionary](https://github.com/pavannaiik/LeetCode/tree/master/0720-longest-word-in-dictionary) |
 | [0726-number-of-atoms](https://github.com/pavannaiik/LeetCode/tree/master/0726-number-of-atoms) |
 | [0778-reorganize-string](https://github.com/pavannaiik/LeetCode/tree/master/0778-reorganize-string) |
 | [0886-score-of-parentheses](https://github.com/pavannaiik/LeetCode/tree/master/0886-score-of-parentheses) |
@@ -593,5 +597,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Trie
 |  |
 | ------- |
+| [0720-longest-word-in-dictionary](https://github.com/pavannaiik/LeetCode/tree/master/0720-longest-word-in-dictionary) |
 | [2009-longest-word-with-all-prefixes](https://github.com/pavannaiik/LeetCode/tree/master/2009-longest-word-with-all-prefixes) |
 <!---LeetCode Topics End-->
