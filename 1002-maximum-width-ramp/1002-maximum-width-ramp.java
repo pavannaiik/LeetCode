@@ -1,19 +1,19 @@
 class Solution {
     public int maxWidthRamp(int[] nums) {
         int size = nums.length;
-        Integer[] indices = new Integer[size];
-        for(int i=0;i<size;i++){
-            indices[i]=i;
+        Integer[] rightMax = new Integer[size];
+        rightMax[size-1]=nums[size-1];
+        for(int i=size-2;i>=0;i--){
+            rightMax[i]=Math.max(rightMax[i+1],nums[i]);
         }
-        Arrays.sort(indices, (i, j)->
-            nums[i]!=nums[j]?nums[i]-nums[j]:i-j
-        );
-
-        int minIndex = size;
-        int maxWidth = 0;
-        for(int i:indices){
-            maxWidth = Math.max(maxWidth, i-minIndex);
-            minIndex = Math.min(minIndex, i);
+        int maxWidth =0;
+        int right = 0, left=0;
+        while(right<size){
+            if(left < right && nums[left ]>rightMax[right]){
+                left++;
+            }
+            maxWidth = Math.max(maxWidth, right - left);
+            right++;
         }
         return maxWidth;
 
