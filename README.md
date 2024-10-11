@@ -85,6 +85,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2552-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/pavannaiik/LeetCode/tree/master/2552-maximum-sum-of-distinct-subarrays-with-length-k) |
 | [2555-design-sql](https://github.com/pavannaiik/LeetCode/tree/master/2555-design-sql) |
 | [2565-merge-operations-to-turn-array-into-a-palindrome](https://github.com/pavannaiik/LeetCode/tree/master/2565-merge-operations-to-turn-array-into-a-palindrome) |
+| [2581-divide-players-into-teams-of-equal-skill](https://github.com/pavannaiik/LeetCode/tree/master/2581-divide-players-into-teams-of-equal-skill) |
 | [2617-time-taken-to-cross-the-door](https://github.com/pavannaiik/LeetCode/tree/master/2617-time-taken-to-cross-the-door) |
 | [2658-count-the-number-of-k-big-indices](https://github.com/pavannaiik/LeetCode/tree/master/2658-count-the-number-of-k-big-indices) |
 | [2727-number-of-senior-citizens](https://github.com/pavannaiik/LeetCode/tree/master/2727-number-of-senior-citizens) |
@@ -117,6 +118,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2468-valid-palindrome-iv](https://github.com/pavannaiik/LeetCode/tree/master/2468-valid-palindrome-iv) |
 | [2565-merge-operations-to-turn-array-into-a-palindrome](https://github.com/pavannaiik/LeetCode/tree/master/2565-merge-operations-to-turn-array-into-a-palindrome) |
 | [2572-append-characters-to-string-to-make-subsequence](https://github.com/pavannaiik/LeetCode/tree/master/2572-append-characters-to-string-to-make-subsequence) |
+| [2581-divide-players-into-teams-of-equal-skill](https://github.com/pavannaiik/LeetCode/tree/master/2581-divide-players-into-teams-of-equal-skill) |
 ## Sorting
 |  |
 | ------- |
@@ -147,6 +149,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2405-minimum-number-of-keypresses](https://github.com/pavannaiik/LeetCode/tree/master/2405-minimum-number-of-keypresses) |
 | [2458-find-minimum-time-to-finish-all-jobs-ii](https://github.com/pavannaiik/LeetCode/tree/master/2458-find-minimum-time-to-finish-all-jobs-ii) |
 | [2502-sort-the-people](https://github.com/pavannaiik/LeetCode/tree/master/2502-sort-the-people) |
+| [2581-divide-players-into-teams-of-equal-skill](https://github.com/pavannaiik/LeetCode/tree/master/2581-divide-players-into-teams-of-equal-skill) |
 | [2846-robot-collisions](https://github.com/pavannaiik/LeetCode/tree/master/2846-robot-collisions) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/pavannaiik/LeetCode/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
 ## Dynamic Programming
@@ -282,6 +285,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2502-sort-the-people](https://github.com/pavannaiik/LeetCode/tree/master/2502-sort-the-people) |
 | [2552-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/pavannaiik/LeetCode/tree/master/2552-maximum-sum-of-distinct-subarrays-with-length-k) |
 | [2555-design-sql](https://github.com/pavannaiik/LeetCode/tree/master/2555-design-sql) |
+| [2581-divide-players-into-teams-of-equal-skill](https://github.com/pavannaiik/LeetCode/tree/master/2581-divide-players-into-teams-of-equal-skill) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/pavannaiik/LeetCode/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
 ## Divide and Conquer
 |  |
