@@ -1,26 +1,29 @@
 class Solution {
     public int[] smallestRange(List<List<Integer>> nums) {
-        int k = nums.size();
-        int[] indices = new int[k];
-        int[] range = new int[]{0, Integer.MAX_VALUE};
-        while(true){
-            int curMin = Integer.MAX_VALUE, curMax = Integer.MIN_VALUE, minListIndex =0;
-            for(int i=0;i<k;i++){
-                int curElement = nums.get(i).get(indices[i]);
-                if(curElement < curMin){
-                    curMin = curElement;
-                    minListIndex = i;
-                }
-                if(curElement > curMax){
-                    curMax = curElement;
-                }
-            }
-            if(curMax-curMin < range[1]-range[0]){
-                range[0]=curMin;
-                range[1]=curMax;
-            }
-            if(++indices[minListIndex]==nums.get(minListIndex).size()) break;
+        // Priority queue to store (value, list index, element index)
+
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a,b)->a[0]-b[0]);
+        int maxVal = Integer.MIN_VALUE, rangeStart =0, rangeEnd=Integer.MAX_VALUE;
+        for(int i=0;i<nums.size();i++){
+            pq.offer(new int[]{nums.get(i).get(0),i,0});
+            maxVal = Math.max(maxVal, nums.get(i).get(0));
         }
-        return range;
+        while(pq.size()==nums.size()){
+            int[] data = pq.poll();
+            int minVal = data[0], row = data[1], col = data[2];
+            if(maxVal - minVal < rangeEnd-rangeStart){
+                rangeEnd = maxVal;
+                rangeStart = minVal;
+            }
+
+            //add next element
+            if(col +1 < nums.get(row).size()){
+                int nextVal = nums.get(row).get(col+1);
+                pq.offer(new int[]{nextVal, row, col+1});
+                maxVal = Math.max(maxVal, nextVal);
+            }
+        }
+
+        return new int[]{rangeStart, rangeEnd};
     }
 }
