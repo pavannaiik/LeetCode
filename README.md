@@ -56,6 +56,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1002-maximum-width-ramp](https://github.com/pavannaiik/LeetCode/tree/master/1002-maximum-width-ramp) |
 | [1036-rotting-oranges](https://github.com/pavannaiik/LeetCode/tree/master/1036-rotting-oranges) |
 | [1073-number-of-enclaves](https://github.com/pavannaiik/LeetCode/tree/master/1073-number-of-enclaves) |
+| [1098-largest-unique-number](https://github.com/pavannaiik/LeetCode/tree/master/1098-largest-unique-number) |
 | [1107-minimum-swaps-to-group-all-1s-together](https://github.com/pavannaiik/LeetCode/tree/master/1107-minimum-swaps-to-group-all-1s-together) |
 | [1196-filling-bookcase-shelves](https://github.com/pavannaiik/LeetCode/tree/master/1196-filling-bookcase-shelves) |
 | [1207-delete-nodes-and-return-forest](https://github.com/pavannaiik/LeetCode/tree/master/1207-delete-nodes-and-return-forest) |
@@ -153,6 +154,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0941-sort-array-by-parity](https://github.com/pavannaiik/LeetCode/tree/master/0941-sort-array-by-parity) |
 | [0948-sort-an-array](https://github.com/pavannaiik/LeetCode/tree/master/0948-sort-an-array) |
 | [0974-reorder-data-in-log-files](https://github.com/pavannaiik/LeetCode/tree/master/0974-reorder-data-in-log-files) |
+| [1098-largest-unique-number](https://github.com/pavannaiik/LeetCode/tree/master/1098-largest-unique-number) |
 | [1256-rank-transform-of-an-array](https://github.com/pavannaiik/LeetCode/tree/master/1256-rank-transform-of-an-array) |
 | [1333-sort-the-jumbled-numbers](https://github.com/pavannaiik/LeetCode/tree/master/1333-sort-the-jumbled-numbers) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/pavannaiik/LeetCode/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
@@ -293,6 +295,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0778-reorganize-string](https://github.com/pavannaiik/LeetCode/tree/master/0778-reorganize-string) |
 | [0870-magic-squares-in-grid](https://github.com/pavannaiik/LeetCode/tree/master/0870-magic-squares-in-grid) |
 | [0999-regions-cut-by-slashes](https://github.com/pavannaiik/LeetCode/tree/master/0999-regions-cut-by-slashes) |
+| [1098-largest-unique-number](https://github.com/pavannaiik/LeetCode/tree/master/1098-largest-unique-number) |
 | [1207-delete-nodes-and-return-forest](https://github.com/pavannaiik/LeetCode/tree/master/1207-delete-nodes-and-return-forest) |
 | [1256-rank-transform-of-an-array](https://github.com/pavannaiik/LeetCode/tree/master/1256-rank-transform-of-an-array) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/pavannaiik/LeetCode/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
