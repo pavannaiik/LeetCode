@@ -207,6 +207,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0564-find-the-closest-palindrome](https://github.com/pavannaiik/LeetCode/tree/master/0564-find-the-closest-palindrome) |
 | [0592-fraction-addition-and-subtraction](https://github.com/pavannaiik/LeetCode/tree/master/0592-fraction-addition-and-subtraction) |
 | [0650-2-keys-keyboard](https://github.com/pavannaiik/LeetCode/tree/master/0650-2-keys-keyboard) |
+| [0670-maximum-swap](https://github.com/pavannaiik/LeetCode/tree/master/0670-maximum-swap) |
 | [0796-reaching-points](https://github.com/pavannaiik/LeetCode/tree/master/0796-reaching-points) |
 | [0870-magic-squares-in-grid](https://github.com/pavannaiik/LeetCode/tree/master/0870-magic-squares-in-grid) |
 | [1033-broken-calculator](https://github.com/pavannaiik/LeetCode/tree/master/1033-broken-calculator) |
@@ -360,6 +361,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0455-assign-cookies](https://github.com/pavannaiik/LeetCode/tree/master/0455-assign-cookies) |
 | [0624-maximum-distance-in-arrays](https://github.com/pavannaiik/LeetCode/tree/master/0624-maximum-distance-in-arrays) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/pavannaiik/LeetCode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
+| [0670-maximum-swap](https://github.com/pavannaiik/LeetCode/tree/master/0670-maximum-swap) |
 | [0778-reorganize-string](https://github.com/pavannaiik/LeetCode/tree/master/0778-reorganize-string) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/pavannaiik/LeetCode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1033-broken-calculator](https://github.com/pavannaiik/LeetCode/tree/master/1033-broken-calculator) |
