@@ -1,24 +1,21 @@
 class Solution {
-    int burstBallons(int i, int j, vector<int> &nums,vector<vector<int>>&dp ){
-        if(i > j){
-            return 0;
-        }
-        if(dp[i][j]!=-1){
-            return dp[i][j];
-        }
-        int maxCoins = INT_MIN;
-        for(int idx = i; idx<=j;idx++){
-            int cost = nums.at(i-1)*nums.at(idx)*nums.at(j+1) + burstBallons(i, idx-1,nums,dp) + burstBallons(idx+1, j, nums,dp);
-            maxCoins = max(maxCoins, cost);
-        }
-        return dp[i][j] = maxCoins;
-    }
 public:
     int maxCoins(vector<int>& nums) {
-        int n = nums.size();
-        nums.push_back(1);
-        nums.insert(nums.begin(), 1);
-        vector<vector<int>>dp(n+1,vector<int>(n+1,-1));
-        return burstBallons(1, n,nums,dp);
+        int n = nums.size()+2;
+        vector<vector<int>>dp(n,vector<int>(n));
+        vector<int> new_nums(n,1);
+        int i=1;
+        for(auto num:nums){
+            new_nums[i++]=num;
+        }
+        for(int len =2;len<=n;len++){
+            for(int i=0;i<n-len;i++){
+                int j= i+len;
+                for(int k=i+1;k<j;k++){
+                    dp[i][j]= max(dp[i][j], dp[i][k]+dp[k][j]+ new_nums[i] * new_nums[k] * new_nums[j]);
+                }
+            }
+        }
+        return dp[0][n-1];
     }
 };
