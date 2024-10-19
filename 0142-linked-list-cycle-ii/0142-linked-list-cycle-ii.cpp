@@ -7,13 +7,7 @@
  * };
  */
 class Solution {
-    ListNode* findStart(ListNode* node1, ListNode* node2){
-        while(node1!=node2){
-            node1=node1->next;
-            node2=node2->next;
-        }
-        return node1;
-    }
+
 public:
     ListNode *detectCycle(ListNode *head) {
         ListNode* slow = head;
@@ -22,7 +16,12 @@ public:
             fast=fast->next->next;
             slow=slow->next;
             if(fast==slow){
-                return findStart(head,fast);
+                slow=head;
+                while(slow!=fast){
+                    slow=slow->next;
+                    fast=fast->next;
+                }
+                return slow;
             }
         }
         return NULL;
