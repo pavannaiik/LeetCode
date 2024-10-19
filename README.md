@@ -105,6 +105,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2727-number-of-senior-citizens](https://github.com/pavannaiik/LeetCode/tree/master/2727-number-of-senior-citizens) |
 | [2846-robot-collisions](https://github.com/pavannaiik/LeetCode/tree/master/2846-robot-collisions) |
 | [3235-minimum-cost-to-convert-string-i](https://github.com/pavannaiik/LeetCode/tree/master/3235-minimum-cost-to-convert-string-i) |
+| [3306-mark-elements-on-array-by-performing-queries](https://github.com/pavannaiik/LeetCode/tree/master/3306-mark-elements-on-array-by-performing-queries) |
 ## Two Pointers
 |  |
 | ------- |
@@ -176,6 +177,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/pavannaiik/LeetCode/tree/master/2581-divide-players-into-teams-of-equal-skill) |
 | [2846-robot-collisions](https://github.com/pavannaiik/LeetCode/tree/master/2846-robot-collisions) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/pavannaiik/LeetCode/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
+| [3306-mark-elements-on-array-by-performing-queries](https://github.com/pavannaiik/LeetCode/tree/master/3306-mark-elements-on-array-by-performing-queries) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -324,6 +326,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2555-design-sql](https://github.com/pavannaiik/LeetCode/tree/master/2555-design-sql) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/pavannaiik/LeetCode/tree/master/2581-divide-players-into-teams-of-equal-skill) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/pavannaiik/LeetCode/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
+| [3306-mark-elements-on-array-by-performing-queries](https://github.com/pavannaiik/LeetCode/tree/master/3306-mark-elements-on-array-by-performing-queries) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -417,6 +420,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/pavannaiik/LeetCode/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2616-maximal-score-after-applying-k-operations](https://github.com/pavannaiik/LeetCode/tree/master/2616-maximal-score-after-applying-k-operations) |
 | [2803-modify-graph-edge-weights](https://github.com/pavannaiik/LeetCode/tree/master/2803-modify-graph-edge-weights) |
+| [3306-mark-elements-on-array-by-performing-queries](https://github.com/pavannaiik/LeetCode/tree/master/3306-mark-elements-on-array-by-performing-queries) |
 ## String
 |  |
 | ------- |
@@ -538,6 +542,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2645-pass-the-pillow](https://github.com/pavannaiik/LeetCode/tree/master/2645-pass-the-pillow) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/pavannaiik/LeetCode/tree/master/2800-minimum-string-length-after-removing-substrings) |
 | [2846-robot-collisions](https://github.com/pavannaiik/LeetCode/tree/master/2846-robot-collisions) |
+| [3306-mark-elements-on-array-by-performing-queries](https://github.com/pavannaiik/LeetCode/tree/master/3306-mark-elements-on-array-by-performing-queries) |
 ## Queue
 |  |
 | ------- |
