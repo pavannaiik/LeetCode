@@ -82,6 +82,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1803-average-waiting-time](https://github.com/pavannaiik/LeetCode/tree/master/1803-average-waiting-time) |
 | [1923-sentence-similarity-iii](https://github.com/pavannaiik/LeetCode/tree/master/1923-sentence-similarity-iii) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/pavannaiik/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
+| [2038-nearest-exit-from-entrance-in-maze](https://github.com/pavannaiik/LeetCode/tree/master/2038-nearest-exit-from-entrance-in-maze) |
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/pavannaiik/LeetCode/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
 | [2067-maximum-number-of-points-with-cost](https://github.com/pavannaiik/LeetCode/tree/master/2067-maximum-number-of-points-with-cost) |
 | [2094-remove-stones-to-minimize-the-total](https://github.com/pavannaiik/LeetCode/tree/master/2094-remove-stones-to-minimize-the-total) |
@@ -253,6 +254,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1496-lucky-numbers-in-a-matrix](https://github.com/pavannaiik/LeetCode/tree/master/1496-lucky-numbers-in-a-matrix) |
 | [1691-minimum-number-of-days-to-disconnect-island](https://github.com/pavannaiik/LeetCode/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
 | [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/pavannaiik/LeetCode/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
+| [2038-nearest-exit-from-entrance-in-maze](https://github.com/pavannaiik/LeetCode/tree/master/2038-nearest-exit-from-entrance-in-maze) |
 | [2472-build-a-matrix-with-conditions](https://github.com/pavannaiik/LeetCode/tree/master/2472-build-a-matrix-with-conditions) |
 | [2675-find-the-width-of-columns-of-a-grid](https://github.com/pavannaiik/LeetCode/tree/master/2675-find-the-width-of-columns-of-a-grid) |
 ## Binary Search
@@ -637,6 +639,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1073-number-of-enclaves](https://github.com/pavannaiik/LeetCode/tree/master/1073-number-of-enclaves) |
 | [1643-number-of-nodes-in-the-sub-tree-with-the-same-label](https://github.com/pavannaiik/LeetCode/tree/master/1643-number-of-nodes-in-the-sub-tree-with-the-same-label) |
 | [1691-minimum-number-of-days-to-disconnect-island](https://github.com/pavannaiik/LeetCode/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
+| [2038-nearest-exit-from-entrance-in-maze](https://github.com/pavannaiik/LeetCode/tree/master/2038-nearest-exit-from-entrance-in-maze) |
 | [2171-second-minimum-time-to-reach-destination](https://github.com/pavannaiik/LeetCode/tree/master/2171-second-minimum-time-to-reach-destination) |
 ## Shortest Path
 |  |
