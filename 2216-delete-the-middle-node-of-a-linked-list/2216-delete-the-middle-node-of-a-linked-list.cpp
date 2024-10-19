@@ -13,6 +13,8 @@ public:
     ListNode* deleteMiddle(ListNode* head) {
         if(head->next==NULL) return NULL;
         ListNode* slow= head;
+        //why we initialize fast=head.next.next because we want to delete the middle ele
+        //element not to find middle element, we are actually searching predeccor of mid 
         ListNode* fast=head->next->next;
         while(fast!=NULL && fast->next!=NULL){
             fast=fast->next->next;
