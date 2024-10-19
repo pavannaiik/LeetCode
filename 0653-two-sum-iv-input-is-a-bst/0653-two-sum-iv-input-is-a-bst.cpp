@@ -10,15 +10,18 @@
  * };
  */
 class Solution {
-    bool dfs(TreeNode* root, unordered_set<int>&set, int k ){
-        if(root==NULL) return false;
-        if(set.contains(k-root->val)) return true;
-        set.insert(root->val);
-        return dfs(root->left,set,k)||dfs(root->right,set,k);
-    }
 public:
     bool findTarget(TreeNode* root, int k) {
-        unordered_set<int>set;
-        return dfs(root,set,k);
+        return dfs(root,root,k);
+    }
+    bool dfs(TreeNode* root,TreeNode* cur, int k){
+        if(cur==NULL) return false;
+        return search(root, cur,k-cur->val) || dfs(root, cur->left,k) || dfs(root, cur->right,k);
+    }
+    bool search(TreeNode* root,TreeNode* cur, int value){
+        if(root==NULL) return false;
+        return (root->val == value) && (root != cur) 
+            || (root->val < value) && search(root->right, cur, value) 
+                || (root->val > value) && search(root->left, cur, value);
     }
 };
