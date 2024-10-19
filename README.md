@@ -136,6 +136,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1739-split-two-strings-to-make-palindrome](https://github.com/pavannaiik/LeetCode/tree/master/1739-split-two-strings-to-make-palindrome) |
 | [1923-sentence-similarity-iii](https://github.com/pavannaiik/LeetCode/tree/master/1923-sentence-similarity-iii) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/pavannaiik/LeetCode/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
+| [2216-delete-the-middle-node-of-a-linked-list](https://github.com/pavannaiik/LeetCode/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
 | [2468-valid-palindrome-iv](https://github.com/pavannaiik/LeetCode/tree/master/2468-valid-palindrome-iv) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/pavannaiik/LeetCode/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2565-merge-operations-to-turn-array-into-a-palindrome](https://github.com/pavannaiik/LeetCode/tree/master/2565-merge-operations-to-turn-array-into-a-palindrome) |
@@ -518,6 +519,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0328-odd-even-linked-list](https://github.com/pavannaiik/LeetCode/tree/master/0328-odd-even-linked-list) |
 | [0908-middle-of-the-linked-list](https://github.com/pavannaiik/LeetCode/tree/master/0908-middle-of-the-linked-list) |
 | [2182-find-the-minimum-and-maximum-number-of-nodes-between-critical-points](https://github.com/pavannaiik/LeetCode/tree/master/2182-find-the-minimum-and-maximum-number-of-nodes-between-critical-points) |
+| [2216-delete-the-middle-node-of-a-linked-list](https://github.com/pavannaiik/LeetCode/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
 | [2299-merge-nodes-in-between-zeros](https://github.com/pavannaiik/LeetCode/tree/master/2299-merge-nodes-in-between-zeros) |
 ## Stack
 |  |
