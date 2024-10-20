@@ -128,6 +128,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0061-rotate-list](https://github.com/pavannaiik/LeetCode/tree/master/0061-rotate-list) |
 | [0075-sort-colors](https://github.com/pavannaiik/LeetCode/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/pavannaiik/LeetCode/tree/master/0088-merge-sorted-array) |
+| [0125-valid-palindrome](https://github.com/pavannaiik/LeetCode/tree/master/0125-valid-palindrome) |
 | [0141-linked-list-cycle](https://github.com/pavannaiik/LeetCode/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/pavannaiik/LeetCode/tree/master/0142-linked-list-cycle-ii) |
 | [0143-reorder-list](https://github.com/pavannaiik/LeetCode/tree/master/0143-reorder-list) |
@@ -468,6 +469,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/pavannaiik/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0049-group-anagrams](https://github.com/pavannaiik/LeetCode/tree/master/0049-group-anagrams) |
+| [0125-valid-palindrome](https://github.com/pavannaiik/LeetCode/tree/master/0125-valid-palindrome) |
 | [0131-palindrome-partitioning](https://github.com/pavannaiik/LeetCode/tree/master/0131-palindrome-partitioning) |
 | [0159-longest-substring-with-at-most-two-distinct-characters](https://github.com/pavannaiik/LeetCode/tree/master/0159-longest-substring-with-at-most-two-distinct-characters) |
 | [0208-implement-trie-prefix-tree](https://github.com/pavannaiik/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
