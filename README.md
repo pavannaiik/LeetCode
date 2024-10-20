@@ -35,6 +35,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0217-contains-duplicate](https://github.com/pavannaiik/LeetCode/tree/master/0217-contains-duplicate) |
 | [0229-majority-element-ii](https://github.com/pavannaiik/LeetCode/tree/master/0229-majority-element-ii) |
 | [0238-product-of-array-except-self](https://github.com/pavannaiik/LeetCode/tree/master/0238-product-of-array-except-self) |
+| [0239-sliding-window-maximum](https://github.com/pavannaiik/LeetCode/tree/master/0239-sliding-window-maximum) |
 | [0271-encode-and-decode-strings](https://github.com/pavannaiik/LeetCode/tree/master/0271-encode-and-decode-strings) |
 | [0286-walls-and-gates](https://github.com/pavannaiik/LeetCode/tree/master/0286-walls-and-gates) |
 | [0287-find-the-duplicate-number](https://github.com/pavannaiik/LeetCode/tree/master/0287-find-the-duplicate-number) |
@@ -455,6 +456,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Heap (Priority Queue)
 |  |
 | ------- |
+| [0239-sliding-window-maximum](https://github.com/pavannaiik/LeetCode/tree/master/0239-sliding-window-maximum) |
 | [0264-ugly-number-ii](https://github.com/pavannaiik/LeetCode/tree/master/0264-ugly-number-ii) |
 | [0347-top-k-frequent-elements](https://github.com/pavannaiik/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0407-trapping-rain-water-ii](https://github.com/pavannaiik/LeetCode/tree/master/0407-trapping-rain-water-ii) |
@@ -528,6 +530,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0003-longest-substring-without-repeating-characters](https://github.com/pavannaiik/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0076-minimum-window-substring](https://github.com/pavannaiik/LeetCode/tree/master/0076-minimum-window-substring) |
 | [0159-longest-substring-with-at-most-two-distinct-characters](https://github.com/pavannaiik/LeetCode/tree/master/0159-longest-substring-with-at-most-two-distinct-characters) |
+| [0239-sliding-window-maximum](https://github.com/pavannaiik/LeetCode/tree/master/0239-sliding-window-maximum) |
 | [0340-longest-substring-with-at-most-k-distinct-characters](https://github.com/pavannaiik/LeetCode/tree/master/0340-longest-substring-with-at-most-k-distinct-characters) |
 | [0424-longest-repeating-character-replacement](https://github.com/pavannaiik/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0567-permutation-in-string](https://github.com/pavannaiik/LeetCode/tree/master/0567-permutation-in-string) |
@@ -611,6 +614,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Queue
 |  |
 | ------- |
+| [0239-sliding-window-maximum](https://github.com/pavannaiik/LeetCode/tree/master/0239-sliding-window-maximum) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/pavannaiik/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2617-time-taken-to-cross-the-door](https://github.com/pavannaiik/LeetCode/tree/master/2617-time-taken-to-cross-the-door) |
 ## Backtracking
@@ -805,4 +809,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/pavannaiik/LeetCode/tree/master/0347-top-k-frequent-elements) |
+## Monotonic Queue
+|  |
+| ------- |
+| [0239-sliding-window-maximum](https://github.com/pavannaiik/LeetCode/tree/master/0239-sliding-window-maximum) |
 <!---LeetCode Topics End-->
