@@ -65,6 +65,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0792-binary-search](https://github.com/pavannaiik/LeetCode/tree/master/0792-binary-search) |
 | [0870-magic-squares-in-grid](https://github.com/pavannaiik/LeetCode/tree/master/0870-magic-squares-in-grid) |
 | [0883-car-fleet](https://github.com/pavannaiik/LeetCode/tree/master/0883-car-fleet) |
+| [0907-koko-eating-bananas](https://github.com/pavannaiik/LeetCode/tree/master/0907-koko-eating-bananas) |
 | [0921-spiral-matrix-iii](https://github.com/pavannaiik/LeetCode/tree/master/0921-spiral-matrix-iii) |
 | [0941-sort-array-by-parity](https://github.com/pavannaiik/LeetCode/tree/master/0941-sort-array-by-parity) |
 | [0948-sort-an-array](https://github.com/pavannaiik/LeetCode/tree/master/0948-sort-an-array) |
@@ -302,6 +303,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0350-intersection-of-two-arrays-ii](https://github.com/pavannaiik/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/pavannaiik/LeetCode/tree/master/0719-find-k-th-smallest-pair-distance) |
 | [0792-binary-search](https://github.com/pavannaiik/LeetCode/tree/master/0792-binary-search) |
+| [0907-koko-eating-bananas](https://github.com/pavannaiik/LeetCode/tree/master/0907-koko-eating-bananas) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/pavannaiik/LeetCode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
 | [2658-count-the-number-of-k-big-indices](https://github.com/pavannaiik/LeetCode/tree/master/2658-count-the-number-of-k-big-indices) |
 ## Bit Manipulation
