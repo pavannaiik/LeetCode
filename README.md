@@ -22,6 +22,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0074-search-a-2d-matrix](https://github.com/pavannaiik/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0075-sort-colors](https://github.com/pavannaiik/LeetCode/tree/master/0075-sort-colors) |
 | [0078-subsets](https://github.com/pavannaiik/LeetCode/tree/master/0078-subsets) |
+| [0084-largest-rectangle-in-histogram](https://github.com/pavannaiik/LeetCode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0088-merge-sorted-array](https://github.com/pavannaiik/LeetCode/tree/master/0088-merge-sorted-array) |
 | [0090-subsets-ii](https://github.com/pavannaiik/LeetCode/tree/master/0090-subsets-ii) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/pavannaiik/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
@@ -582,6 +583,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0020-valid-parentheses](https://github.com/pavannaiik/LeetCode/tree/master/0020-valid-parentheses) |
 | [0042-trapping-rain-water](https://github.com/pavannaiik/LeetCode/tree/master/0042-trapping-rain-water) |
+| [0084-largest-rectangle-in-histogram](https://github.com/pavannaiik/LeetCode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0143-reorder-list](https://github.com/pavannaiik/LeetCode/tree/master/0143-reorder-list) |
 | [0145-binary-tree-postorder-traversal](https://github.com/pavannaiik/LeetCode/tree/master/0145-binary-tree-postorder-traversal) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/pavannaiik/LeetCode/tree/master/0150-evaluate-reverse-polish-notation) |
@@ -606,6 +608,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0042-trapping-rain-water](https://github.com/pavannaiik/LeetCode/tree/master/0042-trapping-rain-water) |
+| [0084-largest-rectangle-in-histogram](https://github.com/pavannaiik/LeetCode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0739-daily-temperatures](https://github.com/pavannaiik/LeetCode/tree/master/0739-daily-temperatures) |
 | [0883-car-fleet](https://github.com/pavannaiik/LeetCode/tree/master/0883-car-fleet) |
 | [1002-maximum-width-ramp](https://github.com/pavannaiik/LeetCode/tree/master/1002-maximum-width-ramp) |
