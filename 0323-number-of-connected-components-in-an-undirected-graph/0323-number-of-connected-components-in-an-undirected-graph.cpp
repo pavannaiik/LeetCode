@@ -17,9 +17,7 @@ public:
         return count;
     }
     void dfs(vector<vector<int>>&adj, vector<int>&vis, int node){
-        if(vis[node]==1){
-            return;
-        }
+        
         vis[node]=1;
         for(int n:adj[node]){
             if(vis[n]==0){
