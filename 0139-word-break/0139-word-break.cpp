@@ -7,6 +7,8 @@ public:
         dp[0]=true;
         for(int i=1;i<=n;i++){
             for(int j=0;j<i;j++){
+                //if characters till j is segmented
+                //then only we can check for the other characters
                 if(dp[j] && words.count(s.substr(j,i-j))){
                     dp[i]=true;
                     break;
