@@ -22,6 +22,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0049-group-anagrams](https://github.com/pavannaiik/LeetCode/tree/master/0049-group-anagrams) |
 | [0051-n-queens](https://github.com/pavannaiik/LeetCode/tree/master/0051-n-queens) |
 | [0053-maximum-subarray](https://github.com/pavannaiik/LeetCode/tree/master/0053-maximum-subarray) |
+| [0055-jump-game](https://github.com/pavannaiik/LeetCode/tree/master/0055-jump-game) |
 | [0056-merge-intervals](https://github.com/pavannaiik/LeetCode/tree/master/0056-merge-intervals) |
 | [0074-search-a-2d-matrix](https://github.com/pavannaiik/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0075-sort-colors](https://github.com/pavannaiik/LeetCode/tree/master/0075-sort-colors) |
@@ -245,6 +246,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0022-generate-parentheses](https://github.com/pavannaiik/LeetCode/tree/master/0022-generate-parentheses) |
 | [0042-trapping-rain-water](https://github.com/pavannaiik/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0053-maximum-subarray](https://github.com/pavannaiik/LeetCode/tree/master/0053-maximum-subarray) |
+| [0055-jump-game](https://github.com/pavannaiik/LeetCode/tree/master/0055-jump-game) |
 | [0062-unique-paths](https://github.com/pavannaiik/LeetCode/tree/master/0062-unique-paths) |
 | [0072-edit-distance](https://github.com/pavannaiik/LeetCode/tree/master/0072-edit-distance) |
 | [0091-decode-ways](https://github.com/pavannaiik/LeetCode/tree/master/0091-decode-ways) |
@@ -519,6 +521,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/pavannaiik/LeetCode/tree/master/0011-container-with-most-water) |
+| [0055-jump-game](https://github.com/pavannaiik/LeetCode/tree/master/0055-jump-game) |
 | [0455-assign-cookies](https://github.com/pavannaiik/LeetCode/tree/master/0455-assign-cookies) |
 | [0621-task-scheduler](https://github.com/pavannaiik/LeetCode/tree/master/0621-task-scheduler) |
 | [0624-maximum-distance-in-arrays](https://github.com/pavannaiik/LeetCode/tree/master/0624-maximum-distance-in-arrays) |
