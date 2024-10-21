@@ -52,6 +52,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0287-find-the-duplicate-number](https://github.com/pavannaiik/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0304-range-sum-query-2d-immutable](https://github.com/pavannaiik/LeetCode/tree/master/0304-range-sum-query-2d-immutable) |
 | [0312-burst-balloons](https://github.com/pavannaiik/LeetCode/tree/master/0312-burst-balloons) |
+| [0322-coin-change](https://github.com/pavannaiik/LeetCode/tree/master/0322-coin-change) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/pavannaiik/LeetCode/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0347-top-k-frequent-elements](https://github.com/pavannaiik/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/pavannaiik/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
@@ -246,6 +247,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0241-different-ways-to-add-parentheses](https://github.com/pavannaiik/LeetCode/tree/master/0241-different-ways-to-add-parentheses) |
 | [0264-ugly-number-ii](https://github.com/pavannaiik/LeetCode/tree/master/0264-ugly-number-ii) |
 | [0312-burst-balloons](https://github.com/pavannaiik/LeetCode/tree/master/0312-burst-balloons) |
+| [0322-coin-change](https://github.com/pavannaiik/LeetCode/tree/master/0322-coin-change) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/pavannaiik/LeetCode/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0494-target-sum](https://github.com/pavannaiik/LeetCode/tree/master/0494-target-sum) |
 | [0542-01-matrix](https://github.com/pavannaiik/LeetCode/tree/master/0542-01-matrix) |
@@ -849,6 +851,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0226-invert-binary-tree](https://github.com/pavannaiik/LeetCode/tree/master/0226-invert-binary-tree) |
 | [0261-graph-valid-tree](https://github.com/pavannaiik/LeetCode/tree/master/0261-graph-valid-tree) |
 | [0286-walls-and-gates](https://github.com/pavannaiik/LeetCode/tree/master/0286-walls-and-gates) |
+| [0322-coin-change](https://github.com/pavannaiik/LeetCode/tree/master/0322-coin-change) |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/pavannaiik/LeetCode/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/pavannaiik/LeetCode/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0399-evaluate-division](https://github.com/pavannaiik/LeetCode/tree/master/0399-evaluate-division) |
