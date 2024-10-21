@@ -12,6 +12,8 @@ public:
                 }
             }
         }
+        // this approch works as the empty cells are filled by neared gate first and 
+        // we are only filling if the gate is empty 
         while(!q.empty()){
             pair p = q.front();
             q.pop();
