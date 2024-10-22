@@ -308,6 +308,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/pavannaiik/LeetCode/tree/master/0002-add-two-numbers) |
+| [0007-reverse-integer](https://github.com/pavannaiik/LeetCode/tree/master/0007-reverse-integer) |
 | [0048-rotate-image](https://github.com/pavannaiik/LeetCode/tree/master/0048-rotate-image) |
 | [0050-powx-n](https://github.com/pavannaiik/LeetCode/tree/master/0050-powx-n) |
 | [0060-permutation-sequence](https://github.com/pavannaiik/LeetCode/tree/master/0060-permutation-sequence) |
