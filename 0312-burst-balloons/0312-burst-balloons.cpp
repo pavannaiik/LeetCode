@@ -5,7 +5,7 @@ public:
         nums.push_back(1);
         nums.insert(nums.begin(), 1);
         vector<vector<int>>memo(n+1,vector<int>(n+1,-1));;
-        int coins= calculateMaxCoins(1,n,nums,memo);
+        int coins = calculateMaxCoins(1,n,nums,memo);
         return coins;
     }
     int calculateMaxCoins(int i, int j, vector<int>&newNums,  vector<vector<int>>&memo){
