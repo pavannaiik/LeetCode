@@ -130,6 +130,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/pavannaiik/LeetCode/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
 | [1720-crawler-log-folder](https://github.com/pavannaiik/LeetCode/tree/master/1720-crawler-log-folder) |
 | [1741-sort-array-by-increasing-frequency](https://github.com/pavannaiik/LeetCode/tree/master/1741-sort-array-by-increasing-frequency) |
+| [1755-defuse-the-bomb](https://github.com/pavannaiik/LeetCode/tree/master/1755-defuse-the-bomb) |
 | [1803-average-waiting-time](https://github.com/pavannaiik/LeetCode/tree/master/1803-average-waiting-time) |
 | [1923-sentence-similarity-iii](https://github.com/pavannaiik/LeetCode/tree/master/1923-sentence-similarity-iii) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/pavannaiik/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
@@ -698,6 +699,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0567-permutation-in-string](https://github.com/pavannaiik/LeetCode/tree/master/0567-permutation-in-string) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/pavannaiik/LeetCode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [1107-minimum-swaps-to-group-all-1s-together](https://github.com/pavannaiik/LeetCode/tree/master/1107-minimum-swaps-to-group-all-1s-together) |
+| [1755-defuse-the-bomb](https://github.com/pavannaiik/LeetCode/tree/master/1755-defuse-the-bomb) |
 | [2255-minimum-swaps-to-group-all-1s-together-ii](https://github.com/pavannaiik/LeetCode/tree/master/2255-minimum-swaps-to-group-all-1s-together-ii) |
 | [2552-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/pavannaiik/LeetCode/tree/master/2552-maximum-sum-of-distinct-subarrays-with-length-k) |
 ## Prefix Sum
