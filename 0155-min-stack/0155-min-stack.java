@@ -1,7 +1,6 @@
 class MinStack {
     
     private Node head;
-     int min=Integer.MIN_VALUE;
     public MinStack() {
         
     }
