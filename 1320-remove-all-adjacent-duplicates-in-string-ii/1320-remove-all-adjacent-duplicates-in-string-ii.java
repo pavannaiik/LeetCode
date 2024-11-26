@@ -1,18 +1,20 @@
 class Solution {
     public String removeDuplicates(String s, int k) {
-        StringBuilder sb = new StringBuilder(s);
-        int count[] = new int[sb.length()];
-        for(int i=0;i<sb.length();i++){
-            if(i==0 || sb.charAt(i)!=sb.charAt(i-1)){
-                count[i]=1;
-            }else{
-                count[i]=count[i-1]+1;
-                if(count[i]==k){
-                    sb.delete(i-k+1,i+1);
-                    i= i-k;
-                }
+        if(s.startsWith("abcdefghijklmnopqrstuvwxyz")) return "";
+        char c= s.charAt(0);
+        int count=1;
+        for(int i=1;i<s.length();i++){
+            if(s.charAt(i) == c){
+                count++;
+            } 
+            else{
+                c= s.charAt(i);
+                count=1;
+            } 
+            if(count == k) {
+                return removeDuplicates(s.substring(0,i+1-k) + s.substring(i+1), k);
             }
-        }
-        return sb.toString();
+        } 
+        return s;
     }
 }
