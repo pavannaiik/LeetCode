@@ -8,11 +8,8 @@ class Solution {
                     {
                     stack.pop();
                     continue;
-                    }
-                    if(Math.abs(stack.peek()) == Math.abs(asteroid)){
+                    }else if(Math.abs(stack.peek()) == Math.abs(asteroid)){
                     stack.pop();
-                    flag= 0;
-                    break;
                 }
                 flag=0;
                 break;
