@@ -1,13 +1,11 @@
 class Solution {
     public int minimumOneBitOperations(int n) {
-        int ans =0, k=0, mask=1;
-        while(mask <= n){
-            if((n&mask)!=0){
-                ans = (1<<(k+1))-1-ans;
-            }
-            mask = mask << 1;
-            k++;
-        }
-        return ans;
+       if(n ==0) return 0;
+       int k=0;
+       while((1<<k) <= n){
+        k++;
+       }
+       k--;
+       return (1<<(k+1))-1 - minimumOneBitOperations((1<<k) ^ n);
     }
 }
