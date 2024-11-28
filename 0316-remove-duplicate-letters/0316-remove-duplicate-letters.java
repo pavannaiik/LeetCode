@@ -10,8 +10,7 @@ class Solution {
                 continue;
             }
             while(!stack.isEmpty() && stack.peek()-'a' > ch-'a' && count[stack.peek()-'a'] >0){
-                seen[stack.peek()-'a']=false;
-                stack.pop();
+                seen[stack.pop()-'a']=false;
             }
             stack.add(ch);
             seen[ch-'a']=true;
