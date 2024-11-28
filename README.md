@@ -275,6 +275,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0062-unique-paths](https://github.com/pavannaiik/LeetCode/tree/master/0062-unique-paths) |
 | [0072-edit-distance](https://github.com/pavannaiik/LeetCode/tree/master/0072-edit-distance) |
 | [0091-decode-ways](https://github.com/pavannaiik/LeetCode/tree/master/0091-decode-ways) |
+| [0096-unique-binary-search-trees](https://github.com/pavannaiik/LeetCode/tree/master/0096-unique-binary-search-trees) |
 | [0097-interleaving-string](https://github.com/pavannaiik/LeetCode/tree/master/0097-interleaving-string) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/pavannaiik/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/pavannaiik/LeetCode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
@@ -325,6 +326,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0050-powx-n](https://github.com/pavannaiik/LeetCode/tree/master/0050-powx-n) |
 | [0060-permutation-sequence](https://github.com/pavannaiik/LeetCode/tree/master/0060-permutation-sequence) |
 | [0062-unique-paths](https://github.com/pavannaiik/LeetCode/tree/master/0062-unique-paths) |
+| [0096-unique-binary-search-trees](https://github.com/pavannaiik/LeetCode/tree/master/0096-unique-binary-search-trees) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/pavannaiik/LeetCode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0204-count-primes](https://github.com/pavannaiik/LeetCode/tree/master/0204-count-primes) |
 | [0241-different-ways-to-add-parentheses](https://github.com/pavannaiik/LeetCode/tree/master/0241-different-ways-to-add-parentheses) |
@@ -836,6 +838,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Tree
 |  |
 | ------- |
+| [0096-unique-binary-search-trees](https://github.com/pavannaiik/LeetCode/tree/master/0096-unique-binary-search-trees) |
 | [0098-validate-binary-search-tree](https://github.com/pavannaiik/LeetCode/tree/master/0098-validate-binary-search-tree) |
 | [0100-same-tree](https://github.com/pavannaiik/LeetCode/tree/master/0100-same-tree) |
 | [0102-binary-tree-level-order-traversal](https://github.com/pavannaiik/LeetCode/tree/master/0102-binary-tree-level-order-traversal) |
@@ -862,6 +865,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Binary Tree
 |  |
 | ------- |
+| [0096-unique-binary-search-trees](https://github.com/pavannaiik/LeetCode/tree/master/0096-unique-binary-search-trees) |
 | [0098-validate-binary-search-tree](https://github.com/pavannaiik/LeetCode/tree/master/0098-validate-binary-search-tree) |
 | [0100-same-tree](https://github.com/pavannaiik/LeetCode/tree/master/0100-same-tree) |
 | [0102-binary-tree-level-order-traversal](https://github.com/pavannaiik/LeetCode/tree/master/0102-binary-tree-level-order-traversal) |
@@ -1042,6 +1046,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Binary Search Tree
 |  |
 | ------- |
+| [0096-unique-binary-search-trees](https://github.com/pavannaiik/LeetCode/tree/master/0096-unique-binary-search-trees) |
 | [0098-validate-binary-search-tree](https://github.com/pavannaiik/LeetCode/tree/master/0098-validate-binary-search-tree) |
 | [0230-kth-smallest-element-in-a-bst](https://github.com/pavannaiik/LeetCode/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/pavannaiik/LeetCode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
