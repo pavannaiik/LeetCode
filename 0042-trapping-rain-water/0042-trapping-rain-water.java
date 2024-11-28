@@ -1,7 +1,7 @@
 class Solution {
     public int trap(int[] height) {
         int len = height.length;
-        int left_max = height[0], right_max = height[len - 1], left = 0, right = len - 1;
+        int left_max = 0, right_max = 0, left = 0, right = len - 1;
         int ans = 0;
 
         while(left < right){
