@@ -1,15 +1,13 @@
 class Solution {
     public int numTrees(int n) {
-        //Recurrance relation is ways(n)= Sum(1,n)[ways(x-1)*ways(n-x)]
-        int dp[] = new int[n+1];
-        dp[0]=1;
-        for(int x=1;x<=n;x++){
-            int val=0;
-            for(int j=1;j<=x;j++){
-                val += dp[j-1]*dp[x-j];
+        int[] G = new int[n+1];
+        G[0]=1;
+        G[1]=1;
+        for(int i=2;i<=n;i++){
+            for(int j=1;j<=i;++j){
+                G[i] += G[j-1] * G[i-j];
             }
-            dp[x]=val;
         }
-        return dp[n];
+        return G[n];
     }
 }
