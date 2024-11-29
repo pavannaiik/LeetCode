@@ -1,22 +1,22 @@
 class Solution {
     public String convert(String s, int numRows) {
         if(numRows==1) return s;
-        String res = "";
-        int diff = numRows*2-2;
+        StringBuilder res = new StringBuilder();
+        int charsInSection = 2*(numRows-1);
         for(int i=0;i<numRows;i++){
             int index = i;
             while(index<s.length()){
-                res+=s.charAt(index);
+                res.append(s.charAt(index));
                 if(i !=0 && i != numRows-1){
-                    int diagonalDiff = diff- 2*i;
-                    int secondIndex = index + diagonalDiff;
+                    int charsInBetween = charsInSection- 2*i;
+                    int secondIndex = index + charsInBetween;
                     if(secondIndex < s.length()){
-                        res+=s.charAt(secondIndex);
+                        res.append(s.charAt(secondIndex));
                     }
                 }
-                index+=diff;
+                index+=charsInSection;
             }
         }
-        return res;
+        return res.toString();
     }
 }
