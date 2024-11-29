@@ -86,6 +86,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0525-contiguous-array](https://github.com/pavannaiik/LeetCode/tree/master/0525-contiguous-array) |
 | [0542-01-matrix](https://github.com/pavannaiik/LeetCode/tree/master/0542-01-matrix) |
 | [0560-subarray-sum-equals-k](https://github.com/pavannaiik/LeetCode/tree/master/0560-subarray-sum-equals-k) |
+| [0582-kill-process](https://github.com/pavannaiik/LeetCode/tree/master/0582-kill-process) |
 | [0621-task-scheduler](https://github.com/pavannaiik/LeetCode/tree/master/0621-task-scheduler) |
 | [0624-maximum-distance-in-arrays](https://github.com/pavannaiik/LeetCode/tree/master/0624-maximum-distance-in-arrays) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/pavannaiik/LeetCode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
@@ -471,6 +472,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0525-contiguous-array](https://github.com/pavannaiik/LeetCode/tree/master/0525-contiguous-array) |
 | [0560-subarray-sum-equals-k](https://github.com/pavannaiik/LeetCode/tree/master/0560-subarray-sum-equals-k) |
 | [0567-permutation-in-string](https://github.com/pavannaiik/LeetCode/tree/master/0567-permutation-in-string) |
+| [0582-kill-process](https://github.com/pavannaiik/LeetCode/tree/master/0582-kill-process) |
 | [0621-task-scheduler](https://github.com/pavannaiik/LeetCode/tree/master/0621-task-scheduler) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/pavannaiik/LeetCode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/pavannaiik/LeetCode/tree/master/0653-two-sum-iv-input-is-a-bst) |
@@ -856,6 +858,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/pavannaiik/LeetCode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/pavannaiik/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/pavannaiik/LeetCode/tree/master/0572-subtree-of-another-tree) |
+| [0582-kill-process](https://github.com/pavannaiik/LeetCode/tree/master/0582-kill-process) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/pavannaiik/LeetCode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/pavannaiik/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/pavannaiik/LeetCode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
@@ -917,6 +920,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0543-diameter-of-binary-tree](https://github.com/pavannaiik/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 | [0547-number-of-provinces](https://github.com/pavannaiik/LeetCode/tree/master/0547-number-of-provinces) |
 | [0572-subtree-of-another-tree](https://github.com/pavannaiik/LeetCode/tree/master/0572-subtree-of-another-tree) |
+| [0582-kill-process](https://github.com/pavannaiik/LeetCode/tree/master/0582-kill-process) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/pavannaiik/LeetCode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0684-redundant-connection](https://github.com/pavannaiik/LeetCode/tree/master/0684-redundant-connection) |
 | [0694-number-of-distinct-islands](https://github.com/pavannaiik/LeetCode/tree/master/0694-number-of-distinct-islands) |
@@ -965,6 +969,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0407-trapping-rain-water-ii](https://github.com/pavannaiik/LeetCode/tree/master/0407-trapping-rain-water-ii) |
 | [0542-01-matrix](https://github.com/pavannaiik/LeetCode/tree/master/0542-01-matrix) |
 | [0547-number-of-provinces](https://github.com/pavannaiik/LeetCode/tree/master/0547-number-of-provinces) |
+| [0582-kill-process](https://github.com/pavannaiik/LeetCode/tree/master/0582-kill-process) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/pavannaiik/LeetCode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0684-redundant-connection](https://github.com/pavannaiik/LeetCode/tree/master/0684-redundant-connection) |
 | [0694-number-of-distinct-islands](https://github.com/pavannaiik/LeetCode/tree/master/0694-number-of-distinct-islands) |
