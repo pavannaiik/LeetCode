@@ -1,5 +1,5 @@
 class Solution {
-    Map<Integer, ArrayList<Pair<Integer, Integer>>> columnTable = new HashMap();
+    Map<Integer, ArrayList<Pair<Integer, Integer>>> columnTable = new HashMap<>();
     int minColumn = 0, maxColumn = 0;
 
     private void DFS(TreeNode node, Integer row, Integer column) {
@@ -10,7 +10,7 @@ class Solution {
             this.columnTable.put(column, new ArrayList<Pair<Integer, Integer>>());
         }
 
-        this.columnTable.get(column).add(new Pair<Integer, Integer>(row, node.val));
+        this.columnTable.get(column).add(new Pair<>(row, node.val));
         this.minColumn = Math.min(minColumn, column);
         this.maxColumn = Math.max(maxColumn, column);
         // preorder DFS traversal
