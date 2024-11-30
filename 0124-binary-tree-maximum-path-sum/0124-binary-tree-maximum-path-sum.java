@@ -23,6 +23,7 @@ class Solution {
         if(root==null) return 0;
         int leftPathSum = dfs(root.left);
         int rightPathSum = dfs(root.right);
+        // if we include left sub tree or not if the value obtained in left sub tree is positive then we consider it otherwise we dont so 0 applies for both subtress
         leftPathSum = Math.max(0,leftPathSum);
         rightPathSum = Math.max(0,rightPathSum);
         maxSum = Math.max(maxSum, root.val+leftPathSum+rightPathSum);
