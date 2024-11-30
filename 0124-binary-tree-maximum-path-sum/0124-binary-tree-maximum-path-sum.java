@@ -14,19 +14,18 @@
  * }
  */
 class Solution {
-    private int maxSum =Integer.MIN_VALUE;
+    int maxV = Integer.MIN_VALUE;
     public int maxPathSum(TreeNode root) {
         dfs(root);
-        return maxSum;
+        return maxV;
     }
     public int dfs(TreeNode root){
         if(root==null) return 0;
-        int leftPathSum = dfs(root.left);
-        int rightPathSum = dfs(root.right);
-        // if we include left sub tree or not if the value obtained in left sub tree is positive then we consider it otherwise we dont so 0 applies for both subtress
-        leftPathSum = Math.max(0,leftPathSum);
-        rightPathSum = Math.max(0,rightPathSum);
-        maxSum = Math.max(maxSum, root.val+leftPathSum+rightPathSum);
-        return root.val + Math.max(leftPathSum,rightPathSum);
+        int leftSum = dfs(root.left);
+        int rightSum = dfs(root.right);
+        leftSum = Math.max(0, leftSum);
+        rightSum = Math.max(0, rightSum);
+        maxV = Math.max(maxV, root.val+leftSum+rightSum);
+        return root.val+Math.max(leftSum, rightSum);
     }
 }
