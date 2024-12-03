@@ -19,7 +19,7 @@ class Solution {
     }
 
     public List<List<Integer>> verticalTraversal(TreeNode root) {
-        List<List<Integer>> output = new ArrayList();
+        List<List<Integer>> output = new ArrayList<>();
         if (root == null) {
             return output;
         }
@@ -29,18 +29,19 @@ class Solution {
 
         // step 2). retrieve the value from the columnTable
         for (int i = minColumn; i < maxColumn + 1; ++i) {
-            // order by both "row" and "value"
-            Collections.sort(columnTable.get(i), new Comparator<Pair<Integer, Integer>>() {
-                @Override
-                public int compare(Pair<Integer, Integer> p1, Pair<Integer, Integer> p2) {
-                    if (p1.getKey().equals(p2.getKey()))
-                        return p1.getValue() - p2.getValue();
-                    else
-                        return p1.getKey() - p2.getKey();
+           
+           Collections.sort(columnTable.get(i), new Comparator<Pair<Integer,Integer>>() {
+            @Override
+            public int compare(Pair<Integer,Integer>p1, Pair<Integer,Integer>p2){
+                if(p1.getKey().equals(p2.getKey())){
+                    return p1.getValue()-p2.getValue();
+                }else{
+                    return p1.getKey()-p2.getKey();
                 }
-            });
+            }
+           });
 
-            List<Integer> sortedColumn = new ArrayList();
+            List<Integer> sortedColumn = new ArrayList<>();
             for (Pair<Integer, Integer> p : columnTable.get(i)) {
                 sortedColumn.add(p.getValue());
             }
