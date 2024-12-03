@@ -4,11 +4,10 @@ class Solution {
         for(int asteroid:asteroids){
             int flag=1;
             while(!stack.isEmpty() && (stack.peek() >0 && asteroid <0)){
-                if( Math.abs(stack.peek())< Math.abs(asteroid))
-                    {
+                if( Math.abs(stack.peek())< Math.abs(asteroid)){
                     stack.pop();
                     continue;
-                    }else if(Math.abs(stack.peek()) == Math.abs(asteroid)){
+                }else if(Math.abs(stack.peek()) == Math.abs(asteroid)){
                     stack.pop();
                 }
                 flag=0;
