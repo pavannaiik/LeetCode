@@ -30,12 +30,12 @@ class Solution {
             if(left.val < right.val){
                 cur.next = left;
                 left=left.next;
-                cur=cur.next;
+                
             }else{
                 cur.next = right;
                 right=right.next;
-                cur=cur.next;
             }
+            cur=cur.next;
         }
         if(left!=null){
             cur.next = left;
