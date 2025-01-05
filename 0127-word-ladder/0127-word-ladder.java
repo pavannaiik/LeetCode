@@ -4,7 +4,10 @@ class Solution {
         wordList.forEach(word -> {
             for (int i = 0; i < word.length(); i++) {
                 String newWord = word.substring(0, i) + '*' + word.substring(i + 1);
-                map.computeIfAbsent(newWord, k -> new ArrayList<>()).add(word);
+                if(!map.containsKey(newWord)){
+                    map.put(newWord, new ArrayList<>());
+                }
+                map.get(newWord).add(word);
             }
         });
 
@@ -22,7 +25,10 @@ class Solution {
                 String newWord = word.substring(0, i) + '*' + word.substring(i + 1);
                 for (String adjacentWord : map.getOrDefault(newWord, new ArrayList<>())) {
                     if (adjacentWord.equals(endWord)) return level + 1;
-                    if (visited.add(adjacentWord)) queue.add(new Pair<>(adjacentWord, level + 1));
+                    if (!visited.contains(adjacentWord)) {
+                        visited.add(adjacentWord);
+                        queue.add(new Pair<>(adjacentWord, level + 1));
+                    }
                 }
             }
         }
