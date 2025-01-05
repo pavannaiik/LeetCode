@@ -1,27 +1,25 @@
 class Solution {
-    int maxLen = Integer.MIN_VALUE;
-    int leftIndex=0, rightIndex =0;
+    int left_index=0, right_index=0, max_len=0;
     public String longestPalindrome(String s) {
-        for(int i=0;i<s.length();i++){
-            findLP(s, i, i);
-            findLP(s,i,i+1);
-        }
-        return s.substring(leftIndex, rightIndex+1);
-    }
-    public void findLP(String s, int left, int right){
         int n = s.length();
-        while(left >=0 && right <n){
-            if(s.charAt(left)!=s.charAt(right)){
-                break;
-            }
-            left--;
-            right++;
+        for(int i=0;i<n;i++){
+            lps(s, i, i, n);
+            lps(s, i, i+1, n);
         }
-        int curLen = right-left-1;
-        if(curLen > maxLen){
-            maxLen = curLen;
-            leftIndex = left+1;
-            rightIndex = right-1;
+        return s.substring(left_index, right_index+1);
+    }
+    public void lps(String s, int i, int j, int n){
+        while(i >=0 && j < n && s.charAt(i)==s.charAt(j)){
+            i--;
+            j++;
+        }
+        i++;
+        j--;
+        int window = j-i+1;
+        if(window > max_len){
+            max_len=window;
+            left_index= i;
+            right_index=j;
         }
     }
 }
