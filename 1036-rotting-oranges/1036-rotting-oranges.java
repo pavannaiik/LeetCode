@@ -1,36 +1,41 @@
 class Solution {
     public int orangesRotting(int[][] grid) {
-        int ans =2;
+        int freshOranges = 0;
+        int[][] dir = {{0,1},{1,0},{0,-1},{-1,0}};
+        Queue<Pair<Integer, Integer>>queue = new LinkedList<>();
         int n = grid.length, m = grid[0].length;
-        for(int i=0;i<n;i++){
+        int flag=1;
+        for(int i=0;i< n;i++){
             for(int j=0;j<m;j++){
-                if(grid[i][j]==2){
-                    dfs(grid, i, j, n, m, 2);
+                if(grid[i][j]==1) freshOranges++;
+                if(grid[i][j]==2 ){
+                    queue.add(new Pair(i,j));
                 }
             }
         }
-       // System.out.println(grid);
-        for(int i=0;i<n;i++){
-            for(int j=0;j<m;j++){
-                if(grid[i][j]==1){
-                    return -1;
+        if(freshOranges==0) return 0;
+        int minTime=0;
+        while(!queue.isEmpty()){
+            minTime++;
+            int len = queue.size();
+            for(int k=0;k<len;k++){
+                Pair node = queue.poll();
+                int x = (int)node.getKey();
+                int y= (int)node.getValue();
+                if(freshOranges==0) return minTime-1;
+                for(int i=0;i<4;i++){
+                    int r= x+dir[i][0];
+                    int c = y+dir[i][1];
+                    if(r >=0 && r <n && c >=0 && c < m && grid[r][c]==1){
+                        freshOranges--;
+                        grid[r][c]=2;
+                        queue.add(new Pair(r,c));
+                    }
                 }
-                ans = Math.max(ans, grid[i][j]);
             }
-        }
-        return ans-2;
+            
 
-    }
-    public void dfs(int[][] grid, int i, int j, int n, int m, int time){
-        if(i<0 || i>=n || j<0 ||j >=m|| grid[i][j]==0){
-            return;
         }
-        if(grid[i][j] > 1 && grid[i][j] < time) return;
-        grid[i][j] = time;
-
-        dfs(grid, i, j+1, n, m, time+1);
-        dfs(grid, i, j-1, n, m, time+1);
-        dfs(grid, i+1, j, n, m, time+1);
-        dfs(grid, i-1, j, n, m, time+1);
+        return freshOranges==0?minTime-1:-1;
     }
 }
