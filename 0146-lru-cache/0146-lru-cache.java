@@ -1,81 +1,60 @@
 class LRUCache {
-    
-    //size to keep know the capacity 
-    private int size;
-    //create a hashmap which stores keys and Nodes
-    HashMap<Integer,Node>map;
-    //since we need doubly linkedlist create two nodes front and rear
-    Node front;
-    Node rear;
+    int size;
+    Map<Integer, Node>map = new HashMap<>();
+    Node head, tail;
     public LRUCache(int capacity) {
-        //initialize size , map, front ,rear and point front and rear each other
         size=capacity;
-        map = new HashMap<>();
-        front =new Node(-1,-1);
-        rear = new Node(-1,-1);
-        front.next = rear;
-        rear.prev = front;
+        head=new Node(-1, -1);
+        tail=new Node(-1, -1);
+        head.next=tail;
+        tail.prev=head;
     }
     
     public int get(int key) {
-        // in get we check the key exist in map if it exist then we remove it from map and add the node to the front of the doublylinked list so  here remove method takes care of removing it from ll and map
-        if(map.containsKey(key)){
-            Node cur = map.get(key);
-            remove(cur);
-            insert(cur);
-            return cur.val;
-        }else{
-            //else we return -1 as mentioned in question
+        if(!map.containsKey(key)){
             return -1;
         }
-        
+        Node cur = map.get(key);
+        removeNode(cur);
+        insertNode(cur);
+        return cur.value;
     }
-    public void insert(Node node){
-        
-        // in insert we insert key and node into map first 
-        // we have three nodes now so map each other 
-        map.put(node.key,node);
-        Node frontNext = front.next;
-        front.next= node;
-        node.prev = front;
-        node.next=frontNext;
-        frontNext.prev = node;
-    }
-    
-    
-    public void put(int key, int value) {
-        // in put we check if the key contains in map if yes then we remove it from map add ll
-        // then we add it map and ll at the front
-        if(map.containsKey(key)){
-           remove(map.get(key));
-        }
-        // if map size is full then we remove the last element which is LRU which is present at rear.prev
-        if(map.size()== size){
-                remove(rear.prev);
-            }
-        // insert at the front
-        insert(new Node(key,value));
-    }
-    // remove we remove from map and we map node last and next node with each other
-    public void remove(Node cur){
+
+    public void removeNode(Node cur){
         map.remove(cur.key);
         cur.prev.next = cur.next;
         cur.next.prev = cur.prev;
     }
+    public void insertNode(Node cur){
+        map.put(cur.key, cur);
+        Node nextHead = head.next;
+        head.next = cur;
+        cur.prev= head;
+        cur.next = nextHead;
+        nextHead.prev= cur;
+
+    }
     
-    // create a class with node requirement
-    private class Node{
-        int key;
-        int val;
-        Node prev;
-        Node next;
-        Node(int key,int val){
-            this.key=key;
-            this.val=val;
+    public void put(int key, int value) {
+        Node curNode = new Node(key,value);
+        if(map.containsKey(key)){
+            removeNode(map.get(key));
         }
+         if(map.size()==size){
+            removeNode(tail.prev);
+        }
+        insertNode(curNode);
     }
 }
 
+class Node{
+    int key, value;
+    Node next, prev;
+    Node(int key, int value){
+        this.key=key;
+        this.value=value;
+    }
+}
 /**
  * Your LRUCache object will be instantiated and called as such:
  * LRUCache obj = new LRUCache(capacity);
