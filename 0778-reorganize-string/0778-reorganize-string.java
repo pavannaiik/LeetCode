@@ -2,27 +2,28 @@ class Solution {
     public String reorganizeString(String s) {
         int[] charCountArray = new int[26];
         int n = s.length();
-        for(char ch: s.toCharArray()){
-            charCountArray[ch-'a']++;
-        }
-        PriorityQueue<Pair<Character, Integer>>pq= new PriorityQueue<>((a,b)->b.getValue()-a.getValue());
-        for(int i=0;i<26;i++){
-            if(charCountArray[i]>0){
-                pq.add(new Pair((char)('a'+i), charCountArray[i]));
+        int highestCount=0, index =-1;
+        for(int i=0;i< n;i++){
+            charCountArray[s.charAt(i)-'a']++;
+            if(charCountArray[s.charAt(i)-'a'] > highestCount){
+                highestCount=charCountArray[s.charAt(i)-'a'];
+                index =s.charAt(i)-'a';
             }
         }
-        System.out.println(pq);
+        if(highestCount > (n+1)/2){
+            return "";
+        }
         char[] ans = new char[s.length()];
         int i=0;
-        while(!pq.isEmpty()){
-            Pair p1 = pq.poll();
-            char key= (char) p1.getKey();
-            int val = (int) p1.getValue();
-            for(int j=0;j<val;j++){
-                if (i >= n) i = 1;
-                ans[i]=key;
-                if(i > 0 && ans[i-1]==key) return "";
-                i += 2;
+        while(charCountArray[index]-- > 0){
+            ans[i]=(char)('a'+index);
+            i=i+2;
+        }
+        for(int j=0;j<26;j++){
+            while(charCountArray[j]-- >0){
+                 if (i >= n) i = 1;
+                ans[i]=(char)('a'+j);
+                i = i+2;
             }
         }
         return String.valueOf(ans);
