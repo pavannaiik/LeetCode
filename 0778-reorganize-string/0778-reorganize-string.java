@@ -1,6 +1,7 @@
 class Solution {
     public String reorganizeString(String s) {
         int[] charCountArray = new int[26];
+        int n = s.length();
         for(char ch: s.toCharArray()){
             charCountArray[ch-'a']++;
         }
@@ -11,23 +12,19 @@ class Solution {
             }
         }
         System.out.println(pq);
-        StringBuilder sb = new StringBuilder(s.length());
-
+        char[] ans = new char[s.length()];
+        int i=0;
         while(!pq.isEmpty()){
             Pair p1 = pq.poll();
-            if(pq.isEmpty() && (int)p1.getValue() > 1) return "";
-            else if(pq.isEmpty()) {
-                sb.append(p1.getKey());
-                return sb.toString();
+            char key= (char) p1.getKey();
+            int val = (int) p1.getValue();
+            for(int j=0;j<val;j++){
+                if (i >= n) i = 1;
+                ans[i]=key;
+                if(i > 0 && ans[i-1]==key) return "";
+                i += 2;
             }
-            Pair p2 = pq.poll();
-            sb.append(p1.getKey());
-            sb.append(p2.getKey());
-            if((int)p1.getValue() > 1)
-            pq.add(new Pair(p1.getKey(),(int) p1.getValue()-1));
-            if((int)p2.getValue() > 1)
-            pq.add(new Pair(p2.getKey(),(int)p2.getValue()-1));
         }
-        return sb.toString();
+        return String.valueOf(ans);
     }
 }
