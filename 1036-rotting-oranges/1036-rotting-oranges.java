@@ -22,7 +22,6 @@ class Solution {
                 Pair node = queue.poll();
                 int x = (int)node.getKey();
                 int y= (int)node.getValue();
-                if(freshOranges==0) return minTime-1;
                 for(int i=0;i<4;i++){
                     int r= x+dir[i][0];
                     int c = y+dir[i][1];
