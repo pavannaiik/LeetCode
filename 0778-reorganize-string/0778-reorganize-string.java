@@ -1,36 +1,33 @@
 class Solution {
     public String reorganizeString(String s) {
-        int[] freq = new int[26];
-        int max_c = 0;
-        int n = s.length();
-        int letter =0;
-        for(int i=0;i<n;i++){
-            freq[s.charAt(i)-'a']++;
-            if(max_c <freq[s.charAt(i)-'a'] ){
-                max_c = freq[s.charAt(i)-'a'];
-                letter = s.charAt(i)-'a';
-            }
+        int[] charCountArray = new int[26];
+        for(char ch: s.toCharArray()){
+            charCountArray[ch-'a']++;
         }
-        if(max_c > (n+1)/2){
-            return "";
-        }
-        var ans = new char[n];
-        int index =0;
-        while(freq[letter] >0){
-            ans[index]=(char)('a'+letter);
-            index+=2;
-            freq[letter]--;
-        }
+        PriorityQueue<Pair<Character, Integer>>pq= new PriorityQueue<>((a,b)->b.getValue()-a.getValue());
         for(int i=0;i<26;i++){
-            while(freq[i]>0){
-                if(index >= n){
-                index =1;
-            }
-                ans[index]=(char)('a'+i);
-                index+=2;
-                freq[i]--;
+            if(charCountArray[i]>0){
+                pq.add(new Pair((char)('a'+i), charCountArray[i]));
             }
         }
-        return String.valueOf(ans);
+        System.out.println(pq);
+        StringBuilder sb = new StringBuilder(s.length());
+
+        while(!pq.isEmpty()){
+            Pair p1 = pq.poll();
+            if(pq.isEmpty() && (int)p1.getValue() > 1) return "";
+            else if(pq.isEmpty()) {
+                sb.append(p1.getKey());
+                return sb.toString();
+            }
+            Pair p2 = pq.poll();
+            sb.append(p1.getKey());
+            sb.append(p2.getKey());
+            if((int)p1.getValue() > 1)
+            pq.add(new Pair(p1.getKey(),(int) p1.getValue()-1));
+            if((int)p2.getValue() > 1)
+            pq.add(new Pair(p2.getKey(),(int)p2.getValue()-1));
+        }
+        return sb.toString();
     }
 }
