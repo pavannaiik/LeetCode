@@ -10,40 +10,39 @@
  */
 class Solution {
     public ListNode mergeKLists(ListNode[] lists) {
-        return divide(lists, 0, lists.length-1);
+        return merge(lists, 0, lists.length-1);
     }
-    public ListNode divide(ListNode[] lists, int left, int right){
-        if(left==right) return lists[left];
-        if(left < right){
-            int mid = left+(right-left)/2;
-            ListNode l1 = divide(lists, left, mid);
-            ListNode l2 = divide(lists, mid+1, right);
-            return merge(l1, l2);
+    public ListNode merge(ListNode[] lists, int i, int n){
+        if(i==n) return lists[i];
+        if(i < n){
+            int mid = i+(n-i)/2;
+            ListNode left = merge(lists, i, mid);
+            ListNode right = merge(lists, mid+1, n);
+            return combine(left, right);
         }else{
             return null;
         }
-
     }
-    public ListNode merge(ListNode l1, ListNode l2){
-        ListNode head = new ListNode(0);
-        ListNode point = head;
-        while (l1 != null && l2 != null) {
-            if (l1.val <= l2.val) {
-                point.next = l1;
-                l1 = l1.next;
-            } else {
-                point.next = l2;
-                l2 = l1;
-                l1 = point.next.next;
+    public ListNode combine(ListNode left, ListNode right){
+        ListNode cur = new ListNode(0);
+        ListNode prev = cur;
+        while(left !=null && right !=null){
+            if(left.val < right.val){
+                cur.next = left;
+                left=left.next;
+                cur=cur.next;
+            }else{
+                cur.next = right;
+                right=right.next;
+                cur=cur.next;
             }
-            point = point.next;
         }
-        if (l1 == null) {
-            point.next = l2;
-        } else {
-            point.next = l1;
+        if(left!=null){
+            cur.next = left;
         }
-        return head.next;
+        if(right!=null){
+            cur.next = right;
+        }
+        return prev.next;
     }
-    
 }
