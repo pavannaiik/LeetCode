@@ -1,37 +1,23 @@
 class Solution {
+    int idx; // this index traverse the string in one pass, between different level of recursion
     public int calculate(String s) {
-        Stack<Integer> stack = new Stack<>();
-        int num = 0;
-        int result = 0;
-        int sign = 1;  // 1 for positive, -1 for negative
-
-        for (int i = 0; i < s.length(); i++) {
-            char ch = s.charAt(i);
-
-            if (Character.isDigit(ch)) {
-                num = num * 10 + (ch - '0');  // Convert char to int
-            } else if (ch == '+') {
-                result += sign * num;
+        idx = 0; // Initialization should be here
+        return calc(s);
+    }
+    
+    private int calc(String s) {
+        int res = 0, num = 0, sign = 1;
+        while (idx < s.length()) {
+            char c = s.charAt(idx++);
+            if (c >= '0' && c <= '9') num = num * 10 + c - '0';
+            else if (c == '(') num = calc(s); // ( is start of a new sub-problem, Let recursion solve the sub-problem
+            else if (c == ')') return res + sign * num;
+            else if (c == '+' || c == '-') { // only when we meet a new sign, we know a while number has been read
+                res += sign * num;
                 num = 0;
-                sign = 1;  // Set sign for next number
-            } else if (ch == '-') {
-                result += sign * num;
-                num = 0;
-                sign = -1;  // Set sign for next number
-            } else if (ch == '(') {
-                stack.push(result);
-                stack.push(sign);
-                result = 0;
-                sign = 1;
-            } else if (ch == ')') {
-                result += sign * num;
-                num = 0;
-                result *= stack.pop();  // Pop sign
-                result += stack.pop();  // Pop previous result
+                sign = c == '-' ? -1 : 1;
             }
         }
-
-        result += sign * num;  // Add the last number
-        return result;
+        return res + sign * num; // last number is not processed yet
     }
 }
