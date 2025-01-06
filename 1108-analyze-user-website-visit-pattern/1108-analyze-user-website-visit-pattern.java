@@ -1,47 +1,51 @@
+class Element{
+    public String web;
+    public int time;
+    public Element(String websit, int timestamp) {
+        this.web = websit;
+        this.time = timestamp;
+    }
+}
 class Solution {
+    private String s = "";
+    private int max = 0;
     public List<String> mostVisitedPattern(String[] username, int[] timestamp, String[] website) {
-        // Step 1: Build a map of users to their visited websites with timestamps
-        Map<String, List<Map.Entry<Integer, String>>> userVisits = new HashMap<>();
-        for (int i = 0; i < username.length; i++) {
-            userVisits.putIfAbsent(username[i], new ArrayList<>());
-            userVisits.get(username[i]).add(Map.entry(timestamp[i], website[i]));
+        if(website == null || website.length < 3) return new ArrayList<>();
+        Map<String, List<Element>> group = new HashMap<>();
+        int len = username.length;
+        for(int i = 0; i < len; i++) {
+            group.putIfAbsent(username[i], new ArrayList<>());
+            group.get(username[i]).add(new Element(website[i], timestamp[i]));
         }
-
-        // Step 2: Sort the visits by timestamp for each user
-        for (List<Map.Entry<Integer, String>> visits : userVisits.values()) {
-            visits.sort(Map.Entry.comparingByKey());
+        Map<String, Integer> count = new HashMap<>();
+        for(String name : group.keySet()) {
+            List<Element> list = group.get(name);
+            Collections.sort(list, (a, b) -> (a.time - b.time));
+            helper(list, 0, new StringBuilder(), 0, new HashSet<>(), count);
         }
-
-        // Step 3: Use a map to count the occurrences of each 3-sequence pattern
-        Map<List<String>, Integer> patternCount = new HashMap<>();
-        for (String user : userVisits.keySet()) {
-            List<Map.Entry<Integer, String>> visits = userVisits.get(user);
-            Set<List<String>> uniquePatterns = new HashSet<>();  // To avoid duplicate patterns for the same user
-
-            int n = visits.size();
-            for (int i = 0; i < n; i++) {
-                for (int j = i + 1; j < n; j++) {
-                    for (int k = j + 1; k < n; k++) {
-                        List<String> pattern = List.of(visits.get(i).getValue(), visits.get(j).getValue(), visits.get(k).getValue());
-                        if (uniquePatterns.add(pattern)) {
-                            patternCount.put(pattern, patternCount.getOrDefault(pattern, 0) + 1);
-                        }
-                    }
+        return Arrays.asList(s.split(" "));
+    }
+    private void helper(List<Element> list, int start, StringBuilder sb, int count, Set<String> seen, Map<String, Integer> map) {
+        if(count == 3) {
+            String curr = sb.toString();
+            if(seen.contains(curr)) return;
+            map.put(curr, map.getOrDefault(curr, 0) + 1);
+            if(map.get(curr) >= max) {
+                if(map.get(curr) > max || s.compareTo(curr) > 0) {
+                    s = curr;
                 }
+                max = map.get(curr);
             }
+            seen.add(curr);
+            return;
+        }else if(count > 3) return;
+        int len = sb.length();
+        for(int i = start; i < list.size(); i++) {
+            if(len > 0) sb.append(" ");
+            sb.append(list.get(i).web);
+            helper(list, i + 1, sb, count + 1, seen, map);
+            sb.setLength(len);
         }
-
-        // Step 4: Find the most visited pattern
-        List<String> result = new ArrayList<>();
-        int maxCount = 0;
-        for (List<String> pattern : patternCount.keySet()) {
-            int count = patternCount.get(pattern);
-            if (count > maxCount || (count == maxCount && pattern.toString().compareTo(result.toString()) < 0)) {
-                result = pattern;
-                maxCount = count;
-            }
-        }
-
-        return result;
+        return;
     }
 }
