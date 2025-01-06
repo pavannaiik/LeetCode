@@ -1,37 +1,34 @@
 class Solution {
     public int calculate(String s) {
-        Stack<Integer> stack = new Stack<>();
-        int num = 0;
-        int result = 0;
-        int sign = 1;  // 1 for positive, -1 for negative
-
-        for (int i = 0; i < s.length(); i++) {
-            char ch = s.charAt(i);
-
-            if (Character.isDigit(ch)) {
-                num = num * 10 + (ch - '0');  // Convert char to int
-            } else if (ch == '+') {
-                result += sign * num;
-                num = 0;
-                sign = 1;  // Set sign for next number
-            } else if (ch == '-') {
-                result += sign * num;
-                num = 0;
-                sign = -1;  // Set sign for next number
-            } else if (ch == '(') {
-                stack.push(result);
-                stack.push(sign);
-                result = 0;
-                sign = 1;
-            } else if (ch == ')') {
-                result += sign * num;
-                num = 0;
-                result *= stack.pop();  // Pop sign
-                result += stack.pop();  // Pop previous result
-            }
+    if(s == null) return 0;
+        
+    int result = 0;
+    int sign = 1;
+    int num = 0;
+            
+    Stack<Integer> stack = new Stack<Integer>();
+    stack.push(sign);
+            
+    for(int i = 0; i < s.length(); i++) {
+        char c = s.charAt(i);
+                
+        if(c >= '0' && c <= '9') {
+            num = num * 10 + (c - '0');
+                    
+        } else if(c == '+' || c == '-') {
+            result += sign * num;
+            sign = stack.peek() * (c == '+' ? 1: -1); 
+            num = 0;
+                    
+        } else if(c == '(') {
+            stack.push(sign);
+                    
+        } else if(c == ')') {
+            stack.pop();
         }
-
-        result += sign * num;  // Add the last number
-        return result;
     }
+            
+    result += sign * num;
+    return result;
+}
 }
