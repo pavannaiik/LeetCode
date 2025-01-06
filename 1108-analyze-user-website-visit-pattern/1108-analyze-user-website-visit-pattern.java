@@ -1,51 +1,51 @@
-class Element{
-    public String web;
-    public int time;
-    public Element(String websit, int timestamp) {
-        this.web = websit;
-        this.time = timestamp;
+class Pair {
+    int time;
+    String web;
+    public Pair(int time, String web) {
+        this.time = time;
+        this.web = web;
     }
 }
 class Solution {
-    private String s = "";
-    private int max = 0;
     public List<String> mostVisitedPattern(String[] username, int[] timestamp, String[] website) {
-        if(website == null || website.length < 3) return new ArrayList<>();
-        Map<String, List<Element>> group = new HashMap<>();
-        int len = username.length;
-        for(int i = 0; i < len; i++) {
-            group.putIfAbsent(username[i], new ArrayList<>());
-            group.get(username[i]).add(new Element(website[i], timestamp[i]));
+        Map<String, List<Pair>> map = new HashMap<>();
+        int n = username.length;
+        // collect the website info for every user, key: username, value: (timestamp, website)
+        for (int i = 0; i < n; i++) {
+            map.putIfAbsent(username[i], new ArrayList<>());
+            map.get(username[i]).add(new Pair(timestamp[i], website[i]));
         }
+        // count map to record every 3 combination occuring time for the different user.
         Map<String, Integer> count = new HashMap<>();
-        for(String name : group.keySet()) {
-            List<Element> list = group.get(name);
-            Collections.sort(list, (a, b) -> (a.time - b.time));
-            helper(list, 0, new StringBuilder(), 0, new HashSet<>(), count);
-        }
-        return Arrays.asList(s.split(" "));
-    }
-    private void helper(List<Element> list, int start, StringBuilder sb, int count, Set<String> seen, Map<String, Integer> map) {
-        if(count == 3) {
-            String curr = sb.toString();
-            if(seen.contains(curr)) return;
-            map.put(curr, map.getOrDefault(curr, 0) + 1);
-            if(map.get(curr) >= max) {
-                if(map.get(curr) > max || s.compareTo(curr) > 0) {
-                    s = curr;
+        String res = "";
+        for (String key : map.keySet()) {
+            Set<String> set = new HashSet<>();
+            // this set is to avoid visit the same 3-seq in one user
+            List<Pair> list = map.get(key);
+            Collections.sort(list, (a, b)->(a.time - b.time)); // sort by time
+            // brutal force O(N ^ 3)
+            for (int i = 0; i < list.size(); i++) {
+                for (int j = i + 1; j < list.size(); j++) {
+                    for (int k = j + 1; k < list.size(); k++) {
+                        String str = list.get(i).web + " " + list.get(j).web + " " + list.get(k).web;
+                        if (!set.contains(str)) {
+                            count.put(str, count.getOrDefault(str, 0) + 1);
+                            set.add(str);
+                        }
+                        if (res.equals("") || count.get(res) < count.get(str) || (count.get(res) == count.get(str) && res.compareTo(str) > 0)) {
+                            // make sure the right lexi order
+                            res = str;
+                        }
+                    }
                 }
-                max = map.get(curr);
             }
-            seen.add(curr);
-            return;
-        }else if(count > 3) return;
-        int len = sb.length();
-        for(int i = start; i < list.size(); i++) {
-            if(len > 0) sb.append(" ");
-            sb.append(list.get(i).web);
-            helper(list, i + 1, sb, count + 1, seen, map);
-            sb.setLength(len);
         }
-        return;
+        // grab the right answer
+        String[] r = res.split(" ");
+        List<String> result = new ArrayList<>();
+        for (String str : r) {
+            result.add(str);
+        }
+        return result;
     }
 }
