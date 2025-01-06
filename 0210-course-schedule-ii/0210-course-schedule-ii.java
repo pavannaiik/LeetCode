@@ -15,9 +15,6 @@ class Solution {
                 queue.add(i);
             }
         }
-        if(queue.size()==0){
-            return new int[0];
-        }
         List<Integer>ans= new ArrayList<>();
         while(!queue.isEmpty()){
             int curElement = queue.poll();
