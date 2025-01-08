@@ -3,13 +3,12 @@ class Solution {
         if(n==1 || n==2){
             return n;
         }
-        int[] dp = new int[n];
-        Arrays.fill(dp,0);
-        dp[0]=1;
-        dp[1]=2;
+        int dp1=2, dp2=1;
         for(int i=2;i<n;i++){
-            dp[i]=dp[i-1]+dp[i-2];
+            int dp= dp1+dp2;
+            dp2=dp1;
+            dp1=dp;
         }
-        return dp[n-1];
+        return dp1;
     }
 }
