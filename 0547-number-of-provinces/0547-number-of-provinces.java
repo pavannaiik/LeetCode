@@ -1,20 +1,21 @@
 class Solution {
-    Set<Integer>set = new HashSet<>();
     public int findCircleNum(int[][] isConnected) {
-        int cnt =0;
-        for(int i=0;i<isConnected.length;i++){
-            if(!set.contains(i)){
-                cnt++;
-                dfs(isConnected, i);
+        int n = isConnected.length;
+        boolean[] visited = new boolean[n];
+        int provience=0;
+        for(int i=0;i<n;i++){
+            if(!visited[i]){
+                dfs(isConnected, visited, i);
+                provience++;
             }
         }
-        return cnt;
+        return provience;
     }
-    public void dfs(int[][] isConnected, int i){
-        set.add(i);
-        for(int j=0;j<isConnected.length;j++){
-            if(!set.contains(j)  && isConnected[i][j]==1){
-                dfs(isConnected, j);
+    public void dfs(int[][] isConnected, boolean[] visited, int city){
+        visited[city]=true;
+        for(int i=0;i<isConnected[0].length;i++){
+            if(!visited[i] && isConnected[city][i]==1){
+                dfs(isConnected, visited, i);
             }
         }
     }
