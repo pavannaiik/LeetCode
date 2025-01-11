@@ -1,25 +1,20 @@
 class Solution {
-    private static final int MOD = 1_000_000_007;
-
     public int countGoodNumbers(long n) {
-        long evenCount = (n + 1) / 2;  // Number of even indices
-        long oddCount = n / 2;          // Number of odd indices
-
-        long evenDigits = fastPower(5, evenCount, MOD);
-        long oddDigits = fastPower(4, oddCount, MOD);
-
-        return (int) ((evenDigits * oddDigits) % MOD);
+        long evenDigits = (n+1)/2;
+        long oddDigits = (n)/2;
+        int mod=1000000007;
+        long evenVal = fastPower(5, evenDigits, mod);
+        long oddVal = fastPower(4, oddDigits, mod);
+        return (int)((evenVal*oddVal)%mod);
     }
-
-    // Fast exponentiation: (base^exp) % mod
-    private long fastPower(long base, long exp, int mod) {
-        long result = 1;
-        while (exp > 0) {
-            if (exp % 2 == 1) {
-                result = (result * base) % mod;
+    public long fastPower(long base, long exp, int mod){
+        long result=1;
+        while(exp > 0){
+            if(exp %2==1){
+                result = (result*base)%mod;
             }
-            base = (base * base) % mod;
-            exp /= 2;
+            base = (base*base)%mod;
+            exp = exp/2;
         }
         return result;
     }
