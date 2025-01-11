@@ -163,6 +163,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2267-minimum-difference-in-sums-after-removal-of-elements](https://github.com/pavannaiik/LeetCode/tree/master/2267-minimum-difference-in-sums-after-removal-of-elements) |
 | [2306-create-binary-tree-from-descriptions](https://github.com/pavannaiik/LeetCode/tree/master/2306-create-binary-tree-from-descriptions) |
 | [2334-number-of-flowers-in-full-bloom](https://github.com/pavannaiik/LeetCode/tree/master/2334-number-of-flowers-in-full-bloom) |
+| [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/pavannaiik/LeetCode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2458-find-minimum-time-to-finish-all-jobs-ii](https://github.com/pavannaiik/LeetCode/tree/master/2458-find-minimum-time-to-finish-all-jobs-ii) |
 | [2472-build-a-matrix-with-conditions](https://github.com/pavannaiik/LeetCode/tree/master/2472-build-a-matrix-with-conditions) |
 | [2474-minimum-adjacent-swaps-to-make-a-valid-array](https://github.com/pavannaiik/LeetCode/tree/master/2474-minimum-adjacent-swaps-to-make-a-valid-array) |
@@ -279,6 +280,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2334-number-of-flowers-in-full-bloom](https://github.com/pavannaiik/LeetCode/tree/master/2334-number-of-flowers-in-full-bloom) |
 | [2379-maximum-total-importance-of-roads](https://github.com/pavannaiik/LeetCode/tree/master/2379-maximum-total-importance-of-roads) |
 | [2405-minimum-number-of-keypresses](https://github.com/pavannaiik/LeetCode/tree/master/2405-minimum-number-of-keypresses) |
+| [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/pavannaiik/LeetCode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2458-find-minimum-time-to-finish-all-jobs-ii](https://github.com/pavannaiik/LeetCode/tree/master/2458-find-minimum-time-to-finish-all-jobs-ii) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/pavannaiik/LeetCode/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2502-sort-the-people](https://github.com/pavannaiik/LeetCode/tree/master/2502-sort-the-people) |
@@ -544,6 +546,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2306-create-binary-tree-from-descriptions](https://github.com/pavannaiik/LeetCode/tree/master/2306-create-binary-tree-from-descriptions) |
 | [2334-number-of-flowers-in-full-bloom](https://github.com/pavannaiik/LeetCode/tree/master/2334-number-of-flowers-in-full-bloom) |
 | [2405-minimum-number-of-keypresses](https://github.com/pavannaiik/LeetCode/tree/master/2405-minimum-number-of-keypresses) |
+| [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/pavannaiik/LeetCode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2487-optimal-partition-of-string](https://github.com/pavannaiik/LeetCode/tree/master/2487-optimal-partition-of-string) |
 | [2502-sort-the-people](https://github.com/pavannaiik/LeetCode/tree/master/2502-sort-the-people) |
 | [2552-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/pavannaiik/LeetCode/tree/master/2552-maximum-sum-of-distinct-subarrays-with-length-k) |
@@ -658,6 +661,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2156-stone-game-ix](https://github.com/pavannaiik/LeetCode/tree/master/2156-stone-game-ix) |
 | [2379-maximum-total-importance-of-roads](https://github.com/pavannaiik/LeetCode/tree/master/2379-maximum-total-importance-of-roads) |
 | [2405-minimum-number-of-keypresses](https://github.com/pavannaiik/LeetCode/tree/master/2405-minimum-number-of-keypresses) |
+| [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/pavannaiik/LeetCode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2458-find-minimum-time-to-finish-all-jobs-ii](https://github.com/pavannaiik/LeetCode/tree/master/2458-find-minimum-time-to-finish-all-jobs-ii) |
 | [2474-minimum-adjacent-swaps-to-make-a-valid-array](https://github.com/pavannaiik/LeetCode/tree/master/2474-minimum-adjacent-swaps-to-make-a-valid-array) |
 | [2487-optimal-partition-of-string](https://github.com/pavannaiik/LeetCode/tree/master/2487-optimal-partition-of-string) |
@@ -696,6 +700,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2094-remove-stones-to-minimize-the-total](https://github.com/pavannaiik/LeetCode/tree/master/2094-remove-stones-to-minimize-the-total) |
 | [2267-minimum-difference-in-sums-after-removal-of-elements](https://github.com/pavannaiik/LeetCode/tree/master/2267-minimum-difference-in-sums-after-removal-of-elements) |
 | [2379-maximum-total-importance-of-roads](https://github.com/pavannaiik/LeetCode/tree/master/2379-maximum-total-importance-of-roads) |
+| [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/pavannaiik/LeetCode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/pavannaiik/LeetCode/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2616-maximal-score-after-applying-k-operations](https://github.com/pavannaiik/LeetCode/tree/master/2616-maximal-score-after-applying-k-operations) |
 | [2803-modify-graph-edge-weights](https://github.com/pavannaiik/LeetCode/tree/master/2803-modify-graph-edge-weights) |
@@ -888,6 +893,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1951-find-the-winner-of-the-circular-game](https://github.com/pavannaiik/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [1971-incremental-memory-leak](https://github.com/pavannaiik/LeetCode/tree/master/1971-incremental-memory-leak) |
 | [2299-merge-nodes-in-between-zeros](https://github.com/pavannaiik/LeetCode/tree/master/2299-merge-nodes-in-between-zeros) |
+| [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/pavannaiik/LeetCode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2617-time-taken-to-cross-the-door](https://github.com/pavannaiik/LeetCode/tree/master/2617-time-taken-to-cross-the-door) |
 | [2645-pass-the-pillow](https://github.com/pavannaiik/LeetCode/tree/master/2645-pass-the-pillow) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/pavannaiik/LeetCode/tree/master/2800-minimum-string-length-after-removing-substrings) |
