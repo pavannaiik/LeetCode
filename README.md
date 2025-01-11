@@ -379,6 +379,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1642-water-bottles](https://github.com/pavannaiik/LeetCode/tree/master/1642-water-bottles) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/pavannaiik/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [1971-incremental-memory-leak](https://github.com/pavannaiik/LeetCode/tree/master/1971-incremental-memory-leak) |
+| [2050-count-good-numbers](https://github.com/pavannaiik/LeetCode/tree/master/2050-count-good-numbers) |
 | [2156-stone-game-ix](https://github.com/pavannaiik/LeetCode/tree/master/2156-stone-game-ix) |
 | [2645-pass-the-pillow](https://github.com/pavannaiik/LeetCode/tree/master/2645-pass-the-pillow) |
 | [3273-most-expensive-item-that-can-not-be-bought](https://github.com/pavannaiik/LeetCode/tree/master/3273-most-expensive-item-that-can-not-be-bought) |
@@ -473,6 +474,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0241-different-ways-to-add-parentheses](https://github.com/pavannaiik/LeetCode/tree/master/0241-different-ways-to-add-parentheses) |
 | [0273-integer-to-english-words](https://github.com/pavannaiik/LeetCode/tree/master/0273-integer-to-english-words) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/pavannaiik/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
+| [2050-count-good-numbers](https://github.com/pavannaiik/LeetCode/tree/master/2050-count-good-numbers) |
 ## Hash Table
 |  |
 | ------- |
