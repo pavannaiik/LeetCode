@@ -16,16 +16,19 @@ class Solution {
             if(first[i]==-1) continue;
             int start = first[i];
             int end = last[i];
-            for(int j = start;j<n;j++){
-                char c= s.charAt(j);
-                int cStart= first[c-'a'];
-                int cLast = last[c-'a'];
-                if(cStart < start) break;
+            for (int j = start; j <n; j++) {
+                char c = s.charAt(j);
+                int cStart = first[c - 'a'];
+                int cLast = last[c - 'a'];
+
+                if (cStart < start) break;
                 end = Math.max(end, cLast);
-                if(j==end && end-start+1 < n){
-                    res=Math.max(res, end-start+1);
+
+                if (j == end && end - start + 1 < n) {
+                    res = Math.max(res, end - start + 1);
                 }
             }
+
         }
         return res;
     }
