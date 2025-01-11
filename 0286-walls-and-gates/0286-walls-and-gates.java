@@ -1,38 +1,32 @@
 class Solution {
-    private static final int EMPTY = Integer.MAX_VALUE;
-private static final int GATE = 0;
-private static final List<int[]> DIRECTIONS = Arrays.asList(
-        new int[] { 1,  0},
-        new int[] {-1,  0},
-        new int[] { 0,  1},
-        new int[] { 0, -1}
-);
+    public void wallsAndGates(int[][] rooms) {
+        Queue<Pair<Integer,Integer>>queue = new LinkedList<>();
+        int n = rooms.length, m = rooms[0].length;
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                if(rooms[i][j]==0){
+                    queue.add(new Pair(i,j));
+                }
+            }
+        }
+        if(queue.size()==0) return;
+        int dist=1;
+        int[][] dir={{0,1},{1,0},{-1,0},{0,-1}};
+        while(!queue.isEmpty()){
+            int len = queue.size();
+            for(int j=0;j<len;j++){
+                Pair cell = queue.poll();
+                for(int i=0;i<4;i++){
+                int r = (int)cell.getKey() + dir[i][0];
+                int c = (int)cell.getValue() + dir[i][1];
+                if(r >=0 && r < n && c >=0 && c< m && (rooms[r][c]!=-1 && rooms[r][c] > dist)){
+                    queue.add(new Pair(r,c));
+                    rooms[r][c]=dist;
+                }
+            }
+            }
+            dist++;
+        }
 
-public void wallsAndGates(int[][] rooms) {
-    int m = rooms.length;
-    if (m == 0) return;
-    int n = rooms[0].length;
-    Queue<int[]> q = new LinkedList<>();
-    for (int row = 0; row < m; row++) {
-        for (int col = 0; col < n; col++) {
-            if (rooms[row][col] == GATE) {
-                q.add(new int[] { row, col });
-            }
-        }
     }
-    while (!q.isEmpty()) {
-        int[] point = q.poll();
-        int row = point[0];
-        int col = point[1];
-        for (int[] direction : DIRECTIONS) {
-            int r = row + direction[0];
-            int c = col + direction[1];
-            if (r < 0 || c < 0 || r >= m || c >= n || rooms[r][c] != EMPTY) {
-                continue;
-            }
-            rooms[r][c] = rooms[row][col] + 1;
-            q.add(new int[] { r, c });
-        }
-    }
-}
 }
