@@ -1,34 +1,43 @@
 class Solution {
     public int[] searchRange(int[] nums, int target) {
-        if(nums.length==0){
-            return new int[]{-1,-1};
-        }
-        int[] res = new int[]{-1,-1};
-        int l=0,r=nums.length;
-         while(l<r){
-            int mid = (l+r)/2;
-            if(nums[mid]<=target){
-                l=mid+1;
+        int n = nums.length;
+        int i=0, j=n-1;
+        int[] ans={-1,-1};
+        if(n==0) return ans;
+        while(i <= j){
+            int mid = i+(j-i)/2;
+            if(nums[mid]==target){
+                ans[0]= searchLeft(nums, target,0, mid);
+                ans[1]=searchRight(nums, target, mid, n-1);
+                return ans;
+            }else if(nums[mid]>target){
+                j=mid-1;
             }else{
-                r = mid;
+                i=mid+1;
             }
         }
-        if(l-1 ==-1 || nums[l-1]!=target){
-            return new int[]{-1,-1};
-        }
-        res[1]=l-1;
-        r = l-1;
-        l=0;
-        while(l<r){
-            int mid = (l+r)/2;
-            if(nums[mid]<target){
-               l=mid+1;
-            }else {
-               r=mid;
+        return ans;
+    }
+    public int searchLeft(int[] nums, int target, int i, int j){
+        while(i <= j){
+            int mid=i+(j-i)/2;
+            if(nums[mid] >= target){
+                j=mid-1;
+            }else{
+                i=mid+1;
             }
         }
-        res[0]=l;
-        return res;
-        
+        return i;
+    }
+    public int searchRight(int[] nums, int target, int i, int j){
+        while(i <= j){
+            int mid=i+(j-i)/2;
+            if(nums[mid] <= target){
+                i=mid+1;
+            }else{
+                j=mid-1;
+            }
+        }
+        return i-1;
     }
 }
