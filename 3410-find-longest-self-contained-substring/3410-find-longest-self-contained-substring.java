@@ -1,27 +1,44 @@
 class Solution {
     public int maxSubstringLength(String s) {
-       int ans =-1;
-       int[] totalCount = new int[26];
-       int n = s.length();
-       for(char ch:s.toCharArray()) totalCount[ch-'a']++;
-       for(int i=1;i<=26;i++){
-        int valid =0, unique =0, left=0;
-        int[] count = new int[26];
-        for(int right=0;right<n;right++){
-            count[s.charAt(right)-'a']++;
-            if(count[s.charAt(right)-'a']==1) unique++;
-            if(count[s.charAt(right)-'a']==totalCount[s.charAt(right)-'a']) valid++;
-            while(unique > i){
-                count[s.charAt(left)-'a']--;
-                if(count[s.charAt(left)-'a']==0) unique--;
-                if(count[s.charAt(left)-'a']==totalCount[s.charAt(left)-'a']-1) valid--;
-                left++;
+        if (s.isBlank()) return -1;
+        
+        int n = s.length();
+        int[] first = new int[26];
+        int[] last = new int[26];
+        Arrays.fill(first, -1);
+
+        // Step 1: Calculate first and last occurrences of each character
+        for (int i = 0; i < n; i++) {
+            char c = s.charAt(i);
+            if (first[c - 'a'] == -1) {
+                first[c - 'a'] = i;
             }
-            if(valid==i && right-left+1!=n){
-                ans=Math.max(ans, right-left+1);
+            last[c - 'a'] = i;
+        }
+
+        int res = -1;
+
+        // Step 2: Check for self-contained substrings
+        for (int i = 0; i < 26; i++) {
+            if (first[i] == -1) continue;
+
+            int start = first[i];
+            int end = last[i];
+
+            // Extend the substring to include all characters within the range [start, end]
+            for (int j = start; j < n; j++) {
+                char c = s.charAt(j);
+                int charStart = first[c-'a'];
+                int charEnd = last[c-'a'];
+                if(charStart < start) break;
+                end = Math.max(end, charEnd);
+
+                if(j==end && end-start+1 < n){
+                    res= Math.max(res, end-start+1);
+                }
             }
         }
-       }
-       return ans;
+
+        return res;
     }
 }
