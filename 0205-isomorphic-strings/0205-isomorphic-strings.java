@@ -1,18 +1,20 @@
 class Solution {
     public boolean isIsomorphic(String s, String t) {
-        HashMap<Character, Character>mapS = new HashMap<>();
-        HashMap<Character, Character>mapT = new HashMap<>();
-        for(int i=0;i<s.length();i++){
-            char c = s.charAt(i);
-            char ch = t.charAt(i);
-            if(mapS.containsKey(c) && mapS.get(c)!=ch){
+        int[] mapS = new int[256];  // To map characters from 's' to 't'
+        int[] mapT = new int[256];  // To map characters from 't' to 's'
+
+        for (int i = 0; i < s.length(); i++) {
+            char c1 = s.charAt(i);
+            char c2 = t.charAt(i);
+
+            // If the mappings are inconsistent, return false
+            if (mapS[c1] != mapT[c2]) {
                 return false;
             }
-            if(mapT.containsKey(ch) && mapT.get(ch)!=c){
-                return false;
-            }
-            mapS.put(c,ch);
-            mapT.put(ch, c);
+
+            // Update the mappings to the current index + 1 (to differentiate from default 0)
+            mapS[c1] = i + 1;
+            mapT[c2] = i + 1;
         }
         return true;
     }
