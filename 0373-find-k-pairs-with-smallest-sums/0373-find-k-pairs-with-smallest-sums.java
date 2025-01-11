@@ -9,7 +9,6 @@ class Solution {
         }
         while( k-- > 0 && !minHeap.isEmpty()){
             int[] current = minHeap.poll();
-            int sum = current[0];
             int i= current[1];
             int j= current[2];
             ans.add(Arrays.asList(nums1[i], nums2[j]));
