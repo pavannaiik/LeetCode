@@ -1,14 +1,17 @@
 class Solution {
     public String reverseWords(String s) {
-        String[] res = s.split(" ");
-        StringBuilder sb= new StringBuilder();
-        
-        for(int i=res.length-1;i>=0;i--){
-            System.out.println(res[i]);
-            if(!res[i].equals(""))
-            sb.append(res[i]);
-            if(i-1>=0 && !res[i-1].equals(""))
+        // Split by any whitespace and trim input
+        String[] words = s.trim().split("\\s+");
+
+        // Use StringBuilder to build the reversed result
+        StringBuilder sb = new StringBuilder();
+
+        // Append words in reverse order
+        for (int i = words.length - 1; i >= 0; i--) {
+            sb.append(words[i]);
+            if (i > 0) {
                 sb.append(" ");
+            }
         }
         return sb.toString();
     }
