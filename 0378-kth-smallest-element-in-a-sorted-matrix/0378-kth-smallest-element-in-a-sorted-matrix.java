@@ -1,31 +1,38 @@
 class Solution {
     public int kthSmallest(int[][] matrix, int k) {
-        PriorityQueue<Integer>pq= new PriorityQueue<>((a,b)->b-a);
-        int start=0, end=0;
-        for(int i=0;i<matrix.length;i++){
-            int flag=0;
-            for(int j=0;j<matrix[0].length;j++){
-                pq.add(matrix[i][j]);
-                start=i;
-                end=j;
-                if(pq.size() == k){
-                    flag=1;
-                    break;
-                }
+        int n = matrix.length;
+        int low = matrix[0][0];
+        int high = matrix[n - 1][n - 1];
+
+        while (low < high) {
+            int mid = low + (high - low) / 2;
+            int count = countLessEqual(matrix, mid);
+
+            if (count >= k) {
+                high = mid;
+            } else {
+                low = mid + 1;
             }
-            if(flag==1) break;
         }
-        end=end+1;
-        for(int i=start;i<matrix.length;i++){
-            for(int j=end;j<matrix[0].length;j++){
-                pq.add(matrix[i][j]);
-                if(pq.size()>k){
-                    pq.poll();
-                }
+        return low;
+    }
+
+    // Helper method to count elements less than or equal to 'mid'
+    private int countLessEqual(int[][] matrix, int mid) {
+        int count = 0;
+        int n = matrix.length;
+        int row = n - 1;
+        int col = 0;
+
+        // Start from bottom-left corner
+        while (row >= 0 && col < n) {
+            if (matrix[row][col] <= mid) {
+                count += row + 1;
+                col++;
+            } else {
+                row--;
             }
-            end=0;
         }
-        if(!pq.isEmpty()) return pq.peek();
-        return -1;
+        return count;
     }
 }
