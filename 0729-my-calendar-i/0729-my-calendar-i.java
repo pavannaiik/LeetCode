@@ -1,20 +1,18 @@
 class MyCalendar {
-    List<int[]>calender;
-    public MyCalendar() {
-        calender=new ArrayList<>();
+    TreeMap<Integer, Integer> calendar;
+
+    MyCalendar() {
+        calendar = new TreeMap();
     }
-    
-    public boolean book(int startTime, int endTime) {
-        for(int[] event:calender){
-            if(startTime < event[1] && event[0]< endTime) return false;
+
+    public boolean book(int start, int end) {
+        Integer prev = calendar.floorKey(start),
+                next = calendar.ceilingKey(start);
+        if ((prev == null || calendar.get(prev) <= start) &&
+                (next == null || end <= next)) {
+            calendar.put(start, end);
+            return true;
         }
-        calender.add(new int[]{startTime,endTime});
-        return true;
+        return false;
     }
 }
-
-/**
- * Your MyCalendar object will be instantiated and called as such:
- * MyCalendar obj = new MyCalendar();
- * boolean param_1 = obj.book(startTime,endTime);
- */
