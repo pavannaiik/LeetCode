@@ -1,39 +1,25 @@
 class Solution {
-    
-    private String s;
-    private String t;
-    private int sn;
-    private int tn;
-    private Integer memo[][];
-    
-    private int check(int si, int ti) {
-        if (si == sn || ti == tn || sn - si < tn - ti) {
-            return ti == tn ? 1 : 0;
-        }
-        if (ti == tn) {
-            return 1;
-        }
-        if (si == sn) {
-            return 0;
-        }
-        if (memo[si][ti] != null) {
-            return memo[si][ti];
-        }
-        int count = check(si + 1, ti);
-        if (s.charAt(si) == t.charAt(ti)) {
-            count += check(si + 1, ti + 1);
-        }
-        memo[si][ti] = count;
-        return count;
-    }
-    
+    int[][] memo ;
     public int numDistinct(String s, String t) {
-        this.s = s;
-        this.t = t;
-        this.sn = s.length();
-        this.tn = t.length();
-        this.memo = new Integer[sn][tn];
-        return check(0, 0);
+        if(s.equals(t)) return 1;
+        memo = new int[s.length()+1][t.length()+1];
+        for (int[] row : memo) {
+        Arrays.fill(row, -1);
     }
-    
+        return countSame(s, t, 0, 0,new StringBuilder());
+    }
+    public int countSame(String s, String t, int sIndex,int tIndex, StringBuilder sb ){
+        
+        if(tIndex == t.length()) return 1;
+        if(sIndex==s.length()) return 0;
+        if(memo[sIndex][tIndex]!=-1) return memo[sIndex][tIndex];
+        int cnt =0;
+        if(s.charAt(sIndex)==t.charAt(tIndex)){
+            cnt += countSame(s, t, sIndex+1, tIndex+1, sb);
+        }
+         cnt += countSame(s, t, sIndex+1, tIndex, sb);
+        
+
+        return memo[sIndex][tIndex]=cnt;
+    }
 }
