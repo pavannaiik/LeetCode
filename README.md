@@ -1246,4 +1246,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0912-random-pick-with-weight](https://github.com/pavannaiik/LeetCode/tree/master/0912-random-pick-with-weight) |
+## Database
+|  |
+| ------- |
+| [1258-article-views-i](https://github.com/pavannaiik/LeetCode/tree/master/1258-article-views-i) |
 <!---LeetCode Topics End-->
