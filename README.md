@@ -386,6 +386,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1033-broken-calculator](https://github.com/pavannaiik/LeetCode/tree/master/1033-broken-calculator) |
 | [1090-armstrong-number](https://github.com/pavannaiik/LeetCode/tree/master/1090-armstrong-number) |
 | [1240-stone-game-ii](https://github.com/pavannaiik/LeetCode/tree/master/1240-stone-game-ii) |
+| [1585-the-kth-factor-of-n](https://github.com/pavannaiik/LeetCode/tree/master/1585-the-kth-factor-of-n) |
 | [1642-water-bottles](https://github.com/pavannaiik/LeetCode/tree/master/1642-water-bottles) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/pavannaiik/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [1971-incremental-memory-leak](https://github.com/pavannaiik/LeetCode/tree/master/1971-incremental-memory-leak) |
@@ -1188,6 +1189,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0204-count-primes](https://github.com/pavannaiik/LeetCode/tree/master/0204-count-primes) |
+| [1585-the-kth-factor-of-n](https://github.com/pavannaiik/LeetCode/tree/master/1585-the-kth-factor-of-n) |
 | [3273-most-expensive-item-that-can-not-be-bought](https://github.com/pavannaiik/LeetCode/tree/master/3273-most-expensive-item-that-can-not-be-bought) |
 ## Game Theory
 |  |
