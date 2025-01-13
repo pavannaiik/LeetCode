@@ -1,28 +1,25 @@
-public class Solution {
+class Solution {
     public int largestRectangleArea(int[] heights) {
-        int maxarea = 0;
-       int[] left = new int[heights.length];
-        int[] right = new int[heights.length];
-        left[0]=-1;
-        right[heights.length-1]=heights.length;
-        for(int i=1;i<heights.length;i++){
-            int p =i-1;
-            while(p>=0 && heights[i]<=heights[p]){
-                p=left[p];
-            }
-            left[i]=p;
-        }
-        for(int i=heights.length-2;i>=0;i--){
-           int p=i+1;
-            while(p<heights.length && heights[i]<=heights[p]){
-                p=right[p];
-            }
-            right[i]=p;
-            
-        }
+        Stack<Pair<Integer,Integer>>stack = new Stack<>();
+        int max_area=0;
+        int n = heights.length;
         for(int i=0;i<heights.length;i++){
-            maxarea = Math.max(maxarea,heights[i]*(right[i]-left[i]-1));
+            int min_index=i;
+            while(!stack.isEmpty() && stack.peek().getValue() > heights[i]){
+                Pair<Integer,Integer> p = stack.pop();
+                int index = p.getKey();
+                int height=p.getValue();
+                max_area = Math.max(max_area, (i-index)*height);
+                min_index=Math.min(min_index, index);
+            }
+            stack.add(new Pair<>(min_index, heights[i]));
         }
-        return maxarea;
+        while(!stack.isEmpty()){
+            Pair<Integer,Integer> p = stack.pop();
+            int index = p.getKey();
+            int height=p.getValue();
+            max_area = Math.max(max_area, (n-index)*height);
+        }
+        return max_area;
     }
 }
