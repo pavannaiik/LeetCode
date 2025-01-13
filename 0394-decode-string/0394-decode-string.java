@@ -1,36 +1,36 @@
 class Solution {
     public String decodeString(String s) {
-        Stack<Character>stack = new Stack<>();
-        StringBuilder sb = new StringBuilder();
-        for(int i=0;i<s.length();i++){
-            if(s.charAt(i)==']'){
-                while(!stack.isEmpty() && stack.peek()!='['){
-                    sb.insert(0, stack.pop());
+        Stack<String> stack = new Stack<>();
+        StringBuilder currentString = new StringBuilder();
+        int num = 0;
+
+        for (char c : s.toCharArray()) {
+            if (Character.isDigit(c)) {
+                // Build the number
+                num = num * 10 + (c - '0');
+            } else if (c == '[') {
+                // Push the current number and string onto the stack
+                stack.push(currentString.toString());
+                stack.push(String.valueOf(num));
+                // Reset for new segment
+                currentString = new StringBuilder();
+                num = 0;
+            } else if (c == ']') {
+                // Pop the number from the stack
+                int repeatTimes = Integer.parseInt(stack.pop());
+                // Pop the previous string from the stack
+                StringBuilder prevString = new StringBuilder(stack.pop());
+                // Repeat the current string and append it to the previous string
+                for (int i = 0; i < repeatTimes; i++) {
+                    prevString.append(currentString);
                 }
-                stack.pop();
-                int num=0, base=1;
-                while(!stack.isEmpty() && Character.isDigit(stack.peek())){
-                    num += (stack.peek()-'0')*base;
-                    base*=10;
-                    stack.pop();
-                }
-                StringBuilder newSB = new StringBuilder(sb);
-                while(num-->1){
-                    sb.append(newSB);
-                }
-                for(char c:sb.toString().toCharArray()){
-                    stack.push(c);
-                }
-                sb = new StringBuilder();
-                
-            }else{
-                stack.push(s.charAt(i));
+                // Update the current string
+                currentString = prevString;
+            } else {
+                // Append regular characters to the current string
+                currentString.append(c);
             }
         }
-        StringBuilder ans = new StringBuilder();
-        while(!stack.isEmpty()){
-            ans.insert(0, stack.pop());
-        }
-        return ans.toString();
+        return currentString.toString();
     }
 }
