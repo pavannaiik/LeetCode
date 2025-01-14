@@ -1,38 +1,32 @@
 class Solution {
     public int[] platesBetweenCandles(String s, int[][] queries) {
-        int n=s.length();
+        int n = s.length();
         int[] leftCandles = new int[n];
         int[] rightCandles = new int[n];
-        int[] totalCandles= new int[n];
-        int leftC=-1, rightC=-1, totalC=0;
-        for(int i=0;i<n;i++){
-            if(s.charAt(i)=='|'){
-                leftC=i;
-                totalC++;
-            }
-            totalCandles[i]=totalC;
-            leftCandles[i]=leftC;
+        int[] totalCandles = new int[n];
+        
+        // Two-pointer approach to compute left, right, and total candles in one pass
+        int leftC = -1, rightC = -1, totalC = 0;
+        for (int i = 0, j = n - 1; i < n; i++, j--) {
+            if (s.charAt(i) == '|') leftC = i;
+            if (s.charAt(j) == '|') rightC = j;
+            totalCandles[i] = totalC += (s.charAt(i) == '|') ? 1 : 0;
+            leftCandles[i] = leftC;
+            rightCandles[j] = rightC;
         }
-        for(int i=n-1;i>=0;i--){
-            if(s.charAt(i)=='|'){
-                rightC=i;
+        
+        // Process queries
+        int[] res = new int[queries.length];
+        for (int i = 0; i < queries.length; i++) {
+            int left = rightCandles[queries[i][0]];
+            int right = leftCandles[queries[i][1]];
+            if (left == -1 || right == -1 || left >= right) {
+                res[i] = 0;
+            } else {
+                res[i] = (right - left + 1) - (totalCandles[right] - totalCandles[left] + 1);
             }
-            rightCandles[i]=rightC;
         }
-        int[] res= new int[queries.length];
-        int i=0;
-        for(int[]query :queries){
-            int left=query[0], right=query[1];
-            int start = rightCandles[left];
-            int end   = leftCandles[right];
-            if(start==-1 || end==-1 || end-start<=1){
-                res[i++]=0;
-                continue;
-            }
-            int numberOfcandle = totalCandles[end]-totalCandles[start]+1;
-            int totalSize=end-start+1;
-            res[i++]=totalSize-numberOfcandle;
-        }
+        
         return res;
     }
 }
