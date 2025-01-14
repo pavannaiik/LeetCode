@@ -5,7 +5,6 @@ class Solution {
         int n = grid.length;
         int m = grid[0].length;
         int start=0, end=0;
-        int cell=0;
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
                 if(grid[i][j]==1){
