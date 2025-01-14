@@ -127,6 +127,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0999-regions-cut-by-slashes](https://github.com/pavannaiik/LeetCode/tree/master/0999-regions-cut-by-slashes) |
 | [1002-maximum-width-ramp](https://github.com/pavannaiik/LeetCode/tree/master/1002-maximum-width-ramp) |
 | [1014-k-closest-points-to-origin](https://github.com/pavannaiik/LeetCode/tree/master/1014-k-closest-points-to-origin) |
+| [1022-unique-paths-iii](https://github.com/pavannaiik/LeetCode/tree/master/1022-unique-paths-iii) |
 | [1036-rotting-oranges](https://github.com/pavannaiik/LeetCode/tree/master/1036-rotting-oranges) |
 | [1073-number-of-enclaves](https://github.com/pavannaiik/LeetCode/tree/master/1073-number-of-enclaves) |
 | [1098-largest-unique-number](https://github.com/pavannaiik/LeetCode/tree/master/1098-largest-unique-number) |
@@ -435,6 +436,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0945-snakes-and-ladders](https://github.com/pavannaiik/LeetCode/tree/master/0945-snakes-and-ladders) |
 | [0967-minimum-falling-path-sum](https://github.com/pavannaiik/LeetCode/tree/master/0967-minimum-falling-path-sum) |
 | [0999-regions-cut-by-slashes](https://github.com/pavannaiik/LeetCode/tree/master/0999-regions-cut-by-slashes) |
+| [1022-unique-paths-iii](https://github.com/pavannaiik/LeetCode/tree/master/1022-unique-paths-iii) |
 | [1036-rotting-oranges](https://github.com/pavannaiik/LeetCode/tree/master/1036-rotting-oranges) |
 | [1073-number-of-enclaves](https://github.com/pavannaiik/LeetCode/tree/master/1073-number-of-enclaves) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/pavannaiik/LeetCode/tree/master/1171-shortest-path-in-binary-matrix) |
@@ -487,6 +489,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0371-sum-of-two-integers](https://github.com/pavannaiik/LeetCode/tree/master/0371-sum-of-two-integers) |
 | [0421-maximum-xor-of-two-numbers-in-an-array](https://github.com/pavannaiik/LeetCode/tree/master/0421-maximum-xor-of-two-numbers-in-an-array) |
 | [0476-number-complement](https://github.com/pavannaiik/LeetCode/tree/master/0476-number-complement) |
+| [1022-unique-paths-iii](https://github.com/pavannaiik/LeetCode/tree/master/1022-unique-paths-iii) |
 | [1732-minimum-one-bit-operations-to-make-integers-zero](https://github.com/pavannaiik/LeetCode/tree/master/1732-minimum-one-bit-operations-to-make-integers-zero) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/pavannaiik/LeetCode/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
 ## Recursion
@@ -969,6 +972,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0090-subsets-ii](https://github.com/pavannaiik/LeetCode/tree/master/0090-subsets-ii) |
 | [0131-palindrome-partitioning](https://github.com/pavannaiik/LeetCode/tree/master/0131-palindrome-partitioning) |
 | [0494-target-sum](https://github.com/pavannaiik/LeetCode/tree/master/0494-target-sum) |
+| [1022-unique-paths-iii](https://github.com/pavannaiik/LeetCode/tree/master/1022-unique-paths-iii) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/pavannaiik/LeetCode/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
 ## Tree
 |  |
