@@ -198,6 +198,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3235-minimum-cost-to-convert-string-i](https://github.com/pavannaiik/LeetCode/tree/master/3235-minimum-cost-to-convert-string-i) |
 | [3306-mark-elements-on-array-by-performing-queries](https://github.com/pavannaiik/LeetCode/tree/master/3306-mark-elements-on-array-by-performing-queries) |
 | [3594-identify-the-largest-outlier-in-an-array](https://github.com/pavannaiik/LeetCode/tree/master/3594-identify-the-largest-outlier-in-an-array) |
+| [3715-maximum-coins-from-k-consecutive-bags](https://github.com/pavannaiik/LeetCode/tree/master/3715-maximum-coins-from-k-consecutive-bags) |
 ## Two Pointers
 |  |
 | ------- |
@@ -308,6 +309,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2846-robot-collisions](https://github.com/pavannaiik/LeetCode/tree/master/2846-robot-collisions) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/pavannaiik/LeetCode/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
 | [3306-mark-elements-on-array-by-performing-queries](https://github.com/pavannaiik/LeetCode/tree/master/3306-mark-elements-on-array-by-performing-queries) |
+| [3715-maximum-coins-from-k-consecutive-bags](https://github.com/pavannaiik/LeetCode/tree/master/3715-maximum-coins-from-k-consecutive-bags) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -480,6 +482,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2334-number-of-flowers-in-full-bloom](https://github.com/pavannaiik/LeetCode/tree/master/2334-number-of-flowers-in-full-bloom) |
 | [2658-count-the-number-of-k-big-indices](https://github.com/pavannaiik/LeetCode/tree/master/2658-count-the-number-of-k-big-indices) |
 | [3410-find-longest-self-contained-substring](https://github.com/pavannaiik/LeetCode/tree/master/3410-find-longest-self-contained-substring) |
+| [3715-maximum-coins-from-k-consecutive-bags](https://github.com/pavannaiik/LeetCode/tree/master/3715-maximum-coins-from-k-consecutive-bags) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -718,6 +721,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2616-maximal-score-after-applying-k-operations](https://github.com/pavannaiik/LeetCode/tree/master/2616-maximal-score-after-applying-k-operations) |
 | [3195-separate-black-and-white-balls](https://github.com/pavannaiik/LeetCode/tree/master/3195-separate-black-and-white-balls) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/pavannaiik/LeetCode/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
+| [3715-maximum-coins-from-k-consecutive-bags](https://github.com/pavannaiik/LeetCode/tree/master/3715-maximum-coins-from-k-consecutive-bags) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
@@ -853,6 +857,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1966-frequency-of-the-most-frequent-element](https://github.com/pavannaiik/LeetCode/tree/master/1966-frequency-of-the-most-frequent-element) |
 | [2255-minimum-swaps-to-group-all-1s-together-ii](https://github.com/pavannaiik/LeetCode/tree/master/2255-minimum-swaps-to-group-all-1s-together-ii) |
 | [2552-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/pavannaiik/LeetCode/tree/master/2552-maximum-sum-of-distinct-subarrays-with-length-k) |
+| [3715-maximum-coins-from-k-consecutive-bags](https://github.com/pavannaiik/LeetCode/tree/master/3715-maximum-coins-from-k-consecutive-bags) |
 ## Prefix Sum
 |  |
 | ------- |
@@ -871,6 +876,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2334-number-of-flowers-in-full-bloom](https://github.com/pavannaiik/LeetCode/tree/master/2334-number-of-flowers-in-full-bloom) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/pavannaiik/LeetCode/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [3410-find-longest-self-contained-substring](https://github.com/pavannaiik/LeetCode/tree/master/3410-find-longest-self-contained-substring) |
+| [3715-maximum-coins-from-k-consecutive-bags](https://github.com/pavannaiik/LeetCode/tree/master/3715-maximum-coins-from-k-consecutive-bags) |
 ## Linked List
 |  |
 | ------- |
