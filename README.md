@@ -227,6 +227,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0295-find-median-from-data-stream](https://github.com/pavannaiik/LeetCode/tree/master/0295-find-median-from-data-stream) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/pavannaiik/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0360-sort-transformed-array](https://github.com/pavannaiik/LeetCode/tree/master/0360-sort-transformed-array) |
+| [0392-is-subsequence](https://github.com/pavannaiik/LeetCode/tree/master/0392-is-subsequence) |
 | [0455-assign-cookies](https://github.com/pavannaiik/LeetCode/tree/master/0455-assign-cookies) |
 | [0528-swapping-nodes-in-a-linked-list](https://github.com/pavannaiik/LeetCode/tree/master/0528-swapping-nodes-in-a-linked-list) |
 | [0567-permutation-in-string](https://github.com/pavannaiik/LeetCode/tree/master/0567-permutation-in-string) |
@@ -347,6 +348,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/pavannaiik/LeetCode/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0337-house-robber-iii](https://github.com/pavannaiik/LeetCode/tree/master/0337-house-robber-iii) |
 | [0338-counting-bits](https://github.com/pavannaiik/LeetCode/tree/master/0338-counting-bits) |
+| [0392-is-subsequence](https://github.com/pavannaiik/LeetCode/tree/master/0392-is-subsequence) |
 | [0416-partition-equal-subset-sum](https://github.com/pavannaiik/LeetCode/tree/master/0416-partition-equal-subset-sum) |
 | [0435-non-overlapping-intervals](https://github.com/pavannaiik/LeetCode/tree/master/0435-non-overlapping-intervals) |
 | [0494-target-sum](https://github.com/pavannaiik/LeetCode/tree/master/0494-target-sum) |
@@ -795,6 +797,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0273-integer-to-english-words](https://github.com/pavannaiik/LeetCode/tree/master/0273-integer-to-english-words) |
 | [0316-remove-duplicate-letters](https://github.com/pavannaiik/LeetCode/tree/master/0316-remove-duplicate-letters) |
 | [0340-longest-substring-with-at-most-k-distinct-characters](https://github.com/pavannaiik/LeetCode/tree/master/0340-longest-substring-with-at-most-k-distinct-characters) |
+| [0392-is-subsequence](https://github.com/pavannaiik/LeetCode/tree/master/0392-is-subsequence) |
 | [0394-decode-string](https://github.com/pavannaiik/LeetCode/tree/master/0394-decode-string) |
 | [0399-evaluate-division](https://github.com/pavannaiik/LeetCode/tree/master/0399-evaluate-division) |
 | [0424-longest-repeating-character-replacement](https://github.com/pavannaiik/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
