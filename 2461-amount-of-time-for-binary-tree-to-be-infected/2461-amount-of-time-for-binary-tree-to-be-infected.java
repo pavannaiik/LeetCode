@@ -1,54 +1,25 @@
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
- */
 class Solution {
-    Map<Integer, List<Integer>>map = new HashMap<>();
+    int amount =0;
     public int amountOfTime(TreeNode root, int start) {
-        Queue<Integer>queue = new LinkedList<>();
-        buildMap(root, null);
-        queue.add(start);
-        Set<Integer>visited = new HashSet<>();
-        int ans =0;
-        while(!queue.isEmpty()){
-            int len = queue.size();
-            for(int i=0;i<len;i++){
-                int node = queue.poll();
-                if(!visited.contains(node)){
-                    for(int child:map.get(node)){
-                    if(!visited.contains(child))
-                     queue.add(child);
-                 }
-                }
-                visited.add(node);
-            }
-            ans++;
-        }
-        return ans-1;
+        traverse(root, start);
+        return amount;
     }
-    public void buildMap(TreeNode root, TreeNode parent){
-        if(root==null) return;
-        if(!map.containsKey(root.val)){
-            map.put(root.val, new ArrayList<>());
+    private int traverse(TreeNode root, int start) {
+        if (root == null) {
+            return 0;
         }
-        if(parent!=null)
-        map.get(root.val).add(parent.val);
-        if(root.left!=null)
-        map.get(root.val).add(root.left.val);
-        if(root.right!=null)
-        map.get(root.val).add(root.right.val);
-        buildMap(root.left, root);
-        buildMap(root.right, root);
+
+        int left = traverse(root.left, start);
+        int right = traverse(root.right, start);
+        if (root.val == start) {
+            amount = Math.max(left, right);
+            return -1;
+        } else if (left >= 0 && right >= 0) {
+            return Math.max(left, right) + 1;
+        } else {
+            amount = Math.max(amount, Math.abs(left - right));
+            return Math.min(left, right) - 1;
+        }
     }
 }
+   
