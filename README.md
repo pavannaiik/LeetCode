@@ -58,6 +58,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0198-house-robber](https://github.com/pavannaiik/LeetCode/tree/master/0198-house-robber) |
 | [0200-number-of-islands](https://github.com/pavannaiik/LeetCode/tree/master/0200-number-of-islands) |
 | [0204-count-primes](https://github.com/pavannaiik/LeetCode/tree/master/0204-count-primes) |
+| [0212-word-search-ii](https://github.com/pavannaiik/LeetCode/tree/master/0212-word-search-ii) |
 | [0213-house-robber-ii](https://github.com/pavannaiik/LeetCode/tree/master/0213-house-robber-ii) |
 | [0215-kth-largest-element-in-an-array](https://github.com/pavannaiik/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0217-contains-duplicate](https://github.com/pavannaiik/LeetCode/tree/master/0217-contains-duplicate) |
@@ -433,6 +434,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0079-word-search](https://github.com/pavannaiik/LeetCode/tree/master/0079-word-search) |
 | [0130-surrounded-regions](https://github.com/pavannaiik/LeetCode/tree/master/0130-surrounded-regions) |
 | [0200-number-of-islands](https://github.com/pavannaiik/LeetCode/tree/master/0200-number-of-islands) |
+| [0212-word-search-ii](https://github.com/pavannaiik/LeetCode/tree/master/0212-word-search-ii) |
 | [0221-maximal-square](https://github.com/pavannaiik/LeetCode/tree/master/0221-maximal-square) |
 | [0240-search-a-2d-matrix-ii](https://github.com/pavannaiik/LeetCode/tree/master/0240-search-a-2d-matrix-ii) |
 | [0286-walls-and-gates](https://github.com/pavannaiik/LeetCode/tree/master/0286-walls-and-gates) |
@@ -796,6 +798,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0205-isomorphic-strings](https://github.com/pavannaiik/LeetCode/tree/master/0205-isomorphic-strings) |
 | [0208-implement-trie-prefix-tree](https://github.com/pavannaiik/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/pavannaiik/LeetCode/tree/master/0211-design-add-and-search-words-data-structure) |
+| [0212-word-search-ii](https://github.com/pavannaiik/LeetCode/tree/master/0212-word-search-ii) |
 | [0224-basic-calculator](https://github.com/pavannaiik/LeetCode/tree/master/0224-basic-calculator) |
 | [0227-basic-calculator-ii](https://github.com/pavannaiik/LeetCode/tree/master/0227-basic-calculator-ii) |
 | [0241-different-ways-to-add-parentheses](https://github.com/pavannaiik/LeetCode/tree/master/0241-different-ways-to-add-parentheses) |
@@ -1002,6 +1005,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0079-word-search](https://github.com/pavannaiik/LeetCode/tree/master/0079-word-search) |
 | [0090-subsets-ii](https://github.com/pavannaiik/LeetCode/tree/master/0090-subsets-ii) |
 | [0131-palindrome-partitioning](https://github.com/pavannaiik/LeetCode/tree/master/0131-palindrome-partitioning) |
+| [0212-word-search-ii](https://github.com/pavannaiik/LeetCode/tree/master/0212-word-search-ii) |
 | [0494-target-sum](https://github.com/pavannaiik/LeetCode/tree/master/0494-target-sum) |
 | [1022-unique-paths-iii](https://github.com/pavannaiik/LeetCode/tree/master/1022-unique-paths-iii) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/pavannaiik/LeetCode/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
@@ -1313,6 +1317,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0139-word-break](https://github.com/pavannaiik/LeetCode/tree/master/0139-word-break) |
 | [0208-implement-trie-prefix-tree](https://github.com/pavannaiik/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/pavannaiik/LeetCode/tree/master/0211-design-add-and-search-words-data-structure) |
+| [0212-word-search-ii](https://github.com/pavannaiik/LeetCode/tree/master/0212-word-search-ii) |
 | [0421-maximum-xor-of-two-numbers-in-an-array](https://github.com/pavannaiik/LeetCode/tree/master/0421-maximum-xor-of-two-numbers-in-an-array) |
 | [0720-longest-word-in-dictionary](https://github.com/pavannaiik/LeetCode/tree/master/0720-longest-word-in-dictionary) |
 | [2009-longest-word-with-all-prefixes](https://github.com/pavannaiik/LeetCode/tree/master/2009-longest-word-with-all-prefixes) |
