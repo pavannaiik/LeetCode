@@ -129,6 +129,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1002-maximum-width-ramp](https://github.com/pavannaiik/LeetCode/tree/master/1002-maximum-width-ramp) |
 | [1014-k-closest-points-to-origin](https://github.com/pavannaiik/LeetCode/tree/master/1014-k-closest-points-to-origin) |
 | [1022-unique-paths-iii](https://github.com/pavannaiik/LeetCode/tree/master/1022-unique-paths-iii) |
+| [1025-minimum-cost-for-tickets](https://github.com/pavannaiik/LeetCode/tree/master/1025-minimum-cost-for-tickets) |
 | [1036-rotting-oranges](https://github.com/pavannaiik/LeetCode/tree/master/1036-rotting-oranges) |
 | [1073-number-of-enclaves](https://github.com/pavannaiik/LeetCode/tree/master/1073-number-of-enclaves) |
 | [1098-largest-unique-number](https://github.com/pavannaiik/LeetCode/tree/master/1098-largest-unique-number) |
@@ -362,6 +363,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0803-cheapest-flights-within-k-stops](https://github.com/pavannaiik/LeetCode/tree/master/0803-cheapest-flights-within-k-stops) |
 | [0962-flip-string-to-monotone-increasing](https://github.com/pavannaiik/LeetCode/tree/master/0962-flip-string-to-monotone-increasing) |
 | [0967-minimum-falling-path-sum](https://github.com/pavannaiik/LeetCode/tree/master/0967-minimum-falling-path-sum) |
+| [1025-minimum-cost-for-tickets](https://github.com/pavannaiik/LeetCode/tree/master/1025-minimum-cost-for-tickets) |
 | [1196-filling-bookcase-shelves](https://github.com/pavannaiik/LeetCode/tree/master/1196-filling-bookcase-shelves) |
 | [1240-stone-game-ii](https://github.com/pavannaiik/LeetCode/tree/master/1240-stone-game-ii) |
 | [1250-longest-common-subsequence](https://github.com/pavannaiik/LeetCode/tree/master/1250-longest-common-subsequence) |
