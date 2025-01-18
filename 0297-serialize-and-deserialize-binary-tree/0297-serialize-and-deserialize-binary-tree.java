@@ -11,35 +11,24 @@ public class Codec {
 
     // Encodes a tree to a single string.
     public String serialize(TreeNode root) {
-        StringBuilder sb = new StringBuilder();
-        dfs(root, sb);
-        return sb.toString();
-    }
-    public void dfs(TreeNode root, StringBuilder sb){
-        if(root==null){
-            sb.append("N,");
-            return;
-        }
-        sb.append(root.val).append(",");
-        dfs(root.left, sb);
-        dfs(root.right, sb);
+        if(root==null) return "N,";
+        return root.val+","+serialize(root.left)+serialize(root.right);
     }
 
     // Decodes your encoded data to tree.
     public TreeNode deserialize(String data) {
-        String[] nodes = data.split(",");
-        int[] index = new int[1]; // Mutable index
-        return dfsDeserialize(nodes, index);
+        System.out.println(data);
+        Queue<String>nodes = new LinkedList<>(Arrays.asList(data.split(",")));
+        return buildTree(nodes);
     }
-    public TreeNode dfsDeserialize(String[] nodes, int[] index){
-        if (index[0] >= nodes.length || nodes[index[0]].equals("N")) {
-            index[0]++;
-            return null;
-        }
-        TreeNode root = new TreeNode(Integer.parseInt(nodes[index[0]++]));
-        root.left = dfsDeserialize(nodes, index);
-        root.right = dfsDeserialize(nodes, index);
+    public TreeNode buildTree(Queue<String>nodes){
+        String val = nodes.poll();
+        if(val.equals("N")) return null;
+        TreeNode root = new TreeNode(Integer.parseInt(val));
+        root.left=buildTree(nodes);
+        root.right=buildTree(nodes);
         return root;
+
     }
 }
 
