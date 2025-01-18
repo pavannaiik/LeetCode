@@ -1,30 +1,34 @@
 class Solution {
     public int[] vowelStrings(String[] words, int[][] queries) {
-        int[] left=new int[words.length];
-        int cnt =0;
-        int i=0;
-        for(String s:words){
-            if(s.charAt(0)=='a' || s.charAt(0)=='e' || s.charAt(0)=='i'
-               || s.charAt(0)=='o' || s.charAt(0)=='u'){
-                if(s.charAt(s.length()-1)=='a' || s.charAt(s.length()-1)=='e' || s.charAt(s.length()-1)=='i'
-               || s.charAt(s.length()-1)=='o' || s.charAt(s.length()-1)=='u'){
-                cnt++;
-               }
-               }
-               left[i++]=cnt;
-        }
-        int[] result=new int[queries.length];
-        int p=0;
-        for(int[] query: queries){
-            int start = query[0];
-            int end = query[1];
-            if(start==0){
-                result[p++]=left[end];
-                continue;
-            }
-            result[p++]=left[end]-left[start-1];
+        int n = words.length;
+        int[] prefixSum = new int[n];
+        int count = 0;
 
+        for (int i = 0; i < n; i++) {
+            String s = words[i];
+            if (isVowel(s.charAt(0)) && isVowel(s.charAt(s.length() - 1))) {
+                count++;
+            }
+            prefixSum[i] = count;
         }
+
+
+        int[] result = new int[queries.length];
+        for (int i = 0; i < queries.length; i++) {
+            int start = queries[i][0];
+            int end = queries[i][1];
+
+            if (start == 0) {
+                result[i] = prefixSum[end];
+            } else {
+                result[i] = prefixSum[end] - prefixSum[start - 1];
+            }
+        }
+
         return result;
+    }
+
+    private boolean isVowel(char c) {
+        return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u';
     }
 }
