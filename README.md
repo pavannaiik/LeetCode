@@ -180,6 +180,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2267-minimum-difference-in-sums-after-removal-of-elements](https://github.com/pavannaiik/LeetCode/tree/master/2267-minimum-difference-in-sums-after-removal-of-elements) |
 | [2306-create-binary-tree-from-descriptions](https://github.com/pavannaiik/LeetCode/tree/master/2306-create-binary-tree-from-descriptions) |
 | [2334-number-of-flowers-in-full-bloom](https://github.com/pavannaiik/LeetCode/tree/master/2334-number-of-flowers-in-full-bloom) |
+| [2358-number-of-ways-to-split-array](https://github.com/pavannaiik/LeetCode/tree/master/2358-number-of-ways-to-split-array) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/pavannaiik/LeetCode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2458-find-minimum-time-to-finish-all-jobs-ii](https://github.com/pavannaiik/LeetCode/tree/master/2458-find-minimum-time-to-finish-all-jobs-ii) |
 | [2472-build-a-matrix-with-conditions](https://github.com/pavannaiik/LeetCode/tree/master/2472-build-a-matrix-with-conditions) |
@@ -891,6 +892,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2165-plates-between-candles](https://github.com/pavannaiik/LeetCode/tree/master/2165-plates-between-candles) |
 | [2325-number-of-ways-to-select-buildings](https://github.com/pavannaiik/LeetCode/tree/master/2325-number-of-ways-to-select-buildings) |
 | [2334-number-of-flowers-in-full-bloom](https://github.com/pavannaiik/LeetCode/tree/master/2334-number-of-flowers-in-full-bloom) |
+| [2358-number-of-ways-to-split-array](https://github.com/pavannaiik/LeetCode/tree/master/2358-number-of-ways-to-split-array) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/pavannaiik/LeetCode/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/pavannaiik/LeetCode/tree/master/2691-count-vowel-strings-in-ranges) |
 | [3410-find-longest-self-contained-substring](https://github.com/pavannaiik/LeetCode/tree/master/3410-find-longest-self-contained-substring) |
