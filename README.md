@@ -193,6 +193,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2617-time-taken-to-cross-the-door](https://github.com/pavannaiik/LeetCode/tree/master/2617-time-taken-to-cross-the-door) |
 | [2658-count-the-number-of-k-big-indices](https://github.com/pavannaiik/LeetCode/tree/master/2658-count-the-number-of-k-big-indices) |
 | [2675-find-the-width-of-columns-of-a-grid](https://github.com/pavannaiik/LeetCode/tree/master/2675-find-the-width-of-columns-of-a-grid) |
+| [2691-count-vowel-strings-in-ranges](https://github.com/pavannaiik/LeetCode/tree/master/2691-count-vowel-strings-in-ranges) |
 | [2727-number-of-senior-citizens](https://github.com/pavannaiik/LeetCode/tree/master/2727-number-of-senior-citizens) |
 | [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/pavannaiik/LeetCode/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
 | [2846-robot-collisions](https://github.com/pavannaiik/LeetCode/tree/master/2846-robot-collisions) |
@@ -845,6 +846,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2502-sort-the-people](https://github.com/pavannaiik/LeetCode/tree/master/2502-sort-the-people) |
 | [2555-design-sql](https://github.com/pavannaiik/LeetCode/tree/master/2555-design-sql) |
 | [2572-append-characters-to-string-to-make-subsequence](https://github.com/pavannaiik/LeetCode/tree/master/2572-append-characters-to-string-to-make-subsequence) |
+| [2691-count-vowel-strings-in-ranges](https://github.com/pavannaiik/LeetCode/tree/master/2691-count-vowel-strings-in-ranges) |
 | [2727-number-of-senior-citizens](https://github.com/pavannaiik/LeetCode/tree/master/2727-number-of-senior-citizens) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/pavannaiik/LeetCode/tree/master/2800-minimum-string-length-after-removing-substrings) |
 | [3195-separate-black-and-white-balls](https://github.com/pavannaiik/LeetCode/tree/master/3195-separate-black-and-white-balls) |
@@ -886,6 +888,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2325-number-of-ways-to-select-buildings](https://github.com/pavannaiik/LeetCode/tree/master/2325-number-of-ways-to-select-buildings) |
 | [2334-number-of-flowers-in-full-bloom](https://github.com/pavannaiik/LeetCode/tree/master/2334-number-of-flowers-in-full-bloom) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/pavannaiik/LeetCode/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
+| [2691-count-vowel-strings-in-ranges](https://github.com/pavannaiik/LeetCode/tree/master/2691-count-vowel-strings-in-ranges) |
 | [3410-find-longest-self-contained-substring](https://github.com/pavannaiik/LeetCode/tree/master/3410-find-longest-self-contained-substring) |
 | [3715-maximum-coins-from-k-consecutive-bags](https://github.com/pavannaiik/LeetCode/tree/master/3715-maximum-coins-from-k-consecutive-bags) |
 ## Linked List
