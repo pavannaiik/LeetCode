@@ -248,6 +248,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1923-sentence-similarity-iii](https://github.com/pavannaiik/LeetCode/tree/master/1923-sentence-similarity-iii) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/pavannaiik/LeetCode/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2216-delete-the-middle-node-of-a-linked-list](https://github.com/pavannaiik/LeetCode/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
+| [2236-maximum-twin-sum-of-a-linked-list](https://github.com/pavannaiik/LeetCode/tree/master/2236-maximum-twin-sum-of-a-linked-list) |
 | [2468-valid-palindrome-iv](https://github.com/pavannaiik/LeetCode/tree/master/2468-valid-palindrome-iv) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/pavannaiik/LeetCode/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2565-merge-operations-to-turn-array-into-a-palindrome](https://github.com/pavannaiik/LeetCode/tree/master/2565-merge-operations-to-turn-array-into-a-palindrome) |
@@ -923,6 +924,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0908-middle-of-the-linked-list](https://github.com/pavannaiik/LeetCode/tree/master/0908-middle-of-the-linked-list) |
 | [2182-find-the-minimum-and-maximum-number-of-nodes-between-critical-points](https://github.com/pavannaiik/LeetCode/tree/master/2182-find-the-minimum-and-maximum-number-of-nodes-between-critical-points) |
 | [2216-delete-the-middle-node-of-a-linked-list](https://github.com/pavannaiik/LeetCode/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
+| [2236-maximum-twin-sum-of-a-linked-list](https://github.com/pavannaiik/LeetCode/tree/master/2236-maximum-twin-sum-of-a-linked-list) |
 | [2299-merge-nodes-in-between-zeros](https://github.com/pavannaiik/LeetCode/tree/master/2299-merge-nodes-in-between-zeros) |
 ## Stack
 |  |
@@ -955,6 +957,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1756-minimum-deletions-to-make-string-balanced](https://github.com/pavannaiik/LeetCode/tree/master/1756-minimum-deletions-to-make-string-balanced) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/pavannaiik/LeetCode/tree/master/1818-maximum-score-from-removing-substrings) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/pavannaiik/LeetCode/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
+| [2236-maximum-twin-sum-of-a-linked-list](https://github.com/pavannaiik/LeetCode/tree/master/2236-maximum-twin-sum-of-a-linked-list) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/pavannaiik/LeetCode/tree/master/2800-minimum-string-length-after-removing-substrings) |
 | [2846-robot-collisions](https://github.com/pavannaiik/LeetCode/tree/master/2846-robot-collisions) |
 ## Monotonic Stack
