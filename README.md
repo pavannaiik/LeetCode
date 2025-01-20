@@ -379,6 +379,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2067-maximum-number-of-points-with-cost](https://github.com/pavannaiik/LeetCode/tree/master/2067-maximum-number-of-points-with-cost) |
 | [2267-minimum-difference-in-sums-after-removal-of-elements](https://github.com/pavannaiik/LeetCode/tree/master/2267-minimum-difference-in-sums-after-removal-of-elements) |
 | [2325-number-of-ways-to-select-buildings](https://github.com/pavannaiik/LeetCode/tree/master/2325-number-of-ways-to-select-buildings) |
+| [2562-count-ways-to-build-good-strings](https://github.com/pavannaiik/LeetCode/tree/master/2562-count-ways-to-build-good-strings) |
 | [3273-most-expensive-item-that-can-not-be-bought](https://github.com/pavannaiik/LeetCode/tree/master/3273-most-expensive-item-that-can-not-be-bought) |
 ## Math
 |  |
