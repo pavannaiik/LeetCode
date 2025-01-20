@@ -10,27 +10,24 @@
  */
 class Solution {
     public ListNode reverseKGroup(ListNode head, int k) {
-        int len =0;
-        ListNode temp = head;
-        while(temp!=null){
-            len++;
-            temp=temp.next;
-        }
-        ListNode res = new ListNode(0);
-        res.next = head;
-        ListNode cur = res, prev = res, nex=res;
-        while(len>=k){
-            cur = prev.next;
-            nex = cur.next;
-            for(int i=1;i<k;i++){
-                cur.next = nex.next;
-                nex.next = prev.next;
-                prev.next = nex;
-                nex = cur.next;
-            }
-            prev = cur;
-            len-=k;
-        }
-        return res.next;
+    ListNode curr = head;
+    int count = 0;
+    while (curr != null && count != k) { // find the k+1 node
+        curr = curr.next;
+        count++;
     }
+    if (count == k) { // if k+1 node is found
+        curr = reverseKGroup(curr, k); // reverse list with k+1 node as head
+        // head - head-pointer to direct part, 
+        // curr - head-pointer to reversed part;
+        while (count-- > 0) { // reverse current k-group: 
+            ListNode tmp = head.next; // tmp - next head in direct part
+            head.next = curr; // preappending "direct" head to the reversed list 
+            curr = head; // move head of reversed part to a new node
+            head = tmp; // move "direct" head to the next node in direct part
+        }
+        head = curr;
+    }
+    return head;
+}
 }
