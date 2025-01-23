@@ -838,6 +838,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1304-longest-happy-string](https://github.com/pavannaiik/LeetCode/tree/master/1304-longest-happy-string) |
 | [1320-remove-all-adjacent-duplicates-in-string-ii](https://github.com/pavannaiik/LeetCode/tree/master/1320-remove-all-adjacent-duplicates-in-string-ii) |
 | [1356-minimum-number-of-moves-to-make-palindrome](https://github.com/pavannaiik/LeetCode/tree/master/1356-minimum-number-of-moves-to-make-palindrome) |
+| [1508-longest-happy-prefix](https://github.com/pavannaiik/LeetCode/tree/master/1508-longest-happy-prefix) |
 | [1720-crawler-log-folder](https://github.com/pavannaiik/LeetCode/tree/master/1720-crawler-log-folder) |
 | [1739-split-two-strings-to-make-palindrome](https://github.com/pavannaiik/LeetCode/tree/master/1739-split-two-strings-to-make-palindrome) |
 | [1756-minimum-deletions-to-make-string-balanced](https://github.com/pavannaiik/LeetCode/tree/master/1756-minimum-deletions-to-make-string-balanced) |
@@ -1243,6 +1244,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0214-shortest-palindrome](https://github.com/pavannaiik/LeetCode/tree/master/0214-shortest-palindrome) |
 | [0572-subtree-of-another-tree](https://github.com/pavannaiik/LeetCode/tree/master/0572-subtree-of-another-tree) |
 | [0694-number-of-distinct-islands](https://github.com/pavannaiik/LeetCode/tree/master/0694-number-of-distinct-islands) |
+| [1508-longest-happy-prefix](https://github.com/pavannaiik/LeetCode/tree/master/1508-longest-happy-prefix) |
 ## Binary Indexed Tree
 |  |
 | ------- |
@@ -1355,6 +1357,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0214-shortest-palindrome](https://github.com/pavannaiik/LeetCode/tree/master/0214-shortest-palindrome) |
 | [0572-subtree-of-another-tree](https://github.com/pavannaiik/LeetCode/tree/master/0572-subtree-of-another-tree) |
+| [1508-longest-happy-prefix](https://github.com/pavannaiik/LeetCode/tree/master/1508-longest-happy-prefix) |
 | [3684-substring-matching-pattern](https://github.com/pavannaiik/LeetCode/tree/master/3684-substring-matching-pattern) |
 ## Geometry
 |  |
@@ -1372,4 +1375,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0214-shortest-palindrome](https://github.com/pavannaiik/LeetCode/tree/master/0214-shortest-palindrome) |
+| [1508-longest-happy-prefix](https://github.com/pavannaiik/LeetCode/tree/master/1508-longest-happy-prefix) |
 <!---LeetCode Topics End-->
