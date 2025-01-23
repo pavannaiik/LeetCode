@@ -803,6 +803,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0208-implement-trie-prefix-tree](https://github.com/pavannaiik/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/pavannaiik/LeetCode/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0212-word-search-ii](https://github.com/pavannaiik/LeetCode/tree/master/0212-word-search-ii) |
+| [0214-shortest-palindrome](https://github.com/pavannaiik/LeetCode/tree/master/0214-shortest-palindrome) |
 | [0224-basic-calculator](https://github.com/pavannaiik/LeetCode/tree/master/0224-basic-calculator) |
 | [0227-basic-calculator-ii](https://github.com/pavannaiik/LeetCode/tree/master/0227-basic-calculator-ii) |
 | [0241-different-ways-to-add-parentheses](https://github.com/pavannaiik/LeetCode/tree/master/0241-different-ways-to-add-parentheses) |
@@ -1239,6 +1240,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Function
 |  |
 | ------- |
+| [0214-shortest-palindrome](https://github.com/pavannaiik/LeetCode/tree/master/0214-shortest-palindrome) |
 | [0572-subtree-of-another-tree](https://github.com/pavannaiik/LeetCode/tree/master/0572-subtree-of-another-tree) |
 | [0694-number-of-distinct-islands](https://github.com/pavannaiik/LeetCode/tree/master/0694-number-of-distinct-islands) |
 ## Binary Indexed Tree
@@ -1351,6 +1353,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String Matching
 |  |
 | ------- |
+| [0214-shortest-palindrome](https://github.com/pavannaiik/LeetCode/tree/master/0214-shortest-palindrome) |
 | [0572-subtree-of-another-tree](https://github.com/pavannaiik/LeetCode/tree/master/0572-subtree-of-another-tree) |
 | [3684-substring-matching-pattern](https://github.com/pavannaiik/LeetCode/tree/master/3684-substring-matching-pattern) |
 ## Geometry
@@ -1365,4 +1368,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1258-article-views-i](https://github.com/pavannaiik/LeetCode/tree/master/1258-article-views-i) |
+## Rolling Hash
+|  |
+| ------- |
+| [0214-shortest-palindrome](https://github.com/pavannaiik/LeetCode/tree/master/0214-shortest-palindrome) |
 <!---LeetCode Topics End-->
