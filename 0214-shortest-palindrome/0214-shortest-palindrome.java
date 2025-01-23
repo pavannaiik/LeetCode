@@ -1,14 +1,22 @@
 class Solution {
     public String shortestPalindrome(String s) {
-        StringBuilder sb = new StringBuilder(s).reverse();
-        int n =s.length();
-        String s2 = sb.toString();
-        for(int i=0;i<=n;i++){
-            if(s.startsWith(s2.substring(i,n))){
-                return s2.substring(0,i)+s;
-            }
-        }
-       
-        return "";
+    int n = s.length();
+
+    int left = 0; // Pointer to track the longest palindromic prefix
+    // Find the longest palindromic prefix by comparing characters from the start and end
+    for (int j = 0; j < n; j++) {
+      int right = n - j - 1;
+      if (s.charAt(left) == s.charAt(right)) {
+        left++;
+      }
     }
+
+    // If the entire string is already a palindrome, return it
+    if (left == n) {
+      return s;
+    }
+
+    String suffix = s.substring(left, n);
+    return new StringBuilder(suffix).reverse().append(shortestPalindrome(s.substring(0, left))).append(suffix).toString();
+  }
 }
