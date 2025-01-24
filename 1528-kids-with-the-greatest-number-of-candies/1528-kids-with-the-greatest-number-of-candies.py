@@ -4,7 +4,8 @@ class Solution:
         boolVal = []
         for c in range(len(candies)):
             if candies[c] + extraCandies >= highest:
-                boolVal.append(True) 
+                boolVal.append(True)
             else:
                 boolVal.append(False)
+
         return boolVal
