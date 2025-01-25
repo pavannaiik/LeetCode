@@ -9,7 +9,7 @@ class Solution {
             for(int j=0;j<m;j++){
                 if(grid[i][j]==1) freshOranges++;
                 if(grid[i][j]==2 ){
-                    queue.add(new Pair(i,j));
+                    queue.add(new Pair<>(i,j));
                 }
             }
         }
