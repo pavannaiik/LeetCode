@@ -10,12 +10,7 @@
  */
 class Solution {
     public ListNode mergeKLists(ListNode[] lists) {
-        PriorityQueue<ListNode>pq = new PriorityQueue<>(new Comparator<ListNode>() {
-             @Override
-            public int compare(ListNode l1, ListNode l2){
-                return l1.val - l2.val;
-            }
-        });
+        PriorityQueue<ListNode>pq = new PriorityQueue<>((a,b)->a.val-b.val);
         for(ListNode li:lists){
             if(li!=null)
                 pq.offer(li);
