@@ -1,31 +1,48 @@
 class Solution {
     public String reorganizeString(String s) {
-        int[] charCountArray = new int[26];
-        int n = s.length();
-        int highestCount=0, index =-1;
-        for(int i=0;i< n;i++){
-            charCountArray[s.charAt(i)-'a']++;
-            if(charCountArray[s.charAt(i)-'a'] > highestCount){
-                highestCount=charCountArray[s.charAt(i)-'a'];
-                index =s.charAt(i)-'a';
+        // Step 1: Count the frequency of each character
+        Map<Character, Integer> frequencyMap = new HashMap<>();
+        for (char c : s.toCharArray()) {
+            frequencyMap.put(c, frequencyMap.getOrDefault(c, 0) + 1);
+        }
+
+        // Step 2: Add characters to a max heap based on their frequencies
+        PriorityQueue<Character> maxHeap = new PriorityQueue<>(
+            (a, b) -> frequencyMap.get(b) - frequencyMap.get(a)
+        );
+        maxHeap.addAll(frequencyMap.keySet());
+
+        // Step 3: Reorganize the string
+        StringBuilder result = new StringBuilder();
+        while (maxHeap.size() > 1) {
+            // Get the two most frequent characters
+            char first = maxHeap.poll();
+            char second = maxHeap.poll();
+
+            // Append them to the result
+            result.append(first);
+            result.append(second);
+
+            // Decrease their frequency and re-add them to the heap if they're still needed
+            frequencyMap.put(first, frequencyMap.get(first) - 1);
+            frequencyMap.put(second, frequencyMap.get(second) - 1);
+            if (frequencyMap.get(first) > 0) {
+                maxHeap.add(first);
+            }
+            if (frequencyMap.get(second) > 0) {
+                maxHeap.add(second);
             }
         }
-        if(highestCount > (n+1)/2){
-            return "";
-        }
-        char[] ans = new char[s.length()];
-        int i=0;
-        while(charCountArray[index]-- > 0){
-            ans[i]=(char)('a'+index);
-            i=i+2;
-        }
-        for(int j=0;j<26;j++){
-            while(charCountArray[j]-- >0){
-                 if (i >= n) i = 1;
-                ans[i]=(char)('a'+j);
-                i = i+2;
+
+        // If one character is left, check if it can be placed without violating the condition
+        if (!maxHeap.isEmpty()) {
+            char last = maxHeap.poll();
+            if (frequencyMap.get(last) > 1) {
+                return ""; // Not possible to rearrange
             }
+            result.append(last);
         }
-        return String.valueOf(ans);
+
+        return result.toString();
     }
 }
