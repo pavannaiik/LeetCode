@@ -22,8 +22,7 @@ class Solution {
                 int len = curString.length();
                 for(int i=0;i<len;i++){
                     String temp = curString.substring(0, i)+"*"+curString.substring(i+1);
-                    List<String>words = map.get(temp);
-                    if(words==null) continue;
+                    List<String>words = map.getOrDefault(temp, new ArrayList<>());
                     for(String str:words){
                         if(endWord.equals(str)){
                             return level+1;
