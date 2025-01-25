@@ -1,53 +1,67 @@
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
 class Solution {
-    Map<Integer, ArrayList<Pair<Integer, Integer>>> columnTable = new HashMap<>();
-    int minColumn = 0, maxColumn = 0;
-
-    private void DFS(TreeNode node, Integer row, Integer column) {
-        if (node == null)
-            return;
-
-        if (!columnTable.containsKey(column)) {
-            this.columnTable.put(column, new ArrayList<Pair<Integer, Integer>>());
-        }
-
-        this.columnTable.get(column).add(new Pair<>(row, node.val));
-        this.minColumn = Math.min(minColumn, column);
-        this.maxColumn = Math.max(maxColumn, column);
-        // preorder DFS traversal
-        this.DFS(node.left, row + 1, column - 1);
-        this.DFS(node.right, row + 1, column + 1);
-    }
-
     public List<List<Integer>> verticalTraversal(TreeNode root) {
-        List<List<Integer>> output = new ArrayList<>();
-        if (root == null) {
-            return output;
+        // A map to store column -> List of (row, value) pairs
+        TreeMap<Integer, List<int[]>> columnMap = new TreeMap<>();
+
+        // BFS queue storing nodes along with their row and column
+        Queue<Object[]> queue = new LinkedList<>();
+        queue.offer(new Object[]{root, 0, 0}); // {node, row, column}
+
+        // Perform BFS
+        while (!queue.isEmpty()) {
+            Object[] current = queue.poll();
+            TreeNode node = (TreeNode) current[0];
+            int row = (int) current[1];
+            int col = (int) current[2];
+
+            // Add the node to the corresponding column list
+            columnMap.putIfAbsent(col, new ArrayList<>());
+            columnMap.get(col).add(new int[]{row, node.val});
+
+            // Add the left and right children with updated row and column
+            if (node.left != null) {
+                queue.offer(new Object[]{node.left, row + 1, col - 1});
+            }
+            if (node.right != null) {
+                queue.offer(new Object[]{node.right, row + 1, col + 1});
+            }
         }
 
-        // step 1). DFS traversal
-        this.DFS(root, 0, 0);
-
-        // step 2). retrieve the value from the columnTable
-        for (int i = minColumn; i < maxColumn + 1; ++i) {
-           
-           Collections.sort(columnTable.get(i), new Comparator<Pair<Integer,Integer>>() {
-            @Override
-            public int compare(Pair<Integer,Integer>p1, Pair<Integer,Integer>p2){
-                if(p1.getKey().equals(p2.getKey())){
-                    return p1.getValue()-p2.getValue();
-                }else{
-                    return p1.getKey()-p2.getKey();
+        // Prepare the result list
+        List<List<Integer>> result = new ArrayList<>();
+        for (List<int[]> nodes : columnMap.values()) {
+            // Sort the nodes by row, and if row is the same, by value
+            Collections.sort(nodes, (a, b) -> {
+                if (a[0] == b[0]) {
+                    return a[1] - b[1]; // Sort by value if row is the same
                 }
-            }
-           });
+                return a[0] - b[0]; // Sort by row
+            });
 
-            List<Integer> sortedColumn = new ArrayList<>();
-            for (Pair<Integer, Integer> p : columnTable.get(i)) {
-                sortedColumn.add(p.getValue());
+            // Extract the values for the column
+            List<Integer> columnValues = new ArrayList<>();
+            for (int[] node : nodes) {
+                columnValues.add(node[1]);
             }
-            output.add(sortedColumn);
+            result.add(columnValues);
         }
 
-        return output;
+        return result;
+
     }
 }
