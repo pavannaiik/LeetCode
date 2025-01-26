@@ -1,52 +1,72 @@
 class Solution {
-    public List<String> findWords(char[][] board, String[] words) {
-    Trie trie = buildTrie(words);
-    Set<String> res = new HashSet<>();
-    for (int i = 0; i < board.length; i++) {
-        for (int j = 0; j < board[0].length; j++) {
-            dfs(board, trie, res, i, j);
-        }
-    }
-    return new ArrayList<>(res);
-}
-
-public void dfs(char[][] board, Trie node, Set<String> res, int i, int j) {
-    if (i < 0 || i >= board.length || j < 0 || j >= board[0].length || 
-        board[i][j] == '#' || node.next[board[i][j] - 'a'] == null) {
-            return;
-    }
-    if (node.next[board[i][j] - 'a'].word != null) {
-        res.add(node.next[board[i][j] - 'a'].word);
+    // Trie Node
+    static class TrieNode {
+        Map<Character, TrieNode> children = new HashMap<>();
+        String word = null; // If this node represents the end of a word, store the word here
     }
 
-    // Go to next char
-    node = node.next[board[i][j] - 'a']; 
-    char c = board[i][j];
-    board[i][j] = '#';
-    dfs(board, node, res, i - 1, j);
-    dfs(board, node, res, i + 1, j);
-    dfs(board, node, res, i, j - 1);
-    dfs(board, node, res, i, j + 1);
-    board[i][j] = c;
-}   
-
-public Trie buildTrie(String[] words) {
-    Trie root = new Trie();
-    for (String w : words) {
-        Trie p = root;
-        for (char c : w.toCharArray()) {
-            if (p.next[c - 'a'] == null) {
-                p.next[c - 'a'] = new Trie();
+    // Build the Trie
+    private TrieNode buildTrie(String[] words) {
+        TrieNode root = new TrieNode();
+        for (String word : words) {
+            TrieNode node = root;
+            for (char c : word.toCharArray()) {
+                if (!node.children.containsKey(c)) {
+                    node.children.put(c, new TrieNode());
+                }
+                node = node.children.get(c);
             }
-            p = p.next[c - 'a'];  // will point to curr char
+            node.word = word; // Mark the end of a word
         }
-        p.word = w;
+        return root;
     }
-    return root;
-}
 
-private class Trie {
-    Trie[] next = new Trie[26];
-    String word = null;
-}
+    // Backtracking function
+    private void backtrack(char[][] board, int row, int col, TrieNode node, List<String> result) {
+        char c = board[row][col];
+        if (!node.children.containsKey(c)) {
+            return; // No word with this prefix
+        }
+
+        TrieNode childNode = node.children.get(c);
+        if (childNode.word != null) {
+            result.add(childNode.word); // Found a word
+            childNode.word = null; // Avoid duplicate entries
+        }
+
+        // Mark the cell as visited
+        board[row][col] = '#';
+
+        // Explore neighbors
+        int[] rowOffsets = {-1, 1, 0, 0};
+        int[] colOffsets = {0, 0, -1, 1};
+        for (int d = 0; d < 4; d++) {
+            int newRow = row + rowOffsets[d];
+            int newCol = col + colOffsets[d];
+            if (newRow >= 0 && newRow < board.length && newCol >= 0 && newCol < board[0].length && board[newRow][newCol] != '#') {
+                backtrack(board, newRow, newCol, childNode, result);
+            }
+        }
+
+        // Restore the cell after backtracking
+        board[row][col] = c;
+
+        // Optimization: Remove the child node if it is no longer needed
+        if (childNode.children.isEmpty()) {
+            node.children.remove(c);
+        }
+    }
+    public List<String> findWords(char[][] board, String[] words) {
+        TrieNode root = buildTrie(words);
+
+        // Step 2: Backtracking
+        List<String> result = new ArrayList<>();
+        for (int row = 0; row < board.length; row++) {
+            for (int col = 0; col < board[0].length; col++) {
+                backtrack(board, row, col, root, result);
+            }
+        }
+
+        return result;
+    }
 }
