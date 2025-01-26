@@ -14,54 +14,54 @@
  * }
  */
 class Solution {
-    public List<List<Integer>> verticalTraversal(TreeNode root) {
-        // A map to store column -> List of (row, value) pairs
-        TreeMap<Integer, List<int[]>> columnMap = new TreeMap<>();
+    Map<Integer, ArrayList<Pair<Integer, Integer>>> columnTable = new HashMap<>();
+    int minColumn = 0, maxColumn = 0;
 
-        // BFS queue storing nodes along with their row and column
-        Queue<Object[]> queue = new LinkedList<>();
-        queue.offer(new Object[]{root, 0, 0}); // {node, row, column}
+    private void DFS(TreeNode node, Integer row, Integer column) {
+        if (node == null) return;
 
-        // Perform BFS
-        while (!queue.isEmpty()) {
-            Object[] current = queue.poll();
-            TreeNode node = (TreeNode) current[0];
-            int row = (int) current[1];
-            int col = (int) current[2];
-
-            // Add the node to the corresponding column list
-            columnMap.putIfAbsent(col, new ArrayList<>());
-            columnMap.get(col).add(new int[]{row, node.val});
-
-            // Add the left and right children with updated row and column
-            if (node.left != null) {
-                queue.offer(new Object[]{node.left, row + 1, col - 1});
-            }
-            if (node.right != null) {
-                queue.offer(new Object[]{node.right, row + 1, col + 1});
-            }
+        if (!columnTable.containsKey(column)) {
+            columnTable.put(column, new ArrayList<Pair<Integer, Integer>>());
         }
 
-        // Prepare the result list
-        List<List<Integer>> result = new ArrayList<>();
-        for (List<int[]> nodes : columnMap.values()) {
-            // Sort the nodes by row, and if row is the same, by value
-            Collections.sort(nodes, (a, b) -> {
-                if (a[0] == b[0]) {
-                    return a[1] - b[1]; // Sort by value if row is the same
+        columnTable.get(column).add(new Pair<>(row, node.val));
+        minColumn = Math.min(minColumn, column);
+        maxColumn = Math.max(maxColumn, column);
+
+        // Preorder DFS traversal
+        DFS(node.left, row + 1, column - 1);
+        DFS(node.right, row + 1, column + 1);
+    }
+
+    public List<List<Integer>> verticalTraversal(TreeNode root) {
+        List<List<Integer>> output = new ArrayList<>();
+        if (root == null) {
+            return output;
+        }
+
+        // Step 1: Perform DFS traversal
+        DFS(root, 0, 0);
+
+        // Step 2: Retrieve and sort values from the columnTable
+        for (int i = minColumn; i <= maxColumn; ++i) {
+            Collections.sort(columnTable.get(i), new Comparator<Pair<Integer, Integer>>() {
+                @Override
+                public int compare(Pair<Integer, Integer> p1, Pair<Integer, Integer> p2) {
+                    if (p1.getKey().equals(p2.getKey())) {
+                        return p1.getValue() - p2.getValue(); // Sort by value if rows are the same
+                    } else {
+                        return p1.getKey() - p2.getKey(); // Sort by row
+                    }
                 }
-                return a[0] - b[0]; // Sort by row
             });
 
-            // Extract the values for the column
-            List<Integer> columnValues = new ArrayList<>();
-            for (int[] node : nodes) {
-                columnValues.add(node[1]);
+            List<Integer> sortedColumn = new ArrayList<>();
+            for (Pair<Integer, Integer> p : columnTable.get(i)) {
+                sortedColumn.add(p.getValue());
             }
-            result.add(columnValues);
+            output.add(sortedColumn);
         }
 
-        return result;
-
+        return output;
     }
 }
