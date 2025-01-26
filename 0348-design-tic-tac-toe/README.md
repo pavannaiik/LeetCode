@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/design-tic-tac-toe/">348. Design Tic-Tac-Toe</a></h2><h3>Medium</h3><hr><div><p>Assume the following rules are for the tic-tac-toe game on an <code>n x n</code> board between two players:</p>
+<h2><a href="https://leetcode.com/problems/design-tic-tac-toe">348. Design Tic-Tac-Toe</a></h2><h3>Medium</h3><hr><p>Assume the following rules are for the tic-tac-toe game on an <code>n x n</code> board between two players:</p>
 
 <ol>
 	<li>A move is guaranteed to be valid and is placed on an empty block.</li>
@@ -22,15 +22,16 @@
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 
-<pre><strong>Input</strong>
-["TicTacToe", "move", "move", "move", "move", "move", "move", "move"]
+<pre>
+<strong>Input</strong>
+[&quot;TicTacToe&quot;, &quot;move&quot;, &quot;move&quot;, &quot;move&quot;, &quot;move&quot;, &quot;move&quot;, &quot;move&quot;, &quot;move&quot;]
 [[3], [0, 0, 1], [0, 2, 2], [2, 2, 1], [1, 1, 2], [2, 0, 1], [1, 0, 2], [2, 1, 1]]
 <strong>Output</strong>
 [null, 0, 0, 0, 0, 0, 0, 1]
 
 <strong>Explanation</strong>
 TicTacToe ticTacToe = new TicTacToe(3);
-Assume that player 1 is "X" and player 2 is "O" in the board.
+Assume that player 1 is &quot;X&quot; and player 2 is &quot;O&quot; in the board.
 ticTacToe.move(0, 0, 1); // return 0 (no one wins)
 |X| | |
 | | | |    // Player 1 makes a move at (0, 0).
@@ -80,4 +81,3 @@ ticTacToe.move(2, 1, 1); // return 1&nbsp;(player 1 wins)
 
 <p>&nbsp;</p>
 <p><strong>Follow-up:</strong> Could you do better than <code>O(n<sup>2</sup>)</code> per <code>move()</code> operation?</p>
-</div>
