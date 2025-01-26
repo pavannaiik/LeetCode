@@ -126,6 +126,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0912-random-pick-with-weight](https://github.com/pavannaiik/LeetCode/tree/master/0912-random-pick-with-weight) |
 | [0921-spiral-matrix-iii](https://github.com/pavannaiik/LeetCode/tree/master/0921-spiral-matrix-iii) |
 | [0941-sort-array-by-parity](https://github.com/pavannaiik/LeetCode/tree/master/0941-sort-array-by-parity) |
+| [0943-sum-of-subarray-minimums](https://github.com/pavannaiik/LeetCode/tree/master/0943-sum-of-subarray-minimums) |
 | [0945-snakes-and-ladders](https://github.com/pavannaiik/LeetCode/tree/master/0945-snakes-and-ladders) |
 | [0948-sort-an-array](https://github.com/pavannaiik/LeetCode/tree/master/0948-sort-an-array) |
 | [0952-word-subsets](https://github.com/pavannaiik/LeetCode/tree/master/0952-word-subsets) |
@@ -380,6 +381,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0664-strange-printer](https://github.com/pavannaiik/LeetCode/tree/master/0664-strange-printer) |
 | [0747-min-cost-climbing-stairs](https://github.com/pavannaiik/LeetCode/tree/master/0747-min-cost-climbing-stairs) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/pavannaiik/LeetCode/tree/master/0803-cheapest-flights-within-k-stops) |
+| [0943-sum-of-subarray-minimums](https://github.com/pavannaiik/LeetCode/tree/master/0943-sum-of-subarray-minimums) |
 | [0962-flip-string-to-monotone-increasing](https://github.com/pavannaiik/LeetCode/tree/master/0962-flip-string-to-monotone-increasing) |
 | [0967-minimum-falling-path-sum](https://github.com/pavannaiik/LeetCode/tree/master/0967-minimum-falling-path-sum) |
 | [1025-minimum-cost-for-tickets](https://github.com/pavannaiik/LeetCode/tree/master/1025-minimum-cost-for-tickets) |
@@ -1002,6 +1004,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0739-daily-temperatures](https://github.com/pavannaiik/LeetCode/tree/master/0739-daily-temperatures) |
 | [0883-car-fleet](https://github.com/pavannaiik/LeetCode/tree/master/0883-car-fleet) |
 | [0886-score-of-parentheses](https://github.com/pavannaiik/LeetCode/tree/master/0886-score-of-parentheses) |
+| [0943-sum-of-subarray-minimums](https://github.com/pavannaiik/LeetCode/tree/master/0943-sum-of-subarray-minimums) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/pavannaiik/LeetCode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1002-maximum-width-ramp](https://github.com/pavannaiik/LeetCode/tree/master/1002-maximum-width-ramp) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/pavannaiik/LeetCode/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
@@ -1024,6 +1027,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0503-next-greater-element-ii](https://github.com/pavannaiik/LeetCode/tree/master/0503-next-greater-element-ii) |
 | [0739-daily-temperatures](https://github.com/pavannaiik/LeetCode/tree/master/0739-daily-temperatures) |
 | [0883-car-fleet](https://github.com/pavannaiik/LeetCode/tree/master/0883-car-fleet) |
+| [0943-sum-of-subarray-minimums](https://github.com/pavannaiik/LeetCode/tree/master/0943-sum-of-subarray-minimums) |
 | [1002-maximum-width-ramp](https://github.com/pavannaiik/LeetCode/tree/master/1002-maximum-width-ramp) |
 | [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/pavannaiik/LeetCode/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
 ## Simulation
