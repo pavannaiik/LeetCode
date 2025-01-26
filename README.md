@@ -150,6 +150,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1306-minimum-absolute-difference](https://github.com/pavannaiik/LeetCode/tree/master/1306-minimum-absolute-difference) |
 | [1325-path-with-maximum-probability](https://github.com/pavannaiik/LeetCode/tree/master/1325-path-with-maximum-probability) |
 | [1333-sort-the-jumbled-numbers](https://github.com/pavannaiik/LeetCode/tree/master/1333-sort-the-jumbled-numbers) |
+| [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/pavannaiik/LeetCode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 | [1496-lucky-numbers-in-a-matrix](https://github.com/pavannaiik/LeetCode/tree/master/1496-lucky-numbers-in-a-matrix) |
 | [1511-count-number-of-teams](https://github.com/pavannaiik/LeetCode/tree/master/1511-count-number-of-teams) |
 | [1528-kids-with-the-greatest-number-of-candies](https://github.com/pavannaiik/LeetCode/tree/master/1528-kids-with-the-greatest-number-of-candies) |
@@ -496,6 +497,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0907-koko-eating-bananas](https://github.com/pavannaiik/LeetCode/tree/master/0907-koko-eating-bananas) |
 | [0912-random-pick-with-weight](https://github.com/pavannaiik/LeetCode/tree/master/0912-random-pick-with-weight) |
 | [1023-time-based-key-value-store](https://github.com/pavannaiik/LeetCode/tree/master/1023-time-based-key-value-store) |
+| [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/pavannaiik/LeetCode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/pavannaiik/LeetCode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
 | [1966-frequency-of-the-most-frequent-element](https://github.com/pavannaiik/LeetCode/tree/master/1966-frequency-of-the-most-frequent-element) |
 | [2165-plates-between-candles](https://github.com/pavannaiik/LeetCode/tree/master/2165-plates-between-candles) |
