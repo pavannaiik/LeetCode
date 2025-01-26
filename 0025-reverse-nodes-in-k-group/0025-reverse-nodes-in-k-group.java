@@ -19,15 +19,15 @@ class Solution {
         count++;
     }
     // 2.reverse k node at current level 
-       ListNode pre = reverseKGroup(node, k); //pre node point to the the answer of sub-problem 
+       ListNode cur = reverseKGroup(node, k); //pre node point to the the answer of sub-problem 
         while (count > 0) {  
-            ListNode next = head.next; 
-            head.next = pre; 
-            pre = head; 
-            head = next;
+            ListNode temp = head.next; 
+            head.next = cur; 
+            cur = head; 
+            head = temp;
             count = count - 1;
         }
-        return pre;
+        return cur;
 
     }
 }
