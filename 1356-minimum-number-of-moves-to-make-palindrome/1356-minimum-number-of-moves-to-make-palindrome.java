@@ -14,6 +14,8 @@ class Solution {
                     tmp--;
                 }
                 if(tmp==left){
+                    //no matching chars found so move left 
+                    //char to center and keep right n left pointer at same
                     swap(ch, left, left+1);
                     res++;
                 }else{
