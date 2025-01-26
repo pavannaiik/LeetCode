@@ -1,34 +1,62 @@
+import java.util.Arrays;
+
 class Solution {
-        public long maximumCoins(int[][] A, int k) {
-        Arrays.sort(A, (a, b) -> a[0] - b[0]);
-        int n = A.length;
+    public long maximumCoins(int[][] intervals, int k) {
+        Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
+        long maxStart = calculateMaxStartingAtInterval(intervals, k);
+        long maxEnd = calculateMaxEndingAtInterval(intervals, k);
+        return Math.max(maxStart, maxEnd);
+    }
 
-        // Start at A[i][0]
-        long res = 0, cur = 0;
-        for (int i = 0, j = 0; i < n; ++i) {
-            while (j < n && A[j][1] <= A[i][0] + k - 1) {
-                cur += 1L * (A[j][1] - A[j][0] + 1) * A[j][2];
-                j++;
+    private long calculateMaxStartingAtInterval(int[][] intervals, int k) {
+        long max = 0, currentSum = 0;
+        int n = intervals.length;
+        int right = 0;
+        for (int left = 0; left < n; left++) {
+            int windowStart = intervals[left][0];
+            int windowEnd = windowStart + k - 1;
+            // Expand right to include intervals fully inside the window
+            while (right < n && intervals[right][1] <= windowEnd) {
+                currentSum += getIntervalCoins(intervals[right]);
+                right++;
             }
-            if (j < n) {
-                long part = 1L * Math.max(0, A[i][0] + k - 1 - A[j][0] + 1) * A[j][2];
-                res = Math.max(res, cur + part);
+            // Check partial overlap with the next interval
+            long partial = 0;
+            if (right < n && intervals[right][0] <= windowEnd) {
+                partial = (windowEnd - intervals[right][0] + 1L) * intervals[right][2];
             }
-            cur -= 1L * (A[i][1] - A[i][0] + 1) * A[i][2];
+            max = Math.max(max, currentSum + partial);
+            // Subtract the left interval as the window moves
+            currentSum -= getIntervalCoins(intervals[left]);
         }
+        return max;
+    }
 
-        // End at A[i][1]
-        cur = 0;
-        for (int i = 0, j = 0; i < n; ++i) {
-            cur += 1L * (A[i][1] - A[i][0] + 1) * A[i][2];
-            while (A[j][1] < A[i][1] - k + 1) {
-                cur -= 1L * (A[j][1] - A[j][0] + 1) * A[j][2];
-                j++;
+    private long calculateMaxEndingAtInterval(int[][] intervals, int k) {
+        long max = 0, currentSum = 0;
+        int n = intervals.length;
+        int left = 0;
+        for (int right = 0; right < n; right++) {
+            currentSum += getIntervalCoins(intervals[right]);
+            int windowEnd = intervals[right][1];
+            int windowStart = windowEnd - k + 1;
+            // Adjust left to exclude intervals completely before the window
+            while (left <= right && intervals[left][1] < windowStart) {
+                currentSum -= getIntervalCoins(intervals[left]);
+                left++;
             }
-            long part = 1L * Math.max(0, A[i][1] - k - A[j][0] + 1) * A[j][2];
-            res = Math.max(res, cur - part);
+            // Calculate partial overlap with the leftmost interval
+            long partial = 0;
+            if (left <= right) {
+                int overlapStart = Math.max(intervals[left][0], windowStart);
+                partial = (overlapStart - intervals[left][0]) * (long) intervals[left][2];
+            }
+            max = Math.max(max, currentSum - partial);
         }
+        return max;
+    }
 
-        return res;
+    private long getIntervalCoins(int[] interval) {
+        return (interval[1] - interval[0] + 1L) * interval[2];
     }
 }
