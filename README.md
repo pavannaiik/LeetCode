@@ -187,6 +187,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2267-minimum-difference-in-sums-after-removal-of-elements](https://github.com/pavannaiik/LeetCode/tree/master/2267-minimum-difference-in-sums-after-removal-of-elements) |
 | [2306-create-binary-tree-from-descriptions](https://github.com/pavannaiik/LeetCode/tree/master/2306-create-binary-tree-from-descriptions) |
 | [2334-number-of-flowers-in-full-bloom](https://github.com/pavannaiik/LeetCode/tree/master/2334-number-of-flowers-in-full-bloom) |
+| [2354-minimum-health-to-beat-game](https://github.com/pavannaiik/LeetCode/tree/master/2354-minimum-health-to-beat-game) |
 | [2358-number-of-ways-to-split-array](https://github.com/pavannaiik/LeetCode/tree/master/2358-number-of-ways-to-split-array) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/pavannaiik/LeetCode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2458-find-minimum-time-to-finish-all-jobs-ii](https://github.com/pavannaiik/LeetCode/tree/master/2458-find-minimum-time-to-finish-all-jobs-ii) |
@@ -747,6 +748,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2094-remove-stones-to-minimize-the-total](https://github.com/pavannaiik/LeetCode/tree/master/2094-remove-stones-to-minimize-the-total) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/pavannaiik/LeetCode/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2156-stone-game-ix](https://github.com/pavannaiik/LeetCode/tree/master/2156-stone-game-ix) |
+| [2354-minimum-health-to-beat-game](https://github.com/pavannaiik/LeetCode/tree/master/2354-minimum-health-to-beat-game) |
 | [2379-maximum-total-importance-of-roads](https://github.com/pavannaiik/LeetCode/tree/master/2379-maximum-total-importance-of-roads) |
 | [2405-minimum-number-of-keypresses](https://github.com/pavannaiik/LeetCode/tree/master/2405-minimum-number-of-keypresses) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/pavannaiik/LeetCode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
