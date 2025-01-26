@@ -281,6 +281,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0253-meeting-rooms-ii](https://github.com/pavannaiik/LeetCode/tree/master/0253-meeting-rooms-ii) |
 | [0268-missing-number](https://github.com/pavannaiik/LeetCode/tree/master/0268-missing-number) |
 | [0295-find-median-from-data-stream](https://github.com/pavannaiik/LeetCode/tree/master/0295-find-median-from-data-stream) |
+| [0314-binary-tree-vertical-order-traversal](https://github.com/pavannaiik/LeetCode/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0347-top-k-frequent-elements](https://github.com/pavannaiik/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/pavannaiik/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0360-sort-transformed-array](https://github.com/pavannaiik/LeetCode/tree/master/0360-sort-transformed-array) |
@@ -575,6 +576,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0229-majority-element-ii](https://github.com/pavannaiik/LeetCode/tree/master/0229-majority-element-ii) |
 | [0264-ugly-number-ii](https://github.com/pavannaiik/LeetCode/tree/master/0264-ugly-number-ii) |
 | [0268-missing-number](https://github.com/pavannaiik/LeetCode/tree/master/0268-missing-number) |
+| [0314-binary-tree-vertical-order-traversal](https://github.com/pavannaiik/LeetCode/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0340-longest-substring-with-at-most-k-distinct-characters](https://github.com/pavannaiik/LeetCode/tree/master/0340-longest-substring-with-at-most-k-distinct-characters) |
 | [0347-top-k-frequent-elements](https://github.com/pavannaiik/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/pavannaiik/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
@@ -1065,6 +1067,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/pavannaiik/LeetCode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/pavannaiik/LeetCode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/pavannaiik/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [0314-binary-tree-vertical-order-traversal](https://github.com/pavannaiik/LeetCode/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0337-house-robber-iii](https://github.com/pavannaiik/LeetCode/tree/master/0337-house-robber-iii) |
 | [0450-delete-node-in-a-bst](https://github.com/pavannaiik/LeetCode/tree/master/0450-delete-node-in-a-bst) |
 | [0543-diameter-of-binary-tree](https://github.com/pavannaiik/LeetCode/tree/master/0543-diameter-of-binary-tree) |
@@ -1104,6 +1107,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/pavannaiik/LeetCode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/pavannaiik/LeetCode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/pavannaiik/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [0314-binary-tree-vertical-order-traversal](https://github.com/pavannaiik/LeetCode/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0337-house-robber-iii](https://github.com/pavannaiik/LeetCode/tree/master/0337-house-robber-iii) |
 | [0450-delete-node-in-a-bst](https://github.com/pavannaiik/LeetCode/tree/master/0450-delete-node-in-a-bst) |
 | [0543-diameter-of-binary-tree](https://github.com/pavannaiik/LeetCode/tree/master/0543-diameter-of-binary-tree) |
@@ -1145,6 +1149,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/pavannaiik/LeetCode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0261-graph-valid-tree](https://github.com/pavannaiik/LeetCode/tree/master/0261-graph-valid-tree) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/pavannaiik/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [0314-binary-tree-vertical-order-traversal](https://github.com/pavannaiik/LeetCode/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/pavannaiik/LeetCode/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/pavannaiik/LeetCode/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0337-house-robber-iii](https://github.com/pavannaiik/LeetCode/tree/master/0337-house-robber-iii) |
@@ -1202,6 +1207,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0261-graph-valid-tree](https://github.com/pavannaiik/LeetCode/tree/master/0261-graph-valid-tree) |
 | [0286-walls-and-gates](https://github.com/pavannaiik/LeetCode/tree/master/0286-walls-and-gates) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/pavannaiik/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [0314-binary-tree-vertical-order-traversal](https://github.com/pavannaiik/LeetCode/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0322-coin-change](https://github.com/pavannaiik/LeetCode/tree/master/0322-coin-change) |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/pavannaiik/LeetCode/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/pavannaiik/LeetCode/tree/master/0329-longest-increasing-path-in-a-matrix) |
