@@ -149,6 +149,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1272-invalid-transactions](https://github.com/pavannaiik/LeetCode/tree/master/1272-invalid-transactions) |
 | [1293-three-consecutive-odds](https://github.com/pavannaiik/LeetCode/tree/master/1293-three-consecutive-odds) |
 | [1306-minimum-absolute-difference](https://github.com/pavannaiik/LeetCode/tree/master/1306-minimum-absolute-difference) |
+| [1319-unique-number-of-occurrences](https://github.com/pavannaiik/LeetCode/tree/master/1319-unique-number-of-occurrences) |
 | [1325-path-with-maximum-probability](https://github.com/pavannaiik/LeetCode/tree/master/1325-path-with-maximum-probability) |
 | [1333-sort-the-jumbled-numbers](https://github.com/pavannaiik/LeetCode/tree/master/1333-sort-the-jumbled-numbers) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/pavannaiik/LeetCode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
@@ -612,6 +613,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1207-delete-nodes-and-return-forest](https://github.com/pavannaiik/LeetCode/tree/master/1207-delete-nodes-and-return-forest) |
 | [1256-rank-transform-of-an-array](https://github.com/pavannaiik/LeetCode/tree/master/1256-rank-transform-of-an-array) |
 | [1272-invalid-transactions](https://github.com/pavannaiik/LeetCode/tree/master/1272-invalid-transactions) |
+| [1319-unique-number-of-occurrences](https://github.com/pavannaiik/LeetCode/tree/master/1319-unique-number-of-occurrences) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/pavannaiik/LeetCode/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
 | [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/pavannaiik/LeetCode/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
 | [1643-number-of-nodes-in-the-sub-tree-with-the-same-label](https://github.com/pavannaiik/LeetCode/tree/master/1643-number-of-nodes-in-the-sub-tree-with-the-same-label) |
