@@ -10,7 +10,6 @@ class Solution {
                 }
                 if(i==0 && j==0){
                     dp[i][j]=1;
-
                 }else if(i==0){
                     dp[i][j]=dp[i][j-1];
                 }else if(j==0){
