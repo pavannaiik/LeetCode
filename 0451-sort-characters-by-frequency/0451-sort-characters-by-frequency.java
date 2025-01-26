@@ -1,26 +1,28 @@
 class Solution {
     public String frequencySort(String s) {
-        HashMap<Character,Integer>map = new HashMap<>();
-        for(char c: s.toCharArray()){
-            map.put(c, map.getOrDefault(c, 0)+1);
+       // Step 1: Count frequencies of characters
+        Map<Character, Integer> freqMap = new HashMap<>();
+        for (char c : s.toCharArray()) {
+            freqMap.put(c, freqMap.getOrDefault(c, 0) + 1);
         }
-        int maxFreq = Collections.max(map.values());
-        List<List<Character>>buckets = new ArrayList<>();
-        for(int i=0;i<=maxFreq;i++){
-            buckets.add(new ArrayList<Character>());
-        }
-        for(Character key:map.keySet()){
-            int freq = map.get(key);
-            buckets.get(freq).add(key);
-        }
-        StringBuilder sb = new StringBuilder();
-        for(int i=buckets.size()-1;i>=1;i--){
-            for(Character c:buckets.get(i)){
-                for(int j=0;j<i;j++){
-                    sb.append(c);
-                }
+
+        // Step 2: Add entries to a max-heap based on frequency
+        PriorityQueue<Map.Entry<Character, Integer>> maxHeap = new PriorityQueue<>(
+            (a, b) -> b.getValue() - a.getValue()
+        );
+        maxHeap.addAll(freqMap.entrySet());
+
+        // Step 3: Build the result string
+        StringBuilder result = new StringBuilder();
+        while (!maxHeap.isEmpty()) {
+            Map.Entry<Character, Integer> entry = maxHeap.poll();
+            char c = entry.getKey();
+            int frequency = entry.getValue();
+            for (int i = 0; i < frequency; i++) {
+                result.append(c);
             }
         }
-        return sb.toString();
+
+        return result.toString();
     }
 }
