@@ -1,39 +1,36 @@
 class Solution {
-
     public int smallestDistancePair(int[] nums, int k) {
-        int arrayLength = nums.length;
+        Arrays.sort(nums);
+        int n = nums.length;
+        int l = 0;
+        int r = nums[n-1] - nums[0];
 
-        // Find the maximum element in the array
-        int maxElement = Integer.MIN_VALUE;
-        for (int num : nums) {
-            maxElement = Math.max(maxElement, num);
-        }
+        while (l <= r){
+            int mid = (l + r) / 2;
+            int pairs = sliding(nums, mid, n);
 
-        // Initialize a bucket array to store counts of each distance
-        int[] distanceBucket = new int[maxElement + 1];
-
-        // Populate the bucket array with counts of each distance
-        for (int i = 0; i < arrayLength; ++i) {
-            for (int j = i + 1; j < arrayLength; ++j) {
-                // Compute the distance between nums[i] and nums[j]
-                int distance = Math.abs(nums[i] - nums[j]);
-
-                // Increment the count for this distance in the bucket
-                ++distanceBucket[distance];
+            if (pairs < k){
+                l = mid + 1;
+            } else {
+                r = mid - 1;
             }
         }
 
-        // Find the k-th smallest distance
-        for (int dist = 0; dist <= maxElement; ++dist) {
-            // Reduce k by the number of pairs with the current distance
-            k -= distanceBucket[dist];
+        return l;
+    }
 
-            // If k is less than or equal to 0, return the current distance
-            if (k <= 0) {
-                return dist;
+    private int sliding(int[] nums, int mid, int n){
+        int count = 0;
+        int j = 0;
+
+        for (int i = 0; i < n; i++){
+
+            while (nums[i] - nums[j] > mid){ // sliding window
+                j += 1;
             }
+            count += i - j; // the number inbetween also < mid so i - j
         }
 
-        return -1; // Return -1 if no distance found, should not reach here
+        return count;
     }
 }
