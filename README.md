@@ -209,6 +209,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2675-find-the-width-of-columns-of-a-grid](https://github.com/pavannaiik/LeetCode/tree/master/2675-find-the-width-of-columns-of-a-grid) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/pavannaiik/LeetCode/tree/master/2691-count-vowel-strings-in-ranges) |
 | [2727-number-of-senior-citizens](https://github.com/pavannaiik/LeetCode/tree/master/2727-number-of-senior-citizens) |
+| [2764-maximum-number-of-fish-in-a-grid](https://github.com/pavannaiik/LeetCode/tree/master/2764-maximum-number-of-fish-in-a-grid) |
 | [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/pavannaiik/LeetCode/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
 | [2846-robot-collisions](https://github.com/pavannaiik/LeetCode/tree/master/2846-robot-collisions) |
 | [3235-minimum-cost-to-convert-string-i](https://github.com/pavannaiik/LeetCode/tree/master/3235-minimum-cost-to-convert-string-i) |
@@ -484,6 +485,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/pavannaiik/LeetCode/tree/master/2038-nearest-exit-from-entrance-in-maze) |
 | [2472-build-a-matrix-with-conditions](https://github.com/pavannaiik/LeetCode/tree/master/2472-build-a-matrix-with-conditions) |
 | [2675-find-the-width-of-columns-of-a-grid](https://github.com/pavannaiik/LeetCode/tree/master/2675-find-the-width-of-columns-of-a-grid) |
+| [2764-maximum-number-of-fish-in-a-grid](https://github.com/pavannaiik/LeetCode/tree/master/2764-maximum-number-of-fish-in-a-grid) |
 ## Binary Search
 |  |
 | ------- |
@@ -704,6 +706,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0999-regions-cut-by-slashes](https://github.com/pavannaiik/LeetCode/tree/master/0999-regions-cut-by-slashes) |
 | [1073-number-of-enclaves](https://github.com/pavannaiik/LeetCode/tree/master/1073-number-of-enclaves) |
 | [1701-remove-max-number-of-edges-to-keep-graph-fully-traversable](https://github.com/pavannaiik/LeetCode/tree/master/1701-remove-max-number-of-edges-to-keep-graph-fully-traversable) |
+| [2764-maximum-number-of-fish-in-a-grid](https://github.com/pavannaiik/LeetCode/tree/master/2764-maximum-number-of-fish-in-a-grid) |
 ## Graph
 |  |
 | ------- |
@@ -1207,6 +1210,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2009-longest-word-with-all-prefixes](https://github.com/pavannaiik/LeetCode/tree/master/2009-longest-word-with-all-prefixes) |
 | [2217-step-by-step-directions-from-a-binary-tree-node-to-another](https://github.com/pavannaiik/LeetCode/tree/master/2217-step-by-step-directions-from-a-binary-tree-node-to-another) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/pavannaiik/LeetCode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
+| [2764-maximum-number-of-fish-in-a-grid](https://github.com/pavannaiik/LeetCode/tree/master/2764-maximum-number-of-fish-in-a-grid) |
 | [3058-maximum-number-of-k-divisible-components](https://github.com/pavannaiik/LeetCode/tree/master/3058-maximum-number-of-k-divisible-components) |
 ## Topological Sort
 |  |
@@ -1265,6 +1269,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/pavannaiik/LeetCode/tree/master/2038-nearest-exit-from-entrance-in-maze) |
 | [2171-second-minimum-time-to-reach-destination](https://github.com/pavannaiik/LeetCode/tree/master/2171-second-minimum-time-to-reach-destination) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/pavannaiik/LeetCode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
+| [2764-maximum-number-of-fish-in-a-grid](https://github.com/pavannaiik/LeetCode/tree/master/2764-maximum-number-of-fish-in-a-grid) |
 ## Shortest Path
 |  |
 | ------- |
