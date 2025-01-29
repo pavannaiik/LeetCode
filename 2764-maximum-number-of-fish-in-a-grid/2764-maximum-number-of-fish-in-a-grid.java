@@ -1,29 +1,28 @@
 class Solution {
+    private final int[][] directions = {{0,1}, {0,-1}, {1,0}, {-1,0}}; // Right, Left, Down, Up
+
     public int findMaxFish(int[][] grid) {
-        int n = grid.length, m = grid[0].length;
-        int ans = 0;
-        for(int i=0;i<n;i++){
-            for(int j=0;j<m;j++){
-                if(grid[i][j]!=0){
-                    int fishes = dfs(grid, i, j, n, m);
-                    ans = Math.max(ans, fishes);
+        int maxFish = 0;
+        for(int i = 0; i < grid.length; i++) {
+            for(int j = 0; j < grid[0].length; j++) {
+                if(grid[i][j] != 0) {
+                    maxFish = Math.max(maxFish, dfs(grid, i, j));
                 }
             }
         }
-        return ans;
+        return maxFish;
     }
-    public int dfs(int[][] grid, int i, int j, int n, int m){
-        if(i < 0|| i>=n || j < 0 || j >=m || grid[i][j]==0){
+
+    private int dfs(int[][] grid, int i, int j) {
+        if (i < 0 || i >= grid.length || j < 0 || j >= grid[0].length || grid[i][j] == 0) {
             return 0;
         }
-        int fishes = grid[i][j];
-        grid[i][j]=0;
-        // Explore all four directions
-        fishes += dfs(grid, i, j - 1, n, m); // Left
-        fishes += dfs(grid, i, j + 1, n, m); // Right
-        fishes += dfs(grid, i - 1, j, n, m); // Up
-        fishes += dfs(grid, i + 1, j, n, m); // Down
+        int fish = grid[i][j];
+        grid[i][j] = 0; // Mark as visited
         
-        return fishes;
+        for (int[] dir : directions) {
+            fish += dfs(grid, i + dir[0], j + dir[1]);
+        }
+        return fish;
     }
 }
