@@ -5,5 +5,4 @@ class Solution:
             if num != val:
                 nums[left] = num
                 left = left + 1
-
         return left
