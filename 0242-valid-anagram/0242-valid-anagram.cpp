@@ -8,8 +8,8 @@ public:
         for(char c:t){
             v[c-'a']--;
         }
-        for(int n:v){
-            if(n!=0) return false;
+        for(int a:v){
+            if(a!=0) return false;
         }
         return true;
     }
