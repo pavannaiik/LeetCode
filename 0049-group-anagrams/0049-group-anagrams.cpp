@@ -10,7 +10,7 @@ public:
             map[key].push_back(s);
         }
         for(auto& p:map){
-            ans.push_back(p.second);
+            ans.push_back(std::move(p.second));
         }
         return ans;
     }
