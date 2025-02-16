@@ -9,7 +9,7 @@ public:
                 ans[1]=i;
                 return ans;
             }
-            map.insert({nums[i],i});
+            map.insert({nums[i], i});
         }
         return ans;
     }
