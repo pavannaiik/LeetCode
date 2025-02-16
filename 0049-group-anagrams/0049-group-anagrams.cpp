@@ -9,7 +9,8 @@ public:
             sort(key.begin(), key.end());
             map[key].push_back(s);
         }
-        for(auto& p:map){
+        //auto& p:map
+        for(auto p:map){
             ans.push_back(std::move(p.second));
         }
         return ans;
