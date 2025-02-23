@@ -157,6 +157,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1333-sort-the-jumbled-numbers](https://github.com/pavannaiik/LeetCode/tree/master/1333-sort-the-jumbled-numbers) |
 | [1382-calculate-amount-paid-in-taxes](https://github.com/pavannaiik/LeetCode/tree/master/1382-calculate-amount-paid-in-taxes) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/pavannaiik/LeetCode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
+| [1478-maximum-number-of-events-that-can-be-attended](https://github.com/pavannaiik/LeetCode/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
 | [1496-lucky-numbers-in-a-matrix](https://github.com/pavannaiik/LeetCode/tree/master/1496-lucky-numbers-in-a-matrix) |
 | [1511-count-number-of-teams](https://github.com/pavannaiik/LeetCode/tree/master/1511-count-number-of-teams) |
 | [1528-kids-with-the-greatest-number-of-candies](https://github.com/pavannaiik/LeetCode/tree/master/1528-kids-with-the-greatest-number-of-candies) |
@@ -318,6 +319,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1272-invalid-transactions](https://github.com/pavannaiik/LeetCode/tree/master/1272-invalid-transactions) |
 | [1306-minimum-absolute-difference](https://github.com/pavannaiik/LeetCode/tree/master/1306-minimum-absolute-difference) |
 | [1333-sort-the-jumbled-numbers](https://github.com/pavannaiik/LeetCode/tree/master/1333-sort-the-jumbled-numbers) |
+| [1478-maximum-number-of-events-that-can-be-attended](https://github.com/pavannaiik/LeetCode/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/pavannaiik/LeetCode/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
 | [1574-maximum-product-of-two-elements-in-an-array](https://github.com/pavannaiik/LeetCode/tree/master/1574-maximum-product-of-two-elements-in-an-array) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/pavannaiik/LeetCode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
@@ -759,6 +761,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1033-broken-calculator](https://github.com/pavannaiik/LeetCode/tree/master/1033-broken-calculator) |
 | [1304-longest-happy-string](https://github.com/pavannaiik/LeetCode/tree/master/1304-longest-happy-string) |
 | [1356-minimum-number-of-moves-to-make-palindrome](https://github.com/pavannaiik/LeetCode/tree/master/1356-minimum-number-of-moves-to-make-palindrome) |
+| [1478-maximum-number-of-events-that-can-be-attended](https://github.com/pavannaiik/LeetCode/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/pavannaiik/LeetCode/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
 | [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/pavannaiik/LeetCode/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
 | [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/pavannaiik/LeetCode/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
@@ -808,6 +811,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1127-last-stone-weight](https://github.com/pavannaiik/LeetCode/tree/master/1127-last-stone-weight) |
 | [1304-longest-happy-string](https://github.com/pavannaiik/LeetCode/tree/master/1304-longest-happy-string) |
 | [1325-path-with-maximum-probability](https://github.com/pavannaiik/LeetCode/tree/master/1325-path-with-maximum-probability) |
+| [1478-maximum-number-of-events-that-can-be-attended](https://github.com/pavannaiik/LeetCode/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
 | [1574-maximum-product-of-two-elements-in-an-array](https://github.com/pavannaiik/LeetCode/tree/master/1574-maximum-product-of-two-elements-in-an-array) |
 | [1762-furthest-building-you-can-reach](https://github.com/pavannaiik/LeetCode/tree/master/1762-furthest-building-you-can-reach) |
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/pavannaiik/LeetCode/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
