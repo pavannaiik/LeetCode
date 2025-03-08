@@ -1011,6 +1011,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0227-basic-calculator-ii](https://github.com/pavannaiik/LeetCode/tree/master/0227-basic-calculator-ii) |
 | [0234-palindrome-linked-list](https://github.com/pavannaiik/LeetCode/tree/master/0234-palindrome-linked-list) |
 | [0316-remove-duplicate-letters](https://github.com/pavannaiik/LeetCode/tree/master/0316-remove-duplicate-letters) |
+| [0341-flatten-nested-list-iterator](https://github.com/pavannaiik/LeetCode/tree/master/0341-flatten-nested-list-iterator) |
 | [0394-decode-string](https://github.com/pavannaiik/LeetCode/tree/master/0394-decode-string) |
 | [0496-next-greater-element-i](https://github.com/pavannaiik/LeetCode/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/pavannaiik/LeetCode/tree/master/0503-next-greater-element-ii) |
@@ -1069,6 +1070,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0239-sliding-window-maximum](https://github.com/pavannaiik/LeetCode/tree/master/0239-sliding-window-maximum) |
+| [0341-flatten-nested-list-iterator](https://github.com/pavannaiik/LeetCode/tree/master/0341-flatten-nested-list-iterator) |
 | [0387-first-unique-character-in-a-string](https://github.com/pavannaiik/LeetCode/tree/master/0387-first-unique-character-in-a-string) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/pavannaiik/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2617-time-taken-to-cross-the-door](https://github.com/pavannaiik/LeetCode/tree/master/2617-time-taken-to-cross-the-door) |
@@ -1113,6 +1115,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/pavannaiik/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/pavannaiik/LeetCode/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0337-house-robber-iii](https://github.com/pavannaiik/LeetCode/tree/master/0337-house-robber-iii) |
+| [0341-flatten-nested-list-iterator](https://github.com/pavannaiik/LeetCode/tree/master/0341-flatten-nested-list-iterator) |
 | [0450-delete-node-in-a-bst](https://github.com/pavannaiik/LeetCode/tree/master/0450-delete-node-in-a-bst) |
 | [0543-diameter-of-binary-tree](https://github.com/pavannaiik/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/pavannaiik/LeetCode/tree/master/0572-subtree-of-another-tree) |
@@ -1197,6 +1200,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/pavannaiik/LeetCode/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/pavannaiik/LeetCode/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0337-house-robber-iii](https://github.com/pavannaiik/LeetCode/tree/master/0337-house-robber-iii) |
+| [0341-flatten-nested-list-iterator](https://github.com/pavannaiik/LeetCode/tree/master/0341-flatten-nested-list-iterator) |
 | [0399-evaluate-division](https://github.com/pavannaiik/LeetCode/tree/master/0399-evaluate-division) |
 | [0543-diameter-of-binary-tree](https://github.com/pavannaiik/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 | [0547-number-of-provinces](https://github.com/pavannaiik/LeetCode/tree/master/0547-number-of-provinces) |
@@ -1348,6 +1352,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0295-find-median-from-data-stream](https://github.com/pavannaiik/LeetCode/tree/master/0295-find-median-from-data-stream) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/pavannaiik/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0304-range-sum-query-2d-immutable](https://github.com/pavannaiik/LeetCode/tree/master/0304-range-sum-query-2d-immutable) |
+| [0341-flatten-nested-list-iterator](https://github.com/pavannaiik/LeetCode/tree/master/0341-flatten-nested-list-iterator) |
 | [0348-design-tic-tac-toe](https://github.com/pavannaiik/LeetCode/tree/master/0348-design-tic-tac-toe) |
 | [0355-design-twitter](https://github.com/pavannaiik/LeetCode/tree/master/0355-design-twitter) |
 | [0380-insert-delete-getrandom-o1](https://github.com/pavannaiik/LeetCode/tree/master/0380-insert-delete-getrandom-o1) |
@@ -1460,4 +1465,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0187-repeated-dna-sequences](https://github.com/pavannaiik/LeetCode/tree/master/0187-repeated-dna-sequences) |
 | [0214-shortest-palindrome](https://github.com/pavannaiik/LeetCode/tree/master/0214-shortest-palindrome) |
 | [1508-longest-happy-prefix](https://github.com/pavannaiik/LeetCode/tree/master/1508-longest-happy-prefix) |
+## Iterator
+|  |
+| ------- |
+| [0341-flatten-nested-list-iterator](https://github.com/pavannaiik/LeetCode/tree/master/0341-flatten-nested-list-iterator) |
 <!---LeetCode Topics End-->
