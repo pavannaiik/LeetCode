@@ -1,15 +1,18 @@
 class Solution {
     public int lengthOfLIS(int[] nums) {
-        int[] LIS = new int[nums.length];
-        Arrays.fill(LIS,1);
-        int max =1;
-        for(int i=1;i<nums.length;i++){
-            for(int j=0;j<i;j++){
-                if(nums[j]<nums[i])
-                LIS[i]=Math.max(LIS[i],LIS[j]+1);
+        List<Integer>result = new ArrayList<>();
+        for(int i=0;i<nums.length;i++){
+            int index = Collections.binarySearch(result, nums[i]);
+            if(index < 0){
+                index = -index - 1;
             }
-            max = Math.max(max,LIS[i]);
+            if(index < result.size()){
+                result.set(index, nums[i]);
+            }else{
+                result.add(nums[i]);
+            }
+            
         }
-        return max;
+        return result.size();
     }
 }
