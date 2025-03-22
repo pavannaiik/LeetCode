@@ -1,41 +1,24 @@
 class Solution {
+    static int mod =(int) 1e9 +7;
     public int sumSubarrayMins(int[] arr) {
-       int MOD = 1_000_000_007;
-        int n = arr.length;
-
-        // Arrays to store left and right bounds
-        int[] prev = new int[n];
-        int[] next = new int[n];
-
-        // Monotonic stack to calculate prev
-        Stack<Integer> stack = new Stack<>();
-        for (int i = 0; i < n; i++) {
-            while (!stack.isEmpty() && arr[stack.peek()] > arr[i]) {
-                stack.pop();
-            }
-            prev[i] = stack.isEmpty() ? i + 1 : i - stack.peek();
-            stack.push(i);
+        int n = arr.length + 1;
+        int[] left = new int[n];
+        int[] ext = new int[n];
+        int[] sums = new int[n];
+        for(int i = 0; i < n -1; ++i)
+           ext[i+1] = arr[i];
+           
+        int res = 0;
+        for (int i = 1; i < n; i++) {
+            int cur = ext[i];
+            int l = i - 1;
+            while (ext[l] >= cur) 
+                l = left[l];
+            
+            left[i] = l;
+            sums[i] = sums[l] + cur * (i - l);
+            res = (res + sums[i]) % mod;
         }
-
-        // Clear the stack for reuse
-        stack.clear();
-
-        // Monotonic stack to calculate next
-        for (int i = n - 1; i >= 0; i--) {
-            while (!stack.isEmpty() && arr[stack.peek()] >= arr[i]) {
-                stack.pop();
-            }
-            next[i] = stack.isEmpty() ? n - i : stack.peek() - i;
-            stack.push(i);
-        }
-
-        // Calculate the result
-        long result = 0;
-        for (int i = 0; i < n; i++) {
-            result += (long) arr[i] * prev[i] * next[i];
-            result %= MOD;
-        }
-
-        return (int) result;    
+        return res;        
     }
 }
