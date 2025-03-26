@@ -251,6 +251,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0350-intersection-of-two-arrays-ii](https://github.com/pavannaiik/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0360-sort-transformed-array](https://github.com/pavannaiik/LeetCode/tree/master/0360-sort-transformed-array) |
 | [0392-is-subsequence](https://github.com/pavannaiik/LeetCode/tree/master/0392-is-subsequence) |
+| [0408-valid-word-abbreviation](https://github.com/pavannaiik/LeetCode/tree/master/0408-valid-word-abbreviation) |
 | [0455-assign-cookies](https://github.com/pavannaiik/LeetCode/tree/master/0455-assign-cookies) |
 | [0528-swapping-nodes-in-a-linked-list](https://github.com/pavannaiik/LeetCode/tree/master/0528-swapping-nodes-in-a-linked-list) |
 | [0567-permutation-in-string](https://github.com/pavannaiik/LeetCode/tree/master/0567-permutation-in-string) |
@@ -870,6 +871,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0392-is-subsequence](https://github.com/pavannaiik/LeetCode/tree/master/0392-is-subsequence) |
 | [0394-decode-string](https://github.com/pavannaiik/LeetCode/tree/master/0394-decode-string) |
 | [0399-evaluate-division](https://github.com/pavannaiik/LeetCode/tree/master/0399-evaluate-division) |
+| [0408-valid-word-abbreviation](https://github.com/pavannaiik/LeetCode/tree/master/0408-valid-word-abbreviation) |
 | [0424-longest-repeating-character-replacement](https://github.com/pavannaiik/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0451-sort-characters-by-frequency](https://github.com/pavannaiik/LeetCode/tree/master/0451-sort-characters-by-frequency) |
 | [0468-validate-ip-address](https://github.com/pavannaiik/LeetCode/tree/master/0468-validate-ip-address) |
