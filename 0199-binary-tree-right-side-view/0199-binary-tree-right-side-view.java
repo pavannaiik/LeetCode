@@ -13,27 +13,25 @@
  *     }
  * }
  */
+ // O(n) + O(n)
 class Solution {
     public List<Integer> rightSideView(TreeNode root) {
+        if(root==null) return new ArrayList<>();
         List<Integer>result = new ArrayList<>();
-        if(root ==null) return result;
         Queue<TreeNode>queue = new LinkedList<>();
-        queue.offer(root);
+        queue.add(root);
         while(!queue.isEmpty()){
-            int length = queue.size();
-            for(int i=0;i<length;i++){
-                TreeNode node = queue.poll();
-                if(i==length-1){
-                    result.add(node.val);
+            int len = queue.size();
+            for(int i=0;i<len;i++){
+                TreeNode cur = queue.poll();
+                if(i==len-1){
+                    result.add(cur.val);
                 }
-                 if(node.left!=null){
-                        queue.offer(node.left);
-                    }
-                    if(node.right!=null){
-                        queue.offer(node.right);
-                    }
+                if(cur.left!=null) queue.add(cur.left);
+                if(cur.right!=null) queue.add(cur.right);
             }
         }
         return result;
+
     }
 }
