@@ -897,6 +897,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1304-longest-happy-string](https://github.com/pavannaiik/LeetCode/tree/master/1304-longest-happy-string) |
 | [1320-remove-all-adjacent-duplicates-in-string-ii](https://github.com/pavannaiik/LeetCode/tree/master/1320-remove-all-adjacent-duplicates-in-string-ii) |
 | [1356-minimum-number-of-moves-to-make-palindrome](https://github.com/pavannaiik/LeetCode/tree/master/1356-minimum-number-of-moves-to-make-palindrome) |
+| [1371-minimum-remove-to-make-valid-parentheses](https://github.com/pavannaiik/LeetCode/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
 | [1508-longest-happy-prefix](https://github.com/pavannaiik/LeetCode/tree/master/1508-longest-happy-prefix) |
 | [1720-crawler-log-folder](https://github.com/pavannaiik/LeetCode/tree/master/1720-crawler-log-folder) |
 | [1739-split-two-strings-to-make-palindrome](https://github.com/pavannaiik/LeetCode/tree/master/1739-split-two-strings-to-make-palindrome) |
@@ -1027,6 +1028,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1002-maximum-width-ramp](https://github.com/pavannaiik/LeetCode/tree/master/1002-maximum-width-ramp) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/pavannaiik/LeetCode/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
 | [1320-remove-all-adjacent-duplicates-in-string-ii](https://github.com/pavannaiik/LeetCode/tree/master/1320-remove-all-adjacent-duplicates-in-string-ii) |
+| [1371-minimum-remove-to-make-valid-parentheses](https://github.com/pavannaiik/LeetCode/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
 | [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/pavannaiik/LeetCode/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
 | [1720-crawler-log-folder](https://github.com/pavannaiik/LeetCode/tree/master/1720-crawler-log-folder) |
 | [1756-minimum-deletions-to-make-string-balanced](https://github.com/pavannaiik/LeetCode/tree/master/1756-minimum-deletions-to-make-string-balanced) |
