@@ -15,47 +15,37 @@
  */
 class Solution {
     public List<List<Integer>> verticalOrder(TreeNode root) {
-        HashMap<Integer,List<Integer>>map = new HashMap<>();
-        List<List<Integer>>output=new ArrayList<>();
-        Queue<MyClass>queue = new LinkedList<>();
-        if(root==null) return output;
-
-        queue.offer(new MyClass(root,0));
-        int min =0, max =0;
+        List<List<Integer>>result = new ArrayList<>();
+        if(root==null) return result;
+        HashMap<Integer, List<Integer>>map = new HashMap<>();
+        Queue<Pair<Integer, TreeNode>>queue = new LinkedList<>();
+        queue.add(new Pair<Integer,TreeNode>(0, root));
+        int minVal = Integer.MAX_VALUE, maxVal = Integer.MIN_VALUE;
         while(!queue.isEmpty()){
             int len = queue.size();
             for(int i=0;i<len;i++){
-                MyClass myclass = queue.poll();
-                if(myclass.node!=null){
-                    if(!map.containsKey(myclass.level)){
-                        map.put(myclass.level,new ArrayList<>());
-                    }
-                    map.get(myclass.level).add(myclass.node.val);
+                Pair<Integer,TreeNode>p = queue.poll();
+                int level = p.getKey();
+                TreeNode node = p.getValue();
+                if(!map.containsKey(level)){
+                    map.put(level, new ArrayList<>());
                 }
-                min = Math.min(myclass.level,min);
-                max = Math.max(myclass.level,max);
-                if(myclass.node.left!=null){
-                    queue.offer(new MyClass(myclass.node.left,myclass.level-1));
+                map.get(level).add(node.val);
+                minVal = Math.min(level, minVal);
+                maxVal = Math.max(level, maxVal);
+                if(node.left!=null){
+                    queue.add(new Pair<Integer,TreeNode>(level-1, node.left));
                 }
-                if(myclass.node.right!=null){
-                    queue.offer(new MyClass(myclass.node.right,myclass.level+1));
+                if(node.right!=null){
+                    queue.add(new Pair<Integer,TreeNode>(level+1, node.right));
                 }
             }
         }
-        
-        for(int k=min;k<=max;k++){
-            output.add(map.get(k));
+        for(int i=minVal;i<=maxVal;i++){
+            List<Integer>cur = map.get(i);
+            //Collections.sort(cur);
+            result.add(cur);
         }
-        return output;
-
-
-    }
-}
-class MyClass{
-    TreeNode node;
-    int level;
-    MyClass(TreeNode node,int level){
-        this.node = node;
-        this.level=level;
+        return result;
     }
 }
