@@ -1,32 +1,47 @@
 class Solution {
     public int calculate(String s) {
         Stack<Integer>stack = new Stack<>();
-        int n = s.length();
-        int curNumber =0;
-        char operation = '+';
-        for(int i=0;i<n;i++){
-            char curChar = s.charAt(i);
-            if(Character.isDigit(curChar)){
-                curNumber = (curNumber * 10) +( curChar-'0');
+        char operator = '#';
+        int curVal = -1;
+        int i=0, j= s.length();
+        while(i < j){
+            char ch = s.charAt(i);
+            if(Character.isWhitespace(ch) ) {
+                i++;
+                continue;
             }
-            if(!Character.isDigit(curChar) && !Character.isWhitespace(curChar) || i == n-1){
-                if(operation =='+'){
-                    stack.push(curNumber);
-                }else if(operation =='-'){
-                    stack.push(-curNumber);
-                }else if(operation =='*'){
-                    stack.push(stack.pop() * curNumber);
-                }else if(operation =='/'){
-                    stack.push(stack.pop() / curNumber);
+            if(Character.isDigit(ch)){
+                int t =0;
+                while(i< j && Character.isDigit(s.charAt(i))){
+                    t = t * 10 + s.charAt(i)-'0';
+                    i++;
                 }
-                operation=curChar;
-                curNumber=0;
+                curVal = t;
+                i--;
+            }else{
+                operator = ch;
+                i++;
+                continue;
             }
+
+            if(operator == '#' && curVal !=-1){
+                stack.push(curVal);
+            }else if(operator=='+'){
+                stack.push(curVal);
+            }else if(operator == '-'){
+                stack.push(-curVal);
+            }else if(operator=='*' ){
+                int top = stack.pop();
+                stack.push(top * curVal);
+            }else {
+                int top = stack.pop();
+                stack.push(top / curVal);
+            }
+            curVal =0;
+            i++;
         }
-        int result=0;
-        while(!stack.isEmpty()){
-            result += stack.pop();
-        }
+        int result = 0;
+        while(!stack.isEmpty()) result += stack.pop();
         return result;
     }
 }
