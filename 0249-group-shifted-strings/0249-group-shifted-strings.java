@@ -4,9 +4,10 @@ class Solution {
         List<List<String>>result = new ArrayList<>();
         for(String s:strings){
             StringBuilder sb = new StringBuilder();
+            char firstChar = s.charAt(0);
             for(int i=0;i<s.length();i++){
                 char c = s.charAt(i);
-                int diff = c-s.charAt(0);
+                int diff = c-firstChar;
                 if(diff<0){
                     diff = diff+25+1;
                 }
