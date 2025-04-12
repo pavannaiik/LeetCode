@@ -23,7 +23,6 @@ class Solution {
     public void getClosest(TreeNode root, double target){
         if(root==null) return;
         double diff = (double)(root.val) - target;
-       // closestValue = Math.min(closestValue, Math.abs(diff));
         if(closestValue > Math.abs(diff)){
             closestValue = Math.abs(diff);
             val = root.val;
@@ -31,6 +30,7 @@ class Solution {
         if(closestValue == Math.abs(diff)){
             val = Math.min(val, root.val);
         }
+        System.out.println(closestValue);
         if(diff > 0){
             getClosest(root.left, target);
         }else{
