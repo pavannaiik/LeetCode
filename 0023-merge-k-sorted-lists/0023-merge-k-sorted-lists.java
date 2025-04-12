@@ -15,9 +15,8 @@ class Solution {
     public ListNode mergeLists(ListNode[] lists, int left, int right){
         if(left==right){
             return lists[left];
-        }
-        if(left > right || right <left) return null;
-        
+        }else if(left > right || right <left) return null;
+
         int mid = left+(right-left)/2;
         ListNode leftNode = mergeLists(lists, left, mid);
         ListNode rightNode = mergeLists(lists, mid+1, right);
