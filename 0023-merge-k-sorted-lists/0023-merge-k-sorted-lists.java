@@ -16,7 +16,7 @@ class Solution {
         if(left==right){
             return lists[left];
         }
-        if(left > right || right <left) return null;
+        if(left > right ) return null;
 
         int mid = left+(right-left)/2;
         ListNode leftNode = mergeLists(lists, left, mid);
