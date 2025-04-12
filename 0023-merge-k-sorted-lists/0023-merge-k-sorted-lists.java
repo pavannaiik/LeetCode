@@ -16,14 +16,13 @@ class Solution {
         if(left==right){
             return lists[left];
         }
-        if(left<right){
-            int mid = left+(right-left)/2;
+        if(left > right || right <left) return null;
+        
+        int mid = left+(right-left)/2;
         ListNode leftNode = mergeLists(lists, left, mid);
         ListNode rightNode = mergeLists(lists, mid+1, right);
         return merge(leftNode, rightNode);
-        }else{
-            return null;
-        }
+        
         
     }
     public ListNode merge(ListNode leftNode, ListNode rightNode){
