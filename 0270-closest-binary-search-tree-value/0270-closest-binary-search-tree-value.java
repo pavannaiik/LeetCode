@@ -30,7 +30,7 @@ class Solution {
         if(closestValue == Math.abs(diff)){
             val = Math.min(val, root.val);
         }
-        System.out.println(closestValue);
+       // System.out.println(closestValue);
         if(diff > 0){
             getClosest(root.left, target);
         }else{
