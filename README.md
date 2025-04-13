@@ -1002,6 +1002,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0328-odd-even-linked-list](https://github.com/pavannaiik/LeetCode/tree/master/0328-odd-even-linked-list) |
 | [0355-design-twitter](https://github.com/pavannaiik/LeetCode/tree/master/0355-design-twitter) |
 | [0528-swapping-nodes-in-a-linked-list](https://github.com/pavannaiik/LeetCode/tree/master/0528-swapping-nodes-in-a-linked-list) |
+| [0758-convert-binary-search-tree-to-sorted-doubly-linked-list](https://github.com/pavannaiik/LeetCode/tree/master/0758-convert-binary-search-tree-to-sorted-doubly-linked-list) |
 | [0908-middle-of-the-linked-list](https://github.com/pavannaiik/LeetCode/tree/master/0908-middle-of-the-linked-list) |
 | [2182-find-the-minimum-and-maximum-number-of-nodes-between-critical-points](https://github.com/pavannaiik/LeetCode/tree/master/2182-find-the-minimum-and-maximum-number-of-nodes-between-critical-points) |
 | [2216-delete-the-middle-node-of-a-linked-list](https://github.com/pavannaiik/LeetCode/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
@@ -1030,6 +1031,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0726-number-of-atoms](https://github.com/pavannaiik/LeetCode/tree/master/0726-number-of-atoms) |
 | [0735-asteroid-collision](https://github.com/pavannaiik/LeetCode/tree/master/0735-asteroid-collision) |
 | [0739-daily-temperatures](https://github.com/pavannaiik/LeetCode/tree/master/0739-daily-temperatures) |
+| [0758-convert-binary-search-tree-to-sorted-doubly-linked-list](https://github.com/pavannaiik/LeetCode/tree/master/0758-convert-binary-search-tree-to-sorted-doubly-linked-list) |
 | [0883-car-fleet](https://github.com/pavannaiik/LeetCode/tree/master/0883-car-fleet) |
 | [0886-score-of-parentheses](https://github.com/pavannaiik/LeetCode/tree/master/0886-score-of-parentheses) |
 | [0943-sum-of-subarray-minimums](https://github.com/pavannaiik/LeetCode/tree/master/0943-sum-of-subarray-minimums) |
@@ -1136,6 +1138,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0582-kill-process](https://github.com/pavannaiik/LeetCode/tree/master/0582-kill-process) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/pavannaiik/LeetCode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0662-maximum-width-of-binary-tree](https://github.com/pavannaiik/LeetCode/tree/master/0662-maximum-width-of-binary-tree) |
+| [0758-convert-binary-search-tree-to-sorted-doubly-linked-list](https://github.com/pavannaiik/LeetCode/tree/master/0758-convert-binary-search-tree-to-sorted-doubly-linked-list) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/pavannaiik/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/pavannaiik/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/pavannaiik/LeetCode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
@@ -1176,6 +1179,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0572-subtree-of-another-tree](https://github.com/pavannaiik/LeetCode/tree/master/0572-subtree-of-another-tree) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/pavannaiik/LeetCode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0662-maximum-width-of-binary-tree](https://github.com/pavannaiik/LeetCode/tree/master/0662-maximum-width-of-binary-tree) |
+| [0758-convert-binary-search-tree-to-sorted-doubly-linked-list](https://github.com/pavannaiik/LeetCode/tree/master/0758-convert-binary-search-tree-to-sorted-doubly-linked-list) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/pavannaiik/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/pavannaiik/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/pavannaiik/LeetCode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
@@ -1229,6 +1233,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0694-number-of-distinct-islands](https://github.com/pavannaiik/LeetCode/tree/master/0694-number-of-distinct-islands) |
 | [0695-max-area-of-island](https://github.com/pavannaiik/LeetCode/tree/master/0695-max-area-of-island) |
 | [0733-flood-fill](https://github.com/pavannaiik/LeetCode/tree/master/0733-flood-fill) |
+| [0758-convert-binary-search-tree-to-sorted-doubly-linked-list](https://github.com/pavannaiik/LeetCode/tree/master/0758-convert-binary-search-tree-to-sorted-doubly-linked-list) |
 | [0801-is-graph-bipartite](https://github.com/pavannaiik/LeetCode/tree/master/0801-is-graph-bipartite) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/pavannaiik/LeetCode/tree/master/0803-cheapest-flights-within-k-stops) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/pavannaiik/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
@@ -1389,6 +1394,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0270-closest-binary-search-tree-value](https://github.com/pavannaiik/LeetCode/tree/master/0270-closest-binary-search-tree-value) |
 | [0450-delete-node-in-a-bst](https://github.com/pavannaiik/LeetCode/tree/master/0450-delete-node-in-a-bst) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/pavannaiik/LeetCode/tree/master/0653-two-sum-iv-input-is-a-bst) |
+| [0758-convert-binary-search-tree-to-sorted-doubly-linked-list](https://github.com/pavannaiik/LeetCode/tree/master/0758-convert-binary-search-tree-to-sorted-doubly-linked-list) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/pavannaiik/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 ## Data Stream
 |  |
@@ -1456,6 +1462,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0146-lru-cache](https://github.com/pavannaiik/LeetCode/tree/master/0146-lru-cache) |
+| [0758-convert-binary-search-tree-to-sorted-doubly-linked-list](https://github.com/pavannaiik/LeetCode/tree/master/0758-convert-binary-search-tree-to-sorted-doubly-linked-list) |
 ## String Matching
 |  |
 | ------- |
