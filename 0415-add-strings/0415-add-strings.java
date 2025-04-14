@@ -1,5 +1,8 @@
 class Solution {
     public String addStrings(String num1, String num2) {
+        return helper(num1, num2);
+    }
+    public String helper(String num1, String num2){
         int n = num2.length(), m = num1.length();
         int i=n-1, j=m-1;
         int carry =0;
