@@ -438,6 +438,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0360-sort-transformed-array](https://github.com/pavannaiik/LeetCode/tree/master/0360-sort-transformed-array) |
 | [0371-sum-of-two-integers](https://github.com/pavannaiik/LeetCode/tree/master/0371-sum-of-two-integers) |
 | [0380-insert-delete-getrandom-o1](https://github.com/pavannaiik/LeetCode/tree/master/0380-insert-delete-getrandom-o1) |
+| [0415-add-strings](https://github.com/pavannaiik/LeetCode/tree/master/0415-add-strings) |
 | [0564-find-the-closest-palindrome](https://github.com/pavannaiik/LeetCode/tree/master/0564-find-the-closest-palindrome) |
 | [0592-fraction-addition-and-subtraction](https://github.com/pavannaiik/LeetCode/tree/master/0592-fraction-addition-and-subtraction) |
 | [0650-2-keys-keyboard](https://github.com/pavannaiik/LeetCode/tree/master/0650-2-keys-keyboard) |
@@ -884,6 +885,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0394-decode-string](https://github.com/pavannaiik/LeetCode/tree/master/0394-decode-string) |
 | [0399-evaluate-division](https://github.com/pavannaiik/LeetCode/tree/master/0399-evaluate-division) |
 | [0408-valid-word-abbreviation](https://github.com/pavannaiik/LeetCode/tree/master/0408-valid-word-abbreviation) |
+| [0415-add-strings](https://github.com/pavannaiik/LeetCode/tree/master/0415-add-strings) |
 | [0424-longest-repeating-character-replacement](https://github.com/pavannaiik/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0451-sort-characters-by-frequency](https://github.com/pavannaiik/LeetCode/tree/master/0451-sort-characters-by-frequency) |
 | [0468-validate-ip-address](https://github.com/pavannaiik/LeetCode/tree/master/0468-validate-ip-address) |
@@ -1071,6 +1073,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0054-spiral-matrix](https://github.com/pavannaiik/LeetCode/tree/master/0054-spiral-matrix) |
 | [0348-design-tic-tac-toe](https://github.com/pavannaiik/LeetCode/tree/master/0348-design-tic-tac-toe) |
+| [0415-add-strings](https://github.com/pavannaiik/LeetCode/tree/master/0415-add-strings) |
 | [0498-diagonal-traverse](https://github.com/pavannaiik/LeetCode/tree/master/0498-diagonal-traverse) |
 | [0592-fraction-addition-and-subtraction](https://github.com/pavannaiik/LeetCode/tree/master/0592-fraction-addition-and-subtraction) |
 | [0735-asteroid-collision](https://github.com/pavannaiik/LeetCode/tree/master/0735-asteroid-collision) |
