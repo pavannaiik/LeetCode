@@ -1,6 +1,17 @@
 class Solution {
     public String addStrings(String num1, String num2) {
-        return helper(num1, num2);
+
+        String[] firstString = num1.split(".");
+        String[] secondString = num2.split(".");
+        boolean hasDecimal = false;
+
+        if(firstString.length >1 || secondString.length>1){
+            hasDecimal=true;
+        }
+        if(!hasDecimal){
+            return helper(num1, num2);
+        }else return "";
+
     }
     public String helper(String num1, String num2){
         int n = num2.length(), m = num1.length();
