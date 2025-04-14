@@ -1,30 +1,21 @@
 class Solution {
     public int[] findDiagonalOrder(List<List<Integer>> nums) {
-        int n = nums.size();
         List<Integer>ans = new ArrayList<>();
-        HashMap<Integer,List<Integer>> map = new HashMap<>();
-        int minVal =0, maxValue =0;
-        for(int i=0;i<n;i++){
-            int col = nums.get(i).size();
-            for(int j=0;j<col;j++){
-                maxValue = Math.max(maxValue, i+j);
-                if(!map.containsKey(i+j)){
-                    map.put(i+j, new ArrayList<>());
-                }
-                map.get(i+j).add(0,nums.get(i).get(j));
-            }
+        Queue<int[]>queue = new LinkedList<>();
+        int n = nums.size();
+        queue.add(new int[]{0,0});
+        while(!queue.isEmpty()){
+            int[] cell = queue.poll();
+            int row = cell[0];
+            int col = cell[1];
+            ans.add(nums.get(row).get(col));
+            if(col==0 && row+1 < n) queue.add(new int[]{row+1, col});
+            if(col+1 < nums.get(row).size()) queue.add(new int[]{row,col+1});
         }
-        for(int i=minVal;i<=maxValue;i++){
-            for(int num:map.get(i)){
-                ans.add(num);
-            }
+        int[] arr = new int[ans.size()];
+        for (int i = 0; i < ans.size(); i++) {
+            arr[i] = ans.get(i);
         }
-        int[] result = new int[ans.size()];
-        int i=0;
-        for(int num:ans){
-            result[i++]=num;
-        }
-
-        return result;
+        return arr;
     }
 }
