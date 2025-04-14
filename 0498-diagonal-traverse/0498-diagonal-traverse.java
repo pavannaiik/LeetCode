@@ -1,31 +1,22 @@
 class Solution {
-    public int[] findDiagonalOrder(int[][] nums) {
-        int n = nums.length;
-        List<Integer>ans = new ArrayList<>();
-        HashMap<Integer,List<Integer>> map = new HashMap<>();
-        int minVal =0, maxValue =0;
-        for(int i=0;i<n;i++){
-            int col = nums[i].length;
-            for(int j=0;j<col;j++){
-                maxValue = Math.max(maxValue, i+j);
-                if(!map.containsKey(i+j)){
-                    map.put(i+j, new ArrayList<>());
-                }
-                if((i+j)%2==0)
-                map.get(i+j).add(0,nums[i][j]);
-                else map.get(i+j).add(nums[i][j]);
-            }
+    public int[] findDiagonalOrder(int[][] matrix) {
+        if (matrix == null || matrix.length == 0) return new int[0];
+        int m = matrix.length, n = matrix[0].length;
+        
+        int[] result = new int[m * n];
+        int row = 0, col = 0, d = 1;
+
+        for (int i = 0; i < m * n; i++) {
+            result[i] = matrix[row][col];
+            row -= d;
+            col += d;
+            
+            if (row >= m) { row = m - 1; col += 2; d = -d;}
+            if (col >= n) { col = n - 1; row += 2; d = -d;}
+            if (row < 0)  { row = 0; d = -d;}
+            if (col < 0)  { col = 0; d = -d;}
         }
-        for(int i=minVal;i<=maxValue;i++){
-            for(int num:map.get(i)){
-                ans.add(num);
-            }
-        }
-        int[] result = new int[ans.size()];
-        int i=0;
-        for(int num:ans){
-            result[i++]=num;
-        }
+        
         return result;
     }
 }
