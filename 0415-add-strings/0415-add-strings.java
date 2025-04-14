@@ -4,7 +4,7 @@ class Solution {
         int i=n-1, j=m-1;
         int carry =0;
         StringBuilder sb = new StringBuilder();
-        while(i>=0 || j>=0 || carry>0){
+        while(i>=0 || j>=0 || carry !=0){
             int num = carry;
             if(i >=0 ){
                 num += num2.charAt(i)-'0';
@@ -15,8 +15,8 @@ class Solution {
                 j--;
             }
             carry = num/10;
-            sb.insert(0, num%10);
+            sb.append(num%10);
         }
-        return sb.toString();
+        return sb.reverse().toString();
     }
 }
