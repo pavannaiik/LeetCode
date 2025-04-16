@@ -1,50 +1,42 @@
 class Solution {
-    public List<List<String>> accountsMerge(List<List<String>> accounts) {
-        Map<String, String> emailToName = new HashMap<>();
-        Map<String, String> parent = new HashMap<>();
-
-        // Step 1: Initialize parent and email-name map
-        for (List<String> account : accounts) {
-            String name = account.get(0);
-            for (int i = 1; i < account.size(); i++) {
-                String email = account.get(i);
-                parent.putIfAbsent(email, email);
-                emailToName.put(email, name);
-                union(parent, account.get(1), email); // connect all emails in same account
+    public void dfs(String email, List<String>emails, HashMap<String,List<String>>adjMap,HashSet<String>visited ){
+        visited.add(email);
+        emails.add(email);
+        for(String neighbor : adjMap.get(email)){
+            if(neighbor==null) continue;
+            if(!visited.contains(neighbor)){
+                dfs(neighbor, emails, adjMap, visited);
             }
         }
-
-        // Step 2: Group emails by root parent
-        Map<String, TreeSet<String>> unions = new HashMap<>();
-        for (String email : parent.keySet()) {
-            String root = find(parent, email);
-            unions.computeIfAbsent(root, x -> new TreeSet<>()).add(email);
+    }
+    public List<List<String>> accountsMerge(List<List<String>> accounts) {
+        HashMap<String, List<String>>adjMap =new HashMap<>();
+        for(List<String>account: accounts){
+            String firstEmail = account.get(1);
+            if(!adjMap.containsKey(firstEmail)){
+                    adjMap.put(firstEmail, new ArrayList<>());
+                }
+            for(int i=2;i<account.size();i++){
+                if(!adjMap.containsKey(account.get(i))){
+                    adjMap.put(account.get(i), new ArrayList<>());
+                }
+                adjMap.get(firstEmail).add(account.get(i));
+                adjMap.get(account.get(i)).add(firstEmail);
+            }
         }
-
-        // Step 3: Build the result
-        List<List<String>> result = new ArrayList<>();
-        for (String root : unions.keySet()) {
-            List<String> group = new ArrayList<>();
-            group.add(emailToName.get(root)); // name
-            group.addAll(unions.get(root));   // sorted emails
-            result.add(group);
+        List<List<String>>result = new ArrayList<>();
+        HashSet<String>visited = new HashSet<>();
+        for(List<String>account:accounts){
+            String name = account.get(0);
+            if(!visited.contains(account.get(1))){
+                List<String>emails = new ArrayList<>();
+                dfs(account.get(1), emails, adjMap, visited);
+                Collections.sort(emails);
+                emails.add(0, name);
+                result.add(emails);
+            }
+            
         }
-
         return result;
-    }
-
-    private String find(Map<String, String> parent, String s) {
-        if (!parent.get(s).equals(s)) {
-            parent.put(s, find(parent, parent.get(s))); // path compression
-        }
-        return parent.get(s);
-    }
-
-    private void union(Map<String, String> parent, String a, String b) {
-        String rootA = find(parent, a);
-        String rootB = find(parent, b);
-        if (!rootA.equals(rootB)) {
-            parent.put(rootB, rootA);
-        }
     }
 }
