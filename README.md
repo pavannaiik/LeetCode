@@ -123,6 +123,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0735-asteroid-collision](https://github.com/pavannaiik/LeetCode/tree/master/0735-asteroid-collision) |
 | [0739-daily-temperatures](https://github.com/pavannaiik/LeetCode/tree/master/0739-daily-temperatures) |
 | [0747-min-cost-climbing-stairs](https://github.com/pavannaiik/LeetCode/tree/master/0747-min-cost-climbing-stairs) |
+| [0756-pour-water](https://github.com/pavannaiik/LeetCode/tree/master/0756-pour-water) |
 | [0792-binary-search](https://github.com/pavannaiik/LeetCode/tree/master/0792-binary-search) |
 | [0870-magic-squares-in-grid](https://github.com/pavannaiik/LeetCode/tree/master/0870-magic-squares-in-grid) |
 | [0883-car-fleet](https://github.com/pavannaiik/LeetCode/tree/master/0883-car-fleet) |
@@ -1082,6 +1083,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0498-diagonal-traverse](https://github.com/pavannaiik/LeetCode/tree/master/0498-diagonal-traverse) |
 | [0592-fraction-addition-and-subtraction](https://github.com/pavannaiik/LeetCode/tree/master/0592-fraction-addition-and-subtraction) |
 | [0735-asteroid-collision](https://github.com/pavannaiik/LeetCode/tree/master/0735-asteroid-collision) |
+| [0756-pour-water](https://github.com/pavannaiik/LeetCode/tree/master/0756-pour-water) |
 | [0921-spiral-matrix-iii](https://github.com/pavannaiik/LeetCode/tree/master/0921-spiral-matrix-iii) |
 | [1382-calculate-amount-paid-in-taxes](https://github.com/pavannaiik/LeetCode/tree/master/1382-calculate-amount-paid-in-taxes) |
 | [1642-water-bottles](https://github.com/pavannaiik/LeetCode/tree/master/1642-water-bottles) |
