@@ -7,7 +7,7 @@ class Solution {
             if(!map.containsKey(String.valueOf(sortedChar))){
                 map.put(String.valueOf(sortedChar), new ArrayList<>());
             }
-            System.out.println(String.valueOf(sortedChar));
+         //   System.out.println(String.valueOf(sortedChar));
             map.get(String.valueOf(sortedChar)).add(str);
         }
       List<List<String>>ans = new ArrayList<>();
