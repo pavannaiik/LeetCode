@@ -4,7 +4,6 @@ class Solution {
         int[][] dir = {{0,1},{1,0},{0,-1},{-1,0}};
         Queue<Pair<Integer, Integer>>queue = new LinkedList<>();
         int n = grid.length, m = grid[0].length;
-        int flag=1;
         for(int i=0;i< n;i++){
             for(int j=0;j<m;j++){
                 if(grid[i][j]==1) freshOranges++;
