@@ -160,6 +160,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1325-path-with-maximum-probability](https://github.com/pavannaiik/LeetCode/tree/master/1325-path-with-maximum-probability) |
 | [1333-sort-the-jumbled-numbers](https://github.com/pavannaiik/LeetCode/tree/master/1333-sort-the-jumbled-numbers) |
 | [1382-calculate-amount-paid-in-taxes](https://github.com/pavannaiik/LeetCode/tree/master/1382-calculate-amount-paid-in-taxes) |
+| [1397-search-suggestions-system](https://github.com/pavannaiik/LeetCode/tree/master/1397-search-suggestions-system) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/pavannaiik/LeetCode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/pavannaiik/LeetCode/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
 | [1496-lucky-numbers-in-a-matrix](https://github.com/pavannaiik/LeetCode/tree/master/1496-lucky-numbers-in-a-matrix) |
@@ -327,6 +328,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1272-invalid-transactions](https://github.com/pavannaiik/LeetCode/tree/master/1272-invalid-transactions) |
 | [1306-minimum-absolute-difference](https://github.com/pavannaiik/LeetCode/tree/master/1306-minimum-absolute-difference) |
 | [1333-sort-the-jumbled-numbers](https://github.com/pavannaiik/LeetCode/tree/master/1333-sort-the-jumbled-numbers) |
+| [1397-search-suggestions-system](https://github.com/pavannaiik/LeetCode/tree/master/1397-search-suggestions-system) |
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/pavannaiik/LeetCode/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
 | [1539-diagonal-traverse-ii](https://github.com/pavannaiik/LeetCode/tree/master/1539-diagonal-traverse-ii) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/pavannaiik/LeetCode/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
@@ -528,6 +530,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0907-koko-eating-bananas](https://github.com/pavannaiik/LeetCode/tree/master/0907-koko-eating-bananas) |
 | [0912-random-pick-with-weight](https://github.com/pavannaiik/LeetCode/tree/master/0912-random-pick-with-weight) |
 | [1023-time-based-key-value-store](https://github.com/pavannaiik/LeetCode/tree/master/1023-time-based-key-value-store) |
+| [1397-search-suggestions-system](https://github.com/pavannaiik/LeetCode/tree/master/1397-search-suggestions-system) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/pavannaiik/LeetCode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/pavannaiik/LeetCode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
 | [1966-frequency-of-the-most-frequent-element](https://github.com/pavannaiik/LeetCode/tree/master/1966-frequency-of-the-most-frequent-element) |
@@ -827,6 +830,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1127-last-stone-weight](https://github.com/pavannaiik/LeetCode/tree/master/1127-last-stone-weight) |
 | [1304-longest-happy-string](https://github.com/pavannaiik/LeetCode/tree/master/1304-longest-happy-string) |
 | [1325-path-with-maximum-probability](https://github.com/pavannaiik/LeetCode/tree/master/1325-path-with-maximum-probability) |
+| [1397-search-suggestions-system](https://github.com/pavannaiik/LeetCode/tree/master/1397-search-suggestions-system) |
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/pavannaiik/LeetCode/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
 | [1539-diagonal-traverse-ii](https://github.com/pavannaiik/LeetCode/tree/master/1539-diagonal-traverse-ii) |
 | [1574-maximum-product-of-two-elements-in-an-array](https://github.com/pavannaiik/LeetCode/tree/master/1574-maximum-product-of-two-elements-in-an-array) |
@@ -919,6 +923,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1320-remove-all-adjacent-duplicates-in-string-ii](https://github.com/pavannaiik/LeetCode/tree/master/1320-remove-all-adjacent-duplicates-in-string-ii) |
 | [1356-minimum-number-of-moves-to-make-palindrome](https://github.com/pavannaiik/LeetCode/tree/master/1356-minimum-number-of-moves-to-make-palindrome) |
 | [1371-minimum-remove-to-make-valid-parentheses](https://github.com/pavannaiik/LeetCode/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
+| [1397-search-suggestions-system](https://github.com/pavannaiik/LeetCode/tree/master/1397-search-suggestions-system) |
 | [1508-longest-happy-prefix](https://github.com/pavannaiik/LeetCode/tree/master/1508-longest-happy-prefix) |
 | [1720-crawler-log-folder](https://github.com/pavannaiik/LeetCode/tree/master/1720-crawler-log-folder) |
 | [1739-split-two-strings-to-make-palindrome](https://github.com/pavannaiik/LeetCode/tree/master/1739-split-two-strings-to-make-palindrome) |
@@ -1468,6 +1473,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0212-word-search-ii](https://github.com/pavannaiik/LeetCode/tree/master/0212-word-search-ii) |
 | [0421-maximum-xor-of-two-numbers-in-an-array](https://github.com/pavannaiik/LeetCode/tree/master/0421-maximum-xor-of-two-numbers-in-an-array) |
 | [0720-longest-word-in-dictionary](https://github.com/pavannaiik/LeetCode/tree/master/0720-longest-word-in-dictionary) |
+| [1397-search-suggestions-system](https://github.com/pavannaiik/LeetCode/tree/master/1397-search-suggestions-system) |
 | [2009-longest-word-with-all-prefixes](https://github.com/pavannaiik/LeetCode/tree/master/2009-longest-word-with-all-prefixes) |
 ## Quickselect
 |  |
