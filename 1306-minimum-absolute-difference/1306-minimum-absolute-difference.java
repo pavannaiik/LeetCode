@@ -1,31 +1,20 @@
 class Solution {
     public List<List<Integer>> minimumAbsDifference(int[] arr) {
-        // Sort the original array
+        List<List<Integer>>result = new ArrayList<>();
         Arrays.sort(arr);
+        int n = arr.length;
+        int minDiff = arr[1]-arr[0];
 
-        // Initialize minimum difference `minPairDiff` as a huge integer in order not 
-        // to miss the absolute difference of the first pair. 
-        int minPairDiff = Integer.MAX_VALUE;
-        List<List<Integer>> answer = new ArrayList();
-
-        // Traverse the sorted array
-        for (int i = 0; i < arr.length - 1; ++i) {
-            // For the absolute value `currPairDiff` of the current pair:
-            int currPairDiff = arr[i + 1] - arr[i];
-
-            // If `currPairDiff` equals `minPairDiff`, add this pair to the answer list.
-            // If `currPairDiff` is smaller than `minPairDiff`, discard all pairs in the answer list, 
-            // add this pair to the answer list and update `minPairDiff`.
-            // If `currPairDiff` is larger than `minPairDiff`, we just go ahead.
-            if (currPairDiff == minPairDiff) {
-                answer.add(Arrays.asList(arr[i], arr[i + 1]));
-            } else if (currPairDiff < minPairDiff) {
-                answer.clear();
-                answer.add(Arrays.asList(arr[i], arr[i + 1]));
-                minPairDiff = currPairDiff;
+        for(int i=1;i<n;i++){
+            if(minDiff == arr[i]-arr[i-1]){
+                result.add(List.of(arr[i-1],arr[i]));
+            }else if(minDiff > arr[i]-arr[i-1]){
+                result.clear();
+                    minDiff = arr[i]-arr[i-1];
+                    result.add(List.of(arr[i-1],arr[i]));
+                
             }
         }
-
-        return answer;   
+        return result;
     }
 }
