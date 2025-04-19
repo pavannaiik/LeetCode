@@ -1,36 +1,52 @@
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
 class Solution {
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
-       if(root == null){
-        return new ArrayList<List<Integer>>();
-       } 
-        List<List<Integer>> result = new ArrayList<>();
-        LinkedList<Integer> level = new LinkedList<>();
-        LinkedList<TreeNode> que_order = new LinkedList<>();
-        boolean is_left = true;
-
-        que_order.addLast(root);
-        que_order.addLast(null);
-        while(!que_order.isEmpty()){
-            TreeNode curr = que_order.pollFirst();
-            if(curr != null){
-                if(is_left){
-                    level.addLast(curr.val);
-                }
-                else{
-                    level.addFirst(curr.val);
-                }
-                if(curr.left != null) que_order.addLast(curr.left);
-                if(curr.right != null) que_order.addLast(curr.right);
-            }
-            else{
-                result.add(level);
-                level = new LinkedList<Integer>();
-                if(!que_order.isEmpty()){
-                    que_order.addLast(null);
-                }
-                is_left = !is_left;
-            }
+        Queue<TreeNode>queue= new LinkedList<>();
+        List<List<Integer>>answer= new ArrayList<>();
+        if(root==null){
+            return answer;
         }
-        return result;
+        answer.add(Arrays.asList(root.val));
+        queue.add(root);
+        int level =1;
+        while(!queue.isEmpty()){
+            int len = queue.size();
+            List<Integer>temp = new ArrayList<>();
+            for(int i=0;i<len;i++){
+                TreeNode cur = queue.poll();
+                if(cur.left!=null){
+                    queue.add(cur.left);
+                    temp.add(cur.left.val);
+                }
+                if(cur.right!=null){
+                    queue.add(cur.right);
+                    temp.add(cur.right.val);
+                }
+            }
+            if(level%2!=0){
+                Collections.reverse(temp);
+            }
+            level++;
+            if(temp.size()!=0){
+                answer.add(temp);
+            }
+            
+        }
+        return answer;
+        
     }
 }
