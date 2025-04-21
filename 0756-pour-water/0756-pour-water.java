@@ -11,6 +11,7 @@ class Solution {
             while(cur < n-1 && heights[cur]>= heights[cur+1]){
                 cur++;
             }
+            //come at k index
             while(cur > k && heights[cur]==heights[cur-1]){
                 cur--;
             }
