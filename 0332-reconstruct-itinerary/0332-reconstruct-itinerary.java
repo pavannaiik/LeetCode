@@ -1,20 +1,23 @@
 class Solution {
-    private List<String>result = new ArrayList<>();
+    private LinkedList<String> result = new LinkedList<>();
+    private Map<String, PriorityQueue<String>> graph = new HashMap<>();
+    
     public List<String> findItinerary(List<List<String>> tickets) {
-        HashMap<String,PriorityQueue<String>>map = new HashMap<>();
-        for(List<String>ticket :tickets){
-            if(!map.containsKey(ticket.get(0))){
-                map.put(ticket.get(0), new PriorityQueue<>());
-            }
-            map.get(ticket.get(0)).add(ticket.get(1));
+        // Build the graph: from -> sorted list of to
+        for (List<String> ticket : tickets) {
+            graph.computeIfAbsent(ticket.get(0), k -> new PriorityQueue<>()).add(ticket.get(1));
         }
-        getItinary(map, "JFK");
+        
+        dfs("JFK");
         return result;
     }
-    public void getItinary(HashMap<String, PriorityQueue<String>>map, String source){
-       while(map.containsKey(source) && !map.get(source).isEmpty()){
-        getItinary(map, map.get(source).poll());
-       }
-       result.add(0,source);
+    
+    private void dfs(String source) {
+        PriorityQueue<String> destinations = graph.get(source);
+        while (destinations != null && !destinations.isEmpty()) {
+            String next = destinations.poll();
+            dfs(next);
+        }
+        result.addFirst(source); // add to front when dead-end
     }
 }
