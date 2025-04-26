@@ -254,6 +254,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0189-rotate-array](https://github.com/pavannaiik/LeetCode/tree/master/0189-rotate-array) |
 | [0234-palindrome-linked-list](https://github.com/pavannaiik/LeetCode/tree/master/0234-palindrome-linked-list) |
 | [0253-meeting-rooms-ii](https://github.com/pavannaiik/LeetCode/tree/master/0253-meeting-rooms-ii) |
+| [0277-find-the-celebrity](https://github.com/pavannaiik/LeetCode/tree/master/0277-find-the-celebrity) |
 | [0283-move-zeroes](https://github.com/pavannaiik/LeetCode/tree/master/0283-move-zeroes) |
 | [0287-find-the-duplicate-number](https://github.com/pavannaiik/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0295-find-median-from-data-stream](https://github.com/pavannaiik/LeetCode/tree/master/0295-find-median-from-data-stream) |
@@ -747,6 +748,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0207-course-schedule](https://github.com/pavannaiik/LeetCode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/pavannaiik/LeetCode/tree/master/0210-course-schedule-ii) |
 | [0261-graph-valid-tree](https://github.com/pavannaiik/LeetCode/tree/master/0261-graph-valid-tree) |
+| [0277-find-the-celebrity](https://github.com/pavannaiik/LeetCode/tree/master/0277-find-the-celebrity) |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/pavannaiik/LeetCode/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/pavannaiik/LeetCode/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0399-evaluate-division](https://github.com/pavannaiik/LeetCode/tree/master/0399-evaluate-division) |
@@ -1530,4 +1532,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0341-flatten-nested-list-iterator](https://github.com/pavannaiik/LeetCode/tree/master/0341-flatten-nested-list-iterator) |
+## Interactive
+|  |
+| ------- |
+| [0277-find-the-celebrity](https://github.com/pavannaiik/LeetCode/tree/master/0277-find-the-celebrity) |
 <!---LeetCode Topics End-->
