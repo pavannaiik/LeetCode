@@ -1,20 +1,15 @@
 class Solution {
     public int[] twoSum(int[] numbers, int target) {
-        int res[] = new int[2];
-        int min=0,max=numbers.length-1;
-        while(min< max){
-            int total= numbers[min]+numbers[max];
-            if(total==target){
-                res[0]=min+1;
-                res[1]=max+1;
-                break;
-            }
-            if(total>target){
-               max--;
-            }else {
-                min++;
+        int i=0, j = numbers.length-1;
+        while(i < j){
+            if(numbers[i]+numbers[j]==target){
+                return new int[]{i+1,j+1};
+            }else if(numbers[i]+numbers[j]>target){
+                j--;
+            }else{
+                i++;
             }
         }
-        return res;
+        return new int[2];
     }
 }
