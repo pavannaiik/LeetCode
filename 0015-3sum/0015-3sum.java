@@ -14,11 +14,10 @@ class Solution {
             while (i < j) {
                 int twoSum = nums[i] + nums[j];
                 if (twoSum == sum) {
-                    temp.add(nums[i]);
-                    temp.add(nums[j]);
-                    result.add(new ArrayList<>(temp)); // add a copy
-                    temp.remove(temp.size() - 1); // backtrack
-                    temp.remove(temp.size() - 1); // backtrack
+                    List<Integer>arrList = new ArrayList<>(temp);
+                    arrList.add(nums[i]);
+                    arrList.add(nums[j]);
+                    result.add(new ArrayList<>(arrList)); 
                     i++;
                     j--;
                     while (i < j && nums[i] == nums[i - 1]) i++;
