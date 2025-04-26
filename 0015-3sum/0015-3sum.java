@@ -14,10 +14,7 @@ class Solution {
             while (i < j) {
                 int twoSum = nums[i] + nums[j];
                 if (twoSum == sum) {
-                    List<Integer>arrList = new ArrayList<>(temp);
-                    arrList.add(nums[i]);
-                    arrList.add(nums[j]);
-                    result.add(new ArrayList<>(arrList)); 
+                    result.add(List.of(temp.get(0),nums[i],nums[j])); 
                     i++;
                     j--;
                     while (i < j && nums[i] == nums[i - 1]) i++;
