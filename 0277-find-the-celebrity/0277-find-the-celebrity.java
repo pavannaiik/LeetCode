@@ -14,7 +14,7 @@ public class Solution extends Relation {
         }
         return -1;
     }
-    public boolean isCelebrity(int celebrity, int n){
+    private boolean isCelebrity(int celebrity, int n){
         for(int i=0;i<n;i++){
             if(i==celebrity) continue;
             if(!knows(i, celebrity) || knows(celebrity, i)) return false;
