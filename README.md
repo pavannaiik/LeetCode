@@ -141,6 +141,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0999-regions-cut-by-slashes](https://github.com/pavannaiik/LeetCode/tree/master/0999-regions-cut-by-slashes) |
 | [1002-maximum-width-ramp](https://github.com/pavannaiik/LeetCode/tree/master/1002-maximum-width-ramp) |
 | [1014-k-closest-points-to-origin](https://github.com/pavannaiik/LeetCode/tree/master/1014-k-closest-points-to-origin) |
+| [1019-squares-of-a-sorted-array](https://github.com/pavannaiik/LeetCode/tree/master/1019-squares-of-a-sorted-array) |
 | [1022-unique-paths-iii](https://github.com/pavannaiik/LeetCode/tree/master/1022-unique-paths-iii) |
 | [1025-minimum-cost-for-tickets](https://github.com/pavannaiik/LeetCode/tree/master/1025-minimum-cost-for-tickets) |
 | [1028-interval-list-intersections](https://github.com/pavannaiik/LeetCode/tree/master/1028-interval-list-intersections) |
@@ -272,6 +273,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0719-find-k-th-smallest-pair-distance](https://github.com/pavannaiik/LeetCode/tree/master/0719-find-k-th-smallest-pair-distance) |
 | [0908-middle-of-the-linked-list](https://github.com/pavannaiik/LeetCode/tree/master/0908-middle-of-the-linked-list) |
 | [0941-sort-array-by-parity](https://github.com/pavannaiik/LeetCode/tree/master/0941-sort-array-by-parity) |
+| [1019-squares-of-a-sorted-array](https://github.com/pavannaiik/LeetCode/tree/master/1019-squares-of-a-sorted-array) |
 | [1028-interval-list-intersections](https://github.com/pavannaiik/LeetCode/tree/master/1028-interval-list-intersections) |
 | [1356-minimum-number-of-moves-to-make-palindrome](https://github.com/pavannaiik/LeetCode/tree/master/1356-minimum-number-of-moves-to-make-palindrome) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/pavannaiik/LeetCode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
@@ -327,6 +329,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0948-sort-an-array](https://github.com/pavannaiik/LeetCode/tree/master/0948-sort-an-array) |
 | [0974-reorder-data-in-log-files](https://github.com/pavannaiik/LeetCode/tree/master/0974-reorder-data-in-log-files) |
 | [1014-k-closest-points-to-origin](https://github.com/pavannaiik/LeetCode/tree/master/1014-k-closest-points-to-origin) |
+| [1019-squares-of-a-sorted-array](https://github.com/pavannaiik/LeetCode/tree/master/1019-squares-of-a-sorted-array) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/pavannaiik/LeetCode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1098-largest-unique-number](https://github.com/pavannaiik/LeetCode/tree/master/1098-largest-unique-number) |
 | [1108-analyze-user-website-visit-pattern](https://github.com/pavannaiik/LeetCode/tree/master/1108-analyze-user-website-visit-pattern) |
