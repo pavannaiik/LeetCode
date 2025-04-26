@@ -1,27 +1,21 @@
 class Solution {
     public boolean validPalindrome(String s) {
-        int i=0, j=s.length()-1;
-        boolean isPalin = true;
-        while(i<=j){
-            if(s.charAt(i)==s.charAt(j)){
-                i++;
-                j--;
-            }else{
-                isPalin = checkPalindrome( i, j-1, s) ||checkPalindrome( i+1, j, s) ;
-                break;
-            }
+        int i=0, j= s.length()-1;
+        while( i<=j && j >=0 && s.charAt(i)==s.charAt(j)){
+            i++;
+            j--;
         }
-        return isPalin;
+        if(i==j) return true;
+        return isPalindrome(s, i, j-1) || isPalindrome(s,i+1, j);
     }
-    public boolean checkPalindrome(int i, int j, String s){
-        if(i>s.length() || j<0) return false;
-        while(i <= j){
-            if(s.charAt(i)==s.charAt(j)){
-                i++;
-                j--;
-            }
-            else return false;
+    public boolean isPalindrome(String s, int i, int j){
+       while(i <= j){
+        if(s.charAt(i)!=s.charAt(j)){
+            return false;
         }
-        return true;
+        i++;
+        j--;
+       }
+       return true;
     }
 }
