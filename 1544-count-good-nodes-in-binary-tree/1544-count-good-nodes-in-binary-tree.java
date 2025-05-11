@@ -1,34 +1,19 @@
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
- */
 class Solution {
+    int count = 0;
     public int goodNodes(TreeNode root) {
-        return dfs(root.val , root) ; 
-
+        dfs(root, root.val);
+        return count;
     }
-    private int  dfs ( int  currMax  ,  TreeNode node){
-        int numGoodNodes = 0;
-        if(node!=null){
-            if(node.val>=currMax){
-                currMax = node.val ; 
-                numGoodNodes ++ ; 
-            } 
-            numGoodNodes += dfs(currMax , node.left) ; 
-            numGoodNodes += dfs(currMax , node.right) ;
-         
+    private void dfs(TreeNode root, int maxVal) {
+        if(root == null) return ;
+        if(root.val == maxVal){
+            count++;
         }
-        return  numGoodNodes ; 
+        if(root.left != null){
+            dfs(root.left, Math.max(maxVal, root.left.val));
+        }
+        if(root.right != null) {
+            dfs(root.right, Math.max(maxVal, root.right.val));
+        }
     }
 }
