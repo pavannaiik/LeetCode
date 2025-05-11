@@ -20,6 +20,8 @@ class Solution {
         }
         int startRow = (row / 3) * 3;
         int startCol = (col / 3) * 3;
+        System.out.println(startRow);
+        System.out.println(startCol);
         for (int i = startRow; i < startRow + 3; i++) 
             for (int j = startCol; j < startCol + 3; j++) 
                 if ((i != row || j != col) && board[i][j] == num) 
