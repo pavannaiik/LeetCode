@@ -21,7 +21,6 @@ class Solution {
                 boxes[boxIndex][num] = true;
             }
         }
-
         return true;
     }
 }
