@@ -10,28 +10,38 @@
  */
 class Solution {
     public ListNode reverseKGroup(ListNode head, int k) {
-        if(head==null||k==1) return head;
-        ListNode node=head;
-        int len=0;
-            while(node!=null){
-                len++;
-                node=node.next;
+        if (head == null || k == 1) return head;
+
+        // Dummy node
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
+
+        // Initialize pointers
+        ListNode prevGroupEnd = dummy;
+        ListNode curr = head;
+
+        while (true) {
+            // Check if there are k nodes to reverse
+            ListNode check = curr;
+            for (int i = 0; i < k; i++) {
+                if (check == null) return dummy.next;
+                check = check.next;
             }
-        ListNode temp=new ListNode(0);
-        temp.next=head;
-       ListNode cur=temp,nex=temp,pre=temp;
-        while(len>=k){
-            cur=pre.next;
-            nex=cur.next;
-            for(int i=1;i<k;i++){
-                cur.next=nex.next;
-                nex.next=pre.next;
-                pre.next=nex;
-                nex=cur.next;
+
+            // Reverse k nodes
+            ListNode prev = null;
+            ListNode tail = curr;
+            for (int i = 0; i < k; i++) {
+                ListNode next = curr.next;
+                curr.next = prev;
+                prev = curr;
+                curr = next;
             }
-            pre=cur;
-            len-=k;
+
+            // Connect with previous part
+            prevGroupEnd.next = prev;
+            tail.next = curr;
+            prevGroupEnd = tail;
         }
-        return temp.next;
     }
 }
