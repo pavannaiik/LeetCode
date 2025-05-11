@@ -1,17 +1,17 @@
 class Solution {
     public int carFleet(int target, int[] position, int[] speed) {
-        TreeMap<Integer,Double> sortedMap=new TreeMap<>(Collections.reverseOrder());
-        for(int i=0;i<position.length;i++){
-            sortedMap.put(position[i],(double)(target-position[i])/speed[i]);
+        float[] time = new float[target + 1];
+        for(int i=0; i < speed.length; i++){
+            time[position[i]] = (float)(target - position[i])/ speed[i];
         }
-        int res=0;
-        double curTime=0;
-        for(Double time : sortedMap.values()){
-            if(time> curTime){
-                curTime = time;
-                res++;
+        int count = 0;
+        float max = 0;
+        for (int i = time.length - 1; i >= 0; i--) {
+            if (time[i] > max) {
+                count++;
+                max = time[i];
             }
         }
-        return res;
+        return count;
     }
 }
