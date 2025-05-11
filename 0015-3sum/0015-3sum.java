@@ -30,7 +30,6 @@ class Solution {
             }
             return;
         }
-        
         for (int i = index; i < length - k + 1; i++) {
             if (i > index && nums[i] == nums[i - 1]) {
                 continue;
