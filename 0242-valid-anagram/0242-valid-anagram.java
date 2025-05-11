@@ -4,16 +4,19 @@ class Solution {
         if (s.length() != t.length()) {
             return false;
         }
-        int[] table = new int[26];
+         int[] arr = new int[26];
+
         for (int i = 0; i < s.length(); i++) {
-            table[s.charAt(i) - 'a']++;
+            arr[s.charAt(i) - 'a']++;
+            arr[t.charAt(i) - 'a']--;
         }
-        for (int i = 0; i < t.length(); i++) {
-            table[t.charAt(i) - 'a']--;
-            if (table[t.charAt(i) - 'a'] < 0) {
+
+        for (int val : arr) {
+            if (val != 0) {
                 return false;
             }
         }
+
         return true;
             
         }
