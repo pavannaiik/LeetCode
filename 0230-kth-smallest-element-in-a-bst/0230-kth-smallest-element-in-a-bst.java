@@ -13,23 +13,26 @@
  *     }
  * }
  */
-class Solution {
+ class Solution {
+    private int count = 0;
+    private int result = -1;
+
     public int kthSmallest(TreeNode root, int k) {
-        if(root==null){
-            return 0;
+        inOrder(root, k);
+        return result;
+    }
+
+    private void inOrder(TreeNode node, int k) {
+        if (node == null) return;
+
+        inOrder(node.left, k);
+
+        count++;
+        if (count == k) {
+            result = node.val;
+            return;
         }
-       Stack<TreeNode>stack = new Stack<>();
-       int cnt=0;
-       while(root!=null || !stack.isEmpty()){
-        while(root!=null){
-            stack.add(root);
-            root=root.left;
-        }
-        root = stack.pop();
-        cnt++;
-        if(cnt==k) return root.val;
-        root= root.right;
-       }
-       return 0;
+
+        inOrder(node.right, k);
     }
 }
