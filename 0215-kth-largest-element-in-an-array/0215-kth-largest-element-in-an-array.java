@@ -1,5 +1,5 @@
 //move the k largest elements to the left part of array
-public class Solution {
+ class Solution {
     public int findKthLargest(int[] nums, int k) {
         if(nums.length == 1) return nums[0];
 
