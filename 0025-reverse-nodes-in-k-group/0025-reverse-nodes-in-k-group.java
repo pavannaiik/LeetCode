@@ -10,24 +10,28 @@
  */
 class Solution {
     public ListNode reverseKGroup(ListNode head, int k) {
-        //1. test weather we have more then k node left, if less then k node left we just return head 
-        ListNode node = head;
-        int count = 0;
-        while (count < k) { 
-            if(node == null)return head;
-            node = node.next;
-            count++;
+        if(head==null||k==1) return head;
+        ListNode node=head;
+        int len=0;
+            while(node!=null){
+                len++;
+                node=node.next;
+            }
+        ListNode temp=new ListNode(0);
+        temp.next=head;
+       ListNode cur=temp,nex=temp,pre=temp;
+        while(len>=k){
+            cur=pre.next;
+            nex=cur.next;
+            for(int i=1;i<k;i++){
+                cur.next=nex.next;
+                nex.next=pre.next;
+                pre.next=nex;
+                nex=cur.next;
+            }
+            pre=cur;
+            len-=k;
         }
-    // 2.reverse k node at current level 
-       ListNode cur = reverseKGroup(node, k); //pre node point to the the answer of sub-problem 
-        while (count > 0) {  
-            ListNode temp = head.next; 
-            head.next = cur; 
-            cur = head; 
-            head = temp;
-            count = count - 1;
-        }
-        return cur;
-
+        return temp.next;
     }
 }
