@@ -9,9 +9,7 @@ class Solution {
         if(sum==target)
           ans.add(new ArrayList<>(temp));
 
-        if (sum>target) return;
-
-        if(index >= nums.length){
+        if(index >= nums.length || sum > target){
             return;
         }
         for(int i=index;i<nums.length;i++){
