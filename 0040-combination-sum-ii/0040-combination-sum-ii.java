@@ -18,8 +18,8 @@ class Solution {
         for(int i=index;i<nums.length;i++){
             if(i > index && nums[i]==nums[i-1]) continue;
             temp.add(nums[i]);
-            recur(nums, i+1, temp, sum+nums[i], target); // only difference is we are re using 
-                                                        //same element unlike subsets here we do i, there we do i+1
+            recur(nums, i+1, temp, sum+nums[i], target); // only difference is we are re not using 
+                                                        //same element unlike subsets here we do i+1, there we do i
             temp.remove(temp.size()-1);
         }
     }
