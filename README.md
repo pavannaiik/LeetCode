@@ -149,6 +149,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1025-minimum-cost-for-tickets](https://github.com/pavannaiik/LeetCode/tree/master/1025-minimum-cost-for-tickets) |
 | [1028-interval-list-intersections](https://github.com/pavannaiik/LeetCode/tree/master/1028-interval-list-intersections) |
 | [1036-rotting-oranges](https://github.com/pavannaiik/LeetCode/tree/master/1036-rotting-oranges) |
+| [1046-max-consecutive-ones-iii](https://github.com/pavannaiik/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
 | [1059-missing-element-in-sorted-array](https://github.com/pavannaiik/LeetCode/tree/master/1059-missing-element-in-sorted-array) |
 | [1073-number-of-enclaves](https://github.com/pavannaiik/LeetCode/tree/master/1073-number-of-enclaves) |
 | [1098-largest-unique-number](https://github.com/pavannaiik/LeetCode/tree/master/1098-largest-unique-number) |
@@ -545,6 +546,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0907-koko-eating-bananas](https://github.com/pavannaiik/LeetCode/tree/master/0907-koko-eating-bananas) |
 | [0912-random-pick-with-weight](https://github.com/pavannaiik/LeetCode/tree/master/0912-random-pick-with-weight) |
 | [1023-time-based-key-value-store](https://github.com/pavannaiik/LeetCode/tree/master/1023-time-based-key-value-store) |
+| [1046-max-consecutive-ones-iii](https://github.com/pavannaiik/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
 | [1059-missing-element-in-sorted-array](https://github.com/pavannaiik/LeetCode/tree/master/1059-missing-element-in-sorted-array) |
 | [1397-search-suggestions-system](https://github.com/pavannaiik/LeetCode/tree/master/1397-search-suggestions-system) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/pavannaiik/LeetCode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
@@ -993,6 +995,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0567-permutation-in-string](https://github.com/pavannaiik/LeetCode/tree/master/0567-permutation-in-string) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/pavannaiik/LeetCode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0643-maximum-average-subarray-i](https://github.com/pavannaiik/LeetCode/tree/master/0643-maximum-average-subarray-i) |
+| [1046-max-consecutive-ones-iii](https://github.com/pavannaiik/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
 | [1107-minimum-swaps-to-group-all-1s-together](https://github.com/pavannaiik/LeetCode/tree/master/1107-minimum-swaps-to-group-all-1s-together) |
 | [1755-defuse-the-bomb](https://github.com/pavannaiik/LeetCode/tree/master/1755-defuse-the-bomb) |
 | [1966-frequency-of-the-most-frequent-element](https://github.com/pavannaiik/LeetCode/tree/master/1966-frequency-of-the-most-frequent-element) |
@@ -1010,6 +1013,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0560-subarray-sum-equals-k](https://github.com/pavannaiik/LeetCode/tree/master/0560-subarray-sum-equals-k) |
 | [0724-find-pivot-index](https://github.com/pavannaiik/LeetCode/tree/master/0724-find-pivot-index) |
 | [0912-random-pick-with-weight](https://github.com/pavannaiik/LeetCode/tree/master/0912-random-pick-with-weight) |
+| [1046-max-consecutive-ones-iii](https://github.com/pavannaiik/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
 | [1240-stone-game-ii](https://github.com/pavannaiik/LeetCode/tree/master/1240-stone-game-ii) |
 | [1694-make-sum-divisible-by-p](https://github.com/pavannaiik/LeetCode/tree/master/1694-make-sum-divisible-by-p) |
 | [1966-frequency-of-the-most-frequent-element](https://github.com/pavannaiik/LeetCode/tree/master/1966-frequency-of-the-most-frequent-element) |
