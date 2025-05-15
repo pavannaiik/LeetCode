@@ -215,6 +215,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2465-shifting-letters-ii](https://github.com/pavannaiik/LeetCode/tree/master/2465-shifting-letters-ii) |
 | [2472-build-a-matrix-with-conditions](https://github.com/pavannaiik/LeetCode/tree/master/2472-build-a-matrix-with-conditions) |
 | [2474-minimum-adjacent-swaps-to-make-a-valid-array](https://github.com/pavannaiik/LeetCode/tree/master/2474-minimum-adjacent-swaps-to-make-a-valid-array) |
+| [2478-longest-nice-subarray](https://github.com/pavannaiik/LeetCode/tree/master/2478-longest-nice-subarray) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/pavannaiik/LeetCode/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2502-sort-the-people](https://github.com/pavannaiik/LeetCode/tree/master/2502-sort-the-people) |
 | [2552-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/pavannaiik/LeetCode/tree/master/2552-maximum-sum-of-distinct-subarrays-with-length-k) |
@@ -578,6 +579,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1732-minimum-one-bit-operations-to-make-integers-zero](https://github.com/pavannaiik/LeetCode/tree/master/1732-minimum-one-bit-operations-to-make-integers-zero) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/pavannaiik/LeetCode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/pavannaiik/LeetCode/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
+| [2478-longest-nice-subarray](https://github.com/pavannaiik/LeetCode/tree/master/2478-longest-nice-subarray) |
 | [2509-minimize-xor](https://github.com/pavannaiik/LeetCode/tree/master/2509-minimize-xor) |
 | [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/pavannaiik/LeetCode/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
 ## Recursion
@@ -1000,6 +1002,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1755-defuse-the-bomb](https://github.com/pavannaiik/LeetCode/tree/master/1755-defuse-the-bomb) |
 | [1966-frequency-of-the-most-frequent-element](https://github.com/pavannaiik/LeetCode/tree/master/1966-frequency-of-the-most-frequent-element) |
 | [2255-minimum-swaps-to-group-all-1s-together-ii](https://github.com/pavannaiik/LeetCode/tree/master/2255-minimum-swaps-to-group-all-1s-together-ii) |
+| [2478-longest-nice-subarray](https://github.com/pavannaiik/LeetCode/tree/master/2478-longest-nice-subarray) |
 | [2552-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/pavannaiik/LeetCode/tree/master/2552-maximum-sum-of-distinct-subarrays-with-length-k) |
 | [3715-maximum-coins-from-k-consecutive-bags](https://github.com/pavannaiik/LeetCode/tree/master/3715-maximum-coins-from-k-consecutive-bags) |
 ## Prefix Sum
