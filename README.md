@@ -108,6 +108,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0503-next-greater-element-ii](https://github.com/pavannaiik/LeetCode/tree/master/0503-next-greater-element-ii) |
 | [0518-coin-change-ii](https://github.com/pavannaiik/LeetCode/tree/master/0518-coin-change-ii) |
 | [0525-contiguous-array](https://github.com/pavannaiik/LeetCode/tree/master/0525-contiguous-array) |
+| [0540-single-element-in-a-sorted-array](https://github.com/pavannaiik/LeetCode/tree/master/0540-single-element-in-a-sorted-array) |
 | [0542-01-matrix](https://github.com/pavannaiik/LeetCode/tree/master/0542-01-matrix) |
 | [0560-subarray-sum-equals-k](https://github.com/pavannaiik/LeetCode/tree/master/0560-subarray-sum-equals-k) |
 | [0582-kill-process](https://github.com/pavannaiik/LeetCode/tree/master/0582-kill-process) |
@@ -542,6 +543,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0300-longest-increasing-subsequence](https://github.com/pavannaiik/LeetCode/tree/master/0300-longest-increasing-subsequence) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/pavannaiik/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/pavannaiik/LeetCode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
+| [0540-single-element-in-a-sorted-array](https://github.com/pavannaiik/LeetCode/tree/master/0540-single-element-in-a-sorted-array) |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/pavannaiik/LeetCode/tree/master/0719-find-k-th-smallest-pair-distance) |
 | [0729-my-calendar-i](https://github.com/pavannaiik/LeetCode/tree/master/0729-my-calendar-i) |
 | [0792-binary-search](https://github.com/pavannaiik/LeetCode/tree/master/0792-binary-search) |
