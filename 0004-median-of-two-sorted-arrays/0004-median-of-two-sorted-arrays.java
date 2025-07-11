@@ -12,7 +12,7 @@ class Solution {
             int partXMin = (partX==n)?Integer.MAX_VALUE:nums1[partX];
             int partYMax = (partY==0)? Integer.MIN_VALUE: nums2[partY-1];
             int partYMin = (partY==m)?Integer.MAX_VALUE:nums2[partY];
-            if(partXMin > partYMax && partYMax < partXMin){
+            if( partYMax <= partXMin && partXMax <= partYMin){
                 if((m+n)%2==0){
                     return (double)(Math.min(partXMin, partYMin) + Math.max(partXMax, partYMax))/2.0;
                 }else{
@@ -25,6 +25,6 @@ class Solution {
             }
 
         }
-        return 0.0;
+        return -1;
     }
 }
