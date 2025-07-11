@@ -1,25 +1,24 @@
 class Solution {
-    int left_index=0, right_index=0, max_len=0;
+    private int left =0, right =0, ans =0;
     public String longestPalindrome(String s) {
         int n = s.length();
         for(int i=0;i<n;i++){
-            lps(s, i, i, n);
-            lps(s, i, i+1, n);
+            longestPalin(i, i, s,n);
+            longestPalin(i, i+1, s, n);
         }
-        return s.substring(left_index, right_index+1);
+        return s.substring(left, right+1);
     }
-    public void lps(String s, int i, int j, int n){
-        while(i >=0 && j < n && s.charAt(i)==s.charAt(j)){
+    public void longestPalin(int i, int j, String s, int n){
+        while(i>=0 && j <n && s.charAt(i)==s.charAt(j)){
             i--;
             j++;
         }
-        i++;
-        j--;
-        int window = j-i+1;
-        if(window > max_len){
-            max_len=window;
-            left_index= i;
-            right_index=j;
+        int len = j-i-1;
+        if(len > ans){
+            ans = len;
+            left = i+1;
+            right = j-1;
         }
+
     }
 }
