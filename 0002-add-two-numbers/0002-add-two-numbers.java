@@ -13,24 +13,17 @@ class Solution {
         ListNode temp = new ListNode(0);
         ListNode prev = temp;
         int carry =0;
-        while(l1 != null && l2 != null){
-            int curSum =  carry + l1.val + l2.val;
-            l1=l1.next;
-            l2=l2.next;
-            carry = curSum/10;
-            temp.next = new ListNode(curSum%10);
-            temp = temp.next;
-        }
-        while(l1!=null){
-            int curSum =  carry + l1.val ;
-            l1=l1.next;
-            carry = curSum/10;
-            temp.next = new ListNode(curSum%10);
-            temp = temp.next;
-        }
-        while(l2!=null){
-            int curSum =  carry + l2.val ;
-            l2=l2.next;
+        while(l1 != null || l2 != null){
+
+            int curSum =  carry ;
+            if(l1!=null){
+                curSum += l1.val;
+                l1=l1.next;
+            }
+            if(l2!=null){
+                curSum += l2.val;
+                l2=l2.next;
+            }
             carry = curSum/10;
             temp.next = new ListNode(curSum%10);
             temp = temp.next;
