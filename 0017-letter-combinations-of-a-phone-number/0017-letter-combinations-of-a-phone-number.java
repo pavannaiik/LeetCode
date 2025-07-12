@@ -1,20 +1,29 @@
 class Solution {
-     private List<String>result = new ArrayList<>();
-    private final Map<Character,String>map = Map.of('2',"abc",'3',"def",'4',"ghi",'5',"jkl",'6',"mno",'7',"pqrs",'8',"tuv",'9',"wxyz");
+    List<String>ans = new ArrayList<>();
     public List<String> letterCombinations(String digits) {
-        if(digits.length()==0) return result;
-        backtrack(digits, 0, new StringBuilder());
-        return result;
+        if(digits.length()==0) return new ArrayList<>();
+        HashMap<Character, List<Character>>map = new HashMap<>();
+        map.put('2', List.of('a','b','c'));
+        map.put('3', List.of('d','e','f'));
+        map.put('4', List.of('g','h','i'));
+        map.put('5', List.of('j','k','l'));
+        map.put('6', List.of('m','n','o'));
+        map.put('7', List.of('p','q','r','s'));
+        map.put('8', List.of('t','u','v'));
+        map.put('9', List.of('w','x','y','z'));
+        getLetterCombinations(digits, 0, digits.length(), new StringBuilder(),map);
+        return ans;
     }
-    public void backtrack(String digits, int index, StringBuilder sb){
-        if( index==digits.length()){
-            result.add(sb.toString());
+    public void getLetterCombinations(String digits, int index, int n, 
+    StringBuilder sb, HashMap<Character, List<Character>>map){
+        if(sb.length() == n){
+            ans.add(sb.toString());
             return;
         }
-        String str = map.get(digits.charAt(index));
-        for(char ch:str.toCharArray()){
-            sb.append(ch);
-            backtrack(digits, index+1, sb);
+        List<Character>curList = map.get(digits.charAt(index));
+        for(Character c: curList){
+            sb.append(c);
+            getLetterCombinations(digits, index+1, n, sb, map);
             sb.deleteCharAt(sb.length()-1);
         }
     }
