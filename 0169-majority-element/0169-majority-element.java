@@ -1,18 +1,20 @@
 class Solution {
-    //Boyer-Moore Voting Algorithm
     public int majorityElement(int[] nums) {
-       int count =0;
-       Integer num = null;
-       for(int number:nums){
-         if(count == 0){
-            num = number;
-         }
-         if(number == num){
-            count++;
-         }else{
-            count--;
-         }
-       }
-       return num;
+        int majorityElement = nums[0];
+        int count =1;
+        for(int i=1;i<nums.length;i++){
+            if(nums[i]==majorityElement){
+                count++;
+                continue;
+            }else{
+                if(count == 0){
+                    majorityElement = nums[i];
+                    count= 1;
+                }else
+                    count--;
+            }
+        }
+
+        return majorityElement;
     }
 }
