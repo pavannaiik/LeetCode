@@ -333,6 +333,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0455-assign-cookies](https://github.com/pavannaiik/LeetCode/tree/master/0455-assign-cookies) |
 | [0621-task-scheduler](https://github.com/pavannaiik/LeetCode/tree/master/0621-task-scheduler) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/pavannaiik/LeetCode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
+| [0642-design-search-autocomplete-system](https://github.com/pavannaiik/LeetCode/tree/master/0642-design-search-autocomplete-system) |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/pavannaiik/LeetCode/tree/master/0719-find-k-th-smallest-pair-distance) |
 | [0720-longest-word-in-dictionary](https://github.com/pavannaiik/LeetCode/tree/master/0720-longest-word-in-dictionary) |
 | [0721-accounts-merge](https://github.com/pavannaiik/LeetCode/tree/master/0721-accounts-merge) |
@@ -868,6 +869,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0451-sort-characters-by-frequency](https://github.com/pavannaiik/LeetCode/tree/master/0451-sort-characters-by-frequency) |
 | [0621-task-scheduler](https://github.com/pavannaiik/LeetCode/tree/master/0621-task-scheduler) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/pavannaiik/LeetCode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
+| [0642-design-search-autocomplete-system](https://github.com/pavannaiik/LeetCode/tree/master/0642-design-search-autocomplete-system) |
 | [0778-reorganize-string](https://github.com/pavannaiik/LeetCode/tree/master/0778-reorganize-string) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/pavannaiik/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/pavannaiik/LeetCode/tree/master/0803-cheapest-flights-within-k-stops) |
@@ -948,6 +950,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0564-find-the-closest-palindrome](https://github.com/pavannaiik/LeetCode/tree/master/0564-find-the-closest-palindrome) |
 | [0567-permutation-in-string](https://github.com/pavannaiik/LeetCode/tree/master/0567-permutation-in-string) |
 | [0592-fraction-addition-and-subtraction](https://github.com/pavannaiik/LeetCode/tree/master/0592-fraction-addition-and-subtraction) |
+| [0642-design-search-autocomplete-system](https://github.com/pavannaiik/LeetCode/tree/master/0642-design-search-autocomplete-system) |
 | [0647-palindromic-substrings](https://github.com/pavannaiik/LeetCode/tree/master/0647-palindromic-substrings) |
 | [0664-strange-printer](https://github.com/pavannaiik/LeetCode/tree/master/0664-strange-printer) |
 | [0680-valid-palindrome-ii](https://github.com/pavannaiik/LeetCode/tree/master/0680-valid-palindrome-ii) |
@@ -1311,6 +1314,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0547-number-of-provinces](https://github.com/pavannaiik/LeetCode/tree/master/0547-number-of-provinces) |
 | [0572-subtree-of-another-tree](https://github.com/pavannaiik/LeetCode/tree/master/0572-subtree-of-another-tree) |
 | [0582-kill-process](https://github.com/pavannaiik/LeetCode/tree/master/0582-kill-process) |
+| [0642-design-search-autocomplete-system](https://github.com/pavannaiik/LeetCode/tree/master/0642-design-search-autocomplete-system) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/pavannaiik/LeetCode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0662-maximum-width-of-binary-tree](https://github.com/pavannaiik/LeetCode/tree/master/0662-maximum-width-of-binary-tree) |
 | [0684-redundant-connection](https://github.com/pavannaiik/LeetCode/tree/master/0684-redundant-connection) |
@@ -1468,6 +1472,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0348-design-tic-tac-toe](https://github.com/pavannaiik/LeetCode/tree/master/0348-design-tic-tac-toe) |
 | [0355-design-twitter](https://github.com/pavannaiik/LeetCode/tree/master/0355-design-twitter) |
 | [0380-insert-delete-getrandom-o1](https://github.com/pavannaiik/LeetCode/tree/master/0380-insert-delete-getrandom-o1) |
+| [0642-design-search-autocomplete-system](https://github.com/pavannaiik/LeetCode/tree/master/0642-design-search-autocomplete-system) |
 | [0729-my-calendar-i](https://github.com/pavannaiik/LeetCode/tree/master/0729-my-calendar-i) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/pavannaiik/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [1023-time-based-key-value-store](https://github.com/pavannaiik/LeetCode/tree/master/1023-time-based-key-value-store) |
@@ -1490,6 +1495,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0295-find-median-from-data-stream](https://github.com/pavannaiik/LeetCode/tree/master/0295-find-median-from-data-stream) |
+| [0642-design-search-autocomplete-system](https://github.com/pavannaiik/LeetCode/tree/master/0642-design-search-autocomplete-system) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/pavannaiik/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 ## Enumeration
 |  |
@@ -1538,6 +1544,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0211-design-add-and-search-words-data-structure](https://github.com/pavannaiik/LeetCode/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0212-word-search-ii](https://github.com/pavannaiik/LeetCode/tree/master/0212-word-search-ii) |
 | [0421-maximum-xor-of-two-numbers-in-an-array](https://github.com/pavannaiik/LeetCode/tree/master/0421-maximum-xor-of-two-numbers-in-an-array) |
+| [0642-design-search-autocomplete-system](https://github.com/pavannaiik/LeetCode/tree/master/0642-design-search-autocomplete-system) |
 | [0720-longest-word-in-dictionary](https://github.com/pavannaiik/LeetCode/tree/master/0720-longest-word-in-dictionary) |
 | [1397-search-suggestions-system](https://github.com/pavannaiik/LeetCode/tree/master/1397-search-suggestions-system) |
 | [2009-longest-word-with-all-prefixes](https://github.com/pavannaiik/LeetCode/tree/master/2009-longest-word-with-all-prefixes) |
