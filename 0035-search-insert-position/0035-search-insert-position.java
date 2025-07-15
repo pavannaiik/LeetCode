@@ -1,6 +1,5 @@
 class Solution {
     public int searchInsert(int[] nums, int target) {
-        int res=0;
         int i=0,j=nums.length;
         while(i<j){
             int mid = (i+j)/2;
