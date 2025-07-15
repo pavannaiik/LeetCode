@@ -18,12 +18,12 @@ class Solution {
     public void backtrack(int r,int n){
         if(r == n){
             // Creating a List to store the concatenated strings
-        List<String> copy = new ArrayList<>();
+             List<String> copy = new ArrayList<>();
 
-        // Concatenating strings in each row
-        for (List<String> row : board) {
-            copy.add(String.join("", row));
-        }
+            // Concatenating strings in each row
+            for (List<String> row : board) {
+                copy.add(String.join("", row));
+            }
             res.add(copy);
             return;
         }
