@@ -43,7 +43,8 @@ class LRUCache {
         
         if(nodeMap.size()  > 1 && nodeMap.containsKey(key)){
             removeNodeFromLinkedList(nodeMap.get(key));
-        }else if(nodeMap.size() >= size){
+        }
+        if(nodeMap.size() >= size){
             //remove from the end
             removeNodeFromEnd();
         }
