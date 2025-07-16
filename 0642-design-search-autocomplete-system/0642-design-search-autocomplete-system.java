@@ -1,76 +1,71 @@
-import java.util.*;
-
 class AutocompleteSystem {
     TrieNode root;
-    StringBuilder currentInput;
-    TrieNode currentNode;
-
+    TrieNode curNode;
+    TrieNode dead;
+    StringBuilder currSentence;
     public AutocompleteSystem(String[] sentences, int[] times) {
         root = new TrieNode();
-        currentInput = new StringBuilder();
-        currentNode = root;
-
-        for (int i = 0; i < sentences.length; i++) {
-            insert(sentences[i], times[i]);
+        for(int i=0;i<sentences.length;i++){
+            addToTrie(sentences[i], times[i]);
         }
+        currSentence = new StringBuilder();
+        curNode = root;
+        dead = new TrieNode();
     }
-
+    
     public List<String> input(char c) {
-        if (c == '#') {
-            insert(currentInput.toString(), 1);
-            currentInput = new StringBuilder();
-            currentNode = root;
-            return new ArrayList<>();
+        if(c=='#'){
+            addToTrie(currSentence.toString(), 1);
+            currSentence.setLength(0);
+            curNode = root;
+            return new ArrayList<String>();
         }
-
-        currentInput.append(c);
-        if (currentNode != null) {
-            currentNode = currentNode.children.getOrDefault(c, null);
+        currSentence.append(c);
+        if(!curNode.children.containsKey(c)){
+            curNode = dead;
+            return new ArrayList<String>();
         }
-
-        if (currentNode == null) return new ArrayList<>();
-
-        PriorityQueue<SentenceFreq> pq = new PriorityQueue<>((a, b) -> {
-            if (a.freq == b.freq) return a.sentence.compareTo(b.sentence);
-            return b.freq - a.freq;
+        curNode = curNode.children.get(c);
+        List<String> sentences = new ArrayList<>(curNode.sentences.keySet());
+        Collections.sort(sentences, (a, b) -> {
+            int hotA = curNode.sentences.get(a);
+            int hotB = curNode.sentences.get(b);
+            if (hotA == hotB) {
+                return a.compareTo(b);
+            }
+            
+            return hotB - hotA;
         });
-
-        for (Map.Entry<String, Integer> entry : currentNode.sentences.entrySet()) {
-            pq.offer(new SentenceFreq(entry.getKey(), entry.getValue()));
+        
+        List<String> ans = new ArrayList<>();
+        for (int i = 0; i < Math.min(3, sentences.size()); i++) {
+            ans.add(sentences.get(i));
         }
-
-        List<String> result = new ArrayList<>();
-        int count = 0;
-        while (!pq.isEmpty() && count < 3) {
-            result.add(pq.poll().sentence);
-            count++;
-        }
-        return result;
+        
+        return ans;
     }
-
-    private void insert(String sentence, int times) {
+    private void addToTrie(String sentence, int count){
         TrieNode node = root;
-        for (char c : sentence.toCharArray()) {
-            node.children.putIfAbsent(c, new TrieNode());
+        for(char c: sentence.toCharArray()){
+            if(!node.children.containsKey(c)){
+                node.children.put(c, new TrieNode());
+            }
             node = node.children.get(c);
-            node.sentences.put(sentence, node.sentences.getOrDefault(sentence, 0) + times);
+            node.sentences.put(sentence, node.sentences.getOrDefault(sentence, 0)+count);
         }
-        node.isEndOfSentence = true;
-    }
-
-    class SentenceFreq {
-        String sentence;
-        int freq;
-
-        SentenceFreq(String s, int f) {
-            this.sentence = s;
-            this.freq = f;
-        }
-    }
-
-    class TrieNode {
-        Map<Character, TrieNode> children = new HashMap<>();
-        Map<String, Integer> sentences = new HashMap<>();
-        boolean isEndOfSentence;
     }
 }
+class TrieNode{
+    Map<Character, TrieNode>children;
+    Map<String,Integer>sentences;
+    public TrieNode(){
+        children = new HashMap<>();
+        sentences = new HashMap<>();
+    }
+}
+
+/**
+ * Your AutocompleteSystem object will be instantiated and called as such:
+ * AutocompleteSystem obj = new AutocompleteSystem(sentences, times);
+ * List<String> param_1 = obj.input(c);
+ */
