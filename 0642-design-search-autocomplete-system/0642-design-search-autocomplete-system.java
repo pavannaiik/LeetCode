@@ -1,96 +1,75 @@
+
 class AutocompleteSystem {
+    TrieNode root;
+    StringBuilder currentInput;
+    TrieNode currentNode;
 
-    class TrieNode implements Comparable<TrieNode> {
-        TrieNode[] children;
-        String s;
-        int times;
-        List<TrieNode> hot;
-
-        public TrieNode() {
-            children = new TrieNode[128];
-            s=null;
-            times=0;
-            hot=new ArrayList<>();
-        }
-
-        public int compareTo(TrieNode t) {
-            if(this.times == t.times) {
-                return this.s.compareTo(t.s);
-            }
-            return t.times - this.times;
-        }
-
-        public void update(TrieNode node) {
-            if(!this.hot.contains(node)) {
-                this.hot.add(node);
-            }
-            Collections.sort(hot);
-            if(hot.size() > 3) {
-                hot.remove(hot.size()-1);
-            }
-        }
-    }
-
-   TrieNode root;
-    TrieNode cur;
-    StringBuilder sb;
     public AutocompleteSystem(String[] sentences, int[] times) {
         root = new TrieNode();
-        cur = root;
-        sb = new StringBuilder();
-        
-        for (int i = 0; i < times.length; i++) {
-            add(sentences[i], times[i]);
+        currentInput = new StringBuilder();
+        currentNode = root;
+
+        for (int i = 0; i < sentences.length; i++) {
+            insert(sentences[i], times[i]);
         }
     }
-    
-    
-    public void add(String sentence, int t) {
-        TrieNode tmp = root;
-        
-        List<TrieNode> visited = new ArrayList<>();
-        for (char c : sentence.toCharArray()) {
-            if (tmp.children[c] == null) {
-                tmp.children[c] = new TrieNode();
-            }
-            
-            tmp = tmp.children[c];
-            visited.add(tmp);
-        }
-        
-        tmp.s = sentence;
-        tmp.times += t;
-        
-        for (TrieNode node : visited) {
-            node.update(tmp);
-        }
-    }
-    
+
     public List<String> input(char c) {
-        List<String> res = new ArrayList<>();
         if (c == '#') {
-            add(sb.toString(), 1);
-            sb = new StringBuilder();
-            cur = root;
-            return res;
+            insert(currentInput.toString(), 1);
+            currentInput = new StringBuilder();
+            currentNode = root;
+            return new ArrayList<>();
         }
-        
-        sb.append(c);
-        if (cur != null) {
-            cur = cur.children[c];
+
+        currentInput.append(c);
+        if (currentNode != null) {
+            currentNode = currentNode.children.getOrDefault(c, null);
         }
-        
-        if (cur == null) return res;
-        for (TrieNode node : cur.hot) {
-            res.add(node.s);
+
+        if (currentNode == null) return new ArrayList<>();
+
+        PriorityQueue<SentenceFreq> pq = new PriorityQueue<>((a, b) -> {
+            if (a.freq == b.freq) return a.sentence.compareTo(b.sentence);
+            return b.freq - a.freq;
+        });
+
+        for (Map.Entry<String, Integer> entry : currentNode.sentences.entrySet()) {
+            pq.offer(new SentenceFreq(entry.getKey(), entry.getValue()));
         }
-        
-        return res;
+
+        List<String> result = new ArrayList<>();
+        int count = 0;
+        while (!pq.isEmpty() && count < 3) {
+            result.add(pq.poll().sentence);
+            count++;
+        }
+        return result;
+    }
+
+    private void insert(String sentence, int times) {
+        TrieNode node = root;
+        for (char c : sentence.toCharArray()) {
+            node.children.putIfAbsent(c, new TrieNode());
+            node = node.children.get(c);
+            node.sentences.put(sentence, node.sentences.getOrDefault(sentence, 0) + times);
+        }
+        node.isEndOfSentence = true;
+    }
+
+    class SentenceFreq {
+        String sentence;
+        int freq;
+
+        SentenceFreq(String s, int f) {
+            this.sentence = s;
+            this.freq = f;
+        }
+    }
+
+    class TrieNode {
+        Map<Character, TrieNode> children = new HashMap<>();
+        Map<String, Integer> sentences = new HashMap<>();
+        boolean isEndOfSentence;
     }
 }
-
-/**
- * Your AutocompleteSystem object will be instantiated and called as such:
- * AutocompleteSystem obj = new AutocompleteSystem(sentences, times);
- * List<String> param_1 = obj.input(c);
- */
