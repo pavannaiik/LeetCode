@@ -1,66 +1,91 @@
 class AutocompleteSystem {
-    TrieNode root;
-    TrieNode curNode;
-    TrieNode dead;
-    StringBuilder currSentence;
+
+    class TrieNode implements Comparable<TrieNode> {
+        TrieNode[] children;
+        String s;
+        int times;
+        List<TrieNode> hot;
+
+        public TrieNode() {
+            children = new TrieNode[128];
+            s=null;
+            times=0;
+            hot=new ArrayList<>();
+        }
+
+        public int compareTo(TrieNode t) {
+            if(this.times == t.times) {
+                return this.s.compareTo(t.s);
+            }
+            return t.times - this.times;
+        }
+
+        public void update(TrieNode node) {
+            if(!this.hot.contains(node)) {
+                this.hot.add(node);
+            }
+            Collections.sort(hot);
+            if(hot.size() > 3) {
+                hot.remove(hot.size()-1);
+            }
+        }
+    }
+
+   TrieNode root;
+    TrieNode cur;
+    StringBuilder sb;
     public AutocompleteSystem(String[] sentences, int[] times) {
         root = new TrieNode();
-        for(int i=0;i<sentences.length;i++){
-            addToTrie(sentences[i], times[i]);
+        cur = root;
+        sb = new StringBuilder();
+        
+        for (int i = 0; i < times.length; i++) {
+            add(sentences[i], times[i]);
         }
-        currSentence = new StringBuilder();
-        curNode = root;
-        dead = new TrieNode();
+    }
+    
+    
+    public void add(String sentence, int t) {
+        TrieNode tmp = root;
+        
+        List<TrieNode> visited = new ArrayList<>();
+        for (char c : sentence.toCharArray()) {
+            if (tmp.children[c] == null) {
+                tmp.children[c] = new TrieNode();
+            }
+            
+            tmp = tmp.children[c];
+            visited.add(tmp);
+        }
+        
+        tmp.s = sentence;
+        tmp.times += t;
+        
+        for (TrieNode node : visited) {
+            node.update(tmp);
+        }
     }
     
     public List<String> input(char c) {
-        if(c=='#'){
-            addToTrie(currSentence.toString(), 1);
-            currSentence.setLength(0);
-            curNode = root;
-            return new ArrayList<String>();
-        }
-        currSentence.append(c);
-        if(!curNode.children.containsKey(c)){
-            curNode = dead;
-            return new ArrayList<String>();
-        }
-        curNode = curNode.children.get(c);
-        List<String> sentences = new ArrayList<>(curNode.sentences.keySet());
-        Collections.sort(sentences, (a, b) -> {
-            int hotA = curNode.sentences.get(a);
-            int hotB = curNode.sentences.get(b);
-            if (hotA == hotB) {
-                return a.compareTo(b);
-            }
-            
-            return hotB - hotA;
-        });
-        
-        List<String> ans = new ArrayList<>();
-        for (int i = 0; i < Math.min(3, sentences.size()); i++) {
-            ans.add(sentences.get(i));
+        List<String> res = new ArrayList<>();
+        if (c == '#') {
+            add(sb.toString(), 1);
+            sb = new StringBuilder();
+            cur = root;
+            return res;
         }
         
-        return ans;
-    }
-    private void addToTrie(String sentence, int count){
-        TrieNode node = root;
-        for(char c: sentence.toCharArray()){
-            if(!node.children.containsKey(c)){
-                node.children.put(c, new TrieNode());
-            }
-            node = node.children.get(c);
-            node.sentences.put(sentence, node.sentences.getOrDefault(sentence, 0)+count);
+        sb.append(c);
+        if (cur != null) {
+            cur = cur.children[c];
         }
-    }
-}
-class TrieNode{
-    Map<Character, TrieNode>children;
-    Map<String,Integer>sentences;
-    public TrieNode(){
-        children = new HashMap<>();
-        sentences = new HashMap<>();
+        
+        if (cur == null) return res;
+        for (TrieNode node : cur.hot) {
+            res.add(node.s);
+        }
+        
+        return res;
     }
 }
 
