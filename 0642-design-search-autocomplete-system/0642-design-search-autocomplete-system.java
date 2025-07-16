@@ -30,22 +30,21 @@ class AutocompleteSystem {
         if (currentNode == null) return new ArrayList<>();
 
         PriorityQueue<SentenceFreq> pq = new PriorityQueue<>((a, b) -> {
-            if (a.freq == b.freq) return a.sentence.compareTo(b.sentence);
-            return b.freq - a.freq;
+            if (a.freq == b.freq) return b.sentence.compareTo(a.sentence); // reverse lex for min-heap
+            return a.freq - b.freq; // min freq on top
         });
 
         for (Map.Entry<String, Integer> entry : currentNode.sentences.entrySet()) {
-            pq.offer(new SentenceFreq(entry.getKey(), entry.getValue()));
+            SentenceFreq sf = new SentenceFreq(entry.getKey(), entry.getValue());
+            pq.offer(sf);
+            if (pq.size() > 3) pq.poll(); // remove lowest priority
         }
 
         List<String> result = new ArrayList<>();
-        int count = 0;
-        while (!pq.isEmpty() && count < 3) {
-            result.add(pq.poll().sentence);
-            count++;
+            while (!pq.isEmpty()) result.add(pq.poll().sentence);
+            Collections.reverse(result); // reverse since it’s a min-heap
+            return result;
         }
-        return result;
-    }
 
     private void insert(String sentence, int times) {
         TrieNode node = root;
