@@ -444,6 +444,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2267-minimum-difference-in-sums-after-removal-of-elements](https://github.com/pavannaiik/LeetCode/tree/master/2267-minimum-difference-in-sums-after-removal-of-elements) |
 | [2325-number-of-ways-to-select-buildings](https://github.com/pavannaiik/LeetCode/tree/master/2325-number-of-ways-to-select-buildings) |
 | [2562-count-ways-to-build-good-strings](https://github.com/pavannaiik/LeetCode/tree/master/2562-count-ways-to-build-good-strings) |
+| [3105-minimum-edge-reversals-so-every-node-is-reachable](https://github.com/pavannaiik/LeetCode/tree/master/3105-minimum-edge-reversals-so-every-node-is-reachable) |
 | [3273-most-expensive-item-that-can-not-be-bought](https://github.com/pavannaiik/LeetCode/tree/master/3273-most-expensive-item-that-can-not-be-bought) |
 ## Math
 |  |
@@ -807,6 +808,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2379-maximum-total-importance-of-roads](https://github.com/pavannaiik/LeetCode/tree/master/2379-maximum-total-importance-of-roads) |
 | [2472-build-a-matrix-with-conditions](https://github.com/pavannaiik/LeetCode/tree/master/2472-build-a-matrix-with-conditions) |
 | [2803-modify-graph-edge-weights](https://github.com/pavannaiik/LeetCode/tree/master/2803-modify-graph-edge-weights) |
+| [3105-minimum-edge-reversals-so-every-node-is-reachable](https://github.com/pavannaiik/LeetCode/tree/master/3105-minimum-edge-reversals-so-every-node-is-reachable) |
 | [3235-minimum-cost-to-convert-string-i](https://github.com/pavannaiik/LeetCode/tree/master/3235-minimum-cost-to-convert-string-i) |
 ## Greedy
 |  |
@@ -1352,6 +1354,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/pavannaiik/LeetCode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 | [2764-maximum-number-of-fish-in-a-grid](https://github.com/pavannaiik/LeetCode/tree/master/2764-maximum-number-of-fish-in-a-grid) |
 | [3058-maximum-number-of-k-divisible-components](https://github.com/pavannaiik/LeetCode/tree/master/3058-maximum-number-of-k-divisible-components) |
+| [3105-minimum-edge-reversals-so-every-node-is-reachable](https://github.com/pavannaiik/LeetCode/tree/master/3105-minimum-edge-reversals-so-every-node-is-reachable) |
 ## Topological Sort
 |  |
 | ------- |
@@ -1415,6 +1418,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2171-second-minimum-time-to-reach-destination](https://github.com/pavannaiik/LeetCode/tree/master/2171-second-minimum-time-to-reach-destination) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/pavannaiik/LeetCode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 | [2764-maximum-number-of-fish-in-a-grid](https://github.com/pavannaiik/LeetCode/tree/master/2764-maximum-number-of-fish-in-a-grid) |
+| [3105-minimum-edge-reversals-so-every-node-is-reachable](https://github.com/pavannaiik/LeetCode/tree/master/3105-minimum-edge-reversals-so-every-node-is-reachable) |
 ## Shortest Path
 |  |
 | ------- |
