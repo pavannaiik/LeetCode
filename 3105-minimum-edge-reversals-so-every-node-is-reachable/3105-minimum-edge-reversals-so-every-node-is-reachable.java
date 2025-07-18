@@ -14,13 +14,11 @@ class Solution {
         }
 
         int[] result = new int[n];
-        boolean[] visited = new boolean[n];
 
         // Step 1: calculate total reversals from root (node 0)
         result[0] = dfsCountReversals(0, -1, adj);
 
         // Step 2: propagate reversal counts to other nodes
-        visited = new boolean[n];
         dfsPropagate(0, -1, result, adj);
 
         return result;
