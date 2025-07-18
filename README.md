@@ -408,6 +408,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0221-maximal-square](https://github.com/pavannaiik/LeetCode/tree/master/0221-maximal-square) |
 | [0241-different-ways-to-add-parentheses](https://github.com/pavannaiik/LeetCode/tree/master/0241-different-ways-to-add-parentheses) |
 | [0264-ugly-number-ii](https://github.com/pavannaiik/LeetCode/tree/master/0264-ugly-number-ii) |
+| [0279-perfect-squares](https://github.com/pavannaiik/LeetCode/tree/master/0279-perfect-squares) |
 | [0300-longest-increasing-subsequence](https://github.com/pavannaiik/LeetCode/tree/master/0300-longest-increasing-subsequence) |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/pavannaiik/LeetCode/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
 | [0312-burst-balloons](https://github.com/pavannaiik/LeetCode/tree/master/0312-burst-balloons) |
@@ -468,6 +469,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0264-ugly-number-ii](https://github.com/pavannaiik/LeetCode/tree/master/0264-ugly-number-ii) |
 | [0268-missing-number](https://github.com/pavannaiik/LeetCode/tree/master/0268-missing-number) |
 | [0273-integer-to-english-words](https://github.com/pavannaiik/LeetCode/tree/master/0273-integer-to-english-words) |
+| [0279-perfect-squares](https://github.com/pavannaiik/LeetCode/tree/master/0279-perfect-squares) |
 | [0360-sort-transformed-array](https://github.com/pavannaiik/LeetCode/tree/master/0360-sort-transformed-array) |
 | [0371-sum-of-two-integers](https://github.com/pavannaiik/LeetCode/tree/master/0371-sum-of-two-integers) |
 | [0380-insert-delete-getrandom-o1](https://github.com/pavannaiik/LeetCode/tree/master/0380-insert-delete-getrandom-o1) |
@@ -1376,6 +1378,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0210-course-schedule-ii](https://github.com/pavannaiik/LeetCode/tree/master/0210-course-schedule-ii) |
 | [0226-invert-binary-tree](https://github.com/pavannaiik/LeetCode/tree/master/0226-invert-binary-tree) |
 | [0261-graph-valid-tree](https://github.com/pavannaiik/LeetCode/tree/master/0261-graph-valid-tree) |
+| [0279-perfect-squares](https://github.com/pavannaiik/LeetCode/tree/master/0279-perfect-squares) |
 | [0286-walls-and-gates](https://github.com/pavannaiik/LeetCode/tree/master/0286-walls-and-gates) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/pavannaiik/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/pavannaiik/LeetCode/tree/master/0314-binary-tree-vertical-order-traversal) |
