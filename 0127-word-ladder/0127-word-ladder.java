@@ -30,10 +30,10 @@ class Solution {
                         if(!visited.contains(str)){
                             queue.offer(str);
                         }
-                    }
+}
                 }
                 visited.add(curString);
-            }
+            }                    
             level++;
         }
         return 0;
