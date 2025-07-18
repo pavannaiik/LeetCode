@@ -1,42 +1,49 @@
 class Solution {
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
-        Map<String, List<String>>map = new HashMap<>();
-        for(String word:wordList){
-            int len= word.length();
-            for(int i=0;i<len;i++){
-                String temp = word.substring(0, i)+"*"+word.substring(i+1);
-                if(!map.containsKey(temp)){
-                    map.put(temp, new ArrayList<>());
-                }
-                map.get(temp).add(word);
+        Set<String> wordSet = new HashSet<>(wordList);
+        if (!wordSet.contains(endWord)) return 0;
+
+        // Step 1: Preprocess - Build adjacency map using wildcard patterns
+        Map<String, List<String>> patternMap = new HashMap<>();
+        int wordLen = beginWord.length();
+
+        for (String word : wordSet) {
+            for (int i = 0; i < wordLen; i++) {
+                String pattern = word.substring(0, i) + "*" + word.substring(i + 1);
+                patternMap.computeIfAbsent(pattern, k -> new ArrayList<>()).add(word);
             }
         }
-        Queue<String>queue = new LinkedList<>();
+
+        // Step 2: BFS
+        Queue<String> queue = new LinkedList<>();
+        Set<String> visited = new HashSet<>();
         queue.offer(beginWord);
-        Set<String>visited = new HashSet<>();
-        int level=1;
-        while(!queue.isEmpty()){
-            int curLen = queue.size();
-            for(int j=0;j<curLen;j++){
-                String curString = queue.poll();
-                int len = curString.length();
-                for(int i=0;i<len;i++){
-                    String temp = curString.substring(0, i)+"*"+curString.substring(i+1);
-                    List<String>words = map.getOrDefault(temp, new ArrayList<>());
-                    for(String str:words){
-                        if(endWord.equals(str)){
-                            return level+1;
+        visited.add(beginWord);
+
+        int level = 1;
+
+        while (!queue.isEmpty()) {
+            int size = queue.size();
+            for (int j = 0; j < size; j++) {
+                String current = queue.poll();
+
+                for (int i = 0; i < wordLen; i++) {
+                    String pattern = current.substring(0, i) + "*" + current.substring(i + 1);
+                    List<String> neighbors = patternMap.getOrDefault(pattern, Collections.emptyList());
+
+                    for (String neighbor : neighbors) {
+                        if (neighbor.equals(endWord)) return level + 1;
+
+                        if (!visited.contains(neighbor)) {
+                            visited.add(neighbor);
+                            queue.offer(neighbor);
                         }
-                        if(!visited.contains(str)){
-                            queue.offer(str);
-                        }
-}
+                    }
                 }
-                visited.add(curString);
-            }                    
+            }
             level++;
         }
-        return 0;
 
+        return 0;
     }
 }
