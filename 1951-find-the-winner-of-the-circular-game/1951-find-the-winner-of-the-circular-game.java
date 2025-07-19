@@ -1,13 +1,10 @@
 class Solution {
 
     public int findTheWinner(int n, int k) {
-        return winnerHelper(n, k) + 1;
-    }
-
-    private int winnerHelper(int n, int k) {
-        if (n == 1) {
-            return 0;
-        }
-        return (winnerHelper(n - 1, k) + k) % n;
+       int ans=0;
+       for(int i=2;i<=n;i++){
+        ans = (ans+k)%i;
+       }
+       return ans+1;
     }
 }
