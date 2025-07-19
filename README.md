@@ -209,6 +209,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2067-maximum-number-of-points-with-cost](https://github.com/pavannaiik/LeetCode/tree/master/2067-maximum-number-of-points-with-cost) |
 | [2094-remove-stones-to-minimize-the-total](https://github.com/pavannaiik/LeetCode/tree/master/2094-remove-stones-to-minimize-the-total) |
 | [2139-detect-squares](https://github.com/pavannaiik/LeetCode/tree/master/2139-detect-squares) |
+| [2150-kth-smallest-product-of-two-sorted-arrays](https://github.com/pavannaiik/LeetCode/tree/master/2150-kth-smallest-product-of-two-sorted-arrays) |
 | [2156-stone-game-ix](https://github.com/pavannaiik/LeetCode/tree/master/2156-stone-game-ix) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/pavannaiik/LeetCode/tree/master/2163-kth-distinct-string-in-an-array) |
 | [2165-plates-between-candles](https://github.com/pavannaiik/LeetCode/tree/master/2165-plates-between-candles) |
@@ -576,6 +577,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/pavannaiik/LeetCode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
 | [1646-kth-missing-positive-number](https://github.com/pavannaiik/LeetCode/tree/master/1646-kth-missing-positive-number) |
 | [1966-frequency-of-the-most-frequent-element](https://github.com/pavannaiik/LeetCode/tree/master/1966-frequency-of-the-most-frequent-element) |
+| [2150-kth-smallest-product-of-two-sorted-arrays](https://github.com/pavannaiik/LeetCode/tree/master/2150-kth-smallest-product-of-two-sorted-arrays) |
 | [2165-plates-between-candles](https://github.com/pavannaiik/LeetCode/tree/master/2165-plates-between-candles) |
 | [2179-most-beautiful-item-for-each-query](https://github.com/pavannaiik/LeetCode/tree/master/2179-most-beautiful-item-for-each-query) |
 | [2334-number-of-flowers-in-full-bloom](https://github.com/pavannaiik/LeetCode/tree/master/2334-number-of-flowers-in-full-bloom) |
