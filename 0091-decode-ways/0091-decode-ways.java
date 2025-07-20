@@ -1,19 +1,21 @@
 class Solution {
     public int numDecodings(String s) {
         int n = s.length();
-        if(s!=null && n!=0 && s.charAt(0)=='0') return 0;
-        int twoback =1;
-        int oneback = s.charAt(0)=='0'?0:1;
-        // we have to go till last element thats why we are going till n+1 
-        // we are only check i-1 not i
-        for(int i=2;i<n+1;i++){
-            int current = s.charAt(i-1)=='0'?0:oneback;
-            if(s.charAt(i-2)=='1' || s.charAt(i-2)=='2' && s.charAt(i-1)- '0' < 7){
-                current += twoback;
+        if(s.charAt(0)=='0') return 0;
+        int[] dp = new int[n+1];
+        dp[0] = 1;
+        dp[1] = 1;
+        for(int i=2;i<=n;i++){
+            int prev = s.charAt(i-2)-'0';
+            int curNum = s.charAt(i-1)-'0';
+            if (curNum != 0) {
+                dp[i] += dp[i - 1];
             }
-            twoback = oneback;
-            oneback = current;
+            if(prev == 1 && curNum <= 9  || prev == 2 && curNum <=6){
+                dp[i] += dp[i-2];
+            }
+            
         }
-       return oneback;
+        return dp[n];
     }
 }
