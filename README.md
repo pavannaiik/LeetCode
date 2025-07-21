@@ -803,6 +803,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0399-evaluate-division](https://github.com/pavannaiik/LeetCode/tree/master/0399-evaluate-division) |
 | [0547-number-of-provinces](https://github.com/pavannaiik/LeetCode/tree/master/0547-number-of-provinces) |
 | [0684-redundant-connection](https://github.com/pavannaiik/LeetCode/tree/master/0684-redundant-connection) |
+| [0744-network-delay-time](https://github.com/pavannaiik/LeetCode/tree/master/0744-network-delay-time) |
 | [0801-is-graph-bipartite](https://github.com/pavannaiik/LeetCode/tree/master/0801-is-graph-bipartite) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/pavannaiik/LeetCode/tree/master/0803-cheapest-flights-within-k-stops) |
 | [1300-critical-connections-in-a-network](https://github.com/pavannaiik/LeetCode/tree/master/1300-critical-connections-in-a-network) |
@@ -887,6 +888,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0621-task-scheduler](https://github.com/pavannaiik/LeetCode/tree/master/0621-task-scheduler) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/pavannaiik/LeetCode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0642-design-search-autocomplete-system](https://github.com/pavannaiik/LeetCode/tree/master/0642-design-search-autocomplete-system) |
+| [0744-network-delay-time](https://github.com/pavannaiik/LeetCode/tree/master/0744-network-delay-time) |
 | [0778-reorganize-string](https://github.com/pavannaiik/LeetCode/tree/master/0778-reorganize-string) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/pavannaiik/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/pavannaiik/LeetCode/tree/master/0803-cheapest-flights-within-k-stops) |
@@ -1346,6 +1348,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0695-max-area-of-island](https://github.com/pavannaiik/LeetCode/tree/master/0695-max-area-of-island) |
 | [0721-accounts-merge](https://github.com/pavannaiik/LeetCode/tree/master/0721-accounts-merge) |
 | [0733-flood-fill](https://github.com/pavannaiik/LeetCode/tree/master/0733-flood-fill) |
+| [0744-network-delay-time](https://github.com/pavannaiik/LeetCode/tree/master/0744-network-delay-time) |
 | [0758-convert-binary-search-tree-to-sorted-doubly-linked-list](https://github.com/pavannaiik/LeetCode/tree/master/0758-convert-binary-search-tree-to-sorted-doubly-linked-list) |
 | [0801-is-graph-bipartite](https://github.com/pavannaiik/LeetCode/tree/master/0801-is-graph-bipartite) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/pavannaiik/LeetCode/tree/master/0803-cheapest-flights-within-k-stops) |
@@ -1413,6 +1416,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0695-max-area-of-island](https://github.com/pavannaiik/LeetCode/tree/master/0695-max-area-of-island) |
 | [0721-accounts-merge](https://github.com/pavannaiik/LeetCode/tree/master/0721-accounts-merge) |
 | [0733-flood-fill](https://github.com/pavannaiik/LeetCode/tree/master/0733-flood-fill) |
+| [0744-network-delay-time](https://github.com/pavannaiik/LeetCode/tree/master/0744-network-delay-time) |
 | [0801-is-graph-bipartite](https://github.com/pavannaiik/LeetCode/tree/master/0801-is-graph-bipartite) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/pavannaiik/LeetCode/tree/master/0803-cheapest-flights-within-k-stops) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/pavannaiik/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
@@ -1435,6 +1439,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0399-evaluate-division](https://github.com/pavannaiik/LeetCode/tree/master/0399-evaluate-division) |
+| [0744-network-delay-time](https://github.com/pavannaiik/LeetCode/tree/master/0744-network-delay-time) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/pavannaiik/LeetCode/tree/master/0803-cheapest-flights-within-k-stops) |
 | [1325-path-with-maximum-probability](https://github.com/pavannaiik/LeetCode/tree/master/1325-path-with-maximum-probability) |
 | [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/pavannaiik/LeetCode/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
