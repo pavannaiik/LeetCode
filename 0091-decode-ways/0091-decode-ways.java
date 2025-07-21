@@ -9,7 +9,7 @@ class Solution {
             int curNum = s.charAt(i-1)-'0';
             int dp = 0;
             if (curNum != 0) {
-                dp += dp1;
+                dp = dp1;
             }
             if(prev == 1 && curNum <= 9  || prev == 2 && curNum <=6){
                 dp += dp2;
