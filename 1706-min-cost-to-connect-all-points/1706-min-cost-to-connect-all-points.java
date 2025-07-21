@@ -1,5 +1,4 @@
-
-import java.lang.reflect.Array;class Solution {
+class Solution {
     public int minCostConnectPoints(int[][] points) {
         int n = points.length;
         int[] dist = new int[n];
