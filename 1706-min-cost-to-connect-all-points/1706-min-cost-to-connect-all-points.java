@@ -18,7 +18,7 @@ class Solution {
             isMST[u] = true;
             count++;
             cost += curCost;
-            for(int v = 0;v< n;v++){
+            for(int v = 0;v < n;v++){
                 int distance = Math.abs(points[u][0]-points[v][0])+Math.abs(points[u][1] - points[v][1]);
                 if(dist[v] >  distance){
                     dist[v]=  distance;
