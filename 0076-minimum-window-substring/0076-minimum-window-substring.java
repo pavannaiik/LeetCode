@@ -1,30 +1,32 @@
 class Solution {
     public String minWindow(String s, String t) {
-        int[] charArray = new int[123];
-        for(char ch: t.toCharArray()){
-            charArray[ch]++;
-        }
-        int required = t.length();
+        int[] freq = new int[128];
+        for(char c: t.toCharArray()) freq[c]++;
         int left =0;
-        int curMin = Integer.MAX_VALUE;
-        int start =0, end =0;
-        for(int i=0;i<s.length();i++){
-            char ch = s.charAt(i);
-            charArray[ch]--;
-            if(charArray[ch]>=0){
-                required--;
+        int n = s.length();
+        int required = t.length();
+        int res = Integer.MAX_VALUE;
+        int start = 0, end =0;
+        for(int right =0;right <n ;right++){
+            char c = s.charAt(right);
+            if(freq[c]-- > 0) required--;
+            if(required == 0){
+                while(required==0){
+                    int winLen = right-left+1;
+                    if(winLen < res){
+                        res = winLen;
+                        start = left;
+                        end = right;
+                    }
+                    char ch = s.charAt(left);
+                    freq[ch]++;
+                    if(freq[ch]>0) required++;
+                    left++;
+                }                
             }
-            while(required == 0){
-                if(curMin > i-left+1){
-                    curMin = i-left+1;
-                    start = left;
-                    end = i;
-                }
-                char leftChar = s.charAt(left);
-                left++;
-                if(charArray[leftChar]++ == 0) required++;
-            }
+
         }
-        return curMin == Integer.MAX_VALUE? "":s.substring(start, end+1);
+        return res == Integer.MAX_VALUE? "":s.substring(start, end+1);
+
     }
 }
