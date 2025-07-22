@@ -15,11 +15,7 @@ class Solution {
             }
             for(int nextCard = currentCard;nextCard < currentCard + groupSize;nextCard++){
                 if(countCards.getOrDefault(nextCard, 0) == 0) return false;
-                if(countCards.get(nextCard) > 0){
-                    countCards.put(nextCard, countCards.get(nextCard)-1);
-                }else{
-                    countCards.remove(nextCard);
-                }
+                countCards.put(nextCard, countCards.get(nextCard)-1);
             }
         }
         return true;
