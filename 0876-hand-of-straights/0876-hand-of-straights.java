@@ -9,11 +9,7 @@ class Solution {
         }
         for(int card: hand){
             if(countCards.getOrDefault(card,0)==0) continue;
-            int currentCard = card;
-            while(countCards.getOrDefault(currentCard-1,0) > 0){
-                currentCard--;
-            }
-            for(int nextCard = currentCard;nextCard < currentCard + groupSize;nextCard++){
+            for(int nextCard = card;nextCard < card + groupSize;nextCard++){
                 if(countCards.getOrDefault(nextCard, 0) == 0) return false;
                 countCards.put(nextCard, countCards.get(nextCard)-1);
             }
