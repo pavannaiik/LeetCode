@@ -79,6 +79,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0252-meeting-rooms](https://github.com/pavannaiik/LeetCode/tree/master/0252-meeting-rooms) |
 | [0253-meeting-rooms-ii](https://github.com/pavannaiik/LeetCode/tree/master/0253-meeting-rooms-ii) |
 | [0268-missing-number](https://github.com/pavannaiik/LeetCode/tree/master/0268-missing-number) |
+| [0269-alien-dictionary](https://github.com/pavannaiik/LeetCode/tree/master/0269-alien-dictionary) |
 | [0271-encode-and-decode-strings](https://github.com/pavannaiik/LeetCode/tree/master/0271-encode-and-decode-strings) |
 | [0283-move-zeroes](https://github.com/pavannaiik/LeetCode/tree/master/0283-move-zeroes) |
 | [0286-walls-and-gates](https://github.com/pavannaiik/LeetCode/tree/master/0286-walls-and-gates) |
@@ -798,6 +799,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0207-course-schedule](https://github.com/pavannaiik/LeetCode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/pavannaiik/LeetCode/tree/master/0210-course-schedule-ii) |
 | [0261-graph-valid-tree](https://github.com/pavannaiik/LeetCode/tree/master/0261-graph-valid-tree) |
+| [0269-alien-dictionary](https://github.com/pavannaiik/LeetCode/tree/master/0269-alien-dictionary) |
 | [0277-find-the-celebrity](https://github.com/pavannaiik/LeetCode/tree/master/0277-find-the-celebrity) |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/pavannaiik/LeetCode/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/pavannaiik/LeetCode/tree/master/0329-longest-increasing-path-in-a-matrix) |
@@ -956,6 +958,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0241-different-ways-to-add-parentheses](https://github.com/pavannaiik/LeetCode/tree/master/0241-different-ways-to-add-parentheses) |
 | [0242-valid-anagram](https://github.com/pavannaiik/LeetCode/tree/master/0242-valid-anagram) |
 | [0249-group-shifted-strings](https://github.com/pavannaiik/LeetCode/tree/master/0249-group-shifted-strings) |
+| [0269-alien-dictionary](https://github.com/pavannaiik/LeetCode/tree/master/0269-alien-dictionary) |
 | [0271-encode-and-decode-strings](https://github.com/pavannaiik/LeetCode/tree/master/0271-encode-and-decode-strings) |
 | [0273-integer-to-english-words](https://github.com/pavannaiik/LeetCode/tree/master/0273-integer-to-english-words) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/pavannaiik/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
@@ -1328,6 +1331,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/pavannaiik/LeetCode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/pavannaiik/LeetCode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0261-graph-valid-tree](https://github.com/pavannaiik/LeetCode/tree/master/0261-graph-valid-tree) |
+| [0269-alien-dictionary](https://github.com/pavannaiik/LeetCode/tree/master/0269-alien-dictionary) |
 | [0270-closest-binary-search-tree-value](https://github.com/pavannaiik/LeetCode/tree/master/0270-closest-binary-search-tree-value) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/pavannaiik/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/pavannaiik/LeetCode/tree/master/0314-binary-tree-vertical-order-traversal) |
@@ -1377,6 +1381,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0207-course-schedule](https://github.com/pavannaiik/LeetCode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/pavannaiik/LeetCode/tree/master/0210-course-schedule-ii) |
+| [0269-alien-dictionary](https://github.com/pavannaiik/LeetCode/tree/master/0269-alien-dictionary) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/pavannaiik/LeetCode/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [2472-build-a-matrix-with-conditions](https://github.com/pavannaiik/LeetCode/tree/master/2472-build-a-matrix-with-conditions) |
 ## Breadth-First Search
@@ -1398,6 +1403,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0210-course-schedule-ii](https://github.com/pavannaiik/LeetCode/tree/master/0210-course-schedule-ii) |
 | [0226-invert-binary-tree](https://github.com/pavannaiik/LeetCode/tree/master/0226-invert-binary-tree) |
 | [0261-graph-valid-tree](https://github.com/pavannaiik/LeetCode/tree/master/0261-graph-valid-tree) |
+| [0269-alien-dictionary](https://github.com/pavannaiik/LeetCode/tree/master/0269-alien-dictionary) |
 | [0279-perfect-squares](https://github.com/pavannaiik/LeetCode/tree/master/0279-perfect-squares) |
 | [0286-walls-and-gates](https://github.com/pavannaiik/LeetCode/tree/master/0286-walls-and-gates) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/pavannaiik/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
