@@ -9,16 +9,14 @@ class Solution {
                 max_area = Math.max(max_area, stack.peek().getKey() * (i-stack.peek().getValue()));
                 min_index = Math.min(min_index, stack.peek().getValue());
                 stack.pop();
+
             }
-            
             stack.add(new Pair<>(heights[i], min_index));
         }
         while(!stack.isEmpty()){
-            max_area = Math.max(max_area, stack.peek().getKey() * ( n- stack.peek().getValue()));
+            max_area = Math.max(max_area, stack.peek().getKey() * (n-stack.peek().getValue()));
             stack.pop();
         }
         return max_area;
     }
 }
-// 2 -> 2 ->
-// 2,0 -> 1, 0 -> 5, 2, 6, 3,
