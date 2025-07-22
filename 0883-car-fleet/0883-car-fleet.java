@@ -1,26 +1,17 @@
 class Solution {
     public int carFleet(int target, int[] position, int[] speed) {
-        int n = position.length;
-        Car[] cars = new Car[n];
-        for(int i=0;i<n;i++){
-            cars[i]= new Car(position[i],(double)( target-position[i])/speed[i]);
+        double[] carFleet = new double[target+1];
+        for(int i=0;i<speed.length;i++){
+            carFleet[position[i]] = (double)(target-position[i])/speed[i];
         }
-        Arrays.sort(cars, (a,b)->Integer.compare(a.position, b.position));
-        int ans = 0, t = n;
-        while(--t > 0){
-            if(cars[t].time < cars[t-1].time) ans++;
-            else cars[t-1] = cars[t];
+        int fleets =0;
+        double maxSpeed = 0;
+        for(int i= target;i>=0;i--){
+            if(carFleet[i] > maxSpeed){
+                maxSpeed = carFleet[i];
+                fleets++;
+            }
         }
-        return ans + (t==0?1:0);
-
-    }
-}
-class Car{
-    int position;
-    double time;
-    Car(int p, double t){
-        position = p;
-        time = t;
-
+        return fleets;
     }
 }
