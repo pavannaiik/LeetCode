@@ -1,20 +1,24 @@
 class Solution {
-    HashSet<Integer>set = new HashSet<>();
-    public boolean isHappy(int n) {
-        while(n!=1){
-            n = sumOfsquaresOfN(n);
-            if(set.contains(n)) return false;
-            set.add(n);
-        }
-        if(n==1) return true;
-        return false;
-    }
-    public int sumOfsquaresOfN(int n){
+    public int sumOfDigitsSquared(int n){
         int sum =0;
-        while(n!=0){
-            sum = sum + (n%10)*(n%10);
-            n = n/10;
+        int m = n;
+        while(m!=0){
+            int d = m%10;
+            sum = sum + d*d;
+            m=m/10;
         }
         return sum;
+    }
+    public boolean isHappy(int n) {
+       
+       int slow = sumOfDigitsSquared(n);
+       int fast = sumOfDigitsSquared(sumOfDigitsSquared(n));
+       while(slow!=fast && fast!=1){
+        slow = sumOfDigitsSquared(slow);
+        fast = sumOfDigitsSquared(sumOfDigitsSquared(fast));
+       }
+       if(fast == 1) return true;
+       return false;
+
     }
 }
