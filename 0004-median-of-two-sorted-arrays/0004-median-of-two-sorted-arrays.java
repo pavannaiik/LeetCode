@@ -23,7 +23,6 @@ class Solution {
             }else{
                 i= partX+1;
             }
-
         }
         return -1;
     }
