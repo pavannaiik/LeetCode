@@ -1,31 +1,25 @@
 class Solution {
     public List<Integer> partitionLabels(String s) {
-        HashMap<Character,int[]>map = new HashMap<>();
-        for(int i=0;i<s.length();i++){
-            char c = s.charAt(i);
-            if(!map.containsKey(c)){
-                map.put(c, new int[]{i,i});
-            }
-            map.get(c)[1] = i;
-        }
-        List<Integer>answer = new ArrayList<>();
-        int i =0, n = s.length();
-        while(i < n){
-            char c = s.charAt(i);
-            int start = map.get(c)[0];
-            int end = map.get(c)[1];
-            int newEnd = end;
-            i++;
-            while(i < newEnd){
-                char ch = s.charAt(i);
-                newEnd = Math.max(newEnd, map.get(ch)[1]);
-                i++;
-            }
-            i = newEnd+1;
-            int len = newEnd - start +1 ;
-            answer.add(len);
-        }
-        return answer;
+        int[] lastIndex = new int[26]; // last index of each character
+        int n = s.length();
 
+        // Step 1: Fill last index of each character
+        for (int i = 0; i < n; i++) {
+            lastIndex[s.charAt(i) - 'a'] = i;
+        }
+
+        List<Integer> result = new ArrayList<>();
+        int start = 0, end = 0;
+
+        // Step 2: Walk through the string and track partitions
+        for (int i = 0; i < n; i++) {
+            end = Math.max(end, lastIndex[s.charAt(i) - 'a']);
+            if (i == end) {
+                result.add(end - start + 1);
+                start = i + 1;
+            }
+        }
+
+        return result;
     }
 }
