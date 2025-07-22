@@ -1,16 +1,17 @@
 class Solution {
     public int characterReplacement(String s, int k) {
-        int left =0, n = s.length();
-        int maxLength = 0, maxCount =0;
-        int[] count = new int[26];
-        for(int right =0; right<n;right++){
-            maxCount = Math.max(maxCount, ++count[s.charAt(right)-'A']);
-            if(right-left+1 - maxCount > k){
-                --count[s.charAt(left) - 'A'];
+        int[] freqArr = new int[26];
+        int left = 0;
+        int maxWinFreq = 0 ;
+        int maxLen = 0;
+        for(int right = 0; right < s.length();right++){
+            maxWinFreq = Math.max(maxWinFreq, ++freqArr[s.charAt(right)-'A']);
+            if(right-left+1 - maxWinFreq > k){
+                --freqArr[s.charAt(left)-'A'];
                 left++;
             }
-            maxLength = Math.max(maxLength, right-left+1);
+            maxLen = Math.max(maxLen, right-left+1);
         }
-        return maxLength;
+        return maxLen;
     }
 }
