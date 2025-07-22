@@ -460,6 +460,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0009-palindrome-number](https://github.com/pavannaiik/LeetCode/tree/master/0009-palindrome-number) |
 | [0012-integer-to-roman](https://github.com/pavannaiik/LeetCode/tree/master/0012-integer-to-roman) |
 | [0013-roman-to-integer](https://github.com/pavannaiik/LeetCode/tree/master/0013-roman-to-integer) |
+| [0043-multiply-strings](https://github.com/pavannaiik/LeetCode/tree/master/0043-multiply-strings) |
 | [0048-rotate-image](https://github.com/pavannaiik/LeetCode/tree/master/0048-rotate-image) |
 | [0050-powx-n](https://github.com/pavannaiik/LeetCode/tree/master/0050-powx-n) |
 | [0060-permutation-sequence](https://github.com/pavannaiik/LeetCode/tree/master/0060-permutation-sequence) |
@@ -932,6 +933,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0020-valid-parentheses](https://github.com/pavannaiik/LeetCode/tree/master/0020-valid-parentheses) |
 | [0022-generate-parentheses](https://github.com/pavannaiik/LeetCode/tree/master/0022-generate-parentheses) |
 | [0032-longest-valid-parentheses](https://github.com/pavannaiik/LeetCode/tree/master/0032-longest-valid-parentheses) |
+| [0043-multiply-strings](https://github.com/pavannaiik/LeetCode/tree/master/0043-multiply-strings) |
 | [0049-group-anagrams](https://github.com/pavannaiik/LeetCode/tree/master/0049-group-anagrams) |
 | [0071-simplify-path](https://github.com/pavannaiik/LeetCode/tree/master/0071-simplify-path) |
 | [0072-edit-distance](https://github.com/pavannaiik/LeetCode/tree/master/0072-edit-distance) |
@@ -1169,6 +1171,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Simulation
 |  |
 | ------- |
+| [0043-multiply-strings](https://github.com/pavannaiik/LeetCode/tree/master/0043-multiply-strings) |
 | [0054-spiral-matrix](https://github.com/pavannaiik/LeetCode/tree/master/0054-spiral-matrix) |
 | [0348-design-tic-tac-toe](https://github.com/pavannaiik/LeetCode/tree/master/0348-design-tic-tac-toe) |
 | [0415-add-strings](https://github.com/pavannaiik/LeetCode/tree/master/0415-add-strings) |
