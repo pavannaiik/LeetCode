@@ -1,33 +1,24 @@
 class Solution {
     public int maxCoins(int[] nums) {
         int n = nums.length;
-        int[] newNums = new int[n + 2];
-        newNums[0] = 1;
-        newNums[n + 1] = 1;
-        for (int i = 0; i < n; i++) {
-            newNums[i + 1] = nums[i];
+        int[][] dp = new int[n+2][n+2];
+        // add 1 to the left and right of the array
+        int[] newNum = new int[n+2];
+        newNum[0]=newNum[n+1]=1;
+        for(int i=1;i<=n;i++){
+            newNum[i]=nums[i-1]; // copying the elemenst of num into newNum
         }
-
-        int[][] memo = new int[n + 2][n + 2];
-        for (int[] row : memo) {
-            Arrays.fill(row, -1);
+        for(int length =1;length<=n;length++){
+            for(int left = 1;left<=n-length+1;left++){
+                int right = left+length-1;
+                for(int i=left;i<=right;i++){
+                    dp[left][right]= Math.max(dp[left][right],(newNum[left-1]*newNum[i]*newNum[right+1]) + dp[left][i-1]+dp[i+1][right]);
+                }
+            }
         }
-
-        return calculateMaxCoins(1, n, newNums, memo);
+        return dp[1][n];
+        
+        
     }
-
-    private int calculateMaxCoins(int i, int j, int[] nums, int[][] memo) {
-        if (i > j) return 0;
-        if (memo[i][j] != -1) return memo[i][j];
-
-        int maxCoins = 0;
-        for (int k = i; k <= j; k++) {
-            int coins = nums[i - 1] * nums[k] * nums[j + 1]
-                      + calculateMaxCoins(i, k - 1, nums, memo)
-                      + calculateMaxCoins(k + 1, j, nums, memo);
-            maxCoins = Math.max(maxCoins, coins);
-        }
-
-        return memo[i][j] = maxCoins;
-    }
+    
 }
