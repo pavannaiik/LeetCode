@@ -19,6 +19,5 @@ class Solution {
             left = i+1;
             right = j-1;
         }
-
     }
 }
