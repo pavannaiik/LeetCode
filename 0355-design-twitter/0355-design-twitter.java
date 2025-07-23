@@ -34,7 +34,7 @@ class Twitter {
 
         for (int followeeId : follows.get(userId)) {
             List<Tweet> tweetList = tweets.getOrDefault(followeeId, new ArrayList<>());
-            for (int i = tweetList.size() - 1; i >= 0 && i >= tweetList.size() - 10; i--) {
+            for (int i = tweetList.size() - 1; i >= 0 ; i--) {
                 pq.offer(tweetList.get(i));
             }
         }
