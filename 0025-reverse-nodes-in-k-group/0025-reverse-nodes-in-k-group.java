@@ -10,38 +10,45 @@
  */
 class Solution {
     public ListNode reverseKGroup(ListNode head, int k) {
-        if (head == null || k == 1) return head;
-
-        // Dummy node
+        // Dummy node to simplify edge cases
         ListNode dummy = new ListNode(0);
         dummy.next = head;
 
-        // Initialize pointers
+        // Pointers
         ListNode prevGroupEnd = dummy;
-        ListNode curr = head;
 
         while (true) {
-            // Check if there are k nodes to reverse
-            ListNode check = curr;
-            for (int i = 0; i < k; i++) {
-                if (check == null) return dummy.next;
-                check = check.next;
-            }
+            // Step 1: Check k nodes exist
+            ListNode kth = getKthNode(prevGroupEnd, k);
+            if (kth == null) break;
 
-            // Reverse k nodes
-            ListNode prev = null;
-            ListNode tail = curr;
-            for (int i = 0; i < k; i++) {
-                ListNode next = curr.next;
+            ListNode groupStart = prevGroupEnd.next;
+            ListNode nextGroupStart = kth.next;
+
+            // Step 2: Reverse the group
+            ListNode prev = kth.next;
+            ListNode curr = groupStart;
+            while (curr != nextGroupStart) {
+                ListNode temp = curr.next;
                 curr.next = prev;
                 prev = curr;
-                curr = next;
+                curr = temp;
             }
 
-            // Connect with previous part
-            prevGroupEnd.next = prev;
-            tail.next = curr;
-            prevGroupEnd = tail;
+            // Step 3: Connect
+            prevGroupEnd.next = kth;
+            prevGroupEnd = groupStart;
         }
+
+        return dummy.next;
+    }
+
+    // Helper: Returns the k-th node from current
+    private ListNode getKthNode(ListNode start, int k) {
+        while (start != null && k > 0) {
+            start = start.next;
+            k--;
+        }
+        return start;
     }
 }
