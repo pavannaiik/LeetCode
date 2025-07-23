@@ -23,6 +23,7 @@ class Solution {
         if(root==null) return 0;
         int left = maxPathSumMethod(root.left);
         int right = maxPathSumMethod(root.right);
+        // for negavive weights
         left = Math.max(left, 0);
         right = Math.max(right, 0);
         maxPathSum = Math.max(maxPathSum, left+right+root.val);
