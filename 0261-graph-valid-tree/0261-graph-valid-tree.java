@@ -11,7 +11,7 @@ class Solution {
 
             if (x == y) return false; // Cycle detected
 
-            parent[x] = y; // Union
+            parent[y] = x; // Union
         }
 
         return true;
