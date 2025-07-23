@@ -1,28 +1,25 @@
 class Solution {
+    int[][] memo;
+    int total;
     public int findTargetSumWays(int[] nums, int target) {
-        int totalSum = 0;
-        for (int num : nums) {
-            totalSum += num;
+        total = Arrays.stream(nums).sum();
+        memo = new int[nums.length][2*total+1];
+        for(int[] arr:memo){
+            Arrays.fill(arr, Integer.MIN_VALUE);
         }
-
-        // If the target is not achievable, return 0
-        if (Math.abs(target) > totalSum || (totalSum + target) % 2 != 0) {
-            return 0;
+        return getTargetSumCount(nums, target, 0, 0);
+    }
+    public int getTargetSumCount(int[] nums, int target, int index, int curSum){
+        if(index == nums.length){
+            if(curSum==target) return 1;
+            else return 0;
         }
-
-        int subsetSum = (totalSum + target) / 2;
-
-        // Use a 1D DP array to calculate the number of ways to achieve the subset sum
-        int[] dp = new int[subsetSum + 1];
-        dp[0] = 1;  // There's 1 way to achieve sum 0 (by using no elements)
-
-        // Populate the DP array
-        for (int num : nums) {
-            for (int j = subsetSum; j >= num; j--) {
-                dp[j] += dp[j - num];
-            }
+        if(memo[index][total+curSum] != Integer.MIN_VALUE){
+            return memo[index][total+curSum];
         }
-
-        return dp[subsetSum];
+        int add = getTargetSumCount(nums, target, index+1, curSum+nums[index]);
+        int subtract = getTargetSumCount(nums, target, index+1, curSum-nums[index]);
+        memo[index][total+curSum] = add+subtract;
+        return memo[index][total+curSum];
     }
 }
