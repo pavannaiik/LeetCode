@@ -254,6 +254,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3594-identify-the-largest-outlier-in-an-array](https://github.com/pavannaiik/LeetCode/tree/master/3594-identify-the-largest-outlier-in-an-array) |
 | [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/pavannaiik/LeetCode/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
 | [3715-maximum-coins-from-k-consecutive-bags](https://github.com/pavannaiik/LeetCode/tree/master/3715-maximum-coins-from-k-consecutive-bags) |
+| [3788-maximum-unique-subarray-sum-after-deletion](https://github.com/pavannaiik/LeetCode/tree/master/3788-maximum-unique-subarray-sum-after-deletion) |
 ## Two Pointers
 |  |
 | ------- |
@@ -746,6 +747,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3410-find-longest-self-contained-substring](https://github.com/pavannaiik/LeetCode/tree/master/3410-find-longest-self-contained-substring) |
 | [3594-identify-the-largest-outlier-in-an-array](https://github.com/pavannaiik/LeetCode/tree/master/3594-identify-the-largest-outlier-in-an-array) |
 | [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/pavannaiik/LeetCode/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
+| [3788-maximum-unique-subarray-sum-after-deletion](https://github.com/pavannaiik/LeetCode/tree/master/3788-maximum-unique-subarray-sum-after-deletion) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -895,6 +897,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3195-separate-black-and-white-balls](https://github.com/pavannaiik/LeetCode/tree/master/3195-separate-black-and-white-balls) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/pavannaiik/LeetCode/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
 | [3715-maximum-coins-from-k-consecutive-bags](https://github.com/pavannaiik/LeetCode/tree/master/3715-maximum-coins-from-k-consecutive-bags) |
+| [3788-maximum-unique-subarray-sum-after-deletion](https://github.com/pavannaiik/LeetCode/tree/master/3788-maximum-unique-subarray-sum-after-deletion) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
