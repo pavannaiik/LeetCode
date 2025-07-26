@@ -255,6 +255,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/pavannaiik/LeetCode/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
 | [3715-maximum-coins-from-k-consecutive-bags](https://github.com/pavannaiik/LeetCode/tree/master/3715-maximum-coins-from-k-consecutive-bags) |
 | [3788-maximum-unique-subarray-sum-after-deletion](https://github.com/pavannaiik/LeetCode/tree/master/3788-maximum-unique-subarray-sum-after-deletion) |
+| [3789-maximize-subarrays-after-removing-one-conflicting-pair](https://github.com/pavannaiik/LeetCode/tree/master/3789-maximize-subarrays-after-removing-one-conflicting-pair) |
 ## Two Pointers
 |  |
 | ------- |
@@ -1108,6 +1109,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2691-count-vowel-strings-in-ranges](https://github.com/pavannaiik/LeetCode/tree/master/2691-count-vowel-strings-in-ranges) |
 | [3410-find-longest-self-contained-substring](https://github.com/pavannaiik/LeetCode/tree/master/3410-find-longest-self-contained-substring) |
 | [3715-maximum-coins-from-k-consecutive-bags](https://github.com/pavannaiik/LeetCode/tree/master/3715-maximum-coins-from-k-consecutive-bags) |
+| [3789-maximize-subarrays-after-removing-one-conflicting-pair](https://github.com/pavannaiik/LeetCode/tree/master/3789-maximize-subarrays-after-removing-one-conflicting-pair) |
 ## Linked List
 |  |
 | ------- |
@@ -1575,6 +1577,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/pavannaiik/LeetCode/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
 | [3201-distribute-candies-among-children-ii](https://github.com/pavannaiik/LeetCode/tree/master/3201-distribute-candies-among-children-ii) |
 | [3594-identify-the-largest-outlier-in-an-array](https://github.com/pavannaiik/LeetCode/tree/master/3594-identify-the-largest-outlier-in-an-array) |
+| [3789-maximize-subarrays-after-removing-one-conflicting-pair](https://github.com/pavannaiik/LeetCode/tree/master/3789-maximize-subarrays-after-removing-one-conflicting-pair) |
 ## Number Theory
 |  |
 | ------- |
@@ -1591,6 +1594,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0729-my-calendar-i](https://github.com/pavannaiik/LeetCode/tree/master/0729-my-calendar-i) |
 | [2658-count-the-number-of-k-big-indices](https://github.com/pavannaiik/LeetCode/tree/master/2658-count-the-number-of-k-big-indices) |
+| [3789-maximize-subarrays-after-removing-one-conflicting-pair](https://github.com/pavannaiik/LeetCode/tree/master/3789-maximize-subarrays-after-removing-one-conflicting-pair) |
 ## Ordered Set
 |  |
 | ------- |
