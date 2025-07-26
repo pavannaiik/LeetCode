@@ -1,13 +1,9 @@
 class Solution {
-
     public int findTheWinner(int n, int k) {
-        return winnerHelper(n, k) + 1;
+        return my(n,k)+1;
     }
-
-    private int winnerHelper(int n, int k) {
-        if (n == 1) {
-            return 0;
-        }
-        return (winnerHelper(n - 1, k) + k) % n;
+    public int my(int n,int k){
+        if(n==1) return 0;
+        return (my(n-1,k)+k)%n;
     }
 }
